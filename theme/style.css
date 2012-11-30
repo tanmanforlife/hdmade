@@ -1262,9 +1262,13 @@
   }
 
   .support-list li {
+	display: block;
     float: none;
+	margin:0 auto;
   }
   .support-list li.madison {
+	left:-10px;
+	position: relative;
     width: 280px;
   }
 
