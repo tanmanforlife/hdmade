@@ -423,6 +423,9 @@
       padding: 2.9em 1.875em;
       margin-top: 2.5em;
     }
+		.lt-ie9 .circle {
+      background: url('img/ie8-circle.png');
+		}
 
     .circle a {
       text-decoration: none;
