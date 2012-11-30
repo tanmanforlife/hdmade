@@ -28,7 +28,9 @@
 
 				<section class="tickets">
 
-					<p>Image goes here</p>
+					<h1><?php echo get_option('ticket_text'); ?></h1>
+
+					<a href="http://www.ticketmaster.com/121212-The-Concert-For-Sandy-Relief-tickets/artist/1805929?tm_link=artist_artistvenue_module"><img src="<?php bloginfo('template_url'); ?>/img/ticketmaster.jpg" alt="ticketmaster logo" /></a>
 
 				</section>
 
