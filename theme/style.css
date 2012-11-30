@@ -111,6 +111,9 @@
       max-width: 997px;
       margin: 0 auto;
     }
+		.lt-ie9 .wrapper {
+			min-width:997px;
+		}
 
 /*
     Top Content Area
