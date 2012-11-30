@@ -29,8 +29,9 @@
     <header role="banner">
         <div class="wrapper cf">
 
-                <a class="branding g one-fifth ir">121212</a>
-
+                <div class="g one-fifth">
+                    <a class="branding ir">121212</a>
+                </div>
 
                 <nav class="g four-fifths" role="navigation">
                     <ul class="nav">
