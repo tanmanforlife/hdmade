@@ -29,8 +29,10 @@
     <header role="banner">
         <div class="wrapper cf">
 
+                <a class="branding g one-fifth ir">121212</a>
 
-                <nav class="g two-fifths" role="navigation">
+
+                <nav class="g four-fifths" role="navigation">
                     <ul class="nav">
                         <li><a href="#" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
                         <li><a href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>

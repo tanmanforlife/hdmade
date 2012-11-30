@@ -67,7 +67,12 @@
 
                					$segments = explode('/', $video_url);
 
-        						echo "<li><iframe id='player_" . $segments[3] . "' src='http://player.vimeo.com/video/" . $segments[3] . "?api=1&player_id=player_" . $segments[3] . "' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>";
+
+        							echo "<li><iframe id='player_" . $segments[3] . "' src='http://player.vimeo.com/video/" . $segments[3] . "?api=1&player_id=player_" . $segments[3] . "' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>";
+
+
+
+
 
 						 endif; ?>
 
@@ -77,12 +82,13 @@
      			<?php endif; ?>
 
 
+
 			</ul>
 		</section>
 	</div>
 
 		<div class="artist-list cf">
-		<div class="wrapper">
+		<div class="wrapper cf">
 			<ul class="artists">
 				<li>Bon Jovi</li>
 				<li>Dave Grohl</li>
@@ -181,7 +187,54 @@
 			<div class="stories">
 				<ul class="slides cf">
 					<?php include ('inc/tumblr-feed.php'); ?>
-				</ul>
+					     			<li class="">
+			<div class="item-wrap">
+										<div class="content">
+
+			<a href="http://robinhoodnyc.tumblr.com/post/35061233028"><img src="http://25.media.tumblr.com/tumblr_md0wu4OuLi1qzeicuo1_400.jpg" alt="tumblr photo"></a>
+			<p class="meta">Mon, 05 Nov 2012 </p>
+			<p>Thank you to the brothers (ages 5 &amp; 7) who held a cookie sale to raise money for our #SandyRelief Fund. Join them: …</p>
+			</div>
+						<a href="http://robinhoodnyc.tumblr.com/post/35061233028" class="more">Read More &gt;</a>
+
+			</div>
+		</li>
+		     			<li class="">
+			<div class="item-wrap">
+										<div class="content">
+
+			<a href="http://robinhoodnyc.tumblr.com/post/35061233028"><img src="http://25.media.tumblr.com/tumblr_md0wu4OuLi1qzeicuo1_400.jpg" alt="tumblr photo"></a>
+			<p class="meta">Mon, 05 Nov 2012 </p>
+			<p>Thank you to the brothers (ages 5 &amp; 7) who held a cookie sale to raise money for our #SandyRelief Fund. Join them: …</p>
+			</div>
+						<a href="http://robinhoodnyc.tumblr.com/post/35061233028" class="more">Read More &gt;</a>
+
+			</div>
+		</li>
+						     			<li class="">
+			<div class="item-wrap">
+										<div class="content">
+
+			<a href="http://robinhoodnyc.tumblr.com/post/35061233028"><img src="http://25.media.tumblr.com/tumblr_md0wu4OuLi1qzeicuo1_400.jpg" alt="tumblr photo"></a>
+			<p class="meta">Mon, 05 Nov 2012 </p>
+			<p>Thank you to the brothers (ages 5 &amp; 7) who held a cookie sale to raise money for our #SandyRelief Fund. Join them: …</p>
+			</div>
+						<a href="http://robinhoodnyc.tumblr.com/post/35061233028" class="more">Read More &gt;</a>
+
+			</div>
+		</li>
+		     			<li class="">
+			<div class="item-wrap">
+										<div class="content">
+
+			<a href="http://robinhoodnyc.tumblr.com/post/35061233028"><img src="http://25.media.tumblr.com/tumblr_md0wu4OuLi1qzeicuo1_400.jpg" alt="tumblr photo"></a>
+			<p class="meta">Mon, 05 Nov 2012 </p>
+			<p>Thank you to the brothers (ages 5 &amp; 7) who held a cookie sale to raise money for our #SandyRelief Fund. Join them: …</p>
+			</div>
+						<a href="http://robinhoodnyc.tumblr.com/post/35061233028" class="more">Read More &gt;</a>
+
+			</div>
+		</li>			</ul>
 			</div>
 		</div>
 	</div>

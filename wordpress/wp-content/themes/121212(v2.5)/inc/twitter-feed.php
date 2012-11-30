@@ -22,7 +22,7 @@
       return $status_text;
   }
 
-  
+
 
   // Create an Array of Twitter Handles
   $handles = explode(",", get_option('twitter_handles'));
@@ -51,14 +51,59 @@
     }
   }
 
-  // Output the filtered tweets to the site
-  foreach ($filteredTweets as $tweeted) {
+  //If the twitter feed is null e.g. if the API goes down then add some other content
 
-    echo "<li><div class='tweet-wrap'>";
-    echo "<p>" . linkify($tweeted['text']) . "</p>";
-    echo "<a href='http://twitter.com/" . $tweeted['user'] . "'><img src='" . $tweeted['profile_image'] . "' alt='" . $tweeted['user'] . " avatar' class='avatar' /></a>";
-    echo "</div></li>";
+  if ($filteredTweets != null) {
 
+    // Output the filtered tweets to the site
+    foreach ($filteredTweets as $tweeted) {
+
+      echo "<li><div class='tweet-wrap'>";
+      echo "<p>" . linkify($tweeted['text']) . "</p>";
+      echo "<a href='http://twitter.com/" . $tweeted['user'] . "'><img src='" . $tweeted['profile_image'] . "' alt='" . $tweeted['user'] . " avatar' class='avatar' /></a>";
+      echo "</div></li>";
+
+    }
   }
+  else { ?>
+
+    <li>
+      <div class='tweet-wrap'>
+        <p>Tickets for <a href='https://twitter.com/search?q=%23121212concert&src=hash'>#121212concert</a> ft. Bruce & The E Street Band on sale 12/3 at 12p ET at <a href='http://ticketmaster.com'>http://ticketmaster.com</a> !</p>
+        <a href='https://twitter.com/springsteen'><img src='https://twimg0-a.akamaihd.net/profile_images/2503639182/kvwh87erruwjrrqmgjrs.jpeg' class='avatar' alt='user avatar' /></a>
+      </div>
+    </li>
+
+    <li>
+      <div class='tweet-wrap'>
+        <p>We're excited to be performing at <a href='https://twitter.com/search?q=%23121212concert&src=hash'>#121212concert</a> to benefit <a href='http://twitter.com/robinhoodnyc'>@robinhoodnyc</a> & those affected by #Sandy. Tix on sale MONDAY via Ticketmaster.</p>
+        <a href='https://twitter.com/bon_jovi'><img src='https://twimg0-a.akamaihd.net/profile_images/2781133214/39ab766dcc1f3c04acf250025f3923c0_normal.png' class='avatar' alt='user avatar' /></a>
+      </div>
+    </li>
+
+    <li>
+      <div class='tweet-wrap'>
+        <p>Paul will perform at Hurricane Sandy <a href='https://twitter.com/search?q=%23121212concert&src=hash'>#121212concert</a> at Madison Square Gardens. Details here: <a href='http://www.121212concert.org'>http://www.121212concert.org</a></p>
+        <a href='https://twitter.com/PaulMcCartney'><img src='https://twimg0-a.akamaihd.net/profile_images/2459817551/saeosl0jonpeiovdjb3y_normal.jpeg' class='avatar' alt='user avatar' /></a>
+      </div>
+    </li>
+
+    <li>
+      <div class='tweet-wrap'>
+        <p>Hey, our mates Eddie Vedder and <a href="http://twitter.com/foofightersdave">@FooFightersDave</a> Grohl are coming along too. Great! <a href="http://twitter.com/robinhoodnyc">@robinhoodnyc</a> <a href='https://twitter.com/search?q=%23121212concert&src=hash'>#121212concert</a></p>
+        <a href='https://twitter.com/thewho'><img src='https://twimg0-a.akamaihd.net/profile_images/1961986092/269ce781-dc39-4848-8974-76801560236a_normal.png' class='avatar' alt='user avatar' /></a>
+      </div>
+    </li>
+
+    <li>
+      <div class='tweet-wrap'>
+        <p>Big News abt <a href='https://twitter.com/search?q=%23121212concert&src=hash'>#121212concert</a>: Bon Jovi, Dave Grohl, & Eddie Vedder added to the lineup. Tix on sale 12/3 at 12p ET. <a href="http://ow.ly/i/1aSbk">http://ow.ly/i/1aSbk</a> </p>
+        <a href='https://twitter.com/thewho'><img src='https://twimg0-a.akamaihd.net/profile_images/1961986092/269ce781-dc39-4848-8974-76801560236a_normal.png' class='avatar' alt='user avatar' /></a>
+      </div>
+    </li>
+
+
+
+  <? }
 
 ?>

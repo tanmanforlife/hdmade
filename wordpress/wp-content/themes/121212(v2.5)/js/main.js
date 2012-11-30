@@ -70,6 +70,12 @@ $(window).ready(function() {
         });
     }
 
+  });
+
+  $(window).load(function() {
+
+
+
     jQuery(".featured-img")
     .fitVids()
     .flexslider({
@@ -97,8 +103,8 @@ $(window).ready(function() {
 
   $('.stories').flexslider({
     animation: "slide",
-    itemWidth: 320,
-    maxItems:3,
+    itemWidth: 330,
+    move:1,
     controlNav: false,
     slideshow: false,
     initDelay: 400,
@@ -132,4 +138,4 @@ $(window).ready(function() {
   $(".lightbox-text").fancybox({
 
   });
-});
+   });
