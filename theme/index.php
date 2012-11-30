@@ -45,7 +45,7 @@
 				<h2>On Twitter</h2>
 				<ul class="slides tweets">
 				<?php include 'inc/twitter-feed.php'; ?>
-			</ul>
+				</ul>
 			</section>
 		</div>
 
