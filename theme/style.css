@@ -980,6 +980,12 @@
   }
 }
 
+@media all and (max-width:56em) {
+	.circle {
+		height:17em;
+		width:17em;
+	}
+}
 
 @media all and (max-width: 48em) {
   html {
@@ -1063,6 +1069,16 @@
   .images .flex-next {
     top: 14.5%;
   }
+}
+@media all and (max-width:767px) {
+	.support .g {
+		float: none;
+		width:100%;
+	}
+	.support .g .circle {
+		float: none;
+		margin:2.5em auto 0 auto;
+	}
 }
 @media all and (max-width: 30em) {
   .outer-wrapper {
