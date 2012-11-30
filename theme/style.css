@@ -1276,11 +1276,15 @@
     width: 100%;
     font-size: 0.8em;
   }
+	footer .nav li {
+		display: inline-block;
+		margin:0;
+	}
 
   footer small {
     float: left;
     clear: both;
-    text-align: left;
+    text-align: center;
     width: 100%!important;
   }
 }
