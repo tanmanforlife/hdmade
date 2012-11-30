@@ -7,29 +7,34 @@
 				if ( get_option('show_timer') != '' ) {
 			?>
 
-				<section class="tickets">
-				<h1><?php echo get_option('ticket_text'); ?></h1>
+				<section class="tickets table">
+					<div class="tr">
+						<div class="td">
+							<h1><?php echo get_option('ticket_text'); ?></h1>
+							<div class="timer cf">
+								<div class="digits">
+									<span class="unit" id="daysLeft"></span>
+									<span class="unit" id="hours"></span>
+									<span class="unit last-unit" id="minutes"></span>
+								</div>
 
-					<div class="timer cf">
-						<div class="digits">
-							<span class="unit" id="daysLeft"></span>
-							<span class="unit" id="hours"></span>
-							<span class="unit last-unit" id="minutes"></span>
+								<span class="timer-unit">Days</span>
+								<span class="timer-unit">Hours</span>
+								<span class="timer-unit">Minutes</span>
+							</div>
 						</div>
-
-						<span class="timer-unit">Days</span>
-						<span class="timer-unit">Hours</span>
-						<span class="timer-unit">Minutes</span>
 					</div>
-			</section>
+				</section>
 
 
 			<? } else { ?>
 
-				<section class="tickets">
-
-					<p>Image goes here</p>
-
+				<section class="tickets table">
+					<div class="tr">
+						<div class="td">
+							<p>Image goes here</p>
+						</div>
+					</div>
 				</section>
 
 
