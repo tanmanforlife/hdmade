@@ -330,6 +330,7 @@
     .stats p {
       font-size: 1em;
       line-height: 2em;
+			margin-top: 0em;
     }
 
     .stat-item {
@@ -343,6 +344,9 @@
       margin: 0 auto;
       color: #007ac1;
     }
+		.stats .giga {
+			letter-spacing:1px;
+		}
 
 /*
     Tumblr Feed Content Area
