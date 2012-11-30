@@ -189,54 +189,7 @@
 			<div class="stories">
 				<ul class="slides cf">
 					<?php include ('inc/tumblr-feed.php'); ?>
-					     			<li class="">
-			<div class="item-wrap">
-										<div class="content">
-
-			<a href="http://robinhoodnyc.tumblr.com/post/35061233028"><img src="http://25.media.tumblr.com/tumblr_md0wu4OuLi1qzeicuo1_400.jpg" alt="tumblr photo"></a>
-			<p class="meta">Mon, 05 Nov 2012 </p>
-			<p>Thank you to the brothers (ages 5 &amp; 7) who held a cookie sale to raise money for our #SandyRelief Fund. Join them: …</p>
-			</div>
-						<a href="http://robinhoodnyc.tumblr.com/post/35061233028" class="more">Read More &gt;</a>
-
-			</div>
-		</li>
-		     			<li class="">
-			<div class="item-wrap">
-										<div class="content">
-
-			<a href="http://robinhoodnyc.tumblr.com/post/35061233028"><img src="http://25.media.tumblr.com/tumblr_md0wu4OuLi1qzeicuo1_400.jpg" alt="tumblr photo"></a>
-			<p class="meta">Mon, 05 Nov 2012 </p>
-			<p>Thank you to the brothers (ages 5 &amp; 7) who held a cookie sale to raise money for our #SandyRelief Fund. Join them: …</p>
-			</div>
-						<a href="http://robinhoodnyc.tumblr.com/post/35061233028" class="more">Read More &gt;</a>
-
-			</div>
-		</li>
-						     			<li class="">
-			<div class="item-wrap">
-										<div class="content">
-
-			<a href="http://robinhoodnyc.tumblr.com/post/35061233028"><img src="http://25.media.tumblr.com/tumblr_md0wu4OuLi1qzeicuo1_400.jpg" alt="tumblr photo"></a>
-			<p class="meta">Mon, 05 Nov 2012 </p>
-			<p>Thank you to the brothers (ages 5 &amp; 7) who held a cookie sale to raise money for our #SandyRelief Fund. Join them: …</p>
-			</div>
-						<a href="http://robinhoodnyc.tumblr.com/post/35061233028" class="more">Read More &gt;</a>
-
-			</div>
-		</li>
-		     			<li class="">
-			<div class="item-wrap">
-										<div class="content">
-
-			<a href="http://robinhoodnyc.tumblr.com/post/35061233028"><img src="http://25.media.tumblr.com/tumblr_md0wu4OuLi1qzeicuo1_400.jpg" alt="tumblr photo"></a>
-			<p class="meta">Mon, 05 Nov 2012 </p>
-			<p>Thank you to the brothers (ages 5 &amp; 7) who held a cookie sale to raise money for our #SandyRelief Fund. Join them: …</p>
-			</div>
-						<a href="http://robinhoodnyc.tumblr.com/post/35061233028" class="more">Read More &gt;</a>
-
-			</div>
-		</li>			</ul>
+				</ul>
 			</div>
 		</div>
 	</div>
