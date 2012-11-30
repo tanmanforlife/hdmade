@@ -27,7 +27,7 @@
 
                     <tr valign="top">
                         <th scope="row"><label for="ticket_text">Ticket Text</label></th>
-                        <td><textarea rows="10" cols="40" name="ticket_text"><? echo get_option('ticket_text') ?></textarea></td>
+                        <td><textarea rows="10" cols="40" name="ticket_text"><?php echo get_option('ticket_text') ?></textarea></td>
                     </tr>
 
 
@@ -39,7 +39,7 @@
 
                     <tr valign="top">
                         <th scope="row"><label for="twitter_handles">Twitter Feed (Separate account names with a comma) and contain <strong>no spaces</strong></label></th>
-                        <td><textarea rows="10" cols="40" name="twitter_handles"><? echo get_option('twitter_handles') ?></textarea></td>
+                        <td><textarea rows="10" cols="40" name="twitter_handles"><?php echo get_option('twitter_handles') ?></textarea></td>
                     </tr>
 
 

@@ -52,13 +52,15 @@
   }
 
   // Output the filtered tweets to the site
-  foreach ($filteredTweets as $tweeted) {
+  if(!empty($filteredTweets)){
+      foreach ($filteredTweets as $tweeted) {
 
-    echo "<li><div class='tweet-wrap'>";
-    echo "<p>" . linkify($tweeted['text']) . "</p>";
-    echo "<a href='http://twitter.com/" . $tweeted['user'] . "'><img src='" . $tweeted['profile_image'] . "' alt='" . $tweeted['user'] . " avatar' class='avatar' /></a>";
-    echo "</div></li>";
+        echo "<li><div class='tweet-wrap'>";
+        echo "<p>" . linkify($tweeted['text']) . "</p>";
+        echo "<a href='http://twitter.com/" . $tweeted['user'] . "'><img src='" . $tweeted['profile_image'] . "' alt='" . $tweeted['user'] . " avatar' class='avatar' /></a>";
+        echo "</div></li>";
 
+      }
   }
 
 ?>

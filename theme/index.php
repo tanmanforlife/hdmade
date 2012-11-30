@@ -27,7 +27,7 @@
 				</section>
 
 
-			<? } else { ?>
+			<?php } else { ?>
 
 				<section class="tickets table">
 					<div class="tr">
@@ -38,7 +38,7 @@
 				</section>
 
 
-			<? } ?>
+			<?php } ?>
 
 
 			<section class="twitter">

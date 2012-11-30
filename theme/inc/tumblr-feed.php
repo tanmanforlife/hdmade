@@ -30,7 +30,7 @@ $content =  $value['posts'];
 foreach ($content as $post) {
 	$type = $post['type'];
 
-	if ($post['type'] == 'regular' && in_array('sandyrelief', $post['tags'])) {
+	if ($post['type'] == 'regular' && is_array($post['tags']) && in_array('sandyrelief', $post['tags'])) {
 		$regularPostBody = $post['regular-body'];
 		$regularPostBody = preg_replace("/<img[^>]+\>/i", "", $regularPostBody);
 		$regularPostBody = strip_tags($regularPostBody);
@@ -42,7 +42,7 @@ foreach ($content as $post) {
 			<a href="<?php echo $post['url'] ?>"><img src="<?php bloginfo('template_url') ?>/img/tumblr-placeholder.png" alt="tumblr photo" /></a>
 
 			<p class="meta"><?php echo substr($post['date'], 0, -8); ?></p>
-			<p><? echo limit_words($regularPostBody,30); ?></p>
+			<p><?php echo limit_words($regularPostBody,30); ?></p>
 		</div>
 					<a href="<?php echo $post['url'] ?>" class="more">Read More &gt;</a>
 
@@ -52,7 +52,7 @@ foreach ($content as $post) {
 	}
 
 
-	if ($post['type'] == 'photo' && in_array('sandyrelief', $post['tags'])) {
+	if ($post['type'] == 'photo' && is_array($post['tags']) && in_array('sandyrelief', $post['tags'])) {
 		$photoUrl = $post['photo-url-400'];
 		$photoCaption = $post['photo-caption'];
 				$photoCaption = strip_tags($photoCaption);
@@ -64,7 +64,7 @@ foreach ($content as $post) {
 
 			<a href="<?php echo $post['url'] ?>"><img src="<?php echo $photoUrl ?>" alt="tumblr photo" /></a>
 			<p class="meta"><?php echo substr($post['date'],0,-8); ?></p>
-			<p><? echo limit_words($photoCaption, 30); ?></p>
+			<p><?php echo limit_words($photoCaption, 30); ?></p>
 			</div>
 						<a href="<?php echo $post['url'] ?>" class="more">Read More &gt;</a>
 
