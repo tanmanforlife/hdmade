@@ -371,6 +371,15 @@
     .item-wrap { padding: 1.25em; }
 
     .content { height: 505px; }
+		.content > a,
+		.content > a img { display: block; }
+		.content .meta {
+			font-size:1.125em;
+			line-height:1;
+			margin:1.388888889em 0 0;
+			-webkit-font-smoothing: subpixel-antialiased;
+		}
+		.content p { margin-top: .5em;}
 
     .stories, .tumblr-feed { overflow: hidden; }
 
