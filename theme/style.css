@@ -329,13 +329,13 @@
 
     .tumblr-feed li img {
       width: 100%;
-      height: 220px;
+      height: auto;
       border-top: 3px solid #fff;
     }
 
     .item-wrap { padding: 1.25em; }
 
-    .content { height: 420px; }
+    .content { height: 505px; }
 
     .stories, .tumblr-feed { overflow: hidden; }
 
