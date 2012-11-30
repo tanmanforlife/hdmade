@@ -72,7 +72,7 @@
 
                					$segments = explode('/', $video_url);
 
-        						echo "<li><iframe id='player_" . $segments[3] . "' src='http://player.vimeo.com/video/" . $segments[3] . "?api=1&player_id=player_" . $segments[3] . "' webkitAllowFullScreen mozallowfullscreen allowFullScreen frameborder='0' height='847' width='672'></iframe></li>";
+        						echo "<li><iframe id='player_" . $segments[3] . "' src='http://player.vimeo.com/video/" . $segments[3] . "?api=1&color=007ac1&player_id=player_" . $segments[3] . "' webkitAllowFullScreen mozallowfullscreen allowFullScreen frameborder='0' height='847' width='672'></iframe></li>";
 
 						 endif; ?>
 
