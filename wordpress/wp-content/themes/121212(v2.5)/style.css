@@ -134,7 +134,11 @@
       position: relative;
     }
 
-
+    .branding {
+      width: 137px;
+      height: 52px;
+      background: url(img/logo.png) no-repeat left center;
+    }
 
     .tickets, .twitter {
       background: #007bc1;
@@ -240,6 +244,10 @@
       padding:4em 0;
     }
 
+    .artist-list h2 {
+      color: #002340;
+    }
+
     .artists {
       padding:0;
       margin:0;
@@ -265,26 +273,41 @@
       color: #002340;
     }
 
-    .where-watch {
-      background: url(img/watch.jpg) no-repeat;
+     .where-watch {
       height:134px;
-      width: 819px;
+      max-width: 805px;
       margin: 0 auto;
       text-align: center;
+      padding: 0;
+      position: relative;
+      background: url(img/border.jpg) no-repeat center;
     }
 
     .where-watch li {
       font-family: 'League Gothic', Helvetica, sans-serif;
-      font-size: 3.7em;
+      font-size: 2.3em;
       list-style: none;
+      display: block;
+      width: 135px;
+      position: absolute;
+      padding-top: 55px;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0px 1px 1px #333;
+      background: url(img/circle-watch.jpg) #f68124;
+      height: 137px;
     }
 
-    .where-watch li:first-child {
-      float: left;
+    .where-watch li:last-child{
+      right: 0px;
     }
 
-    .where-watch li:last-child {
-      float: right
+    .where-watch li:first-child{
+      left: 0;
+    }
+
+    .where-watch li:nth-child(2) {
+      left: 41.5%;
     }
 
 
@@ -916,6 +939,11 @@
 
     .images .flex-prev, .tumblr-feed .flex-prev { left: 20% }
 
+    .tumblr-feed .flex-direction-nav a { background: url(img/bg_direction_nav_dark.png) no-repeat 0 0; }
+    .tumblr-feed .flex-direction-nav a.flex-next { background-position: 100% 0%;}
+
+    }
+
 /*  ==========================================================================
     Fancybox Styling
     ========================================================================== */
@@ -1032,7 +1060,6 @@
     border-radius: 8em;
   }
 
-
   .circle .icon-facebook {
     margin-top: 10px;
   }
@@ -1123,6 +1150,10 @@
   }
 
   .tumblr-feed {
+
+  }
+
+  .tumblr-feed .wrapper {
     width: 320px;
     margin: 0 auto;
     overflow: hidden
@@ -1238,12 +1269,12 @@
   }
 
   .robin-hood-stories .flex-prev {
-    left: 160px;
+    left: 36%;
     top:85px;
   }
 
 .robin-hood-stories .flex-next {
-    right: 160px;
+    right: 36%;
     top:85px;
   }
 
@@ -1269,9 +1300,13 @@
   }
 
   .support-list li {
+	display: block;
     float: none;
+	margin:0 auto;
   }
   .support-list li.madison {
+	left:-10px;
+	position: relative;
     width: 280px;
   }
 
@@ -1279,11 +1314,31 @@
     width: 100%;
     font-size: 0.8em;
   }
+	footer .nav li {
+		display: inline-block;
+		margin:0;
+	}
 
   footer small {
     float: left;
     clear: both;
-    text-align: left;
+    text-align: center;
     width: 100%!important;
   }
+
+  .where-watch {
+    background: none;
+    height: 470px;
+  }
+
+  .where-watch li {
+    position: relative;
+    margin: 0 auto 25px auto;
+
+  }
+
+  .where-watch li:nth-child(2) {
+    margin-left: -34px;
+  }
+
 }

@@ -268,19 +268,44 @@
       color: #002340;
     }
 
-    .where-watch {
+     .where-watch {
+      height:134px;
+      max-width: 805px;
+      margin: 0 auto;
       text-align: center;
+      padding: 0;
+      position: relative;
+      background: url(img/border.jpg) repeat-x center;
     }
 
     .where-watch li {
-      display: inline-block;
-      text-align: center;
-      width: 134px;
-      height: 134px;
-      border-radius: 67px;
+      font-family: 'League Gothic', Helvetica, sans-serif;
+      font-size: 2.3em;
+      list-style: none;
+      display: block;
+      width: 160px;
+      position: absolute;
+      padding-top: 55px;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0px 1px 1px #333;
       background: #f68124;
-      border: 2px solid #fff;
-      margin-top: -67px;
+      height: 160px;
+      border-radius: 80px;
+      border: 15px solid #fff;
+    }
+
+    .where-watch li:last-child{
+      right: 2px;
+    }
+
+    .where-watch li:first-child{
+      left: 0;
+    }
+
+    .where-watch li:nth-child(2) {
+      left: 50%;
+      margin-left: -68px;
     }
 
 
