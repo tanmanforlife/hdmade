@@ -20,7 +20,6 @@
 
     <!--[if (gte IE 6)&(lte IE 8)]>
         <script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/selectivizr.min.js"></script>
-        <script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/corner.js"></script>
     <![endif]-->
 
 </head>
