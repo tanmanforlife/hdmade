@@ -39,9 +39,12 @@
 
     $tweetsJSON = json_decode($response);
 
-    foreach ($tweetsJSON as $t) {
-      $tweets[] = array('text' => $t->text, 'user' => $t->user->screen_name, 'profile_image' => $t->user->profile_image_url);
+    if(is_array($tweetsJSON)){
+        foreach ($tweetsJSON as $t) {
+          $tweets[] = array('text' => $t->text, 'user' => $t->user->screen_name, 'profile_image' => $t->user->profile_image_url);
+        }
     }
+    
   }
 
   // Filter the tweets array for tweets containing #121212Concert
