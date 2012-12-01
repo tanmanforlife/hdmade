@@ -1,0 +1,5 @@
+archive_clean_wp/*
+nbproject/*
+sql_1.sql
+.DS_Store
+wp-config.php
