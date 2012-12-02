@@ -30,11 +30,8 @@
 			<?php } else { ?>
 
 				<section class="tickets table">
-					<div class="tr">
-						<div class="td">
-							<p>Image goes here</p>
-						</div>
-					</div>
+					<h1><?php echo get_option('ticket_text'); ?></h1>
+<a href="http://www.ticketmaster.com/121212-The-Concert-For-Sandy-Relief-tickets/artist/1805929?tm_link=artist_artistvenue_module"><img src="<?php bloginfo('template_url') ?>/img/ticketmaster.jpg"alt="ticketmaster" /></a>
 				</section>
 
 
