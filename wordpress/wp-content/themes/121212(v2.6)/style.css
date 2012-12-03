@@ -34,329 +34,518 @@
     Normalize CSS (git.io/normalize)
     ========================================================================== */
 
-    article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
 /*  ==========================================================================
     Micro Clearfix (http://nicolasgallagher.com/micro-clearfix-hack/)
     ========================================================================== */
 
-    .cf { *zoom: 1; }
-    .cf:before, .cf:after { content: " "; display: table; }
-    .cf:after { clear: both; }
+.cf { *zoom: 1; }
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
 
 /*  ==========================================================================
     Grid (Taken from Inuit.css with some amendments, and unused removed
     ========================================================================== */
 
-    .g { float: left; }
-    .one-whole { width: 100%; }
-    .one-half { width: 50%; }
-    .one-third { width: 33.333%; }
-    .two-thirds { width: 66.666%; }
-    .one-fifth { width: 20%; }
-    .one-fifths { width: 40%; }
-    .three-fifths { width: 60%; }
-    .four-fifths { width: 80%; }
+.g { float: left; }
+.one-whole { width: 100%; }
+.one-half { width: 50%; }
+.one-third { width: 33.333%; }
+.two-thirds { width: 66.666%; }
+.one-fifth { width: 20%; }
+.one-fifths { width: 40%; }
+.three-fifths { width: 60%; }
+.four-fifths { width: 80%; }
 
 /*  ==========================================================================
     Font-Face (League Gothic & Icons)
     ========================================================================== */
 
-    @font-face {
-      font-family: 'League Gothic';
-      src: url("fonts/leaguegothic-regular-webfont.eot");
-      src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
-      font-weight: normal;
-      font-style: normal;
-    }
+@font-face {
+	font-family: 'League Gothic';
+	src: url("fonts/leaguegothic-regular-webfont.eot");
+	src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
 
-    @font-face {
-      font-family: 'icomoon';
-      src: url("fonts/icomoon.eot");
-      src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
-      font-weight: normal;
-      font-style: normal;
-    }
+@font-face {
+	font-family: 'icomoon';
+	src: url("fonts/icomoon.eot");
+	src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* =============================================================================
+   Icons
+   ========================================================================== */
+
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+	content: "\e000";
+	font-size: 1.8em;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all linear 0.1s;
+}
+.icon-twitter:hover, .icon-facebook:hover {
+	color: #BDE723;
+	-webkit-transition: all linear 0.1s;
+}
+.icon-facebook:before {
+	content: "\e001";
+	font-size: 1.8em;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all linear 0.1s;
+}
+.icon-robin:before {
+	content: "\e005";
+	font-size: 1.1em;
+	text-align: left;
+}
+.icon-play:before {
+	content: "\e006";
+	font-size: 3em;
+}
+.icon-play {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	top: 50%;
+	margin-left: -26px;
+	color: rgba(255, 255, 255, 0.5);
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+.icon-twitter span, .icon-facebook span {
+	position: absolute;
+	left: -30000em;
+}
+
+/*  ==========================================================================
+    Buttons & Links
+    ========================================================================== */
+
+.btn {
+	border: none;
+	padding: 0.4em 1em;
+	display: inline-block;
+	background: #b4dc2b;
+	color: #fff;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+	text-transform: uppercase;
+	font-family: 'League Gothic';
+	font-size: 1.4rem;
+	letter-spacing: 0.0625em;
+	position: relative;
+	border-radius: 1px;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+
+.donate {
+	background: #b4dc2b;
+	background: -moz-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b4dc2b), color-stop(51%, #b4dc2b), color-stop(51%, #a1c53c), color-stop(100%, #a1c53c));
+	background: -webkit-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+	background: -o-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+	background: -ms-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+	background: linear-gradient(to bottom, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4dc2b', endColorstr='#a1c53c',GradientType=0 );
+	font-size: 2.2rem
+}
+
+.donate:hover {
+	color:#0087d6;
+	text-shadow:none;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+
+.play {
+	padding: 2px 0 0 0;
+	background: #0087d6;
+	background: -moz-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0087d6), color-stop(51%, #0087d6), color-stop(51%, #007ac1), color-stop(100%, #007ac1));
+	background: -webkit-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: -o-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: -ms-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: linear-gradient(to bottom, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0087d6', endColorstr='#007ac1',GradientType=0 );
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.75em;
+	font-size: 1.8rem;
+}
+
+.play:hover {
+	color:#b4dc2b;
+	text-shadow:none;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	  -o-transition: all 0.1s ease-out;
+	     transition: all 0.1s ease-out;
+}
+
+.more {
+	border-color:#bce723;
+	border-style:solid;
+	border-width:0px;
+	clear: both;
+	color: #bce723;
+	display: inline-block;
+	font-family: 'League Gothic';
+	font-size: 1.125em;
+	letter-spacing: 2px;
+	margin-top: 1.667em;
+	padding-right: 13px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+.more:hover {
+	border-color:#fff;
+	color:#fff;
+}
+.more:after {
+	border-color: inherit;
+	border-style:inherit;
+	border-width:3px 3px 0 0;
+	content:"";
+	display:block;
+	height:5px;
+	margin-top: -6px;
+	position: absolute;
+	right:0;
+	top:50%;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+	width:5px;
+}
 
 /*  ==========================================================================
     Main Styling
     ========================================================================== */
 
-    * {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
-    html {
-      font-family: "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 1em;
-      background: #003a62;
-      -webkit-font-smoothing: antialiased;
-    }
+html {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1em;
+	background: #003a62;
+	-webkit-font-smoothing: antialiased;
+}
 
-    body {
-      line-height: 1.5em;
-    }
+body {
+	line-height: 1.5em;
+}
 
-    .outer-wrapper {
-      max-width: 1270px;
-      height: 100%;
-      margin: 0 auto;
-      background: #000;
-      overflow: hidden;
-    }
+.outer-wrapper {
+	max-width: 1270px;
+	height: 100%;
+	margin: 0 auto;
+	background: #000;
+	overflow: hidden;
+}
 
-    .wrapper {
-      max-width: 997px;
-      margin: 0 auto;
-    }
-		.lt-ie9 .wrapper {
-			min-width:997px;
-		}
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.lt-ie9 .wrapper {
+	min-width:1000px;
+}
 
-/*
+/* ==|== Main =================
+   Type
+   ====================================== */
+
+a {
+	color:#bce723;
+	text-decoration: none;
+	-webkit-transition:all .2s ease;
+	-moz-transition:all .2s ease;
+	-ms-transition:all .2s ease;
+	-o-transition:all .2s ease;
+	transition:all .2s ease;
+}
+a:hover {
+	color:#fff;
+}
+h1 {
+	font-size: 1.9em;
+	text-transform: uppercase;
+	font-family: 'League Gothic';
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 2em;
+	line-height: 1.5em;
+	text-align: center;
+	font-family: 'League Gothic';
+	letter-spacing: 1px;
+	line-height: 1.3em;
+	text-transform: uppercase;
+	display: block;
+	color: #fff;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 1.375em;
+	color: #fff;
+	font-family: georgia;
+	font-weight: normal;
+	font-style: italic;
+	line-height: 1.5em;
+	text-shadow: 0px -1px rgba(0, 0, 0, 0.9);
+}
+
+.radio h2 {
+	font-family: Helvetica;
+	font-size: 1.4em;
+	margin: 2.5em 0 1em 0;
+	display: block;
+	text-align: center;
+}
+
+.giga {
+	font-size: 2.1875em;
+	line-height: 1.37143;
+	font-family: 'League Gothic';
+	letter-spacing: 0.125em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+}
+
+.mega {
+	font-size: 8em;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 2px 0px #333;
+	margin-bottom: -30px;
+}
+	
+/* ==========================================================================
+   Sponsor Banner
+   ========================================================================== */
+
+.sponsor-banner {
+	background:#0079c1 url(img/sponsor-banner-bg.png) repeat-x center bottom;
+	display: block;
+	height:57px;
+	overflow: hidden;
+	position: relative;
+	width:100%;
+}
+.sponsor-banner .sections {
+	left:0;
+	position: absolute;
+	top:0;
+	white-space:nowrap;
+}
+.sponsor-banner .section {
+	padding:0 10px;
+	float: left;
+}
+
+/* =============================================================================
+   Pre-Header
+   ========================================================================== */
+
+.top {
+	background:url('img/bg.jpg') no-repeat center top;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+.pre-header {
+	
+}
+.pre-header .donate {
+	float: left;
+}
+.pre-header nav {
+	float: right;
+}
+.pre-header ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.pre-header li,
+.pre-header a {
+	display: inline-block;
+}
+
+/*  ==========================================================================
     Top Content Area
     ========================================================================== */
 
-    header {
-      padding: 0.6em 0.6em 0.1em 0.6em;
-    }
+header {
+	padding: 0.6em 0.6em 0.1em 0.6em;
+}
 
-    header .icon-twitter, .icon-facebook {
-      margin-top: 1em;
-      font-size: 0.9em;
-    }
+header .icon-twitter, .icon-facebook {
+	margin-top: 1em;
+	font-size: 0.9em;
+}
 
-    header .icon-facebook {
-      font-size: 0.8em;
-    }
+header .icon-facebook {
+	font-size: 0.8em;
+}
 
-    .twitter .slides li {
-      z-index: 1;
-      position: relative;
-    }
+.twitter .slides li {
+	z-index: 1;
+	position: relative;
+}
 
-    .branding {
-      width: 137px;
-      height: 52px;
-      display: block;
-      background: url(img/logo.png) no-repeat left center;
-    }
+.branding {
+	width: 137px;
+	height: 52px;
+	display: block;
+	background: url(img/logo.png) no-repeat left center;
+}
 
-    .tickets, .twitter {
-      background: #007bc1;
-      color: #fff;
-      text-align: center;
-      height: 336px;
-      padding: 1.2em;
-    }
-		.tickets .td {
-			vertical-align: middle;
-		}
-		.tickets .td h1 {
-			margin-top: 0;
-		}
+.tickets, .twitter {
+	background: #007bc1;
+	color: #fff;
+	text-align: center;
+	height: 336px;
+	padding: 1.2em;
+}
+.tickets .td {
+	vertical-align: middle;
+}
+.tickets .td h1 {
+	margin-top: 0;
+}
 
-    .twitter, .twitter h2 {
-      background: #bde723;
-      color: #002340;
-    }
+.twitter, .twitter h2 {
+	background: #bde723;
+	color: #002340;
+}
 
-     .icon-twitter {
-      font-size: 1.5em;
-      margin: 1.25em 0 1.25em 0;
-      display: inline-block;
-    }
+.icon-twitter {
+	font-size: 1.5em;
+	margin: 1.25em 0 1.25em 0;
+	display: inline-block;
+}
 
-    .avatar {
-      width: 48px;
-      display: block;
-      margin: 1.875em auto;
-      border-radius: 3px;
-    }
+.avatar {
+	width: 48px;
+	display: block;
+	margin: 1.875em auto;
+	border-radius: 3px;
+}
 
-    .featured-img {
-      position: relative;
-      z-index: 1;
-      background: #000;
-      overflow: hidden;
-    }
+.featured-img {
+	position: relative;
+	z-index: 1;
+	background: #000;
+	overflow: hidden;
+}
 
-    .featured-img img {
-      width: auto;
-      height: auto;
-      max-width: 100%;
-      margin: 0 auto;
-      display: block;
-      position: relative;
-      z-index: 1;
-    }
+.featured-img img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
 
-    .featured-img iframe {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      border: none;
-      max-height: 672px;
-    }
+.featured-img iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border: none;
+	max-height: 672px;
+}
 
-    .timer {
-      border: 3px solid white;
-      margin: 0 auto;
-      width: 83%;
-      padding: 0.9375em 0 0.3125em 0;
-    }
+.timer {
+	border: 3px solid white;
+	margin: 0 auto;
+	width: 83%;
+	padding: 0.9375em 0 0.3125em 0;
+}
+.digits {
+	font-family: 'League Gothic', 'Helvetica Neue', sans-serif;
+	font-size: 2.5em;
+}
+.unit {
+	float: left;
+	width: 33.3%;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+}
+.unit:after {
+	content: ':';
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 0;
+	font-size: 2rem;
+}
+.last-unit:after { content: ''; }
+.timer-unit {
+	float: left;
+	width: 33.3%;
+	display: inline-block;
+	text-align: center;
+	font-size: 0.8rem;
+	font-family: "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+}
+.twitter .icon-twitter:hover { color: #002340; }
 
-    .digits {
-      font-family: 'League Gothic', 'Helvetica Neue', sans-serif;
-      font-size: 2.5em;
-    }
-
-    .unit {
-      float: left;
-      width: 33.3%;
-      display: inline-block;
-      text-align: center;
-      text-transform: uppercase;
-      position: relative;
-    }
-
-    .unit:after {
-      content: ':';
-      position: absolute;
-      display: block;
-      right: 0;
-      top: 0;
-      font-size: 2rem;
-    }
-
-    .last-unit:after { content: ''; }
-
-    .timer-unit {
-      float: left;
-      width: 33.3%;
-      display: inline-block;
-      text-align: center;
-      font-size: 0.8rem;
-      font-family: "Helvetica Neue", sans-serif;
-      text-transform: uppercase;
-    }
-
-    .twitter .icon-twitter:hover { color: #002340; }
-
-/*
-    Artists Content Area
-    ========================================================================== */
-
-    .artist-list {
-      background: #fff;
-      padding:4em 0;
-    }
-
-    .artist-list h2 {
-      color: #002340;
-    }
-
-    .artists {
-      padding:0;
-      margin:0;
-      font-family: 'League Gothic', Helvetica, sans-serif;
-      font-size: 3.7em;
-      text-transform: uppercase;
-      list-style: none;
-      text-align: center;
-    }
-
-    .artists li {
-      display: inline;
-      line-height: 1em;
-      margin-left: 0.2em;
-      color: #0D76B2;
-    }
-
-    .artists li:first-child {
-      margin-left: 0;
-    }
-
-    .artists li:nth-child(even) {
-      color: #002340;
-    }
-
-       .where-watch {
-        height:134px;
-        max-width: 805px;
-        margin: 0 auto;
-        text-align: center;
-        padding: 0;
-        position: relative;
-        background: url(img/border.jpg) no-repeat center;
-      }
-
-      .where-watch li {
-          font-family: 'League Gothic', Helvetica, sans-serif;
-        font-size: 2.3em;
-        list-style: none;
-        display: block;
-        width: 135px;
-        position: absolute;
-        padding-top: 55px;
-        color: #fff;
-        text-transform: uppercase;
-        text-shadow: 0px 1px 1px #333;
-        background: url(img/circle-watch.jpg) #f68124;
-        height: 137px;
-      }
-
-      .where-watch li:last-child{
-        right: 0px;
-      }
-
-      .where-watch li:first-child{
-        left: 0;
-      }
-
-      .where-watch li:nth-child(2) {
-        left: 41.5%;
-      }
-
-
-
-
-
-/*
-    Stats Content Area
-    ========================================================================== */
-
-    .stats {
-      background: #d8d8d8;
-      color: #002340;
-    }
-
-    .stats p {
-      font-size: 1em;
-      line-height: 2em;
-			margin-top: 0;
-    }
-
-    .stat-item {
-      text-align: center;
-      padding: 1.25em;
-    }
-
-    .giga {
-      clear: both;
-      display: block;
-      margin: 0 auto;
-      color: #007ac1;
-    }
-		.stats .giga {
-			letter-spacing:1px;
-		}
-
-/*
-    Tumblr Feed Content Area
-    ========================================================================== */
+/* =============================================================================
+   Tumblr Feed Content Area
+   ========================================================================== */
 
     .stats, .tumblr-feed, .their-stories, .robin-hood-stories, .images, .radio, .support {
       padding: 4.375em 0 5.375em 0;
@@ -640,62 +829,7 @@
     Typography
     ========================================================================== */
 
-    h1 {
-      font-size: 1.9em;
-      text-transform: uppercase;
-      font-family: 'League Gothic';
-      letter-spacing: 1px;
-      line-height: 1.2em;
-      font-weight: normal;
-    }
 
-    h2 {
-      font-size: 2em;
-      line-height: 1.5em;
-      text-align: center;
-      font-family: 'League Gothic';
-      letter-spacing: 1px;
-      line-height: 1.3em;
-      text-transform: uppercase;
-      display: block;
-      color: #fff;
-      font-weight: normal;
-    }
-
-    h3 {
-      font-size: 1.375em;
-      color: #fff;
-      font-family: georgia;
-      font-weight: normal;
-      font-style: italic;
-      line-height: 1.5em;
-      text-shadow: 0px -1px rgba(0, 0, 0, 0.9);
-    }
-
-    .radio h2 {
-      font-family: Helvetica;
-      font-size: 1.4em;
-      margin: 2.5em 0 1em 0;
-      display: block;
-      text-align: center;
-    }
-
-    .giga {
-      font-size: 2.1875em;
-      line-height: 1.37143;
-      font-family: 'League Gothic';
-      letter-spacing: 0.125em;
-      line-height: 1.5em;
-      text-transform: uppercase;
-    }
-
-    .mega {
-      font-size: 8em;
-      text-align: center;
-      color: white;
-      text-shadow: 0px 2px 0px #333;
-      margin-bottom: -30px;
-    }
 
     .four-oh-four p {
       font-size: 3em;
@@ -726,251 +860,9 @@
       font-size: 1.3em;
     }
 
-/*  ==========================================================================
-    Buttons & Links
-    ========================================================================== */
-
-    .btn {
-      border: none;
-      padding: 0.4em 1em 0.4em 1.8em ;
-      display: inline-block;
-      background: #b4dc2b;
-      color: #fff;
-      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
-      box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
-      text-transform: uppercase;
-      font-family: 'League Gothic';
-      font-size: 1.4rem;
-      letter-spacing: 0.0625em;
-      position: relative;
-      border-radius: 1px;
-      cursor: pointer;
-        -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-
-    .donate {
-      background: #b4dc2b;
-      background: -moz-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b4dc2b), color-stop(51%, #b4dc2b), color-stop(51%, #a1c53c), color-stop(100%, #a1c53c));
-      background: -webkit-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-      background: -o-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-      background: -ms-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-      background: linear-gradient(to bottom, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4dc2b', endColorstr='#a1c53c',GradientType=0 );
-      font-size: 2.2rem
-    }
-
-    .donate:hover {
-      color:#0087d6;
-      text-shadow:none;
-        -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-
-    .play {
-      padding: 2px 0 0 0;
-      background: #0087d6;
-      background: -moz-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0087d6), color-stop(51%, #0087d6), color-stop(51%, #007ac1), color-stop(100%, #007ac1));
-      background: -webkit-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
-      background: -o-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
-      background: -ms-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
-      background: linear-gradient(to bottom, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0087d6', endColorstr='#007ac1',GradientType=0 );
-      display: block;
-      width: 200px;
-      margin: 0 auto;
-      text-align: center;
-      line-height: 1.75em;
-      font-size: 1.8rem;
-    }
-
-    .play:hover {
-      color:#b4dc2b;
-        text-shadow:none;
-          -webkit-transition: all 0.1s ease-out;
-             -moz-transition: all 0.1s ease-out;
-               -o-transition: all 0.1s ease-out;
-                  transition: all 0.1s ease-out;
-    }
-
- 		.more {
-			background:url('img/more.png') right 8px no-repeat;
-			padding-right: 13px;
-			text-decoration: none;
-			color: #007ac3;
-			text-transform: uppercase;
-			font-family: 'League Gothic';
-			letter-spacing: 2px;
-			font-size: 1.3em;
-			margin-top: 1.875em;
-			font-size: 1.125em;
-			margin-top: 1.667em;
-			display: inline-block;
-			clear: both;
-			position: relative;
-			-webkit-transition: all 0.1s ease-out;
-			-moz-transition: all 0.1s ease-out;
-			-o-transition: all 0.1s ease-out;
-			transition: all 0.1s ease-out;
-		}
-		.more span {
-			background:url(img/more.png) right -21px no-repeat;
-			height:11px;
-			opacity:0;
-			filter:alpha(opacity=0);
-			position: absolute;
-			right:0;
-			top:9px;
-			width:8px;
-			-webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-		}
-    .more:hover {
-      color: #a9bc64;
-      -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-		.more:hover span {
-			opacity:1;
-			filter:alpha(opacity=100);
-		}
 
 
-    .btn span {
-      float: left;
-      position: absolute;
-      left: 25px;
-    }
 
-    a {
-      text-decoration: none;
-    }
-
-    footer a, .middle a {
-      -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-
-    footer a:hover, .middle a:hover {
-      color: #bde723;
-      -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-
-    .twitter a {
-      font-weight: bold;
-      color: #002340;
-    }
-
-/*  ==========================================================================
-    Icons
-    ========================================================================== */
-
-    [data-icon]:before {
-      font-family: 'icomoon';
-      content: attr(data-icon);
-      speak: none;
-      font-weight: normal;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    [class^="icon-"]:before, [class*=" icon-"]:before {
-      font-family: 'icomoon';
-      font-style: normal;
-      speak: none;
-      font-weight: normal;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .icon-twitter:before {
-      content: "\e000";
-      font-size: 1.8em;
-      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-      -webkit-transition: all linear 0.1s;
-    }
-
-    .icon-twitter:hover, .icon-facebook:hover {
-      color: #BDE723;
-      -webkit-transition: all linear 0.1s;
-    }
-
-    .icon-facebook:before {
-      content: "\e001";
-      font-size: 1.8em;
-      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-      -webkit-transition: all linear 0.1s;
-    }
-
-    .icon-storm:before {
-      content: "\e002";
-      font-size: 8em;
-      color: #007ac1;
-    }
-
-    .icon-debt:before {
-      content: "\e003";
-      font-size: 6em;
-      color: #007ac1;
-    }
-
-    .icon-key:before {
-      content: "\e004";
-      font-size: 6em;
-      color: #007ac1;
-    }
-
-    .icon-robin:before {
-      content: "\e005";
-      font-size: 1.1em;
-      text-align: left;
-    }
-
-    .icon-play:before {
-      content: "\e006";
-      font-size: 3em;
-    }
-
-    .icon-play {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      top: 50%;
-      margin-left: -26px;
-      color: rgba(255, 255, 255, 0.5);
-      -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-
-    .icon-storm, .icon-debt, .icon-key {
-      margin: 3.75em 0 0 0;
-      display: inline-block;
-    }
-
-    .icon-twitter span, .icon-facebook span, .icon-storm span, .icon-debt span, .icon-key span {
-      position: absolute;
-      left: -30000em;
-    }
-
-    .icon-storm {
-      margin-bottom: -0.875em;
-      display: block;
-    }
 
 /*  ==========================================================================
     Flexslider Styling
