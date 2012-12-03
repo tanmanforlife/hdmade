@@ -1,5 +1,7 @@
 <?php
 
+  error_reporting(0);
+
   function linkify($status_text) {
     $status_text = preg_replace(
         '/(https?:\/\/\S+)/',
