@@ -111,6 +111,9 @@
       max-width: 997px;
       margin: 0 auto;
     }
+		.lt-ie9 .wrapper {
+			min-width:997px;
+		}
 
 /*
     Top Content Area
@@ -148,6 +151,12 @@
       height: 336px;
       padding: 1.2em;
     }
+		.tickets .td {
+			vertical-align: middle;
+		}
+		.tickets .td h1 {
+			margin-top: 0;
+		}
 
     .twitter, .twitter h2 {
       background: #bde723;
@@ -327,6 +336,7 @@
     .stats p {
       font-size: 1em;
       line-height: 2em;
+			margin-top: 0;
     }
 
     .stat-item {
@@ -340,6 +350,9 @@
       margin: 0 auto;
       color: #007ac1;
     }
+		.stats .giga {
+			letter-spacing:1px;
+		}
 
 /*
     Tumblr Feed Content Area
@@ -357,13 +370,22 @@
 
     .tumblr-feed li img {
       width: 100%;
-      height: 220px;
+      height: auto;
       border-top: 3px solid #fff;
     }
 
     .item-wrap { padding: 1.25em; }
 
-    .content { height: 420px; }
+    .content { height: 478px; }
+		.content > a,
+		.content > a img { display: block; }
+		.content .meta {
+			font-size:1.125em;
+			line-height:1;
+			margin:1.388888889em 0 0;
+			-webkit-font-smoothing: subpixel-antialiased;
+		}
+		.content p { margin-top: .5em;}
 
     .stories, .tumblr-feed { overflow: hidden; }
 
@@ -391,10 +413,13 @@
     .robin-hood-stories .icon-robin {
       text-align: center;
       display: block;
-      font-size: 4em;
-      margin-top: 0.5em;
+      font-size: 1em;
+      margin-top: 2em;
       color: #bde723;
     }
+		.robin-hood-stories .icon-robin:before {
+			font-size:4em;
+		}
 
     .robin-hood-stories img {
       float: left;
@@ -436,7 +461,7 @@
 
     .radio {
       color: #fff;
-      background: url(img/radio-logo.png) center 90px no-repeat #002340;
+      background: url('img/radio-logo.png') center 90px no-repeat #002340;
       padding: 6.75em 0 6.25em 0;
     }
 
@@ -458,7 +483,10 @@
       padding: 2.9em 1.875em;
       margin-top: 2.5em;
     }
-
+		.lt-ie9 .circle {
+      background: url('img/ie8-circle.png');
+		}
+		
     .circle a {
       text-decoration: none;
       color: white;
@@ -492,7 +520,7 @@
       float: left;
       list-style: none;
       margin-right: 20px;
-      background: url(img/company.png) no-repeat;
+      background: url('img/company.png') no-repeat;
       text-indent: -3000em;
     }
 
@@ -770,22 +798,40 @@
                   transition: all 0.1s ease-out;
     }
 
-    .more {
-      text-decoration: none;
-      color: #007ac3;
-      text-transform: uppercase;
-      font-family: 'League Gothic';
-      letter-spacing: 2px;
-      font-size: 1.3em;
-      margin-top: 1.875em;
-      display: inline-block;
-      clear: both;
-      -webkit-transition: all 0.1s ease-out;
+ 		.more {
+			background:url('img/more.png') right 8px no-repeat;
+			padding-right: 13px;
+			text-decoration: none;
+			color: #007ac3;
+			text-transform: uppercase;
+			font-family: 'League Gothic';
+			letter-spacing: 2px;
+			font-size: 1.3em;
+			margin-top: 1.875em;
+			font-size: 1.125em;
+			margin-top: 1.667em;
+			display: inline-block;
+			clear: both;
+			position: relative;
+			-webkit-transition: all 0.1s ease-out;
+			-moz-transition: all 0.1s ease-out;
+			-o-transition: all 0.1s ease-out;
+			transition: all 0.1s ease-out;
+		}
+		.more span {
+			background:url(img/more.png) right -21px no-repeat;
+			height:11px;
+			opacity:0;
+			filter:alpha(opacity=0);
+			position: absolute;
+			right:0;
+			top:9px;
+			width:8px;
+			-webkit-transition: all 0.1s ease-out;
       -moz-transition: all 0.1s ease-out;
       -o-transition: all 0.1s ease-out;
       transition: all 0.1s ease-out;
-    }
-
+		}
     .more:hover {
       color: #a9bc64;
       -webkit-transition: all 0.1s ease-out;
@@ -793,6 +839,11 @@
       -o-transition: all 0.1s ease-out;
       transition: all 0.1s ease-out;
     }
+		.more:hover span {
+			opacity:1;
+			filter:alpha(opacity=100);
+		}
+
 
     .btn span {
       float: left;
@@ -924,8 +975,11 @@
     Flexslider Styling
     ========================================================================== */
 
-    .flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{outline:none;}.slides,.flex-control-nav,.flex-direction-nav{list-style:none;margin:0;padding:0;}.flexslider{margin:0;padding:0;}.flexslider .slides > li{display:none;-webkit-backface-visibility:hidden;}.flexslider .slides img{width:100%;display:block;}.flex-pauseplay span{text-transform:capitalize;}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}* html .slides{height:1%;}.flex-direction-nav{height:0;}.flex-prev,.flex-next{opacity:1;-webkit-transition:all linear .1s;z-index:6000000;}.flex-prev:hover,.flex-next:hover{opacity:0.5;-webkit-transition:all linear .1s;}.flex-direction-nav a{width:30px;height:30px;display:block;background:url(img/bg_direction_nav.png) no-repeat 0 0;position:absolute;top:50%;z-index:1000000;cursor:pointer;text-indent:-9999px;-webkit-transition:all .3s ease;margin:-20px 0 0;}.flex-direction-nav .flex-next{background-position:100% 0;right:15px;}.flex-direction-nav .flex-prev{left:10px;}.flexslider:hover .flex-prev{opacity:0.8;left:5px;}.flex-direction-nav .flex-disabled{opacity:.3!important;filter:alpha(opacity=30);cursor:default;}.flex-control-nav{width:100%;position:absolute;bottom:10px;text-align:center;}.flex-control-nav li{zoom:1;display:inline;margin:0 6px;}.flex-control-paging li a{-webkit-transition:all linear .1s;width:11px;height:11px;display:block;background:#bde723;cursor:pointer;text-indent:-9999px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;border-radius:20px;box-shadow:inset 0 0 3px rgba(0,0,0,0.3);}.flex-control-paging li a:hover{background:#5b710b;-webkit-transition:all linear .1s;}.flex-control-paging li a.flex-active{background:#fff;cursor:default;}.flex-control-thumbs{position:static;overflow:hidden;margin:5px 0 0;}.flex-control-thumbs li{width:25%;float:left;margin:0;}.flex-control-thumbs img{width:100%;display:block;opacity:.7;cursor:pointer;}.flex-control-thumbs .flex-active{opacity:1;cursor:default;}html[xmlns] .slides,.no-js .slides > li:first-child{display:block;}.flexslider:hover .flex-next,.flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover,.flex-control-thumbs img:hover{opacity:1;}
-
+    .flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{outline:none;}.slides,.flex-control-nav,.flex-direction-nav{list-style:none;margin:0;padding:0;}.flexslider{margin:0;padding:0;}.flexslider .slides > li{display:none;-webkit-backface-visibility:hidden;}.flexslider .slides img{width:100%;display:block;}.flex-pauseplay span{text-transform:capitalize;}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}* html .slides{height:1%;}.flex-direction-nav{height:0;}.flex-prev,.flex-next{opacity:1;-webkit-transition:all linear .1s;z-index:6000000;}.flex-prev:hover,.flex-next:hover{opacity:0.5;-webkit-transition:all linear .1s;}.flex-direction-nav a{width:30px;height:30px;display:block;background:url('img/bg_direction_nav.png') no-repeat 0 0;position:absolute;top:50%;z-index:1000000;cursor:pointer;text-indent:-9999px;-webkit-transition:all .3s ease;margin:-20px 0 0;}.flex-direction-nav .flex-next{background-position:100% 0;right:15px;}.flex-direction-nav .flex-prev{left:10px;}.flexslider:hover .flex-prev{opacity:0.8;left:5px;}.flex-direction-nav .flex-disabled{opacity:.3!important;filter:alpha(opacity=30);cursor:default;}.flex-control-nav{width:100%;position:absolute;bottom:10px;text-align:center;}.flex-control-nav li{zoom:1;display:inline;margin:0 6px;}.flex-control-paging li a{-webkit-transition:all linear .1s;width:11px;height:11px;display:block;background:#bde723;cursor:pointer;text-indent:-9999px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;border-radius:20px;box-shadow:inset 0 0 3px rgba(0,0,0,0.3);}.flex-control-paging li a:hover{background:#5b710b;-webkit-transition:all linear .1s;}.flex-control-paging li a.flex-active{background:#fff;cursor:default;}.flex-control-thumbs{position:static;overflow:hidden;margin:5px 0 0;}.flex-control-thumbs li{width:25%;float:left;margin:0;}.flex-control-thumbs img{width:100%;display:block;opacity:.7;cursor:pointer;}.flex-control-thumbs .flex-active{opacity:1;cursor:default;}html[xmlns] .slides,.no-js .slides > li:first-child{display:block;}.flexslider:hover .flex-next,.flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover,.flex-control-thumbs img:hover{opacity:1;}
+		
+		.featured-img .flex-direction-nav .flex-prev { left:30px; }
+		.featured-img .flex-direction-nav .flex-next { right:30px; }
+		
     .tumblr-feed .flex-next, .robin-hood-stories .flex-next, .their-stories .flex-next { right: 100px; }
 
     .tumblr-feed .flex-prev, .robin-hood-stories .flex-prev, .their-stories .flex-prev { left: 100px; }
@@ -944,7 +998,7 @@
 
     .images .flex-prev, .tumblr-feed .flex-prev { left: 20% }
 
-    .tumblr-feed .flex-direction-nav a { background: url(img/bg_direction_nav_dark.png) no-repeat 0 0; }
+    .tumblr-feed .flex-direction-nav a { background: url('img/bg_direction_nav_dark.png') no-repeat 0 0; }
     .tumblr-feed .flex-direction-nav a.flex-next { background-position: 100% 0%;}
 
     }
@@ -996,6 +1050,15 @@
       margin-top: -20px;
       padding-left: 2em;
     }
+		.table {
+			display:table;
+		}
+		.tr {
+			display:table-row;
+		}
+		.td {
+			display:table-cell;
+		}
 
 /*  ==========================================================================
     Media Queries
@@ -1010,8 +1073,28 @@
     font-size: 2.1em
   }
 }
-
-
+@media all and (max-width:64em) {
+	.support-list {
+		text-align: center;
+	}
+	.support-list li {
+		display: inline-block;
+		float: none;
+		margin:0;
+	}
+	footer .nav {
+		margin-left: 1em;
+	}
+	footer small {
+		padding-right: 1em;
+	}
+}
+@media all and (max-width:56em) {
+	.circle {
+		height:17em;
+		width:17em;
+	}
+}
 @media all and (max-width: 48em) {
   html {
     font-size: 0.9em;
@@ -1093,6 +1176,16 @@
   .images .flex-next {
     top: 14.5%;
   }
+}
+@media all and (max-width:767px) {
+	.support .g {
+		float: none;
+		width:100%;
+	}
+	.support .g .circle {
+		float: none;
+		margin:2.5em auto 0 auto;
+	}
 }
 @media all and (max-width: 30em) {
   .outer-wrapper {

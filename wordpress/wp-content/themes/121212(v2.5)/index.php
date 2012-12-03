@@ -7,31 +7,35 @@
 				if ( get_option('show_timer') != '' ) {
 			?>
 
-				<section class="tickets">
-				<h1><?php echo get_option('ticket_text'); ?></h1>
+				<section class="tickets table">
+					<div class="tr">
+						<div class="td">
+							<h1><?php echo get_option('ticket_text'); ?></h1>
+							<div class="timer cf">
+								<div class="digits">
+									<span class="unit" id="daysLeft"></span>
+									<span class="unit" id="hours"></span>
+									<span class="unit last-unit" id="minutes"></span>
+								</div>
 
-					<div class="timer cf">
-						<div class="digits">
-							<span class="unit" id="daysLeft"></span>
-							<span class="unit" id="hours"></span>
-							<span class="unit last-unit" id="minutes"></span>
+								<span class="timer-unit">Days</span>
+								<span class="timer-unit">Hours</span>
+								<span class="timer-unit">Minutes</span>
+							</div>
 						</div>
-
-						<span class="timer-unit">Days</span>
-						<span class="timer-unit">Hours</span>
-						<span class="timer-unit">Minutes</span>
 					</div>
-			</section>
+				</section>
 
 
 			<? } else { ?>
 
-				<section class="tickets">
-
-					<h1><?php echo get_option('ticket_text'); ?></h1>
-
-					<a href="http://www.ticketmaster.com/121212-The-Concert-For-Sandy-Relief-tickets/artist/1805929?tm_link=artist_artistvenue_module"><img src="<?php bloginfo('template_url'); ?>/img/ticketmaster.jpg" alt="ticketmaster logo" /></a>
-
+				<section class="tickets table">
+					<div class="tr">
+						<div class="td">
+							<h1><?php echo get_option('ticket_text'); ?></h1>
+							<a href="http://www.ticketmaster.com/121212-The-Concert-For-Sandy-Relief-tickets/artist/1805929?tm_link=artist_artistvenue_module"><img src="<?php bloginfo('template_url'); ?>/img/ticketmaster.jpg" alt="ticketmaster logo" /></a>
+						</div>
+					</div>
 				</section>
 
 
@@ -70,7 +74,7 @@
                					$segments = explode('/', $video_url);
 
 
-        							echo "<li><iframe id='player_" . $segments[3] . "' src='http://player.vimeo.com/video/" . $segments[3] . "?api=1&player_id=player_" . $segments[3] . "' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>";
+        							echo "<li><iframe id='player_" . $segments[3] . "' src='http://player.vimeo.com/video/" . $segments[3] . "?api=1&player_id=player_" . $segments[3] . "' webkitAllowFullScreen mozallowfullscreen allowFullScreen frameborder='0' height='847' width='672'></iframe></li>";
 
 
 
