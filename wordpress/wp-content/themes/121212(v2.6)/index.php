@@ -19,7 +19,7 @@
 								if ( get_post_meta($post->ID, 'video_video_link', true) ) :
 									$video_url = get_post_meta($post->ID, 'video_video_link', true);
 									$segments = explode('/', $video_url);
-									echo "<li><iframe id='player_" . $segments[3] . "' src='http://player.vimeo.com/video/" . $segments[3] . "?api=1&color=007ac1&player_id=player_" . $segments[3] . "' webkitAllowFullScreen mozallowfullscreen allowFullScreen frameborder='0' width='847' height='672'></iframe></li>";
+									echo "<li><iframe id='player_" . $segments[3] . "' src='http://player.vimeo.com/video/" . $segments[3] . "?api=1&color=007ac1&player_id=player_" . $segments[3] . "' webkitAllowFullScreen mozallowfullscreen allowFullScreen frameborder='0' width='655' height='365'></iframe></li>";
 								endif; ?>
 							<?php endwhile; ?>
 						<?php endif; ?>
@@ -27,25 +27,31 @@
 				</section> <!-- .g.span-2.featured-img -->
 				<section class="g span-1 last twitter">
 					<h2>@robinhoodnyc <a href="#" class="more">See All</a></h2>
+					<?php /* ?>
 					<ul class="slides tweets">
 						<?php include 'inc/twitter-feed.php'; ?>
 					</ul>
+					<?php */ ?>
 				</section> <!-- .g.span-1.last.twitter -->
 			</div> <!-- .outer-wrapper -->
 			<div class="ways-to-donate">
-				<h3>Ways To Donate</h3>
+				<h2>Ways To Donate</h2>
 				<div class="table">
 					<div class="tr">
 						<div class="td text-to-give">
+							<img src="<?php bloginfo('template_url');?>/img/ways-to-donate-text.png" alt="Donate via Text" />
 							<p>Text <strong>GIVE</strong> to 50555 to donate $10</p>
 						</div> <!-- .text-to-give -->
 						<div class="td amazon-to-give">
+							<img src="<?php bloginfo('template_url');?>/img/ways-to-donate-amazon.png" alt="Donate via Amazon" />
 							<p>Donate using your Amazon account</p>
 						</div> <!-- .amazon -->
 						<div class="td tweet-to-give">
+							<img src="<?php bloginfo('template_url');?>/img/ways-to-donate-twitter.png" alt="Donate via Tweitter" />
 							<p>Tweet <strong>#givey #121212concert</strong> to donate</p>
 						</div> <!-- .tweet-to-give -->
 						<div class="td foursquare-to-give">
+							<img src="<?php bloginfo('template_url');?>/img/ways-to-donate-fsq.png" alt="Donate via Foursquare" />
 							<p>Check in on foursquare and include <strong>#121212concert</strong> and Samsung will donate $2</p>
 						</div> <!-- .foursquare-to-give -->
 					</div> <!-- .tr -->
@@ -53,7 +59,7 @@
 			</div> <!-- .ways-to-donate -->
 			<div class="dynamic cf">
 				<div class="g span-2 instagram-feed">
-					<h3>From The Garden <a href="#" class="more">See All</a></h3>
+					<h2>From The Garden <a href="#" class="more">See All</a></h2>
 					<div class="instagram-grid clearfix">
 						<?php for ($i=1; $i <= 9; $i++) { ?>
 							<div class="ig ig-<?=$i?>">
@@ -64,7 +70,7 @@
 				</div> <!-- .instagram-feed -->
 				<div class="g span-1 last">
 					<div class="tumblr-feed">
-						<h3>Lorem Ipsum <a href="#" class="more">See All</a></h3>
+						<h2>Lorem Ipsum <a href="#" class="more">See All</a></h2>
 						<div class="stories">
 							<ul class="slides cf">
 								<?php include ('inc/tumblr-feed.php'); ?>
@@ -73,7 +79,7 @@
 					</div> <!-- .tumblr-feed -->
 					<div class="ticker">
 						<?php if ( get_option('show_timer') != '' ) { ?>
-							<h3><?php echo get_option('ticket_text'); ?></h3>
+							<h2><?php echo get_option('ticket_text'); ?></h2>
 							<div class="timer cf">
 								<div class="digits">
 									<span class="unit" id="daysLeft"></span>
@@ -85,14 +91,14 @@
 								<span class="timer-unit">Minutes</span>
 							</div>
 						<? } else { ?>
-							<h1><?php echo get_option('ticket_text'); ?></h1>
+							<h2><?php echo get_option('ticket_text'); ?></h2>
 							<a href="http://www.ticketmaster.com/121212-The-Concert-For-Sandy-Relief-tickets/artist/1805929?tm_link=artist_artistvenue_module"><img src="<?php bloginfo('template_url'); ?>/img/ticketmaster.jpg" alt="ticketmaster logo" /></a>
 						<? } ?>
 					</div> <!-- .ticker -->
 				</div> <!-- .g.span-1 -->
 			</div> <!-- .dynamic -->
 			<div class="social">
-				<h3>Social</h3>
+				<h2>Social</h2>
 				<div class="table">
 					<div class="tr">
 						<div class="td">

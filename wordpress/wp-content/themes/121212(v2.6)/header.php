@@ -39,8 +39,8 @@
 						<li><a href="#">Shop</a></li>
 						<li><span class="separator">|</span></li>
 						<li class="share"><a href="#">Share</a></li>
-						<li><a href="#" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
-						<li><a href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
+						<li class="share share-fb"><a href="#" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
+						<li class="share share-tw"><a href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
 					</ul> <!-- .nav -->
 				</nav> <!-- g four-fifths -->
 	        </div> <!-- .wrapper -->
@@ -58,7 +58,7 @@
 						</a>
 					</h1>
 					<div class="td info">
-						<img src="<?php bloginfo('template_url'); ?>/img/page-desc.png" alt="The Concert for Sandy Relief to benefit The Robin Hood Relief Fund presented by Chase" />
+						<img src="<?php bloginfo('template_url'); ?>/img/desc.png" alt="The Concert for Sandy Relief to benefit The Robin Hood Relief Fund presented by Chase" />
 					</div> <!-- .td -->
 				</div> <!-- .tr -->
 			</header> <!-- .table -->

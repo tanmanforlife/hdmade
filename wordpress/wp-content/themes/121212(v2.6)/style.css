@@ -48,7 +48,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     Grid (Taken from Inuit.css with some amendments, and unused removed
     ========================================================================== */
 
-.g { float: left; }
+.g {
+	float: left;
+	margin-right:3.5%;
+}
 .one-whole { width: 100%; }
 .one-half { width: 50%; }
 .one-third { width: 33.333%; }
@@ -57,16 +60,59 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .one-fifths { width: 40%; }
 .three-fifths { width: 60%; }
 .four-fifths { width: 80%; }
+.span-1 {
+	width:31.0%;
+}
+.span-2 {
+	width:65.5%;
+}
+.span-3 {
+	margin-right: 0;
+	width:100%;
+}
+.g.last {
+	margin-right: 0;
+}
 
 /*  ==========================================================================
-    Font-Face (League Gothic & Icons)
+    Font-Face
     ========================================================================== */
-
+/*
 @font-face {
 	font-family: 'League Gothic';
 	src: url("fonts/leaguegothic-regular-webfont.eot");
 	src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
 	font-weight: normal;
+	font-style: normal;
+}*/
+@font-face {
+		font-family: 'TradeGothic';
+		src: url('fonts/tradegothicltstd.eot');
+		src: url('fonts/tradegothicltstd.eot?#iefix') format('embedded-opentype'),
+				 url('fonts/tradegothicltstd.woff') format('woff'),
+				 url('fonts/tradegothicltstd.ttf') format('truetype'),
+				 url('fonts/tradegothicltstd.svg#tradegothicltstd') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+	font-family: 'TradeGothicCond';
+	src: url('fonts/tradegothicltstd-cn18.eot');
+	src: url('fonts/tradegothicltstd-cn18.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/tradegothicltstd-cn18.woff') format('woff'),
+		 url('fonts/tradegothicltstd-cn18.ttf') format('truetype'),
+		 url('fonts/tradegothicltstd-cn18.svg#tradegothicltstd-cn18') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TradeGothicCond';
+	src: url('fonts/tradegothicltstd-bdcn20.eot');
+	src: url('fonts/tradegothicltstd-bdcn20.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/tradegothicltstd-bdcn20.woff') format('woff'),
+		 url('fonts/tradegothicltstd-bdcn20.ttf') format('truetype'),
+		 url('fonts/tradegothicltstd-bdcn20.svg#tradegothicltstd-bdcn20') format('svg');
+	font-weight: bold;
 	font-style: normal;
 }
 
@@ -144,14 +190,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .btn {
 	border: none;
-	padding: 0.4em 1em;
+	padding: 0.5em 1em 0.3em;
 	display: inline-block;
 	background: #b4dc2b;
 	color: #fff;
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
-	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
 	text-transform: uppercase;
-	font-family: 'League Gothic';
+	font-family: 'TradeGothicCond';
 	font-size: 1.4rem;
 	letter-spacing: 0.0625em;
 	position: relative;
@@ -218,10 +263,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	clear: both;
 	color: #bce723;
 	display: inline-block;
-	font-family: 'League Gothic';
-	font-size: 1.125em;
+	font-family: 'TradeGothicCond';
+	font-size: 18px;
+	font-weight: bold;
 	letter-spacing: 2px;
-	margin-top: 1.667em;
 	padding-right: 13px;
 	position: relative;
 	text-decoration: none;
@@ -231,8 +276,18 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	-o-transition: all 0.1s ease-out;
 	transition: all 0.1s ease-out;
 }
+h2 .more {
+	color:#bce723;
+	position: absolute;
+	right:2px;
+	top:3px;
+}
 .more:hover {
 	border-color:#fff;
+	color:#fff;
+}
+h2 .more:hover {
+	border-color: #fff;
 	color:#fff;
 }
 .more:after {
@@ -272,7 +327,7 @@ html {
 }
 
 body {
-	line-height: 1.5em;
+	line-height: 1.5;
 }
 
 .outer-wrapper {
@@ -310,23 +365,23 @@ a:hover {
 h1 {
 	font-size: 1.9em;
 	text-transform: uppercase;
-	font-family: 'League Gothic';
+	font-family: 'TradeGothicCond';
 	letter-spacing: 1px;
-	line-height: 1.2em;
+	line-height: 1.2;
 	font-weight: normal;
 }
 
 h2 {
-	font-size: 2em;
-	line-height: 1.5em;
+	font-size: 22px;
+	line-height: 1.5;
 	text-align: center;
-	font-family: 'League Gothic';
+	font-family: 'TradeGothic';
 	letter-spacing: 1px;
-	line-height: 1.3em;
 	text-transform: uppercase;
 	display: block;
 	color: #fff;
 	font-weight: normal;
+	position: relative;
 }
 
 h3 {
@@ -334,8 +389,7 @@ h3 {
 	color: #fff;
 	font-family: georgia;
 	font-weight: normal;
-	font-style: italic;
-	line-height: 1.5em;
+	font-style: normal;
 	text-shadow: 0px -1px rgba(0, 0, 0, 0.9);
 }
 
@@ -350,9 +404,9 @@ h3 {
 .giga {
 	font-size: 2.1875em;
 	line-height: 1.37143;
-	font-family: 'League Gothic';
+	font-family: 'TradeGothicCond';
 	letter-spacing: 0.125em;
-	line-height: 1.5em;
+	line-height: 1.5;
 	text-transform: uppercase;
 }
 
@@ -369,7 +423,7 @@ h3 {
    ========================================================================== */
 
 .sponsor-banner {
-	background:#0079c1 url(img/sponsor-banner-bg.png) repeat-x center bottom;
+	background:#0079c1 url('img/sponsor-banner-bg.png') repeat-x center bottom;
 	display: block;
 	height:57px;
 	overflow: hidden;
@@ -399,15 +453,30 @@ h3 {
 	-o-background-size:cover;
 	background-size:cover;
 }
-
 .pre-header {
-	
+	padding: 28px 0;
 }
+
+/* -----------------------
+-- Donate -- */
+
 .pre-header .donate {
+	color:#fff;
 	float: left;
+	font-size:28px;
+	line-height:1;
+	padding:.5em 2em .3em;
 }
+.pre-header .donate:hover {
+	color:#0087d6;
+}
+
+/* -----------------------
+-- Nav -- */
+
 .pre-header nav {
 	float: right;
+	margin-top: 27px;
 }
 .pre-header ul {
 	list-style:none;
@@ -415,26 +484,181 @@ h3 {
 	padding:0;
 }
 .pre-header li,
-.pre-header a {
+.pre-header a,
+.pre-header li > span {
 	display: inline-block;
+}
+.pre-header li {
+	color:#fff;
+	margin:0 .6em;
+}
+.pre-header .share-tw {
+	margin:0 0 0 .4em;
+}
+.pre-header .share-fb {
+	margin:0 .4em;
+}
+.pre-header a,
+.pre-header .separator {
+	color:#fff;
+	font-family:"TradeGothicCond";
+	font-size:24px;
+	line-height:1;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.pre-header a:hover {
+	color:#bce723;
+}
+.pre-header .share a {
+	color:#bce723;
+}
+.pre-header .share a:hover {
+	color:#fff;
+}
+.pre-header .icon-twitter,
+.pre-header .icon-facebook {
+	font-size:12px;
+}
+
+/* =============================================================================
+   Flash Messages
+   ========================================================================== */
+.flash {
+	background:#bce723;
+	color:#010101;
+	font-family:"TradeGothicCond";
+	font-size:22px;
+	font-weight: bold;
+	margin:0 auto;
+	max-width:1070px;
+	padding:20px;
+	position: relative;
+	text-transform: uppercase;
+}
+.flash p {
+	margin:0;
+}
+.flash .close {
+	color:#010101;
+	line-height: 1;
+	position: absolute;
+	right:7px;
+	top:4px;
+}
+
+/* =============================================================================
+   Top
+   ========================================================================== */
+
+.main {
+	background:#010101;
+	color:#fff;
+	margin:0 auto;
+	max-width:1070px;
+	padding:35px;
+}
+header {
+	margin-bottom: 22px;
+}
+header .logo {
+	width:40.5%;
+}
+header .info {
+	text-align: right;
+	width:59.5%;
+}
+/* ==|== Top =================
+   Featured Img
+   ====================================== */
+
+.featured-img {
+	position: relative;
+}
+
+/* ==|== Top =================
+   Twitter
+   ====================================== */
+
+section.twitter {
+	
+}
+section.twitter h2 {
+	font-size:22px;
+	margin:0;
+	text-align: left;
+}
+
+/* =============================================================================
+   Ways To Donate
+   ========================================================================== */
+
+.ways-to-donate {
+	border-color:#666;
+	border-style:solid;
+	border-width: 1px 0;
+	margin:20px 0;
+	padding:20px 0;
+}
+.ways-to-donate .td {
+	padding:0 1%;
+	text-align: center;
+	width:25%;
+}
+
+/* =============================================================================
+   Dynamic
+   ========================================================================== */
+
+/* ==|== Dynamnic =================
+   Instagram
+   ====================================== */
+
+.instagram-feed h2 {
+	background:url('img/instagram-icon.png') no-repeat left center;
+	padding-left: 30px;
+	text-align: left;
+}
+.ig {
+	border-color:#010101;
+	border-style:solid;
+	border-width:0 1px 1px 0;
+	float: left;
+	width:25%;
+}
+.ig-1 {
+	width:50%;
+}
+.ig img {
+	display: block;
+}
+
+/* ==|== Dynamic =================
+   Tumblr
+   ====================================== */
+
+.tumblr-feed {
+	position: relative;
+}
+.tumblr-feed h2 {
+	background:url('img/tumblr-icon.png') no-repeat left center;
+	padding-left: 30px;
+	text-align: left;
+}
+.tumblr-feed p {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 
 /*  ==========================================================================
     Top Content Area
-    ========================================================================== */
+    ========================================================================== 
 
 header {
 	padding: 0.6em 0.6em 0.1em 0.6em;
 }
 
-header .icon-twitter, .icon-facebook {
-	margin-top: 1em;
-	font-size: 0.9em;
-}
-
-header .icon-facebook {
-	font-size: 0.8em;
-}
 
 .twitter .slides li {
 	z-index: 1;
@@ -467,11 +691,6 @@ header .icon-facebook {
 	color: #002340;
 }
 
-.icon-twitter {
-	font-size: 1.5em;
-	margin: 1.25em 0 1.25em 0;
-	display: inline-block;
-}
 
 .avatar {
 	width: 48px;
@@ -545,7 +764,7 @@ header .icon-facebook {
 
 /* =============================================================================
    Tumblr Feed Content Area
-   ========================================================================== */
+   ========================================================================== 
 
     .stats, .tumblr-feed, .their-stories, .robin-hood-stories, .images, .radio, .support {
       padding: 4.375em 0 5.375em 0;
@@ -782,26 +1001,6 @@ header .icon-facebook {
     Navigation
     ========================================================================== */
 
-    .nav {
-      float: right;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .nav li {
-      float: left;
-      margin-left: 2.5em;
-    }
-
-    .nav li:first-child { margin: 0; }
-
-    .nav li a {
-      color: #fff;
-      text-decoration: none;
-      display: block;
-    }
-
     .footer {
       float: left;
       margin-top: 0.9375em;
@@ -868,7 +1067,7 @@ header .icon-facebook {
     Flexslider Styling
     ========================================================================== */
 
-    .flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{outline:none;}.slides,.flex-control-nav,.flex-direction-nav{list-style:none;margin:0;padding:0;}.flexslider{margin:0;padding:0;}.flexslider .slides > li{display:none;-webkit-backface-visibility:hidden;}.flexslider .slides img{width:100%;display:block;}.flex-pauseplay span{text-transform:capitalize;}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}* html .slides{height:1%;}.flex-direction-nav{height:0;}.flex-prev,.flex-next{opacity:1;-webkit-transition:all linear .1s;z-index:6000000;}.flex-prev:hover,.flex-next:hover{opacity:0.5;-webkit-transition:all linear .1s;}.flex-direction-nav a{width:30px;height:30px;display:block;background:url('img/bg_direction_nav.png') no-repeat 0 0;position:absolute;top:50%;z-index:1000000;cursor:pointer;text-indent:-9999px;-webkit-transition:all .3s ease;margin:-20px 0 0;}.flex-direction-nav .flex-next{background-position:100% 0;right:15px;}.flex-direction-nav .flex-prev{left:10px;}.flexslider:hover .flex-prev{opacity:0.8;left:5px;}.flex-direction-nav .flex-disabled{opacity:.3!important;filter:alpha(opacity=30);cursor:default;}.flex-control-nav{width:100%;position:absolute;bottom:10px;text-align:center;}.flex-control-nav li{zoom:1;display:inline;margin:0 6px;}.flex-control-paging li a{-webkit-transition:all linear .1s;width:11px;height:11px;display:block;background:#bde723;cursor:pointer;text-indent:-9999px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;border-radius:20px;box-shadow:inset 0 0 3px rgba(0,0,0,0.3);}.flex-control-paging li a:hover{background:#5b710b;-webkit-transition:all linear .1s;}.flex-control-paging li a.flex-active{background:#fff;cursor:default;}.flex-control-thumbs{position:static;overflow:hidden;margin:5px 0 0;}.flex-control-thumbs li{width:25%;float:left;margin:0;}.flex-control-thumbs img{width:100%;display:block;opacity:.7;cursor:pointer;}.flex-control-thumbs .flex-active{opacity:1;cursor:default;}html[xmlns] .slides,.no-js .slides > li:first-child{display:block;}.flexslider:hover .flex-next,.flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover,.flex-control-thumbs img:hover{opacity:1;}
+    .flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{outline:none;}.slides,.flex-control-nav,.flex-direction-nav{list-style:none;margin:0;padding:0;}.flexslider{margin:0;padding:0;}.flexslider .slides > li{display:none;-webkit-backface-visibility:hidden;}.flexslider .slides img{width:100%;display:block;}.flex-pauseplay span{text-transform:capitalize;}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}* html .slides{height:1%;}.flex-direction-nav{height:0;}.flex-prev,.flex-next{opacity:1;-webkit-transition:all linear .1s;z-index:6000000;}.flex-prev:hover,.flex-next:hover{opacity:0.5;-webkit-transition:all linear .1s;}.flex-direction-nav a{width:30px;height:30px;display:block;background:url('img/bg_direction_nav.png') no-repeat 0 0;position:absolute;top:50%;z-index:1000000;cursor:pointer;text-indent:-9999px;-webkit-transition:all .3s ease;margin:-20px 0 0;}.flex-direction-nav .flex-next{background-position:100% 0;right:15px;}.flex-direction-nav .flex-prev{left:10px;}.flexslider:hover .flex-prev{opacity:0.8;left:5px;}.flex-direction-nav .flex-disabled{opacity:.3!important;filter:alpha(opacity=30);cursor:default;}.flex-control-nav{width:100%;position:absolute;bottom:10px;text-align:center;}.flex-control-nav li{zoom:1;display:inline-block;margin:0 6px;}.flex-control-paging li a{-webkit-transition:all linear .1s;width:11px;height:11px;display:block;background:#bde723;cursor:pointer;text-indent:-9999px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;border-radius:20px;box-shadow:inset 0 0 3px rgba(0,0,0,0.3);}.flex-control-paging li a:hover{background:#5b710b;-webkit-transition:all linear .1s;}.flex-control-paging li a.flex-active{background:#fff;cursor:default;}.flex-control-thumbs{position:static;overflow:hidden;margin:5px 0 0;}.flex-control-thumbs li{width:25%;float:left;margin:0;}.flex-control-thumbs img{width:100%;display:block;opacity:.7;cursor:pointer;}.flex-control-thumbs .flex-active{opacity:1;cursor:default;}html[xmlns] .slides,.no-js .slides > li:first-child{display:block;}.flexslider:hover .flex-next,.flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover,.flex-control-thumbs img:hover{opacity:1;}
 		
 		.featured-img .flex-direction-nav .flex-prev { left:30px; }
 		.featured-img .flex-direction-nav .flex-next { right:30px; }
@@ -885,16 +1084,16 @@ header .icon-facebook {
 
     .robin-hood-stories .flex-prev { left: 20%; }
 
-    .tumblr-feed .flex-next, .tumblr-feed .flex-prev { top:120px; }
+    .tumblr-feed .flex-next, .tumblr-feed .flex-prev { top:150px; }
 
-    .images .flex-next, .tumblr-feed .flex-next { right: 20% }
+    .images .flex-next, .tumblr-feed .flex-next { right: 8% }
 
-    .images .flex-prev, .tumblr-feed .flex-prev { left: 20% }
-
+    .images .flex-prev, .tumblr-feed .flex-prev { left: 8% }
+	/*
     .tumblr-feed .flex-direction-nav a { background: url('img/bg_direction_nav_dark.png') no-repeat 0 0; }
     .tumblr-feed .flex-direction-nav a.flex-next { background-position: 100% 0%;}
 
-    }
+    }*/
 
 /*  ==========================================================================
     Fancybox Styling

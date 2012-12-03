@@ -81,7 +81,8 @@ $(window).load(function() {
 		animationLoop: false,
 		smoothHeight: true,
 		useCSS: false,
-		controlNav: false,
+		controlNav: true,
+		directionNav:false,
 		slideshow:true,
 		touch: false,
 		before: function(slider){
@@ -109,19 +110,6 @@ $(window).load(function() {
 		touch: false
 	});
 
-	$('.twitter').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		slideshow: true,
-		initDelay: 2000,
-		controlNav:false,
-		directionNav:false,
-		useCSS: false,
-		pauseOnHover: true,
-		pauseOnAction: true,
-		touch: false
-	});
 
 	$(".overlay").fancybox({
 		type: 'iframe'
