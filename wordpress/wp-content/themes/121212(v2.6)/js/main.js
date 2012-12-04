@@ -111,6 +111,7 @@ $(window).load(function() {
 	});
 
 
+
 	$(".overlay").fancybox({
 		type: 'iframe'
 	});
@@ -120,4 +121,77 @@ $(window).load(function() {
 	});
 	$(".lightbox-text").fancybox({
 	});
+
+    $('#js-robin-hood-tweets').jTweetsAnywhere({
+        username: 'robinhoodnyc',
+        count: 3,
+        showTweetFeed: {
+            showProfileImages: false,
+            showUserScreenNames: false,
+            showUserFullNames: false,
+            showActionReply: false,
+            showActionRetweet: true,
+            showActionFavorite: false
+        }
+    });
+
+    $('.artists-tweets').jTweetsAnywhere({
+        username: 'robinhoodnyc',
+        count: 3,
+        showTweetFeed: {
+            showProfileImages: true,
+            showUserScreenNames: true,
+            showUserFullNames: true,
+            showActionReply: false,
+            showActionRetweet: true,
+            showActionFavorite: false
+        }
+    });
+
+
+    $.ajax({
+        url: 'http://121212-feed.hdmade.com/results.json',
+        dataType: "jsonp",
+        jsonp : "parseResponse",
+        jsonpCallback: "parseResponse",
+        success: function parseResponse(result) {
+        var list = $('ul#js-instagram li');
+
+       	$.each(list, function(index, value) {
+  			$('ul#js-instagram li:nth-child('+ (index+1) +') img.photo').attr('src', result[index]['standard_res']);
+		});
+
+
+
+
+
+       }
+     });
+
+  setInterval(function() {
+
+    $.ajax({
+        url: 'http://121212-feed.hdmade.com/results.json',
+        dataType: "jsonp",
+        jsonp : "parseResponse",
+        jsonpCallback: "parseResponse",
+        success: function parseResponse(result) {
+
+        var min = 1;
+        var max = $('ul#js-instagram li').size();
+        var maxer = 15;
+        var random = Math.floor(Math.random() * (max - min + 1)) + min;
+        var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
+
+        $('ul#js-instagram li:nth-child('+ random +') img.photo').attr('src', result[randomer]['standard_res']);
+
+
+       }
+     });
+    }, 10000);
+
+
+
+
+
 });

@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-	<?php /* 
+	<?php /*
 	<div class="top">
 		<div role="main"> */ ?>
 			<div class="outer-wrapper cf">
@@ -25,13 +25,9 @@
 						<?php endif; ?>
 					</ul> <!-- .slides -->
 				</section> <!-- .g.span-2.featured-img -->
-				<section class="g span-1 last twitter">
+				<section class="g span-1 last twitter" id="js-robin-hood-tweets">
 					<h2>@robinhoodnyc <a href="#" class="more">See All</a></h2>
-					<?php /* ?>
-					<ul class="slides tweets">
-						<?php include 'inc/twitter-feed.php'; ?>
-					</ul>
-					<?php */ ?>
+
 				</section> <!-- .g.span-1.last.twitter -->
 			</div> <!-- .outer-wrapper -->
 			<div class="ways-to-donate">
@@ -61,16 +57,18 @@
 				<div class="g span-2 instagram-feed">
 					<h2>From The Garden <a href="#" class="more">See All</a></h2>
 					<div class="instagram-grid clearfix">
+						<ul id="js-instagram" class="instagram">
 						<?php for ($i=1; $i <= 9; $i++) { ?>
-							<div class="ig ig-<?=$i?>">
-								<img src="<?php bloginfo('template_url'); ?>/img/instagram.jpg" alt="" />
-							</div>
+							<li class="ig ig-<?=$i?>">
+								<a href="" class="insta-link"><img class="photo" src="" alt="" /></a>
+							</li>
 						<?php } ?>
+						</ul>
 					</div> <!-- .instagram-grid -->
 				</div> <!-- .instagram-feed -->
 				<div class="g span-1 last">
 					<div class="tumblr-feed">
-						<h2>Lorem Ipsum <a href="#" class="more">See All</a></h2>
+						<h2>Tumblr <a href="#" class="more">See All</a></h2>
 						<div class="stories">
 							<ul class="slides cf">
 								<?php include ('inc/tumblr-feed.php'); ?>
@@ -78,62 +76,58 @@
 						</div> <!-- .stories -->
 					</div> <!-- .tumblr-feed -->
 					<div class="ticker">
-						<?php if ( get_option('show_timer') != '' ) { ?>
-							<h2><?php echo get_option('ticket_text'); ?></h2>
+							<p class="timer-status">Less than 3 days to go!!</p>
 							<div class="timer cf">
 								<div class="digits">
 									<span class="unit" id="daysLeft"></span>
 									<span class="unit" id="hours"></span>
 									<span class="unit last-unit" id="minutes"></span>
 								</div>
-								<span class="timer-unit">Days</span>
-								<span class="timer-unit">Hours</span>
-								<span class="timer-unit">Minutes</span>
+								<div class=units>
+									<span class="timer-unit">Days</span>
+									<span class="timer-unit">Hours</span>
+									<span class="timer-unit">Minutes</span>
+								</div>
 							</div>
-						<? } else { ?>
-							<h2><?php echo get_option('ticket_text'); ?></h2>
-							<a href="http://www.ticketmaster.com/121212-The-Concert-For-Sandy-Relief-tickets/artist/1805929?tm_link=artist_artistvenue_module"><img src="<?php bloginfo('template_url'); ?>/img/ticketmaster.jpg" alt="ticketmaster logo" /></a>
-						<? } ?>
 					</div> <!-- .ticker -->
 				</div> <!-- .g.span-1 -->
 			</div> <!-- .dynamic -->
-			<div class="social">
+			<div class="social cf">
 				<h2>Social</h2>
-				<div class="table">
-					<div class="tr">
-						<div class="td">
-							<a href="#" class="icon-facebook">
-								<span>Facebook</span>
+						<div class="one-fourth">
+							<a href="#">
+								<img src="<?php bloginfo('template_url'); ?>/img/fb.png" />
 							</a>
 						</div> <!-- .td -->
-						<div class="td">
-							<a href="#" class="icon-twitter">
-								<span>Twitter</span>
+						<div class="one-fourth">
+							<a href="#">
+								<img src="<?php bloginfo('template_url'); ?>/img/twitter.png" />
 							</a>
 						</div> <!-- .td -->
-						<div class="td">
-							<a href="#" class="icon-foursquare">
-								<span>Foursquare</span>
+						<div class="one-fourth">
+							<a href="#">
+								<img src="<?php bloginfo('template_url'); ?>/img/foursquare.png" />
 							</a>
 						</div> <!-- .td -->
-						<div class="td">
-							<a href="#" class="get-glue">
-								<span>GetGlue</span>
+						<div class="one-fourth">
+							<a href="#">
+								<img src="<?php bloginfo('template_url'); ?>/img/glue.png" />
 							</a>
-						</div> <!-- .td -->
-					</div> <!-- .tr -->
-				</div> <!-- .table -->
 			</div> <!-- .social -->
 		</div> <!-- .main -->
 	</div> <!-- .top -->
 	<div class="what-artists">
-		<div class="wrapper">
+		<div class="wrapper cf">
 			<h2>What The Artists Are Saying</h2>
+			<div class="artists-tweets">
+
+			</div>
 		</div> <!-- .wrapper -->
 	</div> <!-- .what-artists -->
 	<div class="celebs-sandy">
 		<h2>Celebs on Sandy</h2>
 		<div class="celeb-videos">
+			<div class="wrapper">
 			<ul class="slides">
 				<li class="celeb-video">
 					<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -152,12 +146,13 @@
 					<p>Alicia Keys talks about the impact of Sandy.</p>
 				</li>
 			</ul>
+		</div>
 		</div> <!-- .celeb-videos -->
 	</div> <!-- .celebs-sandy -->
 	<div class="sandy-store">
 		<h2>Tell Them You Were There!</h2>
 		<a href="#">
-			<img src="<?php bloginfo('template_url'); ?>/img/121212-merchandise.png" alt="Items for sale on the 121212 Concert store" />
+			<img src="<?php bloginfo('template_url'); ?>/img/merch.jpg" alt="Items for sale on the 121212 Concert store" />
 			<p>Merchandise proceeds go to the Robin Hood Relief Fund</p>
 		</a>
 	</div> <!-- .sandy-store -->
@@ -173,7 +168,7 @@
 			</div> <!-- .right -->
 		</div> <!-- .wrapper -->
 	</div> <!-- .robin-hood-stories -->
-	<div class="sponsors">
+	<div class="sponsors cf">
 		<div class="wrapper">
 			<h3>Brought To You By</h3>
 			<ul>

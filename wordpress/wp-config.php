@@ -15,8 +15,8 @@
  */
 
 //REMOVE ME!!
-define('WP_HOME','http://10.0.1.11:8888/wordpress');
-define('WP_SITEURL','http://10.0.1.11:8888/wordpress');
+define('WP_HOME','http://10.0.1.11:8888/');
+define('WP_SITEURL','http://10.0.1.11:8888/');
 define('SCRIPT_DEBUG', true);
 
 
