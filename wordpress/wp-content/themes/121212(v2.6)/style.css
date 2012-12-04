@@ -452,6 +452,7 @@ h3 {
 	-ms-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
+	padding-bottom: 50px;
 }
 .pre-header {
 	padding: 28px 0;
@@ -558,6 +559,15 @@ h3 {
 	max-width:1070px;
 	padding:35px;
 }
+.main ::-moz-selection {
+	background:#fff;
+	color:#010101;
+}
+.main ::selection {
+	background:#fff;
+	color:#010101;
+}
+
 header {
 	margin-bottom: 22px;
 }
@@ -649,6 +659,44 @@ section.twitter h2 {
 	overflow: hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
+}
+
+/* =============================================================================
+   What Artists
+   ========================================================================== */
+
+.what-artists {
+	background:#bce723;
+	color:#000;
+	padding:20px 0;
+}
+.what-artists h2 {
+	color:#000;
+}
+
+/* =============================================================================
+   Celebs on Sandy
+   ========================================================================== */
+
+.celebs-sandy {
+	background:#bce723;
+	color:#000;
+	padding:20px 0;
+}
+.celebs-sandy h2 {
+	color:#000;
+}
+
+/* =============================================================================
+   Tell Them You Were There
+   ========================================================================== */
+
+.sandy-store {
+	background:#fff;
+	padding:20px 0;
+}
+.sandy-store h2 {
+	color:#000;
 }
 
 /*  ==========================================================================
@@ -1008,7 +1056,7 @@ header {
 
     .footer li {
       margin-left: 0;
-      font-family: 'League Gothic';
+      font-family: 'TradeGothicCond';
       font-size: 1.1em;
       letter-spacing: 0.125em;
       text-transform: uppercase;
