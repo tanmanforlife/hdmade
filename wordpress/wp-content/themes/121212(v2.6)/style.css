@@ -707,11 +707,21 @@ span.jta-tweet-action-retweet a{
 }
 .ig img {
 	display: block;
+
+
 }
 .instagram {
 	list-style: none;
 	padding:0;
 	margin: 0;
+}
+img.hide {
+		opacity: 0;
+		-webkit-transition:opacity linear 1s;
+}
+img.show {
+	opacity: 1;
+	-webkit-transition:opacity linear 1s;
 }
 
 /* ==|== Dynamic =================
@@ -867,10 +877,12 @@ span.jta-tweet-action-retweet a{
 	background:#bce723;
 	color:#000;
 	padding:20px 0;
+	position: relative;
 }
 .celebs-sandy h2 {
 	color:#000;
 }
+
 
 /* =============================================================================
    Tell Them You Were There
@@ -1097,7 +1109,7 @@ text-shadow:none;
     .sponsors {
     	background: #fff;
     	margin: 0;
-    	padding: 40px 0;
+    	padding: 40px 0 60px 0;
     }
 
     .sponsors h3 {
@@ -1236,6 +1248,7 @@ text-shadow:none;
     footer {
       background:#000;
       clear: both;
+      padding-top: 40px;
     }
 
     footer nav{

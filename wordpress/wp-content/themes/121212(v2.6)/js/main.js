@@ -112,6 +112,12 @@ $(window).load(function() {
 
 
 
+
+
+
+
+
+
 	$(".overlay").fancybox({
 		type: 'iframe'
 	});
@@ -149,6 +155,8 @@ $(window).load(function() {
     });
 
 
+
+
     $.ajax({
         url: 'http://121212-feed.hdmade.com/results.json',
         dataType: "jsonp",
@@ -184,7 +192,6 @@ $(window).load(function() {
         var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
 
         $('ul#js-instagram li:nth-child('+ random +') img.photo').attr('src', result[randomer]['standard_res']);
-
 
        }
      });

@@ -127,7 +127,6 @@
 	<div class="celebs-sandy">
 		<h2>Celebs on Sandy</h2>
 		<div class="celeb-videos">
-			<div class="wrapper">
 			<ul class="slides">
 				<li class="celeb-video">
 					<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -146,7 +145,6 @@
 					<p>Alicia Keys talks about the impact of Sandy.</p>
 				</li>
 			</ul>
-		</div>
 		</div> <!-- .celeb-videos -->
 	</div> <!-- .celebs-sandy -->
 	<div class="sandy-store">
