@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	$('.sponsor-banner').simplemarquee({
+		speed: 5000,
+		direction: 'rtl',
+		pause:true
+	});
 	$('.timer').countdown("2012/12/12 19:00:00", function(event) {
 		var $this = $(this);
 		switch(event.type) {
@@ -76,7 +81,8 @@ $(window).load(function() {
 		animationLoop: false,
 		smoothHeight: true,
 		useCSS: false,
-		controlNav: false,
+		controlNav: true,
+		directionNav:false,
 		slideshow:true,
 		touch: false,
 		before: function(slider){
@@ -104,19 +110,6 @@ $(window).load(function() {
 		touch: false
 	});
 
-	$('.twitter').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		slideshow: true,
-		initDelay: 2000,
-		controlNav:false,
-		directionNav:false,
-		useCSS: false,
-		pauseOnHover: true,
-		pauseOnAction: true,
-		touch: false
-	});
 
 	$(".overlay").fancybox({
 		type: 'iframe'

@@ -24,20 +24,41 @@
 
 </head>
 <body>
-    <header role="banner">
-        <div class="wrapper cf">
-
-                <div class="g one-fifth">
-                    <a class="branding ir">121212</a>
-                </div>
-
-                <nav class="g four-fifths" role="navigation">
-                    <ul class="nav">
-                        <li><a href="#" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
-                        <li><a href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
-                        <li id="donate-btn"><a class="btn donate"><span class="icon-robin"></span>Donate</a></li>
-                    </ul>
-                </nav>
-
-        </div>
-    </header>
+	<a href="#" class="sponsor-banner">
+		This is a sponsor banner
+	</a>
+	<div class="top">
+    	<div class="pre-header">
+	        <div class="wrapper cf">
+				<a href="#" class="btn donate">Donate</a>
+				<nav class="" role="navigation">
+					<ul class="nav">
+						<li><a href="#">#121212 Concert</a></li>
+						<li><a href="#">Watch on TV</a></li>
+						<li><a href="#">Social</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><span class="separator">|</span></li>
+						<li class="share"><a href="#">Share</a></li>
+						<li class="share share-fb"><a href="#" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
+						<li class="share share-tw"><a href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
+					</ul> <!-- .nav -->
+				</nav> <!-- g four-fifths -->
+	        </div> <!-- .wrapper -->
+	    </div> <!-- .pre-header -->
+		<div class="flash">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Curabitur volutpat. Dolor sit amet, consectetur.</p>
+			<a class="close" href="#">&times;</a>
+		</div>
+		<div class="main" role="main">
+			<header role="header" class="table">
+				<div class="tr">
+					<h1 class="logo td">
+						<a href="/">
+							<img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="121212 Concert Logo" />
+						</a>
+					</h1>
+					<div class="td info">
+						<img src="<?php bloginfo('template_url'); ?>/img/desc.png" alt="The Concert for Sandy Relief to benefit The Robin Hood Relief Fund presented by Chase" />
+					</div> <!-- .td -->
+				</div> <!-- .tr -->
+			</header> <!-- .table -->

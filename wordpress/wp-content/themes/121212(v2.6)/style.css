@@ -34,329 +34,785 @@
     Normalize CSS (git.io/normalize)
     ========================================================================== */
 
-    article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
 /*  ==========================================================================
     Micro Clearfix (http://nicolasgallagher.com/micro-clearfix-hack/)
     ========================================================================== */
 
-    .cf { *zoom: 1; }
-    .cf:before, .cf:after { content: " "; display: table; }
-    .cf:after { clear: both; }
+.cf { *zoom: 1; }
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
 
 /*  ==========================================================================
     Grid (Taken from Inuit.css with some amendments, and unused removed
     ========================================================================== */
 
-    .g { float: left; }
-    .one-whole { width: 100%; }
-    .one-half { width: 50%; }
-    .one-third { width: 33.333%; }
-    .two-thirds { width: 66.666%; }
-    .one-fifth { width: 20%; }
-    .one-fifths { width: 40%; }
-    .three-fifths { width: 60%; }
-    .four-fifths { width: 80%; }
+.g {
+	float: left;
+	margin-right:3.5%;
+}
+.one-whole { width: 100%; }
+.one-half { width: 50%; }
+.one-third { width: 33.333%; }
+.two-thirds { width: 66.666%; }
+.one-fifth { width: 20%; }
+.one-fifths { width: 40%; }
+.three-fifths { width: 60%; }
+.four-fifths { width: 80%; }
+.span-1 {
+	width:31.0%;
+}
+.span-2 {
+	width:65.5%;
+}
+.span-3 {
+	margin-right: 0;
+	width:100%;
+}
+.g.last {
+	margin-right: 0;
+}
 
 /*  ==========================================================================
-    Font-Face (League Gothic & Icons)
+    Font-Face
+    ========================================================================== */
+/*
+@font-face {
+	font-family: 'League Gothic';
+	src: url("fonts/leaguegothic-regular-webfont.eot");
+	src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}*/
+@font-face {
+		font-family: 'TradeGothic';
+		src: url('fonts/tradegothicltstd.eot');
+		src: url('fonts/tradegothicltstd.eot?#iefix') format('embedded-opentype'),
+				 url('fonts/tradegothicltstd.woff') format('woff'),
+				 url('fonts/tradegothicltstd.ttf') format('truetype'),
+				 url('fonts/tradegothicltstd.svg#tradegothicltstd') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+	font-family: 'TradeGothicCond';
+	src: url('fonts/tradegothicltstd-cn18.eot');
+	src: url('fonts/tradegothicltstd-cn18.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/tradegothicltstd-cn18.woff') format('woff'),
+		 url('fonts/tradegothicltstd-cn18.ttf') format('truetype'),
+		 url('fonts/tradegothicltstd-cn18.svg#tradegothicltstd-cn18') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TradeGothicCond';
+	src: url('fonts/tradegothicltstd-bdcn20.eot');
+	src: url('fonts/tradegothicltstd-bdcn20.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/tradegothicltstd-bdcn20.woff') format('woff'),
+		 url('fonts/tradegothicltstd-bdcn20.ttf') format('truetype'),
+		 url('fonts/tradegothicltstd-bdcn20.svg#tradegothicltstd-bdcn20') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url("fonts/icomoon.eot");
+	src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* =============================================================================
+   Icons
+   ========================================================================== */
+
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+	content: "\e000";
+	font-size: 1.8em;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all linear 0.1s;
+}
+.icon-twitter:hover, .icon-facebook:hover {
+	color: #BDE723;
+	-webkit-transition: all linear 0.1s;
+}
+.icon-facebook:before {
+	content: "\e001";
+	font-size: 1.8em;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all linear 0.1s;
+}
+.icon-robin:before {
+	content: "\e005";
+	font-size: 1.1em;
+	text-align: left;
+}
+.icon-play:before {
+	content: "\e006";
+	font-size: 3em;
+}
+.icon-play {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	top: 50%;
+	margin-left: -26px;
+	color: rgba(255, 255, 255, 0.5);
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+.icon-twitter span, .icon-facebook span {
+	position: absolute;
+	left: -30000em;
+}
+
+/*  ==========================================================================
+    Buttons & Links
     ========================================================================== */
 
-    @font-face {
-      font-family: 'League Gothic';
-      src: url("fonts/leaguegothic-regular-webfont.eot");
-      src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
-      font-weight: normal;
-      font-style: normal;
-    }
+.btn {
+	border: none;
+	padding: 0.5em 1em 0.3em;
+	display: inline-block;
+	background: #b4dc2b;
+	color: #fff;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
+	font-family: 'TradeGothicCond';
+	font-size: 1.4rem;
+	letter-spacing: 0.0625em;
+	position: relative;
+	border-radius: 1px;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
 
-    @font-face {
-      font-family: 'icomoon';
-      src: url("fonts/icomoon.eot");
-      src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
-      font-weight: normal;
-      font-style: normal;
-    }
+.donate {
+	background: #b4dc2b;
+	background: -moz-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b4dc2b), color-stop(51%, #b4dc2b), color-stop(51%, #a1c53c), color-stop(100%, #a1c53c));
+	background: -webkit-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+	background: -o-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+	background: -ms-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+	background: linear-gradient(to bottom, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4dc2b', endColorstr='#a1c53c',GradientType=0 );
+	font-size: 2.2rem
+}
+
+.donate:hover {
+	color:#0087d6;
+	text-shadow:none;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+
+.play {
+	padding: 2px 0 0 0;
+	background: #0087d6;
+	background: -moz-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0087d6), color-stop(51%, #0087d6), color-stop(51%, #007ac1), color-stop(100%, #007ac1));
+	background: -webkit-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: -o-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: -ms-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: linear-gradient(to bottom, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0087d6', endColorstr='#007ac1',GradientType=0 );
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.75em;
+	font-size: 1.8rem;
+}
+
+.play:hover {
+	color:#b4dc2b;
+	text-shadow:none;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	  -o-transition: all 0.1s ease-out;
+	     transition: all 0.1s ease-out;
+}
+
+.more {
+	border-color:#bce723;
+	border-style:solid;
+	border-width:0px;
+	clear: both;
+	color: #bce723;
+	display: inline-block;
+	font-family: 'TradeGothicCond';
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding-right: 13px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+h2 .more {
+	color:#bce723;
+	position: absolute;
+	right:2px;
+	top:3px;
+}
+.more:hover {
+	border-color:#fff;
+	color:#fff;
+}
+h2 .more:hover {
+	border-color: #fff;
+	color:#fff;
+}
+.more:after {
+	border-color: inherit;
+	border-style:inherit;
+	border-width:3px 3px 0 0;
+	content:"";
+	display:block;
+	height:5px;
+	margin-top: -6px;
+	position: absolute;
+	right:0;
+	top:50%;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+	width:5px;
+}
 
 /*  ==========================================================================
     Main Styling
     ========================================================================== */
 
-    * {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
-    html {
-      font-family: "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 1em;
-      background: #003a62;
-      -webkit-font-smoothing: antialiased;
-    }
+html {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1em;
+	background: #003a62;
+	-webkit-font-smoothing: antialiased;
+}
 
-    body {
-      line-height: 1.5em;
-    }
+body {
+	line-height: 1.5;
+}
 
-    .outer-wrapper {
-      max-width: 1270px;
-      height: 100%;
-      margin: 0 auto;
-      background: #000;
-      overflow: hidden;
-    }
+.outer-wrapper {
+	max-width: 1270px;
+	height: 100%;
+	margin: 0 auto;
+	background: #000;
+	overflow: hidden;
+}
 
-    .wrapper {
-      max-width: 997px;
-      margin: 0 auto;
-    }
-		.lt-ie9 .wrapper {
-			min-width:997px;
-		}
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.lt-ie9 .wrapper {
+	min-width:1000px;
+}
 
-/*
+/* ==|== Main =================
+   Type
+   ====================================== */
+
+a {
+	color:#bce723;
+	text-decoration: none;
+	-webkit-transition:all .2s ease;
+	-moz-transition:all .2s ease;
+	-ms-transition:all .2s ease;
+	-o-transition:all .2s ease;
+	transition:all .2s ease;
+}
+a:hover {
+	color:#fff;
+}
+h1 {
+	font-size: 1.9em;
+	text-transform: uppercase;
+	font-family: 'TradeGothicCond';
+	letter-spacing: 1px;
+	line-height: 1.2;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 22px;
+	line-height: 1.5;
+	text-align: center;
+	font-family: 'TradeGothic';
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	color: #fff;
+	font-weight: normal;
+	position: relative;
+}
+
+h3 {
+	font-size: 1.375em;
+	color: #fff;
+	font-family: georgia;
+	font-weight: normal;
+	font-style: normal;
+	text-shadow: 0px -1px rgba(0, 0, 0, 0.9);
+}
+
+.radio h2 {
+	font-family: Helvetica;
+	font-size: 1.4em;
+	margin: 2.5em 0 1em 0;
+	display: block;
+	text-align: center;
+}
+
+.giga {
+	font-size: 2.1875em;
+	line-height: 1.37143;
+	font-family: 'TradeGothicCond';
+	letter-spacing: 0.125em;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.mega {
+	font-size: 8em;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 2px 0px #333;
+	margin-bottom: -30px;
+}
+	
+/* ==========================================================================
+   Sponsor Banner
+   ========================================================================== */
+
+.sponsor-banner {
+	background:#0079c1 url('img/sponsor-banner-bg.png') repeat-x center bottom;
+	display: block;
+	height:57px;
+	overflow: hidden;
+	position: relative;
+	width:100%;
+}
+.sponsor-banner .sections {
+	left:0;
+	position: absolute;
+	top:0;
+	white-space:nowrap;
+}
+.sponsor-banner .section {
+	padding:0 10px;
+	float: left;
+}
+
+/* =============================================================================
+   Pre-Header
+   ========================================================================== */
+
+.top {
+	background:url('img/bg.jpg') no-repeat center top;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	padding-bottom: 50px;
+}
+.pre-header {
+	padding: 28px 0;
+}
+
+/* -----------------------
+-- Donate -- */
+
+.pre-header .donate {
+	color:#fff;
+	float: left;
+	font-size:28px;
+	line-height:1;
+	padding:.5em 2em .3em;
+}
+.pre-header .donate:hover {
+	color:#0087d6;
+}
+
+/* -----------------------
+-- Nav -- */
+
+.pre-header nav {
+	float: right;
+	margin-top: 27px;
+}
+.pre-header ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.pre-header li,
+.pre-header a,
+.pre-header li > span {
+	display: inline-block;
+}
+.pre-header li {
+	color:#fff;
+	margin:0 .6em;
+}
+.pre-header .share-tw {
+	margin:0 0 0 .4em;
+}
+.pre-header .share-fb {
+	margin:0 .4em;
+}
+.pre-header a,
+.pre-header .separator {
+	color:#fff;
+	font-family:"TradeGothicCond";
+	font-size:24px;
+	line-height:1;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.pre-header a:hover {
+	color:#bce723;
+}
+.pre-header .share a {
+	color:#bce723;
+}
+.pre-header .share a:hover {
+	color:#fff;
+}
+.pre-header .icon-twitter,
+.pre-header .icon-facebook {
+	font-size:12px;
+}
+
+/* =============================================================================
+   Flash Messages
+   ========================================================================== */
+.flash {
+	background:#bce723;
+	color:#010101;
+	font-family:"TradeGothicCond";
+	font-size:22px;
+	font-weight: bold;
+	margin:0 auto;
+	max-width:1070px;
+	padding:20px;
+	position: relative;
+	text-transform: uppercase;
+}
+.flash p {
+	margin:0;
+}
+.flash .close {
+	color:#010101;
+	line-height: 1;
+	position: absolute;
+	right:7px;
+	top:4px;
+}
+
+/* =============================================================================
+   Top
+   ========================================================================== */
+
+.main {
+	background:#010101;
+	color:#fff;
+	margin:0 auto;
+	max-width:1070px;
+	padding:35px;
+}
+.main ::-moz-selection {
+	background:#fff;
+	color:#010101;
+}
+.main ::selection {
+	background:#fff;
+	color:#010101;
+}
+
+header {
+	margin-bottom: 22px;
+}
+header .logo {
+	width:40.5%;
+}
+header .info {
+	text-align: right;
+	width:59.5%;
+}
+/* ==|== Top =================
+   Featured Img
+   ====================================== */
+
+.featured-img {
+	position: relative;
+}
+
+/* ==|== Top =================
+   Twitter
+   ====================================== */
+
+section.twitter {
+	
+}
+section.twitter h2 {
+	font-size:22px;
+	margin:0;
+	text-align: left;
+}
+
+/* =============================================================================
+   Ways To Donate
+   ========================================================================== */
+
+.ways-to-donate {
+	border-color:#666;
+	border-style:solid;
+	border-width: 1px 0;
+	margin:20px 0;
+	padding:20px 0;
+}
+.ways-to-donate .td {
+	padding:0 1%;
+	text-align: center;
+	width:25%;
+}
+
+/* =============================================================================
+   Dynamic
+   ========================================================================== */
+
+/* ==|== Dynamnic =================
+   Instagram
+   ====================================== */
+
+.instagram-feed h2 {
+	background:url('img/instagram-icon.png') no-repeat left center;
+	padding-left: 30px;
+	text-align: left;
+}
+.ig {
+	border-color:#010101;
+	border-style:solid;
+	border-width:0 1px 1px 0;
+	float: left;
+	width:25%;
+}
+.ig-1 {
+	width:50%;
+}
+.ig img {
+	display: block;
+}
+
+/* ==|== Dynamic =================
+   Tumblr
+   ====================================== */
+
+.tumblr-feed {
+	position: relative;
+}
+.tumblr-feed h2 {
+	background:url('img/tumblr-icon.png') no-repeat left center;
+	padding-left: 30px;
+	text-align: left;
+}
+.tumblr-feed p {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+/* =============================================================================
+   What Artists
+   ========================================================================== */
+
+.what-artists {
+	background:#bce723;
+	color:#000;
+	padding:20px 0;
+}
+.what-artists h2 {
+	color:#000;
+}
+
+/* =============================================================================
+   Celebs on Sandy
+   ========================================================================== */
+
+.celebs-sandy {
+	background:#bce723;
+	color:#000;
+	padding:20px 0;
+}
+.celebs-sandy h2 {
+	color:#000;
+}
+
+/* =============================================================================
+   Tell Them You Were There
+   ========================================================================== */
+
+.sandy-store {
+	background:#fff;
+	padding:20px 0;
+}
+.sandy-store h2 {
+	color:#000;
+}
+
+/*  ==========================================================================
     Top Content Area
-    ========================================================================== */
+    ========================================================================== 
 
-    header {
-      padding: 0.6em 0.6em 0.1em 0.6em;
-    }
-
-    header .icon-twitter, .icon-facebook {
-      margin-top: 1em;
-      font-size: 0.9em;
-    }
-
-    header .icon-facebook {
-      font-size: 0.8em;
-    }
-
-    .twitter .slides li {
-      z-index: 1;
-      position: relative;
-    }
-
-    .branding {
-      width: 137px;
-      height: 52px;
-      display: block;
-      background: url(img/logo.png) no-repeat left center;
-    }
-
-    .tickets, .twitter {
-      background: #007bc1;
-      color: #fff;
-      text-align: center;
-      height: 336px;
-      padding: 1.2em;
-    }
-		.tickets .td {
-			vertical-align: middle;
-		}
-		.tickets .td h1 {
-			margin-top: 0;
-		}
-
-    .twitter, .twitter h2 {
-      background: #bde723;
-      color: #002340;
-    }
-
-     .icon-twitter {
-      font-size: 1.5em;
-      margin: 1.25em 0 1.25em 0;
-      display: inline-block;
-    }
-
-    .avatar {
-      width: 48px;
-      display: block;
-      margin: 1.875em auto;
-      border-radius: 3px;
-    }
-
-    .featured-img {
-      position: relative;
-      z-index: 1;
-      background: #000;
-      overflow: hidden;
-    }
-
-    .featured-img img {
-      width: auto;
-      height: auto;
-      max-width: 100%;
-      margin: 0 auto;
-      display: block;
-      position: relative;
-      z-index: 1;
-    }
-
-    .featured-img iframe {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      border: none;
-      max-height: 672px;
-    }
-
-    .timer {
-      border: 3px solid white;
-      margin: 0 auto;
-      width: 83%;
-      padding: 0.9375em 0 0.3125em 0;
-    }
-
-    .digits {
-      font-family: 'League Gothic', 'Helvetica Neue', sans-serif;
-      font-size: 2.5em;
-    }
-
-    .unit {
-      float: left;
-      width: 33.3%;
-      display: inline-block;
-      text-align: center;
-      text-transform: uppercase;
-      position: relative;
-    }
-
-    .unit:after {
-      content: ':';
-      position: absolute;
-      display: block;
-      right: 0;
-      top: 0;
-      font-size: 2rem;
-    }
-
-    .last-unit:after { content: ''; }
-
-    .timer-unit {
-      float: left;
-      width: 33.3%;
-      display: inline-block;
-      text-align: center;
-      font-size: 0.8rem;
-      font-family: "Helvetica Neue", sans-serif;
-      text-transform: uppercase;
-    }
-
-    .twitter .icon-twitter:hover { color: #002340; }
-
-/*
-    Artists Content Area
-    ========================================================================== */
-
-    .artist-list {
-      background: #fff;
-      padding:4em 0;
-    }
-
-    .artist-list h2 {
-      color: #002340;
-    }
-
-    .artists {
-      padding:0;
-      margin:0;
-      font-family: 'League Gothic', Helvetica, sans-serif;
-      font-size: 3.7em;
-      text-transform: uppercase;
-      list-style: none;
-      text-align: center;
-    }
-
-    .artists li {
-      display: inline;
-      line-height: 1em;
-      margin-left: 0.2em;
-      color: #0D76B2;
-    }
-
-    .artists li:first-child {
-      margin-left: 0;
-    }
-
-    .artists li:nth-child(even) {
-      color: #002340;
-    }
-
-       .where-watch {
-        height:134px;
-        max-width: 805px;
-        margin: 0 auto;
-        text-align: center;
-        padding: 0;
-        position: relative;
-        background: url(img/border.jpg) no-repeat center;
-      }
-
-      .where-watch li {
-          font-family: 'League Gothic', Helvetica, sans-serif;
-        font-size: 2.3em;
-        list-style: none;
-        display: block;
-        width: 135px;
-        position: absolute;
-        padding-top: 55px;
-        color: #fff;
-        text-transform: uppercase;
-        text-shadow: 0px 1px 1px #333;
-        background: url(img/circle-watch.jpg) #f68124;
-        height: 137px;
-      }
-
-      .where-watch li:last-child{
-        right: 0px;
-      }
-
-      .where-watch li:first-child{
-        left: 0;
-      }
-
-      .where-watch li:nth-child(2) {
-        left: 41.5%;
-      }
+header {
+	padding: 0.6em 0.6em 0.1em 0.6em;
+}
 
 
+.twitter .slides li {
+	z-index: 1;
+	position: relative;
+}
+
+.branding {
+	width: 137px;
+	height: 52px;
+	display: block;
+	background: url(img/logo.png) no-repeat left center;
+}
+
+.tickets, .twitter {
+	background: #007bc1;
+	color: #fff;
+	text-align: center;
+	height: 336px;
+	padding: 1.2em;
+}
+.tickets .td {
+	vertical-align: middle;
+}
+.tickets .td h1 {
+	margin-top: 0;
+}
+
+.twitter, .twitter h2 {
+	background: #bde723;
+	color: #002340;
+}
 
 
+.avatar {
+	width: 48px;
+	display: block;
+	margin: 1.875em auto;
+	border-radius: 3px;
+}
 
-/*
-    Stats Content Area
-    ========================================================================== */
+.featured-img {
+	position: relative;
+	z-index: 1;
+	background: #000;
+	overflow: hidden;
+}
 
-    .stats {
-      background: #d8d8d8;
-      color: #002340;
-    }
+.featured-img img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
 
-    .stats p {
-      font-size: 1em;
-      line-height: 2em;
-			margin-top: 0;
-    }
+.featured-img iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border: none;
+	max-height: 672px;
+}
 
-    .stat-item {
-      text-align: center;
-      padding: 1.25em;
-    }
+.timer {
+	border: 3px solid white;
+	margin: 0 auto;
+	width: 83%;
+	padding: 0.9375em 0 0.3125em 0;
+}
+.digits {
+	font-family: 'League Gothic', 'Helvetica Neue', sans-serif;
+	font-size: 2.5em;
+}
+.unit {
+	float: left;
+	width: 33.3%;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+}
+.unit:after {
+	content: ':';
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 0;
+	font-size: 2rem;
+}
+.last-unit:after { content: ''; }
+.timer-unit {
+	float: left;
+	width: 33.3%;
+	display: inline-block;
+	text-align: center;
+	font-size: 0.8rem;
+	font-family: "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+}
+.twitter .icon-twitter:hover { color: #002340; }
 
-    .giga {
-      clear: both;
-      display: block;
-      margin: 0 auto;
-      color: #007ac1;
-    }
-		.stats .giga {
-			letter-spacing:1px;
-		}
-
-/*
-    Tumblr Feed Content Area
-    ========================================================================== */
+/* =============================================================================
+   Tumblr Feed Content Area
+   ========================================================================== 
 
     .stats, .tumblr-feed, .their-stories, .robin-hood-stories, .images, .radio, .support {
       padding: 4.375em 0 5.375em 0;
@@ -593,26 +1049,6 @@
     Navigation
     ========================================================================== */
 
-    .nav {
-      float: right;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .nav li {
-      float: left;
-      margin-left: 2.5em;
-    }
-
-    .nav li:first-child { margin: 0; }
-
-    .nav li a {
-      color: #fff;
-      text-decoration: none;
-      display: block;
-    }
-
     .footer {
       float: left;
       margin-top: 0.9375em;
@@ -620,7 +1056,7 @@
 
     .footer li {
       margin-left: 0;
-      font-family: 'League Gothic';
+      font-family: 'TradeGothicCond';
       font-size: 1.1em;
       letter-spacing: 0.125em;
       text-transform: uppercase;
@@ -640,62 +1076,7 @@
     Typography
     ========================================================================== */
 
-    h1 {
-      font-size: 1.9em;
-      text-transform: uppercase;
-      font-family: 'League Gothic';
-      letter-spacing: 1px;
-      line-height: 1.2em;
-      font-weight: normal;
-    }
 
-    h2 {
-      font-size: 2em;
-      line-height: 1.5em;
-      text-align: center;
-      font-family: 'League Gothic';
-      letter-spacing: 1px;
-      line-height: 1.3em;
-      text-transform: uppercase;
-      display: block;
-      color: #fff;
-      font-weight: normal;
-    }
-
-    h3 {
-      font-size: 1.375em;
-      color: #fff;
-      font-family: georgia;
-      font-weight: normal;
-      font-style: italic;
-      line-height: 1.5em;
-      text-shadow: 0px -1px rgba(0, 0, 0, 0.9);
-    }
-
-    .radio h2 {
-      font-family: Helvetica;
-      font-size: 1.4em;
-      margin: 2.5em 0 1em 0;
-      display: block;
-      text-align: center;
-    }
-
-    .giga {
-      font-size: 2.1875em;
-      line-height: 1.37143;
-      font-family: 'League Gothic';
-      letter-spacing: 0.125em;
-      line-height: 1.5em;
-      text-transform: uppercase;
-    }
-
-    .mega {
-      font-size: 8em;
-      text-align: center;
-      color: white;
-      text-shadow: 0px 2px 0px #333;
-      margin-bottom: -30px;
-    }
 
     .four-oh-four p {
       font-size: 3em;
@@ -726,257 +1107,15 @@
       font-size: 1.3em;
     }
 
-/*  ==========================================================================
-    Buttons & Links
-    ========================================================================== */
-
-    .btn {
-      border: none;
-      padding: 0.4em 1em 0.4em 1.8em ;
-      display: inline-block;
-      background: #b4dc2b;
-      color: #fff;
-      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
-      box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
-      text-transform: uppercase;
-      font-family: 'League Gothic';
-      font-size: 1.4rem;
-      letter-spacing: 0.0625em;
-      position: relative;
-      border-radius: 1px;
-      cursor: pointer;
-        -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-
-    .donate {
-      background: #b4dc2b;
-      background: -moz-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b4dc2b), color-stop(51%, #b4dc2b), color-stop(51%, #a1c53c), color-stop(100%, #a1c53c));
-      background: -webkit-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-      background: -o-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-      background: -ms-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-      background: linear-gradient(to bottom, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4dc2b', endColorstr='#a1c53c',GradientType=0 );
-      font-size: 2.2rem
-    }
-
-    .donate:hover {
-      color:#0087d6;
-      text-shadow:none;
-        -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-
-    .play {
-      padding: 2px 0 0 0;
-      background: #0087d6;
-      background: -moz-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0087d6), color-stop(51%, #0087d6), color-stop(51%, #007ac1), color-stop(100%, #007ac1));
-      background: -webkit-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
-      background: -o-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
-      background: -ms-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
-      background: linear-gradient(to bottom, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0087d6', endColorstr='#007ac1',GradientType=0 );
-      display: block;
-      width: 200px;
-      margin: 0 auto;
-      text-align: center;
-      line-height: 1.75em;
-      font-size: 1.8rem;
-    }
-
-    .play:hover {
-      color:#b4dc2b;
-        text-shadow:none;
-          -webkit-transition: all 0.1s ease-out;
-             -moz-transition: all 0.1s ease-out;
-               -o-transition: all 0.1s ease-out;
-                  transition: all 0.1s ease-out;
-    }
-
- 		.more {
-			background:url('img/more.png') right 8px no-repeat;
-			padding-right: 13px;
-			text-decoration: none;
-			color: #007ac3;
-			text-transform: uppercase;
-			font-family: 'League Gothic';
-			letter-spacing: 2px;
-			font-size: 1.3em;
-			margin-top: 1.875em;
-			font-size: 1.125em;
-			margin-top: 1.667em;
-			display: inline-block;
-			clear: both;
-			position: relative;
-			-webkit-transition: all 0.1s ease-out;
-			-moz-transition: all 0.1s ease-out;
-			-o-transition: all 0.1s ease-out;
-			transition: all 0.1s ease-out;
-		}
-		.more span {
-			background:url(img/more.png) right -21px no-repeat;
-			height:11px;
-			opacity:0;
-			filter:alpha(opacity=0);
-			position: absolute;
-			right:0;
-			top:9px;
-			width:8px;
-			-webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-		}
-    .more:hover {
-      color: #a9bc64;
-      -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-		.more:hover span {
-			opacity:1;
-			filter:alpha(opacity=100);
-		}
 
 
-    .btn span {
-      float: left;
-      position: absolute;
-      left: 25px;
-    }
 
-    a {
-      text-decoration: none;
-    }
-
-    footer a, .middle a {
-      -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-
-    footer a:hover, .middle a:hover {
-      color: #bde723;
-      -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-
-    .twitter a {
-      font-weight: bold;
-      color: #002340;
-    }
-
-/*  ==========================================================================
-    Icons
-    ========================================================================== */
-
-    [data-icon]:before {
-      font-family: 'icomoon';
-      content: attr(data-icon);
-      speak: none;
-      font-weight: normal;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    [class^="icon-"]:before, [class*=" icon-"]:before {
-      font-family: 'icomoon';
-      font-style: normal;
-      speak: none;
-      font-weight: normal;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .icon-twitter:before {
-      content: "\e000";
-      font-size: 1.8em;
-      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-      -webkit-transition: all linear 0.1s;
-    }
-
-    .icon-twitter:hover, .icon-facebook:hover {
-      color: #BDE723;
-      -webkit-transition: all linear 0.1s;
-    }
-
-    .icon-facebook:before {
-      content: "\e001";
-      font-size: 1.8em;
-      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-      -webkit-transition: all linear 0.1s;
-    }
-
-    .icon-storm:before {
-      content: "\e002";
-      font-size: 8em;
-      color: #007ac1;
-    }
-
-    .icon-debt:before {
-      content: "\e003";
-      font-size: 6em;
-      color: #007ac1;
-    }
-
-    .icon-key:before {
-      content: "\e004";
-      font-size: 6em;
-      color: #007ac1;
-    }
-
-    .icon-robin:before {
-      content: "\e005";
-      font-size: 1.1em;
-      text-align: left;
-    }
-
-    .icon-play:before {
-      content: "\e006";
-      font-size: 3em;
-    }
-
-    .icon-play {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      top: 50%;
-      margin-left: -26px;
-      color: rgba(255, 255, 255, 0.5);
-      -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-    }
-
-    .icon-storm, .icon-debt, .icon-key {
-      margin: 3.75em 0 0 0;
-      display: inline-block;
-    }
-
-    .icon-twitter span, .icon-facebook span, .icon-storm span, .icon-debt span, .icon-key span {
-      position: absolute;
-      left: -30000em;
-    }
-
-    .icon-storm {
-      margin-bottom: -0.875em;
-      display: block;
-    }
 
 /*  ==========================================================================
     Flexslider Styling
     ========================================================================== */
 
-    .flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{outline:none;}.slides,.flex-control-nav,.flex-direction-nav{list-style:none;margin:0;padding:0;}.flexslider{margin:0;padding:0;}.flexslider .slides > li{display:none;-webkit-backface-visibility:hidden;}.flexslider .slides img{width:100%;display:block;}.flex-pauseplay span{text-transform:capitalize;}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}* html .slides{height:1%;}.flex-direction-nav{height:0;}.flex-prev,.flex-next{opacity:1;-webkit-transition:all linear .1s;z-index:6000000;}.flex-prev:hover,.flex-next:hover{opacity:0.5;-webkit-transition:all linear .1s;}.flex-direction-nav a{width:30px;height:30px;display:block;background:url('img/bg_direction_nav.png') no-repeat 0 0;position:absolute;top:50%;z-index:1000000;cursor:pointer;text-indent:-9999px;-webkit-transition:all .3s ease;margin:-20px 0 0;}.flex-direction-nav .flex-next{background-position:100% 0;right:15px;}.flex-direction-nav .flex-prev{left:10px;}.flexslider:hover .flex-prev{opacity:0.8;left:5px;}.flex-direction-nav .flex-disabled{opacity:.3!important;filter:alpha(opacity=30);cursor:default;}.flex-control-nav{width:100%;position:absolute;bottom:10px;text-align:center;}.flex-control-nav li{zoom:1;display:inline;margin:0 6px;}.flex-control-paging li a{-webkit-transition:all linear .1s;width:11px;height:11px;display:block;background:#bde723;cursor:pointer;text-indent:-9999px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;border-radius:20px;box-shadow:inset 0 0 3px rgba(0,0,0,0.3);}.flex-control-paging li a:hover{background:#5b710b;-webkit-transition:all linear .1s;}.flex-control-paging li a.flex-active{background:#fff;cursor:default;}.flex-control-thumbs{position:static;overflow:hidden;margin:5px 0 0;}.flex-control-thumbs li{width:25%;float:left;margin:0;}.flex-control-thumbs img{width:100%;display:block;opacity:.7;cursor:pointer;}.flex-control-thumbs .flex-active{opacity:1;cursor:default;}html[xmlns] .slides,.no-js .slides > li:first-child{display:block;}.flexslider:hover .flex-next,.flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover,.flex-control-thumbs img:hover{opacity:1;}
+    .flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{outline:none;}.slides,.flex-control-nav,.flex-direction-nav{list-style:none;margin:0;padding:0;}.flexslider{margin:0;padding:0;}.flexslider .slides > li{display:none;-webkit-backface-visibility:hidden;}.flexslider .slides img{width:100%;display:block;}.flex-pauseplay span{text-transform:capitalize;}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}* html .slides{height:1%;}.flex-direction-nav{height:0;}.flex-prev,.flex-next{opacity:1;-webkit-transition:all linear .1s;z-index:6000000;}.flex-prev:hover,.flex-next:hover{opacity:0.5;-webkit-transition:all linear .1s;}.flex-direction-nav a{width:30px;height:30px;display:block;background:url('img/bg_direction_nav.png') no-repeat 0 0;position:absolute;top:50%;z-index:1000000;cursor:pointer;text-indent:-9999px;-webkit-transition:all .3s ease;margin:-20px 0 0;}.flex-direction-nav .flex-next{background-position:100% 0;right:15px;}.flex-direction-nav .flex-prev{left:10px;}.flexslider:hover .flex-prev{opacity:0.8;left:5px;}.flex-direction-nav .flex-disabled{opacity:.3!important;filter:alpha(opacity=30);cursor:default;}.flex-control-nav{width:100%;position:absolute;bottom:10px;text-align:center;}.flex-control-nav li{zoom:1;display:inline-block;margin:0 6px;}.flex-control-paging li a{-webkit-transition:all linear .1s;width:11px;height:11px;display:block;background:#bde723;cursor:pointer;text-indent:-9999px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;border-radius:20px;box-shadow:inset 0 0 3px rgba(0,0,0,0.3);}.flex-control-paging li a:hover{background:#5b710b;-webkit-transition:all linear .1s;}.flex-control-paging li a.flex-active{background:#fff;cursor:default;}.flex-control-thumbs{position:static;overflow:hidden;margin:5px 0 0;}.flex-control-thumbs li{width:25%;float:left;margin:0;}.flex-control-thumbs img{width:100%;display:block;opacity:.7;cursor:pointer;}.flex-control-thumbs .flex-active{opacity:1;cursor:default;}html[xmlns] .slides,.no-js .slides > li:first-child{display:block;}.flexslider:hover .flex-next,.flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover,.flex-control-thumbs img:hover{opacity:1;}
 		
 		.featured-img .flex-direction-nav .flex-prev { left:30px; }
 		.featured-img .flex-direction-nav .flex-next { right:30px; }
@@ -993,16 +1132,16 @@
 
     .robin-hood-stories .flex-prev { left: 20%; }
 
-    .tumblr-feed .flex-next, .tumblr-feed .flex-prev { top:120px; }
+    .tumblr-feed .flex-next, .tumblr-feed .flex-prev { top:150px; }
 
-    .images .flex-next, .tumblr-feed .flex-next { right: 20% }
+    .images .flex-next, .tumblr-feed .flex-next { right: 8% }
 
-    .images .flex-prev, .tumblr-feed .flex-prev { left: 20% }
-
+    .images .flex-prev, .tumblr-feed .flex-prev { left: 8% }
+	/*
     .tumblr-feed .flex-direction-nav a { background: url('img/bg_direction_nav_dark.png') no-repeat 0 0; }
     .tumblr-feed .flex-direction-nav a.flex-next { background-position: 100% 0%;}
 
-    }
+    }*/
 
 /*  ==========================================================================
     Fancybox Styling
