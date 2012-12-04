@@ -878,7 +878,7 @@ span.jta-tweet-action-retweet a{
 
 .sandy-store {
 	background:#fff;
-	padding:20px 0;
+	padding:40px 0;
 }
 .sandy-store h2 {
 	color:#000;
@@ -1053,6 +1053,7 @@ header {
       line-height: 1.8em;
       position: relative;
       z-index: 1;
+      padding: 40px 0 60px 0;
     }
 
     .robin-hood-stories h2 {
@@ -1096,6 +1097,7 @@ text-shadow:none;
     .sponsors {
     	background: #fff;
     	margin: 0;
+    	padding: 40px 0;
     }
 
     .sponsors h3 {
@@ -1112,18 +1114,7 @@ text-shadow:none;
 	text-shadow:none;
     }
 
-    .image-stream li {
-      position: relative;
-      z-index: 1;
-    }
 
-    .image-stream li img:hover {
-      box-shadow: 0px 0px 20px black;
-      -webkit-transition: all linear .1s;
-         -moz-transition: all linear .1s;
-           -o-transition: all linear .1s;
-              transition: all linear .1s;
-    }
 
 /*
     Radio Content Area

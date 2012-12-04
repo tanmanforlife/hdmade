@@ -171,18 +171,7 @@
 	<div class="sponsors cf">
 		<div class="wrapper">
 			<h3>Brought To You By</h3>
-			<ul>
-				<li data-sponsor="Optimum"><a href="#" class="hide-text">Optimum Lightpath</a></li>
-				<li data-sponsor="Samsung"><a href="#" class="hide-text">Samsung Galaxy</a></li>
-				<li data-sponsor="StateFarm"><a href="#" class="hide-text">StateFarm</a></li>
-				<li data-sponsor="TWC"><a href="#" class="hide-text">Time Warner Cable</a></li>
-				<li data-sponsor="Verizon"><a href="#" class="hide-text">Verizon Foundation</a></li>
-				<li data-sponsor="Clear Channel"><a href="#" class="hide-text">Clear Channel</a></li>
-				<li data-sponsor="iHeart Radio"><a href="#" class="hide-text">iHeart Radio</a></li>
-				<li data-sponsor="MSG"><a href="#" class="hide-text">The Madison Square Garden Company</a></li>
-				<li data-sponsor="Robin Hood"><a href="#" class="hide-text">Robin Hood</a></li>
-				<li data-sponsor="The Weinstein Company"><a href="#" class="hide-text">The Weinstein Company</a></li>
-			</ul>
+			<img src="<?php bloginfo('template_url'); ?>/img/sponsors.jpg" alt="sponsor logos" />
 		</div> <!-- .wrapper -->
 	</div>
 <?php include 'footer.php'; ?>
