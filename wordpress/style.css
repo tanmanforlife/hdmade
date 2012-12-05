@@ -776,7 +776,9 @@ img.show {
 }
 
 .tumblr-feed img {
+	display: block;
 	height: 195px;
+	margin:0 auto;
 }
 
 /* ==|== Dynamic =================
@@ -900,10 +902,16 @@ p.samsung {
 	line-height: 1.5em;
 	margin-bottom:40px;
 }
-
+.tweets-holding-space {
+	position:absolute;
+	left:-99999em;
+	top:-99999em;
+}
 .artists-tweets .jta-tweet-list-item {
 	border: none;
 	position: relative;
+}
+.artists-tweets .jta-tweet-list-item {
 }
 
 .artists-tweets .jta-tweet-text, .artists-tweets .jta-tweet-text a {
@@ -984,7 +992,47 @@ p.samsung {
 .celebs-sandy h2 {
 	color:#000;
 }
-
+.celebs-sandy p {
+	font-family:"Georgia", serif;
+	font-size:15px;
+	font-style: italic;
+}
+.celebs-sandy a {
+	color:#fff;
+}
+.celebs-sandy ul li {
+	text-align: center;
+}
+.celeb-video-wrap {
+	position: relative;
+}
+.celeb-video-frame {
+	padding:0 20%;
+	position: relative;
+}
+.celeb-video-wrap > iframe,
+.celeb-video-wrap > .bg-video-overlay {
+	position: absolute;
+	top:50%;
+	right:0;
+	width:35%;
+}
+.celeb-video-wrap > .bg-video-overlay {
+	background:#000;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+.celeb-video-wrap > iframe.previous-iframe,
+.celeb-video-wrap > .bg-video-overlay.bgvo-left {
+	left:0;
+	right:auto;
+}
+.celebs-sandy .flex-direction-nav {
+	height:auto;
+}
+.celebs-sandy .flex-direction-nav a {
+	margin:-10px 0 0;
+}
 
 /* =============================================================================
    Tell Them You Were There
