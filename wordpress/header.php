@@ -49,7 +49,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Curabitur volutpat. Dolor sit amet, consectetur.</p>
 			<a class="close" href="#">&times;</a>
 		</div>
-		<div class="main" role="main">
+		<div class="main cf" role="main">
 			<header role="header" class="table">
 				<div class="tr">
 					<h1 class="logo td">

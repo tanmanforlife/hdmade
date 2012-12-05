@@ -176,12 +176,18 @@ $(window).load(function() {
     	},
     	onReadyHandler: function() {
 			$('.artists-tweets').flexslider({
-					animation: "slide",
-					selector: ".jta-tweet-list > li",
-					itemWidth: 333,
-					move:1
-				});
-    	        },
+				animation: "slide",
+				selector: ".jta-tweet-list > li",
+				itemWidth: 333,
+				move:1
+			});
+    	},
+        onFeedPopulationHandler: function(invocations)
+        {
+        	//Fired when new tweets are added
+
+
+        },
     	tweetFilter : function(tweet, options) {
 			    if (tweet && tweet.text) {
 			        var text = tweet.text;
@@ -202,7 +208,8 @@ $(window).load(function() {
 
 
 
-$.ajax({
+
+    $.ajax({
         url: 'http://121212-feed.hdmade.com/results.json',
         dataType: "jsonp",
         jsonp : "parseResponse",
@@ -211,10 +218,11 @@ $.ajax({
         var list = $('ul#js-instagram-all li');
 
        	$.each(list, function(index, value) {
-  			$('ul#js-instagram-all li').append('<img src="'+ result[index]['standard_res'] + '" alt="" />');
+  			$('ul#js-instagram-all li:nth-child('+ (index+1) +') img.photo').attr('src', result[index]['standard_res']);
 		});
        }
      });
+
 
 	$('a.close').click(function() {
 		$('.flash').slideUp();
