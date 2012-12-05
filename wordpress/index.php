@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 	<?php /*
 	<div class="top">
-		<div role="main"> */ ?>
+		<div class="main" role="main"> */ ?>
 			<div class="outer-wrapper cf">
 				<section class="g span-2 featured-img">
 					<ul class="slides">
@@ -76,25 +76,26 @@
 			</div> <!-- .dynamic -->
 			<div class="social cf">
 				<h2>Social</h2>
-						<div class="one-fourth">
-							<a href="#">
-								<img src="img/fb.png" />
-							</a>
-						</div> <!-- .td -->
-						<div class="one-fourth">
-							<a href="#">
-								<img src="img/twitter.png" />
-							</a>
-						</div> <!-- .td -->
-						<div class="one-fourth">
-							<a href="#">
-								<img src="img/foursquare.png" />
-							</a>
-						</div> <!-- .td -->
-						<div class="one-fourth">
-							<a href="#">
-								<img src="img/glue.png" />
-							</a>
+				<div class="one-fourth">
+					<a href="#">
+						<img src="img/fb.png" />
+					</a>
+				</div> <!-- .td -->
+				<div class="one-fourth">
+					<a href="#">
+						<img src="img/twitter.png" />
+					</a>
+				</div> <!-- .td -->
+				<div class="one-fourth">
+					<a href="#">
+						<img src="img/foursquare.png" />
+					</a>
+				</div> <!-- .td -->
+				<div class="one-fourth">
+					<a href="#">
+						<img src="img/glue.png" />
+					</a>
+				</div> <!-- .td -->
 			</div> <!-- .social -->
 		</div> <!-- .main -->
 	</div> <!-- .top -->
@@ -107,23 +108,48 @@
 		</div> <!-- .wrapper -->
 	</div> <!-- .what-artists -->
 	<div class="celebs-sandy">
+		<?php function getVimeoThumb($id) {
+			$data = file_get_contents("http://vimeo.com/api/v2/video/$id.json");
+			$data = json_decode($data);
+			return $data[0]->thumbnail_large;
+		} ?>
 		<h2>Celebs on Sandy</h2>
 		<div class="celeb-videos">
-			<ul class="slides">
+			<ul class="slides cf">
 				<li class="celeb-video">
-					<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					<div class="celeb-video-wrap">
+						<div class="celeb-video-frame">
+							<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
+						</div>
+					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
 				</li>
 				<li class="celeb-video">
-					<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					<div class="celeb-video-wrap">
+						<div class="celeb-video-frame">
+							<iframe src="http://player.vimeo.com/video/53745876?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
+						</div>
+					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
 				</li>
 				<li class="celeb-video">
-					<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					<div class="celeb-video-wrap">
+						<div class="celeb-video-frame">
+							<iframe src="http://player.vimeo.com/video/54658957?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
+						</div>
+					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
 				</li>
 				<li class="celeb-video">
-					<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					<div class="celeb-video-wrap">
+						<div class="celeb-video-frame">
+							<iframe src="http://player.vimeo.com/video/54626679?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
+						</div>
+					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
 				</li>
 			</ul>

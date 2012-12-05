@@ -20,13 +20,6 @@ $(document).ready(function() {
 				break;
 		}
 	});
-
-	$('.videos').roundabout({
-		minOpacity:1,
-		minScale:0.8,
-		enableDrag: true
-	});
-
 	$(".round-next").click(function() {
 		$(".videos").roundabout("animateToNextChild");
 		return false;
@@ -109,15 +102,54 @@ $(window).load(function() {
 		useCSS: false,
 		touch: false
 	});
-
-
-
-
-
-
-
-
-
+	jQuery('.celeb-videos li').fitVids();
+	
+	$('.celeb-videos').flexslider({
+		animation:"slide",
+		animationLoop: true,
+		smoothHeight:true,
+		useCSS: false,
+		controlNav:false,
+		slideshow:false,
+		touch:false,
+		start: function(slider) {
+			$('.celeb-video').not('.clone').each(function(i, t) {
+				console.log(t);
+				var activeSlide = $(t),
+					prevSlide = activeSlide.prev(),
+					nextSlide = activeSlide.next(),
+					prevVideo = prevSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone(),
+					nextVideo = nextSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone();
+				prevVideo.addClass('previous-iframe');
+				nextVideo.addClass('next-iframe');
+				var	videoHeight = ($(window).width() * 0.35) * 0.5625;
+				console.log(videoHeight);
+				prevVideo.css({
+					'height': videoHeight,
+					'marginTop': -1*(videoHeight/2)
+				});
+				nextVideo.css({
+					'height': videoHeight,
+					'marginTop': -1*(videoHeight/2)
+				});
+				activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before($(prevVideo));
+				activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before('<div class="bg-video-overlay bgvo-left"></div>');
+				activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before($(nextVideo));
+				activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before('<div class="bg-video-overlay bgvo-right"></div>');
+				$('.bg-video-overlay').css({
+					'height': videoHeight,
+					'marginTop': -1*(videoHeight/2)
+				});
+			});
+		}
+	});
+	$(window).resize(function() {
+		var	videoHeight = ($(window).width() * 0.35) * 0.5625;
+		$('.previous-iframe, .next-iframe, .bg-video-overlay').css({
+			'height': videoHeight,
+			'marginTop': -1*(videoHeight/2)
+		});
+	});
 	$(".overlay").fancybox({
 		type: 'iframe'
 	});
@@ -235,5 +267,6 @@ $.ajax({
 
 
 
-
 });
+
+
