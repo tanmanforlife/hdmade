@@ -178,17 +178,10 @@ $.ajax({
 
 	$('a.close').click(function() {
 		$('.flash').slideUp();
-		$.cookie('flash_message', 'hidden');
 	});
 
 
 
-	if($.cookie('flash_message') == null) {
-		$('.flash').show();
-	}
-	else {
-		$('.flash').hide();
-	}
 
 
 
