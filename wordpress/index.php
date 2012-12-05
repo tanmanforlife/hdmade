@@ -123,7 +123,6 @@
 					<div class="celeb-video-wrap">
 						<div class="celeb-video-frame">
 							<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
 						</div>
 					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
@@ -132,7 +131,6 @@
 					<div class="celeb-video-wrap">
 						<div class="celeb-video-frame">
 							<iframe src="http://player.vimeo.com/video/53745876?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
 						</div>
 					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
@@ -141,7 +139,6 @@
 					<div class="celeb-video-wrap">
 						<div class="celeb-video-frame">
 							<iframe src="http://player.vimeo.com/video/54658957?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
 						</div>
 					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
@@ -150,7 +147,6 @@
 					<div class="celeb-video-wrap">
 						<div class="celeb-video-frame">
 							<iframe src="http://player.vimeo.com/video/54626679?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
 						</div>
 					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
@@ -173,14 +169,28 @@
 			</hgroup>
 			<img src="img/robin-hood.png" alt="" class="left">
 			<div class="right">
-				<p>Robin Hood has launched a large-scale relief effort to aid our neighbors in the tri-state area whose lives have been shattered by Hurricane Sandy. Within hours of the storm, Robin Hood-funded non-profits were providing blankets, hot food, heaters, generators and more to residents in Red Hook, Coney Island, the Rockaways and all across the region. Now, one month out from the storm, thanks to our supporters, Robin Hood has been able to provide over $8 million in grants tomore than 90 different groups.</p>
+				<p>Robin Hood has launched a large-scale relief effort to aid our neighbors in the tri-state area whose lives have been shattered by Hurricane Sandy. Within hours of the storm, Robin Hood-funded non-profits were providing blankets, hot food, heaters, generators and more to residents in Red Hook, Coney Island, the Rockaways and all across the region. Now, one month out from the storm, thanks to our supporters, Robin Hood has been able to provide over $8 million in grants to more than 90 different groups.</p>
 			</div> <!-- .right -->
 		</div> <!-- .wrapper -->
 	</div> <!-- .robin-hood-stories -->
 	<div class="sponsors cf">
 		<div class="wrapper">
 			<h3>Brought To You By</h3>
+			<ul class="sponsor-list">
+				<li data-sponsor="Optimum Lightpath"><a href="#">Optimum Lightpath</a></li>
+				<li data-sponsor="Samsung Galaxy"><a href="#">Samsung Galaxy</a></li>
+				<li data-sponsor="StateFarm"><a href="#">StateFarm</a></li>
+				<li data-sponsor="TWC"><a href="#">Time Warner Cable</a></li>
+				<li data-sponsor="Verizon"><a href="#">Verizon Foundation</a></li>
+				<li data-sponsor="ClearChannel"><a href="#">ClearChannel</a></li>
+				<li data-sponsor="iHeartRadio"><a href="#">iHeartRadio</a></li>
+				<li data-sponsor="MSG"><a href="#">The Madison Square Garden Company</a></li>
+				<li data-sponsor="Robin Hood"><a href="#">Robin Hood</a></li>
+				<li data-sponsor="The Weinstein Company"><a href="#">The Weinstein Company</a></li>
+			</ul>
+			<?php /* ?>
 			<img src="img/sponsors.jpg" alt="sponsor logos" />
+			*/ ?>
 		</div> <!-- .wrapper -->
 	</div>
 <?php include 'footer.php'; ?>
