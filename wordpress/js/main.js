@@ -170,31 +170,78 @@ $(window).load(function() {
             showUserFullNames: false,
             showActionReply: false,
             showActionRetweet: true,
-            showActionFavorite: false
-        }
+            showActionFavorite: false,
+        },
+        autorefresh: {
+        	mode: 'trigger-insert',
+            interval: 600
+        },
+
+        tweetFilter : function(tweet, options) {
+			    if (tweet && tweet.text) {
+			        var text = tweet.text;
+
+			        if (!text.match(/#121212concert/i)) {
+			            return false;
+			        }
+			        return true;
+			    }
+			    return false;
+			}
     });
 
     $('.artists-tweets').jTweetsAnywhere({
-        searchParams: ['q=html5'],
-    count: 6,
-    showTweetFeed: {
-    	showProfileImages: false,
-            showUserScreenNames: false,
-            showUserFullNames: false,
+        username: '121212concert',
+	    count: 6,
+	    showTweetFeed: {
+    	showProfileImages: true,
+            showUserScreenNames: true,
+            showUserFullNames: true,
             showActionReply: false,
             showActionRetweet: true,
             showActionFavorite: false,
-        autorefresh: {
-            mode: 'trigger-insert',
-            interval: 1
+       	autorefresh: {
+        	mode: 'trigger-insert',
+            interval: 600
         },
         paging: { mode: 'more' }
-    },
+    	},
+    	onReadyHandler: function() {
+			$('.artists-tweets').flexslider({
+				animation: "slide",
+				selector: ".jta-tweet-list > li",
+				itemWidth: 333,
+				move:1
+			});
+    	},
+        onFeedPopulationHandler: function(invocations)
+        {
+        	//Fired when new tweets are added
+
+
+        },
+    	tweetFilter : function(tweet, options) {
+			    if (tweet && tweet.text) {
+			        var text = tweet.text;
+
+			        if (!text.match(/#121212concert/i)) {
+			            return false;
+			        }
+			        return true;
+			    }
+			    return false;
+			}
+
 
     });
 
 
-$.ajax({
+
+
+
+
+
+    $.ajax({
         url: 'http://121212-feed.hdmade.com/results.json',
         dataType: "jsonp",
         jsonp : "parseResponse",
@@ -203,24 +250,18 @@ $.ajax({
         var list = $('ul#js-instagram-all li');
 
        	$.each(list, function(index, value) {
-  			$('ul#js-instagram-all li').append('<img src="'+ result[index]['standard_res'] + '" alt="" />');
+  			$('ul#js-instagram-all li:nth-child('+ (index+1) +') img.photo').attr('src', result[index]['standard_res']);
 		});
        }
      });
 
+
 	$('a.close').click(function() {
 		$('.flash').slideUp();
-		$.cookie('flash_message', 'hidden');
 	});
 
 
 
-	if($.cookie('flash_message') == null) {
-		$('.flash').show();
-	}
-	else {
-		$('.flash').hide();
-	}
 
 
 
