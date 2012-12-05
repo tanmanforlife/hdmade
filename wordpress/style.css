@@ -847,10 +847,17 @@ img.show {
 	line-height: 1.5em;
 	margin-bottom:40px;
 }
-
+.tweets-holding-space {
+	position:absolute;
+	left:-99999em;
+	top:-99999em;
+}
 .artists-tweets .jta-tweet-list-item {
 	border: none;
 	position: relative;
+}
+.artists-tweets .jta-tweet-list-item {
+	width:33.3%;
 }
 
 .artists-tweets .jta-tweet-text, .artists-tweets .jta-tweet-text a {

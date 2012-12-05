@@ -765,6 +765,7 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 			_baseSelector: null,
 			_baseElement: null,
 			_tweetFeedElement: null,
+			_customFeedElement: null,
 			_tweetFeedControlsElement: null,
 			_followButtonElement: null,
 			_loginInfoElement: null,
@@ -785,7 +786,8 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 				}
 			},
 			_resourceBundle: null,
-			_populationCount: 0
+			_populationCount: 0,
+			isArtistsFeed: null
 		}, config);
 
 		/** save the plugin's base selector */
@@ -809,6 +811,7 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 
 			/** create the widget's necessary sub DOM elements */
 			options._tweetFeedElement = options.tweetFeedDecorator ? $(options.tweetFeedDecorator(options)) : null;
+			options._customFeedElement = (options.isArtistsFeed == true) ? options._tweetFeedElement.children() : options._tweetFeedElement;
 			options._tweetFeedControlsElement = options.tweetFeedControlsDecorator ? $(options.tweetFeedControlsDecorator(options)) : null;
 			options._followButtonElement = options.followButtonDecorator ? $(options.followButtonDecorator(options)) : null;
 			options._tweetBoxElement = options.tweetBoxDecorator ? $(options.tweetBoxDecorator(options)) : null;
@@ -950,6 +953,9 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 		/** the default placeholder for the tweet feed is an unordered list */
 		return '<ul class="jta-tweet-list"></ul>';
 	};
+	customFeedElement = function(options) {
+		return '<ul class="jta-tweet-list"></ul>';
+	}
 	defaultTweetDecorator = function(tweet, options)
 	{
 		/**
@@ -1875,7 +1881,7 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 					{
 						/** decorate the tweet and give it to the tweet visualizer */
 						options.tweetVisualizer(
-							options._tweetFeedElement,
+							options._customFeedElement,
 							$(options.tweetDecorator(tweet, options)),
 							'append',
 							options
@@ -1912,6 +1918,62 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 			});
 		}
 	};
+	populateTweetFeedMore = function(options) {
+		/** if a tweet feed is to be displayed, get the tweets and show them */
+		if (options.tweetDecorator && options._tweetFeedElement)
+		{
+			getPagedTweets(options, function(tweets, options)
+			{
+				if (options._tweetFeedConfig._clearBeforePopulate)
+				{
+					clearTweetFeed(options);
+				}
+
+				hideLoadingIndicator(options, function()
+				{
+					/** process the tweets */
+					$.each(tweets, function(idx, tweet)
+					{
+					//	alert('hell oworld');
+						/** decorate the tweet and give it to the tweet visualizer */
+						options.tweetVisualizer(
+							$('.tweets-holding-space'),
+							$(options.tweetDecorator(tweet, options)),
+							'append',
+							options
+						);
+					});
+
+					if (options._tweetFeedConfig._noData && options.noDataDecorator && !options._tweetFeedConfig._noDataElement)
+					{
+						options._tweetFeedConfig._noDataElement = $(options.noDataDecorator(options));
+						options._tweetFeedElement.append(options._tweetFeedConfig._noDataElement);
+					}
+
+					if (options._tweetFeedConfig._clearBeforePopulate)
+					{
+						options._tweetFeedElement.scrollTop(0);
+					}
+
+					addHovercards(options);
+
+					/**
+					 * Here - if a tweet feed is configured - all initially loaded
+					 * tweets were given to the configured tweet visualizer and should
+					 * be inserted in the DOM now. Exception: A user supplied tweet
+					 * visualizer that caches the tweets for later display, without
+					 * inserting them immediatly in the DOM.
+					 */
+					if (options._populationCount < 1)
+					{
+						options.onReadyHandler(options);
+					}
+
+					options.onFeedPopulationHandler(options._populationCount++, options);
+				});
+			});
+		}
+	}
 	populateTweetFeed2 = function(options)
 	{
 		if (options._tweetFeedElement && options._autorefreshTweetsCache.length > 0)
@@ -1976,7 +2038,7 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 
 				/** decorate the tweet and give it to the tweet visualizer */
 				options.tweetVisualizer(
-					options._tweetFeedElement,
+					options._tweetFeedElement.children(),
 					$(options.tweetDecorator(tweet, options)),
 					'prepend',
 					options
@@ -2102,7 +2164,7 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 				{
 					if (!isLoading(options))
 					{
-						nextPage(options, false);
+						nextPageMore(options, false);
 					}
 				});
 			}
@@ -2112,6 +2174,9 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 	{
 		doPage(options, flClear, Math.min(options._tweetFeedConfig.paging._offset + options._tweetFeedConfig.paging._limit, options._tweetsCache.length));
 	};
+	nextPageMore = function(options, flClear) {
+		doPageMore(options, flClear, Math.min(options._tweetFeedConfig.paging._offset + options._tweetFeedConfig.paging._limit, options._tweetsCache.length));
+	}
 	prevPage = function(options, flClear)
 	{
 		doPage(options, flClear, Math.max(0, options._tweetFeedConfig.paging._offset - options._tweetFeedConfig.paging._limit));
@@ -2123,6 +2188,11 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 
 		populateTweetFeed(options);
 	};
+	doPageMore = function(options, flClear, newOffset) {
+		options._tweetFeedConfig.paging._offset = newOffset;
+		options._tweetFeedConfig._clearBeforePopulate = flClear;
+		populateTweetFeedMore(options);
+	}
 	startAutorefresh = function(options)
 	{
 		if (options._tweetFeedConfig.autorefresh.mode != 'none' &&

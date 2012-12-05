@@ -114,7 +114,6 @@ $(window).load(function() {
 		touch:false,
 		start: function(slider) {
 			$('.celeb-video').not('.clone').each(function(i, t) {
-				console.log(t);
 				var activeSlide = $(t),
 					prevSlide = activeSlide.prev(),
 					nextSlide = activeSlide.next(),
@@ -123,7 +122,6 @@ $(window).load(function() {
 				prevVideo.addClass('previous-iframe');
 				nextVideo.addClass('next-iframe');
 				var	videoHeight = ($(window).width() * 0.35) * 0.5625;
-				console.log(videoHeight);
 				prevVideo.css({
 					'height': videoHeight,
 					'marginTop': -1*(videoHeight/2)
@@ -206,19 +204,45 @@ $(window).load(function() {
         },
         paging: { mode: 'more' }
     	},
+	//	_tweetFeedIndicator: '.artists-tweets .jta-tweet-list',
+		isArtistsFeed: true,
+		tweetFeedDecorator: function() {
+			return '<div class="jta-tweet-flexslider"><ul class="jta-tweet-list"></ul></div>';
+		},
+		customTweetElement: $('.jta-tweet-flexslider .jta-tweet-list'),
     	onReadyHandler: function() {
-			$('.artists-tweets').flexslider({
+	
+			$('.jta-tweet-flexslider').flexslider({
 				animation: "slide",
 				selector: ".jta-tweet-list > li",
+				controlNav:false,
 				itemWidth: 333,
+				itemMargin:0,
+				minItems:1,
+				maxItems:3,
 				move:1
 			});
+			
     	},
         onFeedPopulationHandler: function(invocations)
         {
         	//Fired when new tweets are added
-
-
+			var old_tweets_html = $('.jta-tweet-flexslider .flex-viewport .jta-tweet-list').html();
+			var new_tweets_html = $('.tweets-holding-space').html();
+			$('.jta-tweet-flexslider').remove();
+			$('.artists-tweets .jta-tweet-list-controls').before('<div class="jta-tweet-flexslider"></div>');
+			var complete_tweets_html = '<ul class="jta-tweet-list">' + new_tweets_html + old_tweets_html + '</ul>';
+			$('.jta-tweet-flexslider').css('opacity', 0).html(complete_tweets_html);
+			$('.jta-tweet-flexslider').flexslider({
+				animation: "slide",
+				selector: ".jta-tweet-list > li",
+				controlNav:false,
+				itemWidth: 333,
+				itemMargin:0,
+				minItems:1,
+				maxItems:3,
+				move:1
+			}).css('opacity', 1);
         },
     	tweetFilter : function(tweet, options) {
 			    if (tweet && tweet.text) {
