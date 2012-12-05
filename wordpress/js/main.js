@@ -84,14 +84,6 @@ $(window).load(function() {
 		}
 	});
 
-	$('.robin-hood-stories').flexslider({
-		animation: "slide",
-		controlNav: false,
-		slideshow: false,
-		useCSS: false,
-		touch: false
-	});
-
 	$('.stories').flexslider({
 		animation: "slide",
 		itemWidth: 330,
