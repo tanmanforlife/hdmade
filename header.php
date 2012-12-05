@@ -24,13 +24,24 @@
 
 </head>
 <body>
-	<a href="#" class="sponsor-banner">
+    <div id="donate-popup" style="display: none;">
+        <h1>Donate</h1>
+        <p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Releif Fund.  You will be redirected to Amazon to complete the payment process.</p>
+        <div class="amounts">
+            <input type="radio" name="amount" value="10" /><label>$10</label>
+            <input type="radio" name="amount" value="50" /><label>$20</label>
+            <input type="radio" name="amount" value="100" /><label>$100</label>
+            <input type="radio" name="amount" value="custom" /><input type="text" name="amount_custom" value="" />
+        </div>
+        <a href="" class="btn donate">Donate</a>
+    </div>
+        <a href="#" class="sponsor-banner">
 		This is a sponsor banner
 	</a>
 	<div class="top">
     	<div class="pre-header">
 	        <div class="wrapper cf">
-				<a href="#" class="btn donate">Donate</a>
+				<a href="#donate-popup" class="btn donate donate-modal-link">Donate</a>
 				<nav class="" role="navigation">
 					<ul class="nav">
 						<li><a href="#">#121212 Concert</a></li>

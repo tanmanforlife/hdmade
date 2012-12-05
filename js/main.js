@@ -67,9 +67,15 @@ $(document).ready(function() {
         });
     }
 });
-
+$(".donate-modal-link").fancybox({
+            type: 'inline',
+            closeBtn: true,
+            wrapCSS: 'donate-modal',
+            tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
+    });
 
 $(window).load(function () {
+    
     jQuery('.featured-img li').fitVids();
 
     jQuery(".featured-img").flexslider({
@@ -145,6 +151,7 @@ $(window).load(function () {
 	$(".overlay").fancybox({
 		type: 'iframe'
 	});
+    
 
     $(".fancybox").fancybox({
         type: 'image'
