@@ -54,9 +54,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 }
 .one-whole { width: 100%; }
 .one-half { width: 50%; }
-.one-third { width: 33.333%; }
+.one-third { width: 33.333%; float:left;}
 .two-thirds { width: 66.666%; }
-.one-fifth { width: 20%; }
+.one-fifth { width: 20%; float: left;}
 .one-fifths { width: 40%; }
 .three-fifths { width: 60%; }
 .four-fifths { width: 80%; }
@@ -546,7 +546,6 @@ h3 {
 	padding:20px;
 	position: relative;
 	text-transform: uppercase;
-	display: none;
 }
 .flash p {
 	margin:0;
@@ -566,7 +565,7 @@ h3 {
 .main {
 	background:#010101;
 	color:#fff;
-	margin:0 auto;
+	margin:0 auto 35px auto;
 	max-width:1070px;
 	padding:35px;
 }
@@ -588,6 +587,11 @@ header .logo {
 header .info {
 	text-align: right;
 	width:59.5%;
+}
+object {
+	width: 100%;
+	height: 100%;
+	max-height: 422px;
 }
 /* ==|== Top =================
    Featured Img
@@ -728,6 +732,16 @@ img.show {
 	opacity: 1;
 	-webkit-transition:opacity linear 1s;
 }
+.instagram-all {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.instagram-all li {
+	width: 33.3%;
+	float: left;
+	padding:15px;
+}
 
 /* ==|== Dynamic =================
    Tumblr
@@ -762,7 +776,9 @@ img.show {
 }
 
 .tumblr-feed img {
+	display: block;
 	height: 195px;
+	margin:0 auto;
 }
 
 /* ==|== Dynamic =================
@@ -787,6 +803,9 @@ img.show {
 
 .unit:before {
 	content: ':';
+	position: absolute;
+	left: -10px;
+	top:-5px;
 }
 
 .unit:first-child:before {
@@ -797,24 +816,61 @@ img.show {
 	font-family: 'TradeGothicCond';
 	font-weight: bold;
 	text-align: center;
-	font-size: 2.5em
+	font-size: 2.8em
 }
 
 .units {
 	text-align: center;
-	font-size: 0.8em;
-		font-family: 'TradeGothicCond';
-
+	font-size: 0.9em;
+	font-family: 'TradeGothicCond';
+	margin-top: -15px;
 }
 
 .unit {
 	display: inline-block;
+	position: relative;
+	padding:0 15px;
 }
 
 .timer-unit {
 	text-transform: uppercase;
 	text-align: center;
+		padding:0 20px;
+
 }
+
+/* =============================================================================
+   Tumblr
+   ========================================================================== */
+
+.foursquare {
+	background: #0079c1;
+	text-align: center;
+	padding:36px 50px;
+}
+
+.foursquare .giga {
+	font-size: 3.5em;
+	text-shadow:0px -1px 0px #000;
+	font-weight: bold;
+	letter-spacing: 0;
+	display: block;
+	margin-bottom: -20px;
+}
+
+.foursquare p {
+	font-size: 0.9em;
+	margin-top: -11px;
+	font-weight: bold
+}
+
+p.samsung {
+	margin-top: 20px;
+	display: block;
+	font-weight: normal;
+}
+
+
 /* =============================================================================
    Social
    ========================================================================== */
@@ -843,13 +899,19 @@ img.show {
 	display: block;
 	text-align: center;
 	background: url(img/twitter-blue.png) no-repeat 28% 0%;
-	line-height: 1.5em
+	line-height: 1.5em;
+	margin-bottom:40px;
 }
-
+.tweets-holding-space {
+	position:absolute;
+	left:-99999em;
+	top:-99999em;
+}
 .artists-tweets .jta-tweet-list-item {
-	width: 33%;
-	float: left;
 	border: none;
+	position: relative;
+}
+.artists-tweets .jta-tweet-list-item {
 }
 
 .artists-tweets .jta-tweet-text, .artists-tweets .jta-tweet-text a {
@@ -858,7 +920,64 @@ img.show {
 	line-height: 1.7em;
 }
 
+.artists-tweets .jta-tweet-profile-image {
+	position: absolute;
+	width: 50px;
+	top:0px;
+}
 
+
+.artists-tweets .jta-tweet-body {
+	width: 100%;
+}
+
+.artists-tweets .jta-tweet-user-name {
+	display: block;
+	margin-left: 60px;
+	margin-bottom: 50px;
+}
+
+.artists-tweets .jta-tweet-user-full-name {
+	display: block;
+	position: absolute;
+	top:0;
+}
+.artists-tweets .jta-tweet-user-screen-name {
+	display: block;
+	position: absolute;
+	top:23px;
+	padding-bottom: 80px;
+}
+.artists-tweets .jta-tweet-user-full-name a {
+	font-size: 1em;
+
+}
+.artists-tweets .jta-tweet-user-screen-name a {
+	font-weight: normal;
+	font-size: 0.9em;
+
+}
+.artists-tweets .jta-tweet-user-screen-name a:before {
+	content: '@';
+}
+
+.artists-tweets .jta-tweet-timestamp a{
+	color: #666666;
+	font-size: 0.8rem;
+}
+
+.artists-tweets .jta-tweet-action-retweet a{
+	color: #666;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.artists-tweets .jta-tweet-retweeter {
+	display: none;
+}
+.artists-tweets .jta-tweet-attributes {
+	margin-top: 10px;
+}
 
 /* =============================================================================
    Celebs on Sandy
@@ -873,7 +992,47 @@ img.show {
 .celebs-sandy h2 {
 	color:#000;
 }
-
+.celebs-sandy p {
+	font-family:"Georgia", serif;
+	font-size:15px;
+	font-style: italic;
+}
+.celebs-sandy a {
+	color:#fff;
+}
+.celebs-sandy ul li {
+	text-align: center;
+}
+.celeb-video-wrap {
+	position: relative;
+}
+.celeb-video-frame {
+	padding:0 20%;
+	position: relative;
+}
+.celeb-video-wrap > iframe,
+.celeb-video-wrap > .bg-video-overlay {
+	position: absolute;
+	top:50%;
+	right:0;
+	width:35%;
+}
+.celeb-video-wrap > .bg-video-overlay {
+	background:#000;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+.celeb-video-wrap > iframe.previous-iframe,
+.celeb-video-wrap > .bg-video-overlay.bgvo-left {
+	left:0;
+	right:auto;
+}
+.celebs-sandy .flex-direction-nav {
+	height:auto;
+}
+.celebs-sandy .flex-direction-nav a {
+	margin:-10px 0 0;
+}
 
 /* =============================================================================
    Tell Them You Were There
@@ -894,6 +1053,49 @@ img.show {
 	text-align: center;
 	color: #000;
 }
+
+/* =============================================================================
+   Broadcast
+   ========================================================================== */
+
+   .broadcast-list {
+	   	list-style-type: none;
+	   	padding: 0;
+	   	margin: 0;
+   }
+   .broadcast-list li {
+   		text-align: center;
+   		margin-bottom: 20px;
+   		font-family: 'TradeGothic';
+   }
+   .location {
+   		margin-bottom: 100px;
+   }
+   .location h2 {
+   		color: #bce723;
+   		margin-bottom: 50px;
+   }
+   abbr[title] {
+   		border-bottom: none;
+   }
+
+/* =============================================================================
+   Social
+   ========================================================================== */
+
+.participate {
+	text-align: center;
+	border-bottom: 2px solid #fff;
+	margin-top:60px;
+}
+.give-option {
+	font-size: 1em;
+	height: 215px;
+}
+.participate:last-child {
+	border-bottom: none;
+}
+
 
 /*  ==========================================================================
     Top Content Area

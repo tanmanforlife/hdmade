@@ -1,12 +1,15 @@
 <?php include 'header.php'; ?>
 	<?php /*
 	<div class="top">
-		<div class="main" role="main"> */ ?>
+		<div role="main"> */ ?>
 			<div class="outer-wrapper cf">
 				<section class="g span-2 featured-img">
-					<ul class="slides">
-						<li><img src="carousel-images/new1.jpeg" alt="" />
-					</ul> <!-- .slides -->
+					<object type="application/x-shockwave-flash" id="twelvePlayer" name="twelvePlayer" data="http://static.iheart.com/121212/amp.clearchannel/ClearChannelPlayer.swf">
+						<param name="allowFullScreen" value="true">
+						<param name="allowScriptAccess" value="always"><param name="wmode" value="direct">
+						<param name="bgColor" value="#000000">
+						<param name="flashvars" value="settings_url=http://static.iheart.com/121212/amp.clearchannel/player.flash.xml&amp;auto_play=false&amp;data_feed_url=http://static.iheart.com/121212/amp.clearchannel/feed.json&amp;ticker_text_url=http://static.iheart.com/121212/resources/ticker.txt&amp;ticker_polling_interval=3000&amp;ticker_speed=2&amp;report_playerId=iHeartRadioAkamaiEventPlayer&amp;report_device=undefined"><
+					</object>
 				</section> <!-- .g.span-2.featured-img -->
 				<section class="g span-1 last twitter" id="js-robin-hood-tweets">
 					<h2>@robinhoodnyc <a href="#" class="more">See All</a></h2>
@@ -57,102 +60,65 @@
 							</ul> <!-- .slides -->
 						</div> <!-- .stories -->
 					</div> <!-- .tumblr-feed -->
-					<div class="ticker">
-							<p class="timer-status">Less than 3 days to go!!</p>
-							<div class="timer cf">
-								<div class="digits">
-									<span class="unit" id="daysLeft"></span>
-									<span class="unit" id="hours"></span>
-									<span class="unit last-unit" id="minutes"></span>
-								</div>
-								<div class=units>
-									<span class="timer-unit">Days</span>
-									<span class="timer-unit">Hours</span>
-									<span class="timer-unit">Minutes</span>
-								</div>
-							</div>
-					</div> <!-- .ticker -->
+					<div class="foursquare">
+						<p><span class="giga">43,926</span>have checked in at #121212concert</p>
+						<p class="samsung"><em>Samsung will donate $2 for every check in.</em></p>
+					</div>
+
 				</div> <!-- .g.span-1 -->
 			</div> <!-- .dynamic -->
 			<div class="social cf">
 				<h2>Social</h2>
-				<div class="one-fourth">
-					<a href="#">
-						<img src="img/fb.png" />
-					</a>
-				</div> <!-- .td -->
-				<div class="one-fourth">
-					<a href="#">
-						<img src="img/twitter.png" />
-					</a>
-				</div> <!-- .td -->
-				<div class="one-fourth">
-					<a href="#">
-						<img src="img/foursquare.png" />
-					</a>
-				</div> <!-- .td -->
-				<div class="one-fourth">
-					<a href="#">
-						<img src="img/glue.png" />
-					</a>
-				</div> <!-- .td -->
+						<div class="one-fourth">
+							<a href="#">
+								<img src="img/fb.png" />
+							</a>
+						</div> <!-- .td -->
+						<div class="one-fourth">
+							<a href="#">
+								<img src="img/twitter.png" />
+							</a>
+						</div> <!-- .td -->
+						<div class="one-fourth">
+							<a href="#">
+								<img src="img/foursquare.png" />
+							</a>
+						</div> <!-- .td -->
+						<div class="one-fourth">
+							<a href="#">
+								<img src="img/glue.png" />
+							</a>
 			</div> <!-- .social -->
 		</div> <!-- .main -->
 	</div> <!-- .top -->
 	<div class="what-artists">
 		<div class="wrapper cf">
 			<h2>What The Artists Are Saying</h2>
-			<div class="tweets-holding-space"></div>
 			<div class="arti">
-				<div class="artists-tweets">
-					
-				</div> <!-- .artists-tweets -->
-			</div> <!-- .arti -->
+			<div class="artists-tweets">
+
+			</div>
+		</div>
 		</div> <!-- .wrapper -->
 	</div> <!-- .what-artists -->
 	<div class="celebs-sandy">
-		<?php function getVimeoThumb($id) {
-			$data = file_get_contents("http://vimeo.com/api/v2/video/$id.json");
-			$data = json_decode($data);
-			return $data[0]->thumbnail_large;
-		} ?>
 		<h2>Celebs on Sandy</h2>
 		<div class="celeb-videos">
-			<ul class="slides cf">
+			<ul class="slides">
 				<li class="celeb-video">
-					<div class="celeb-video-wrap">
-						<div class="celeb-video-frame">
-							<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
-						</div>
-					</div>
+					<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
 				</li>
 				<li class="celeb-video">
-					<div class="celeb-video-wrap">
-						<div class="celeb-video-frame">
-							<iframe src="http://player.vimeo.com/video/53745876?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
-						</div>
-					</div>
+					<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
 				</li>
 				<li class="celeb-video">
-					<div class="celeb-video-wrap">
-						<div class="celeb-video-frame">
-							<iframe src="http://player.vimeo.com/video/54658957?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
-						</div>
-					</div>
+					<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
 				</li>
 				<li class="celeb-video">
-					<div class="celeb-video-wrap">
-						<div class="celeb-video-frame">
-							<iframe src="http://player.vimeo.com/video/54626679?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
-						</div>
-					</div>
+					<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
 				</li>
 			</ul>
