@@ -217,7 +217,7 @@ $(window).load(function () {
                 if (index > limit) {
                     return false;
                 } else {
-                    $('ul#js-instagram-all').append('<li><img src="' + result[index]['standard_res'] + '" alt="" /></li>');
+                    $('ul#js-instagram-all').append('<li><a href="'+ result[index]['standard_res'] +'"><img src="' + result[index]['standard_res'] + '" alt="" /></a></li>');
                 }
             });
         }
@@ -246,7 +246,7 @@ $(window).load(function () {
                     var list = $('ul#js-instagram-all li');
 
                     for (var i = limit; i < limit + 15; i++) {
-                        $('ul#js-instagram-all').append('<li><img src="' + result[i]['standard_res'] + '" alt="" /></li>');
+                        $('ul#js-instagram-all').append('<a href="'+ result[limit]['standard_res'] +'"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
                     }
                 }
             });
@@ -254,7 +254,8 @@ $(window).load(function () {
         }
     });
 
-    $('a.close').click(function () {
+    $('a.close').click(function (event) {
+    	event.preventDefault();
         $('.flash').slideUp();
     });
 
