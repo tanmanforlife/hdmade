@@ -101,9 +101,11 @@
 	<div class="what-artists">
 		<div class="wrapper cf">
 			<h2>What The Artists Are Saying</h2>
+			<div class="arti">
 			<div class="artists-tweets">
 
 			</div>
+		</div>
 		</div> <!-- .wrapper -->
 	</div> <!-- .what-artists -->
 	<div class="celebs-sandy">

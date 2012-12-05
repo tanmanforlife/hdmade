@@ -140,6 +140,11 @@ $(window).load(function() {
             showActionRetweet: true,
             showActionFavorite: false,
         },
+        autorefresh: {
+        	mode: 'trigger-insert',
+            interval: 600
+        },
+
         tweetFilter : function(tweet, options) {
 			    if (tweet && tweet.text) {
 			        var text = tweet.text;
@@ -154,21 +159,29 @@ $(window).load(function() {
     });
 
     $('.artists-tweets').jTweetsAnywhere({
-        searchParams: ['q=html5'],
+        username: '121212concert',
 	    count: 6,
 	    showTweetFeed: {
-    	showProfileImages: false,
-            showUserScreenNames: false,
-            showUserFullNames: false,
+    	showProfileImages: true,
+            showUserScreenNames: true,
+            showUserFullNames: true,
             showActionReply: false,
             showActionRetweet: true,
             showActionFavorite: false,
        	autorefresh: {
         	mode: 'trigger-insert',
-            interval: 1
+            interval: 600
         },
         paging: { mode: 'more' }
     	},
+    	onReadyHandler: function() {
+			$('.artists-tweets').flexslider({
+					animation: "slide",
+					selector: ".jta-tweet-list > li",
+					itemWidth: 333,
+					move:1
+				});
+    	        },
     	tweetFilter : function(tweet, options) {
 			    if (tweet && tweet.text) {
 			        var text = tweet.text;
@@ -181,7 +194,12 @@ $(window).load(function() {
 			    return false;
 			}
 
+
     });
+
+
+
+
 
 
 $.ajax({
