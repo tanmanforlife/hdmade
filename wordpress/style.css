@@ -56,7 +56,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .one-half { width: 50%; }
 .one-third { width: 33.333%; float:left;}
 .two-thirds { width: 66.666%; }
-.one-fifth { width: 20%; }
+.one-fifth { width: 20%; float: left;}
 .one-fifths { width: 40%; }
 .three-fifths { width: 60%; }
 .four-fifths { width: 80%; }
@@ -801,6 +801,9 @@ img.show {
 
 .unit:before {
 	content: ':';
+	position: absolute;
+	left: -10px;
+	top:-5px;
 }
 
 .unit:first-child:before {
@@ -811,23 +814,27 @@ img.show {
 	font-family: 'TradeGothicCond';
 	font-weight: bold;
 	text-align: center;
-	font-size: 2.5em
+	font-size: 2.8em
 }
 
 .units {
 	text-align: center;
-	font-size: 0.8em;
-		font-family: 'TradeGothicCond';
-
+	font-size: 0.9em;
+	font-family: 'TradeGothicCond';
+	margin-top: -15px;
 }
 
 .unit {
 	display: inline-block;
+	position: relative;
+	padding:0 15px;
 }
 
 .timer-unit {
 	text-transform: uppercase;
 	text-align: center;
+		padding:0 20px;
+
 }
 
 /* =============================================================================
@@ -1023,6 +1030,23 @@ p.samsung {
    abbr[title] {
    		border-bottom: none;
    }
+
+/* =============================================================================
+   Social
+   ========================================================================== */
+
+.participate {
+	text-align: center;
+	border-bottom: 2px solid #fff;
+	margin-top:60px;
+}
+.give-option {
+	font-size: 1em;
+	height: 215px;
+}
+.participate:last-child {
+	border-bottom: none;
+}
 
 
 /*  ==========================================================================

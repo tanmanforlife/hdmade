@@ -266,7 +266,9 @@ $(window).load(function () {
         success: function parseResponse(result) {
             var list = $('ul#js-instagram li');
 
+
             $.each(list, function (index, value) {
+            	$('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr('href', result[index]['standard_res']);
                 $('ul#js-instagram li:nth-child(' + (index + 1) + ') img.photo').attr('src', result[index]['standard_res']);
             });
         }
@@ -290,6 +292,7 @@ $(window).load(function () {
                 $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
                 	$('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', result[randomer]['standard_res']).fadeIn();
             	});
+
 
             }
         });
