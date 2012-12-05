@@ -54,7 +54,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 }
 .one-whole { width: 100%; }
 .one-half { width: 50%; }
-.one-third { width: 33.333%; }
+.one-third { width: 33.333%; float:left;}
 .two-thirds { width: 66.666%; }
 .one-fifth { width: 20%; }
 .one-fifths { width: 40%; }
@@ -565,7 +565,7 @@ h3 {
 .main {
 	background:#010101;
 	color:#fff;
-	margin:0 auto;
+	margin:0 auto 35px auto;
 	max-width:1070px;
 	padding:35px;
 }
@@ -998,6 +998,32 @@ p.samsung {
 	text-align: center;
 	color: #000;
 }
+
+/* =============================================================================
+   Broadcast
+   ========================================================================== */
+
+   .broadcast-list {
+	   	list-style-type: none;
+	   	padding: 0;
+	   	margin: 0;
+   }
+   .broadcast-list li {
+   		text-align: center;
+   		margin-bottom: 20px;
+   		font-family: 'TradeGothic';
+   }
+   .location {
+   		margin-bottom: 100px;
+   }
+   .location h2 {
+   		color: #bce723;
+   		margin-bottom: 50px;
+   }
+   abbr[title] {
+   		border-bottom: none;
+   }
+
 
 /*  ==========================================================================
     Top Content Area
