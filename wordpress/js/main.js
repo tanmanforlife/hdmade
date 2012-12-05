@@ -138,26 +138,48 @@ $(window).load(function() {
             showUserFullNames: false,
             showActionReply: false,
             showActionRetweet: true,
-            showActionFavorite: false
-        }
+            showActionFavorite: false,
+        },
+        tweetFilter : function(tweet, options) {
+			    if (tweet && tweet.text) {
+			        var text = tweet.text;
+
+			        if (!text.match(/#121212concert/i)) {
+			            return false;
+			        }
+			        return true;
+			    }
+			    return false;
+			}
     });
 
     $('.artists-tweets').jTweetsAnywhere({
         searchParams: ['q=html5'],
-    count: 6,
-    showTweetFeed: {
+	    count: 6,
+	    showTweetFeed: {
     	showProfileImages: false,
             showUserScreenNames: false,
             showUserFullNames: false,
             showActionReply: false,
             showActionRetweet: true,
             showActionFavorite: false,
-        autorefresh: {
-            mode: 'trigger-insert',
+       	autorefresh: {
+        	mode: 'trigger-insert',
             interval: 1
         },
         paging: { mode: 'more' }
-    },
+    	},
+    	tweetFilter : function(tweet, options) {
+			    if (tweet && tweet.text) {
+			        var text = tweet.text;
+
+			        if (!text.match(/#121212concert/i)) {
+			            return false;
+			        }
+			        return true;
+			    }
+			    return false;
+			}
 
     });
 
