@@ -1,5 +1,12 @@
 $(document).ready(function() {
-	$('.sponsor-banner').simplemarquee({
+	$(".donate-modal-link").fancybox({
+                type: 'inline',
+                closeBtn: true,
+                wrapCSS: 'donate-modal',
+                tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
+        });
+
+        $('.sponsor-banner').simplemarquee({
 		speed: 5000,
 		direction: 'rtl',
 		pause:true

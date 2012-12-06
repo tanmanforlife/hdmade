@@ -33,17 +33,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 
 </head>
 <body>
-    <div id="donate-popup" style="display: none;">
-        <h1>Donate</h1>
-        <p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Releif Fund.  You will be redirected to Amazon to complete the payment process.</p>
-        <div class="amounts">
-            <input type="radio" name="amount" value="10" /><label>$10</label>
-            <input type="radio" name="amount" value="50" /><label>$20</label>
-            <input type="radio" name="amount" value="100" /><label>$100</label>
-            <input type="radio" name="amount" value="custom" /><input type="text" name="amount_custom" value="" />
+	<div id="donate-popup" style="display: none;">
+            <h1>Donate</h1>
+            <p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Releif Fund.  You will be redirected to Amazon to complete the payment process.</p>
+            <div class="amounts">
+                <input type="radio" name="amount" value="10" /><label>$10</label>
+                <input type="radio" name="amount" value="50" /><label>$20</label>
+                <input type="radio" name="amount" value="100" /><label>$100</label>
+                <input type="radio" name="amount" value="custom" /><input type="text" name="amount_custom" value="" />
+            </div>
+            <a href="" class="btn donate">Donate</a>
         </div>
-        <a href="" class="btn donate">Donate</a>
-    </div>
         <a href="#" class="sponsor-banner">
 		This is a sponsor banner
 	</a>
