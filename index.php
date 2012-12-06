@@ -6,39 +6,34 @@
 				<section class="g span-2 featured-img">
 					<ul class="slides">
 						<li><img src="carousel-images/new1.jpeg" alt="" /></li>
-                                                <li><img src="carousel-images/Carousel_test.jpg" alt="" /></li>
+						<li><img src="carousel-images/new1.jpeg" alt="" /></li>
 					</ul> <!-- .slides -->
 				</section> <!-- .g.span-2.featured-img -->
+				
+				<div class="nav-mobile">
+
+				</div>
+
+
 				<section class="g span-1 last twitter" id="js-robin-hood-tweets">
 					<h2>@robinhoodnyc <a href="#" class="more">See All</a></h2>
 				</section> <!-- .g.span-1.last.twitter -->
 			</div> <!-- .outer-wrapper -->
-			<div class="ways-to-donate">
+			<div class="ways-to-donate cf">
 				<h2>Ways To Donate</h2>
-				<div class="table">
-					<div class="tr">
-						<div class="td text-to-give">
-							<img src="img/ways-to-donate-text.png" alt="Donate via Text" />
-							<p>Text <strong>GIVE</strong> to 50555 to donate $10</p>
+						<div class="one-half to-give">
+							<a class="donate-btn btn-amazon">Amazon</a>
+							<p>Donate using your Amazon Account</p>
 						</div> <!-- .text-to-give -->
-						<div class="td amazon-to-give">
-							<img src="img/ways-to-donate-amazon.png" alt="Donate via Amazon" />
-							<p>Donate using your Amazon account</p>
+						<div class="one-half to-give">
+							<a class="donate-btn btn-twitter">Twitter</a>
+							<p>Tweet #givey #121212concert to donate</p>
 						</div> <!-- .amazon -->
-						<div class="td tweet-to-give">
-							<img src="img/ways-to-donate-twitter.png" alt="Donate via Tweitter" />
-							<p>Tweet <strong>#givey #121212concert</strong> to donate</p>
-						</div> <!-- .tweet-to-give -->
-						<div class="td foursquare-to-give">
-							<img src="img/ways-to-donate-fsq.png" alt="Donate via Foursquare" />
-							<p>Check in on foursquare and include <strong>#121212concert</strong> and Samsung will donate $2</p>
-						</div> <!-- .foursquare-to-give -->
-					</div> <!-- .tr -->
-				</div> <!-- .table -->
+						
 			</div> <!-- .ways-to-donate -->
 			<div class="dynamic cf">
 				<div class="g span-2 instagram-feed">
-					<h2>From The Garden <a href="#" class="more">See All</a></h2>
+					<h2>#121212Concert on Instagram<a href="#" class="more">See All</a></h2>
 					<div class="instagram-grid clearfix">
 						<ul id="js-instagram" class="instagram">
 						<?php for ($i=1; $i <= 9; $i++) { ?>
@@ -102,13 +97,16 @@
 	</div> <!-- .top -->
 	<div class="what-artists">
 		<div class="wrapper cf">
-			<h2>What The Artists Are Saying</h2>
+			<h2>#121212Concert on Twitter</h2>
 			<div class="tweets-holding-space"></div>
 			<div class="arti">
 				<div class="artists-tweets">
-					
+
 				</div> <!-- .artists-tweets -->
+
 			</div> <!-- .arti -->
+															<a class="see-all">See All</a>
+
 		</div> <!-- .wrapper -->
 	</div> <!-- .what-artists -->
 	<div class="celebs-sandy">
@@ -124,7 +122,6 @@
 					<div class="celeb-video-wrap">
 						<div class="celeb-video-frame">
 							<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
 						</div>
 					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
@@ -133,7 +130,6 @@
 					<div class="celeb-video-wrap">
 						<div class="celeb-video-frame">
 							<iframe src="http://player.vimeo.com/video/53745876?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
 						</div>
 					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
@@ -142,7 +138,6 @@
 					<div class="celeb-video-wrap">
 						<div class="celeb-video-frame">
 							<iframe src="http://player.vimeo.com/video/54658957?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
 						</div>
 					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
@@ -151,7 +146,6 @@
 					<div class="celeb-video-wrap">
 						<div class="celeb-video-frame">
 							<iframe src="http://player.vimeo.com/video/54626679?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-							<?php /* <img src="<?= getVimeoThumb(54423646); ?>" alt="" /> */ ?>
 						</div>
 					</div>
 					<p>Alicia Keys talks about the impact of Sandy.</p>
@@ -159,13 +153,32 @@
 			</ul>
 		</div> <!-- .celeb-videos -->
 	</div> <!-- .celebs-sandy -->
-	<div class="sandy-store">
-		<h2>Tell Them You Were There!</h2>
-		<a href="#">
-			<img src="img/merch.jpg" alt="Items for sale on the 121212 Concert store" />
-			<p>Merchandise proceeds go to the Robin Hood Relief Fund</p>
-		</a>
+
+	<div class="sandy-store cf">
+		<div class="wrapper">
+			<h2>Support the Cause</h2>
+			<div class="one-third">
+				<img src="img/hoodies.png" alt="Merchandise Hoodes" />
+				<p><em>Merchandise proceeds go to the Robin Hood Relief Fund</em></p>
+				<a class="#" href="#">Buy</a>
+			</div>
+
+			<div class="one-third">
+				<a href="http://www.iheart.com/live/6146/?autoplay=true"><img src="img/1212merch.png" alt="Listen to the Artists" /></a>
+				<p><em>Listen to all the artists on<br>121212 Radio</em></p>
+				<a class="http://www.iheart.com/live/6146/?autoplay=true" href="#">Listen</a>
+			</div>
+
+			<div class="one-third">
+				<img />
+				<p><em>Check out the<br>121212 Soundtrack on iTunes</em></p>
+				<a class="#" href="#">Listen</a>
+			</div>
+		</div>
 	</div> <!-- .sandy-store -->
+
+
+
 	<div class="robin-hood-stories cf">
 		<div class="wrapper">
 			<hgroup>
@@ -174,14 +187,23 @@
 			</hgroup>
 			<img src="img/robin-hood.png" alt="" class="left">
 			<div class="right">
-				<p>Robin Hood has launched a large-scale relief effort to aid our neighbors in the tri-state area whose lives have been shattered by Hurricane Sandy. Within hours of the storm, Robin Hood-funded non-profits were providing blankets, hot food, heaters, generators and more to residents in Red Hook, Coney Island, the Rockaways and all across the region. Now, one month out from the storm, thanks to our supporters, Robin Hood has been able to provide over $8 million in grants tomore than 90 different groups.</p>
+				<p>Robin Hood has launched a large-scale relief effort to aid our neighbors in the tri-state area whose lives have been shattered by Hurricane Sandy. Within hours of the storm, Robin Hood-funded non-profits were providing blankets, hot food, heaters, generators and more to residents in Red Hook, Coney Island, the Rockaways and all across the region. Now, one month out from the storm, thanks to our supporters, Robin Hood has been able to provide over $8 million in grants to more than 90 different groups.</p>
 			</div> <!-- .right -->
 		</div> <!-- .wrapper -->
 	</div> <!-- .robin-hood-stories -->
 	<div class="sponsors cf">
 		<div class="wrapper">
 			<h3>Brought To You By</h3>
+			<ul class="sponsor-list">
+				<li data-sponsor="ClearChannel"><a href="#">ClearChannel</a></li>
+				<li data-sponsor="iHeartRadio"><a href="#">iHeartRadio</a></li>
+				<li data-sponsor="MSG"><a href="#">The Madison Square Garden Company</a></li>
+				<li data-sponsor="Robin Hood"><a href="#">Robin Hood</a></li>
+				<li data-sponsor="The Weinstein Company"><a href="#">The Weinstein Company</a></li>
+			</ul>
+			<?php /* ?>
 			<img src="img/sponsors.jpg" alt="sponsor logos" />
+			*/ ?>
 		</div> <!-- .wrapper -->
 	</div>
 <?php include 'footer.php'; ?>

@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 	$(".donate-modal-link").fancybox({
                 type: 'inline',
@@ -10,7 +11,9 @@ $(document).ready(function() {
 		speed: 5000,
 		direction: 'rtl',
 		pause:true
-	});
+    });
+
+    // Countdown Timer
 	$('.timer').countdown("2012/12/12 19:00:00", function(event) {
 		var $this = $(this);
 		switch(event.type) {
@@ -27,27 +30,8 @@ $(document).ready(function() {
 				break;
 		}
 	});
-	$(".round-next").click(function() {
-		$(".videos").roundabout("animateToNextChild");
-		return false;
-	});
 
-    $(".round-prev").click(function () {
-        $(".videos").roundabout("animateToPreviousChild");
-        return false;
-    });
-
-    $('.images').flexslider({
-        animation: "slide",
-        animationLoop: false,
-        itemWidth: 310,
-        controlNav: false,
-        directionNav: true,
-        slideshow: true,
-        useCSS: false,
-        touch: false
-    });
-
+    // Vimeo API 
     var vimeoPlayers = jQuery('.featured-img').find('iframe'),
         player;
 
@@ -73,25 +57,21 @@ $(document).ready(function() {
             jQuery('.featured-img').flexslider("play");
         });
     }
-});
-$(".donate-modal-link").fancybox({
-            type: 'inline',
-            closeBtn: true,
-            wrapCSS: 'donate-modal',
-            tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
-    });
+
+});  // End Doc Ready
+
 
 $(window).load(function () {
-    
-    jQuery('.featured-img li').fitVids();
 
+    // Featured Image Carousel Options
+    jQuery('.featured-img li').fitVids();
     jQuery(".featured-img").flexslider({
         animation: "slide",
         animationLoop: false,
         smoothHeight: true,
         useCSS: false,
         controlNav: true,
-        directionNav: false,
+        directionNav: true,
         slideshow: true,
         touch: false,
         before: function (slider) {
@@ -99,16 +79,7 @@ $(window).load(function () {
         }
     });
 
-	$('.stories').flexslider({
-		animation: "slide",
-		itemWidth: 330,
-		move:1,
-		controlNav: false,
-		slideshow: false,
-		initDelay: 400,
-		useCSS: false,
-		touch: false
-	});
+	// Celev Videos Slider Options
 	jQuery('.celeb-videos li').fitVids();
 	
 	$('.celeb-videos').flexslider({
@@ -155,20 +126,11 @@ $(window).load(function () {
 			'marginTop': -1*(videoHeight/2)
 		});
 	});
-	$(".overlay").fancybox({
-		type: 'iframe'
-	});
-    
-
-    $(".fancybox").fancybox({
-        type: 'image'
-    });
-    $(".lightbox-text").fancybox({});
-
+	
+    //Robin Hood Twitter Feed 
     $('#js-robin-hood-tweets').jTweetsAnywhere({
         username: 'robinhoodnyc',
         count: 3,
-        mode: 'auto-insert',
         showTweetFeed: {
             showProfileImages: false,
             showUserScreenNames: false,
@@ -195,8 +157,9 @@ $(window).load(function () {
         }
     });
 
+    // Artists Twitter Feed and Slider 
     $('.artists-tweets').jTweetsAnywhere({
-        username: '121212concert',
+        username: '121212concert',  // Usage: For more than one Twitter feed - ['handle1' , 'handle2' , 'handle3'] etc.
         count: 6,
         showTweetFeed: {
             showProfileImages: true,
@@ -265,7 +228,9 @@ $(window).load(function () {
 
 
     });
-    var limit = 14;
+
+    // Instagram
+    /*var limit = 14;
     $.ajax({
         url: 'http://121212-feed.hdmade.com/results.json',
         dataType: "jsonp",
@@ -313,8 +278,9 @@ $(window).load(function () {
             });
             limit += 15;
         }
-    });
+    });*/
 
+    // Flash Message Close
     $('a.close').click(function (event) {
     	event.preventDefault();
         $('.flash').slideUp();
@@ -359,8 +325,4 @@ $(window).load(function () {
             }
         });
     }, 10000);
-
-
-
-
 });
