@@ -1,3 +1,12 @@
+<?php
+// Start output buffering so we can add headers throughout the request.
+ob_start();
+
+// Set up a 5 minute TTL that Varnish will respect.
+if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD') {
+  header("Cache-Control: public, max-age=300");
+}
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
