@@ -1778,3 +1778,58 @@ letter-spacing: 1px
 
 
 	}
+#donate-popup{
+    display: none;
+    width: 460px;
+    height: 300px;
+    text-align: center;
+}
+#donate-popup p{
+    padding: 0 50px 20px 50px;
+    font-family:"Georgia", serif;
+    font-style: italic;
+    font-size: 0.9em;
+}
+#donate-popup .btn{
+    padding: 0.2em 1em 0.0em;
+}
+#donate-popup .amounts{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#donate-popup .amounts label{
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+#donate-popup .amounts input{
+    display: inline-block;
+    vertical-align: middle;
+}
+#donate-popup .amounts input[type=radio]{
+    margin-right: 10px;
+}
+#donate-popup .amounts input[type=text]{
+    width: 70px;
+    padding: 5px;
+}
+#donate-popup .amounts .amount_blank{
+    display: none;
+}
+#donate-popup .error{
+    color: red;
+}
+.donate-modal .fancybox-skin{
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.donate-modal .modal-close{
+    color: #002340;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+

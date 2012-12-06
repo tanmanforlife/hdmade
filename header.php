@@ -1,3 +1,12 @@
+<?php
+// Start output buffering so we can add headers throughout the request.
+ob_start();
+
+// Set up a 5 minute TTL that Varnish will respect.
+if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD') {
+  header("Cache-Control: public, max-age=300");
+}
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -24,7 +33,37 @@
 
 </head>
 <body>
-	<a href="#" class="sponsor-banner">
+	<div id="donate-popup" style="display: none;">
+            <h1>Donate</h1>
+            <p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Releif Fund.  You will be redirected to Amazon to complete the payment process.</p>
+            
+            <!--a href="" class="btn donate">Donate</a-->
+            <form id="donate-form" action="https://authorize.payments-sandbox.amazon.com/pba/paypipeline" method="post" target="_blank">
+              <input type="hidden" name="returnUrl" value="http://www.121212concert.org/" >
+              <input type="hidden" name="processImmediate" value="1" >
+              <input type="hidden" name="accessKey" value="11SEM03K88SD016FS1G2" >
+              <input type="hidden" name="signatureMethod" value="HmacSHA256" >
+              <input type="hidden" name="collectShippingAddress" value="0" >
+              <input type="hidden" name="isDonationWidget" value="1" >
+              <input type="hidden" name="amazonPaymentsAccountId" value="LDAYRQYTKPGM5JEC2MMHHS2UDUZ3CE882PINP9" >
+              <input type="hidden" name="cobrandingStyle" value="logo" >
+              <input type="hidden" name="immediateReturn" value="1" >
+              <input type="hidden" name="description" value="Donate to Benefit the Robin Hood Relief Fund" >
+              <input type="hidden" name="abandonUrl" value="http://www.121212concert.org/" >
+              <input type="hidden" name="signatureVersion" value="2" >
+              <input type="hidden" name="signature" value="sZLo+VGDub96fDdPbM8v5uP7sVV4GW58nXmLw7mRgcc=" >
+
+            <div class="amounts">
+                <input type="radio" name="amount" class="amount" value="10" /><label>$10</label>
+                <input type="radio" name="amount" class="amount" value="50" /><label>$50</label>
+                <input type="radio" name="amount" class="amount" value="100" /><label>$100</label>
+                <input type="radio" value="custom" class="custom" /> $&nbsp;<input type="text" name="amount" id="amazon_amount" value="" />
+            </div>            
+            <input type="submit" id="submit_donate" class="btn donate" value="Donate" border="0">
+            <div class="error"></div>
+            </form>
+        </div>
+        <a href="#" class="sponsor-banner">
 		This is a sponsor banner
 	</a>
 	<div class="top">
@@ -40,7 +79,7 @@
 						<img src="img/desc.png" alt="The Concert for Sandy Relief to benefit The Robin Hood Relief Fund presented by Chase" />
 					</div> <!-- .td -->
 				</div> <!-- .tr -->
-				<a href="#" class="btn donate">Donate</a>
+				<a href="#donate-popup" class="btn donate donate-modal-link">Donate</a>
 				<nav class="" role="navigation">
 					<ul class="nav site">
 						<li><a href="#">#121212 Concert</a></li>
