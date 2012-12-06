@@ -11,14 +11,22 @@
 				</section> <!-- .g.span-2.featured-img -->
 				
 				<div class="nav-mobile">
-
+					<ul class="nav">
+						<li><a href="#">#121212 Concert</a></li>
+						<li><a href="#">Watch on TV</a></li>
+						<li><a href="#">Social</a></li>
+						<li><a href="#">Shop</a></li>
+					</ul>
 				</div>
-
-
-				<section class="g span-1 last twitter" id="js-robin-hood-tweets">
-					<h2>@robinhoodnyc <a href="#" class="more">See All</a></h2>
-				</section> <!-- .g.span-1.last.twitter -->
+				<div class="twitter-wrap cf">
+					<section class="g span-1 last twitter" id="js-robin-hood-tweets">
+						<h2>@robinhoodnyc <a href="#" class="more">See All</a></h2>
+						
+					</section> <!-- .g.span-1.last.twitter -->
+				</div>
 			</div> <!-- .outer-wrapper -->
+		<div class="mobile-wrap cf">
+
 			<div class="ways-to-donate cf">
 				<h2>Ways To Donate</h2>
 						<div class="one-half to-give">
@@ -203,4 +211,5 @@
 			*/ ?>
 		</div> <!-- .wrapper -->
 	</div>
+</div>
 <?php include 'footer.php'; ?>
