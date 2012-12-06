@@ -18,7 +18,6 @@
 </html>
 <?php
 $incls = get_included_files();
-var_dump($incls);
 $incls = array_filter($incls, "is_file");
 $mod_times = array_map('filemtime', $incls);
 $mod_time = max($mod_times);
