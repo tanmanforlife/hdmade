@@ -20,7 +20,7 @@
 				</div>
 				<div class="twitter-wrap cf">
 					<section class="g span-1 last twitter" id="js-robin-hood-tweets">
-						<h2>@robinhoodnyc <a href="#" class="more">See All</a></h2>
+						<h2>@robinhoodnyc <a href="https://twitter.com/RobinHoodNYC" class="more" target="_blank">See All</a></h2>
 						
 					</section> <!-- .g.span-1.last.twitter -->
 				</div>
@@ -54,7 +54,7 @@
 				</div> <!-- .instagram-feed -->
 				<div class="g span-1 last">
 					<div class="tumblr-feed">
-						<h2>Tumblr <a href="#" class="more">See All</a></h2>
+						<h2>Tumblr <a href="http://robinhoodnyc.tumblr.com/search/121212concert" class="more" target="_blank">See All</a></h2>
 						<div class="stories">
 							<ul class="slides cf">
 								<?php include ('inc/tumblr-feed.php'); ?>
@@ -113,7 +113,7 @@
 				</div> <!-- .artists-tweets -->
 
 			</div> <!-- .arti -->
-															<a class="see-all">See All</a>
+															<a href="https://twitter.com/search?q=%23121212concert" class="see-all" target="_blank">See All</a>
 
 		</div> <!-- .wrapper -->
 	</div> <!-- .what-artists -->
