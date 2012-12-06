@@ -8,41 +8,20 @@
     Contents
     ==========================================================================
 
-    1.  User Defined Mixins or Functions
-    2.  Normalize CSS
-    3.  Micro Clearfix
-    4.  Grid System
-    5.  Font-Face
-    6.  Main Styling
-        6.1.  Top Content Area
-        6.2.  Stats Content Area
-        6.3.  Tumblr Feed Content Area
-        6.5.  Robin Hood Stories Content Area
-        6.6.  Radio Content Area
-        6.7.  Supported Content Area
-        6.8.  Footer
-    7.  Navigation
-    8.  Typography
-    9.  Buttons & Links
-    10. Icons
-    11. FlexSlider Styling
-    12. FancyBox Styling
-    13. Helper Classes
-    14. Media Queries
 
 /*  ==========================================================================
     Normalize CSS (git.io/normalize)
     ========================================================================== */
 
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+	article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
 /*  ==========================================================================
     Micro Clearfix (http://nicolasgallagher.com/micro-clearfix-hack/)
     ========================================================================== */
 
-.cf { *zoom: 1; }
-.cf:before, .cf:after { content: " "; display: table; }
-.cf:after { clear: both; }
+	.cf { *zoom: 1; }
+	.cf:before, .cf:after { content: " "; display: table; }
+	.cf:after { clear: both; }
 
 /*  ==========================================================================
     Grid (Taken from Inuit.css with some amendments, and unused removed
@@ -53,7 +32,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	margin-right:3.5%;
 }
 .one-whole { width: 100%; }
-.one-half { width: 50%; }
+.one-half { width: 50%; float: left }
 .one-third { width: 33.333%; float:left;}
 .two-thirds { width: 66.666%; }
 .one-fifth { width: 20%; float: left;}
@@ -83,148 +62,140 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /*  ==========================================================================
     Font-Face
     ========================================================================== */
-/*
-@font-face {
-	font-family: 'League Gothic';
-	src: url("fonts/leaguegothic-regular-webfont.eot");
-	src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
-	font-weight: normal;
-	font-style: normal;
-}*/
-@font-face {
+
+	@font-face {
+		font-family: 'TradeGothicCond';
+		src: url('fonts/webfonts/1935B8_00.eot');
+		src: url('fonts/webfonts/1935B8_00.eot?#iefix') format('embedded-opentype'),
+			url('fonts/webfonts/1935B8_00.woff') format('woff'),
+			url('fonts/webfonts/1935B8_00.ttf') format('truetype');
+		font-style:normal;
+		font-weight: bold;
+	}
+	 
+	@font-face {
+		font-family: 'TradeGothicCond';
+		src: url('fonts/webfonts/1935B8_10.eot');
+		src: url('fonts/webfonts/1935B8_10.eot?#iefix') format('embedded-opentype'),
+			url('fonts/webfonts/1935B8_10.woff') format('woff'),
+			url('fonts/webfonts/1935B8_10.ttf') format('truetype');
+		font-style:normal;
+		font-weight: normal;
+	}
+
+	@font-face {
 		font-family: 'TradeGothic';
-		src: url('fonts/tradegothicltstd.eot');
-		src: url('fonts/tradegothicltstd.eot?#iefix') format('embedded-opentype'),
-				 url('fonts/tradegothicltstd.woff') format('woff'),
-				 url('fonts/tradegothicltstd.ttf') format('truetype'),
-				 url('fonts/tradegothicltstd.svg#tradegothicltstd') format('svg');
+		src: url('fonts/webfonts/1935B8_20.eot');
+		src: url('fonts/webfonts/1935B8_20.eot?#iefix') format('embedded-opentype'),
+			url('fonts/webfonts/1935B8_20.woff') format('woff'),
+			url('fonts/webfonts/1935B8_20.ttf') format('truetype');
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: 'icomoon';
+		src: url("fonts/icomoon.eot");
+		src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
 		font-weight: normal;
 		font-style: normal;
-}
-@font-face {
-	font-family: 'TradeGothicCond';
-	src: url('fonts/tradegothicltstd-cn18.eot');
-	src: url('fonts/tradegothicltstd-cn18.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/tradegothicltstd-cn18.woff') format('woff'),
-		 url('fonts/tradegothicltstd-cn18.ttf') format('truetype'),
-		 url('fonts/tradegothicltstd-cn18.svg#tradegothicltstd-cn18') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'TradeGothicCond';
-	src: url('fonts/tradegothicltstd-bdcn20.eot');
-	src: url('fonts/tradegothicltstd-bdcn20.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/tradegothicltstd-bdcn20.woff') format('woff'),
-		 url('fonts/tradegothicltstd-bdcn20.ttf') format('truetype'),
-		 url('fonts/tradegothicltstd-bdcn20.svg#tradegothicltstd-bdcn20') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'icomoon';
-	src: url("fonts/icomoon.eot");
-	src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
+	}
 
 /* =============================================================================
    Icons
    ========================================================================== */
 
-[data-icon]:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	-webkit-font-smoothing: antialiased;
-}
-[class^="icon-"]:before, [class*=" icon-"]:before {
-	font-family: 'icomoon';
-	font-style: normal;
-	speak: none;
-	font-weight: normal;
-	-webkit-font-smoothing: antialiased;
-}
-.icon-twitter:before {
-	content: "\e000";
-	font-size: 1.8em;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-	-webkit-transition: all linear 0.1s;
-}
-.icon-twitter:hover, .icon-facebook:hover {
-	color: #BDE723;
-	-webkit-transition: all linear 0.1s;
-}
-.icon-facebook:before {
-	content: "\e001";
-	font-size: 1.8em;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-	-webkit-transition: all linear 0.1s;
-}
-.icon-robin:before {
-	content: "\e005";
-	font-size: 1.1em;
-	text-align: left;
-}
-.icon-play:before {
-	content: "\e006";
-	font-size: 3em;
-}
-.icon-play {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	top: 50%;
-	margin-left: -26px;
-	color: rgba(255, 255, 255, 0.5);
-	-webkit-transition: all 0.1s ease-out;
-	-moz-transition: all 0.1s ease-out;
-	-o-transition: all 0.1s ease-out;
-	transition: all 0.1s ease-out;
-}
-.icon-twitter span, .icon-facebook span {
-	position: absolute;
-	left: -30000em;
-}
+	[data-icon]:before {
+		font-family: 'icomoon';
+		content: attr(data-icon);
+		speak: none;
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+	}
+	[class^="icon-"]:before, [class*=" icon-"]:before {
+		font-family: 'icomoon';
+		font-style: normal;
+		speak: none;
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+	}
+	.icon-twitter:before {
+		content: "\e000";
+		font-size: 1.8em;
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+		-webkit-transition: all linear 0.1s;
+	}
+	.icon-twitter:hover, .icon-facebook:hover {
+		color: #BDE723;
+		-webkit-transition: all linear 0.1s;
+	}
+	.icon-facebook:before {
+		content: "\e001";
+		font-size: 1.8em;
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+		-webkit-transition: all linear 0.1s;
+	}
+	.icon-robin:before {
+		content: "\e005";
+		font-size: 1.1em;
+		text-align: left;
+	}
+	.icon-play:before {
+		content: "\e006";
+		font-size: 3em;
+	}
+	.icon-play {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		top: 50%;
+		margin-left: -26px;
+		color: rgba(255, 255, 255, 0.5);
+		-webkit-transition: all 0.1s ease-out;
+		-moz-transition: all 0.1s ease-out;
+		-o-transition: all 0.1s ease-out;
+		transition: all 0.1s ease-out;
+	}
+	.icon-twitter span, .icon-facebook span {
+		position: absolute;
+		left: -30000em;
+	}
 
 /*  ==========================================================================
     Buttons & Links
     ========================================================================== */
 
-.btn {
-	border: none;
-	padding: 0.5em 1em 0.3em;
-	display: inline-block;
-	background: #b4dc2b;
-	color: #fff;
-	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
-	text-transform: uppercase;
-	font-family: 'TradeGothicCond';
-	font-size: 1.4rem;
-	letter-spacing: 0.0625em;
-	position: relative;
-	border-radius: 1px;
-	cursor: pointer;
-	-webkit-transition: all 0.1s ease-out;
-	-moz-transition: all 0.1s ease-out;
-	-o-transition: all 0.1s ease-out;
-	transition: all 0.1s ease-out;
-}
+	.btn {
+		border: none;
+		padding: 0.5em 1em 0.3em;
+		display: inline-block;
+		background: #b4dc2b;
+		color: #fff;
+		text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+		text-transform: uppercase;
+		font-family: 'TradeGothicCond';
+		font-size: 1.4rem;
+		letter-spacing: 0.0625em;
+		position: relative;
+		border-radius: 1px;
+		cursor: pointer;
+		-webkit-transition: all 0.1s ease-out;
+		-moz-transition: all 0.1s ease-out;
+		-o-transition: all 0.1s ease-out;
+		transition: all 0.1s ease-out;
+	}
 
-.donate {
-	background: #b4dc2b;
-	background: -moz-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b4dc2b), color-stop(51%, #b4dc2b), color-stop(51%, #a1c53c), color-stop(100%, #a1c53c));
-	background: -webkit-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: -o-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: -ms-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: linear-gradient(to bottom, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4dc2b', endColorstr='#a1c53c',GradientType=0 );
-	font-size: 2.2rem
-}
+	.donate {
+		background: #b4dc2b;
+		background: -moz-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b4dc2b), color-stop(51%, #b4dc2b), color-stop(51%, #a1c53c), color-stop(100%, #a1c53c));
+		background: -webkit-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+		background: -o-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+		background: -ms-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+		background: linear-gradient(to bottom, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4dc2b', endColorstr='#a1c53c',GradientType=0 );
+		font-size: 2.2rem
+	}
 
 .donate:hover {
 	color:#0087d6;
@@ -270,7 +241,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	color: #bce723;
 	display: inline-block;
 	font-family: 'TradeGothicCond';
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: bold;
 	letter-spacing: 2px;
 	padding-right: 13px;
@@ -369,7 +340,7 @@ a:hover {
 	color:#fff;
 }
 h1 {
-	font-size: 1.9em;
+	font-size: 2em;
 	text-transform: uppercase;
 	font-family: 'TradeGothicCond';
 	letter-spacing: 1px;
@@ -383,7 +354,7 @@ h1 {
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 28px;
 	line-height: 1.5;
 	text-align: center;
 	font-family: 'TradeGothic';
@@ -463,6 +434,7 @@ h3 {
 	-ms-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
+	padding-bottom: 35px;
 }
 .pre-header {
 	padding: 28px 0;
@@ -481,13 +453,44 @@ h3 {
 .pre-header .donate:hover {
 	color:#0087d6;
 }
+.donate-btn {
+background: url(img/donate-btn.png);
+width: 229px;
+height: 45px;
+display: block;
+font-weight: bold;
+font-family: 'TradeGothic';
+font-size: 1.7em;
+color: white;
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+text-transform: uppercase;
+padding-left: 95px;
+padding-top: 4px;
+float: left
+}
+.btn-twitter {
+	background-position: 228px 0;
+}
+.to-give {
+	padding: 20px 60px;
+}
+.to-give p{
+text-align: center;
+display: block;
+width: 124px;
+float: left;
+font-style: italic;
+margin-left: 20px;
+margin-top: -18px;
+
+}
 
 /* -----------------------
 -- Nav -- */
 
 .pre-header nav {
 	float: right;
-	margin-top: 27px;
+	margin-top: 17px;
 }
 .pre-header ul {
 	list-style:none;
@@ -539,7 +542,7 @@ h3 {
 	background:#bce723;
 	color:#010101;
 	font-family:"TradeGothicCond";
-	font-size:22px;
+	font-size:26px;
 	font-weight: bold;
 	margin:0 auto;
 	max-width:1070px;
@@ -565,7 +568,7 @@ h3 {
 .main {
 	background:#010101;
 	color:#fff;
-	margin:0 auto 35px auto;
+	margin:0 auto;
 	max-width:1070px;
 	padding:35px;
 }
@@ -609,7 +612,7 @@ section.twitter {
 
 }
 section.twitter h2 {
-	font-size:22px;
+	font-size:28px;
 	margin:0;
 	text-align: left;
 }
@@ -790,7 +793,7 @@ img.show {
 	width:250px;
 	margin: 0 auto;
 	height: 138px;
-	padding-top: 45px;
+	padding-top: 40px;
 }
 
 .timer-status {
@@ -805,7 +808,7 @@ img.show {
 	content: ':';
 	position: absolute;
 	left: -10px;
-	top:-5px;
+	top:-2px;
 }
 
 .unit:first-child:before {
@@ -816,14 +819,14 @@ img.show {
 	font-family: 'TradeGothicCond';
 	font-weight: bold;
 	text-align: center;
-	font-size: 2.8em
+	font-size: 3em
 }
 
 .units {
 	text-align: center;
-	font-size: 0.9em;
+	font-size: 1em;
 	font-family: 'TradeGothicCond';
-	margin-top: -15px;
+	margin-top: -20px;
 }
 
 .unit {
@@ -850,7 +853,7 @@ img.show {
 }
 
 .foursquare .giga {
-	font-size: 3.5em;
+	font-size: 3.8em;
 	text-shadow:0px -1px 0px #000;
 	font-weight: bold;
 	letter-spacing: 0;
@@ -891,7 +894,7 @@ p.samsung {
 	background:#bce723;
 	color:#000;
 	padding:20px 0;
-	margin-top:50px;
+	margin-top:0;
 	position: relative;
 }
 .what-artists h2 {
@@ -899,8 +902,9 @@ p.samsung {
 	display: block;
 	text-align: center;
 	background: url(img/twitter-blue.png) no-repeat 28% 0%;
-	line-height: 1.5em;
-	margin-bottom:40px;
+line-height: 1em;
+margin-bottom: 40px;
+padding: 0 0 20px 0;
 }
 .tweets-holding-space {
 	position:absolute;
@@ -979,6 +983,17 @@ p.samsung {
 	margin-top: 10px;
 }
 
+.see-all{
+	font-family: 'TradeGothic';
+	font-size: 1.5em;
+	color: #000;
+	border-left:1px solid #000;
+	display: block;
+	float: right;
+	text-transform: uppercase;
+	line-height: 0.7em;
+	padding-left: 10px;
+}
 /* =============================================================================
    Celebs on Sandy
    ========================================================================== */
@@ -1041,6 +1056,12 @@ p.samsung {
 .sandy-store {
 	background:#fff;
 	padding:40px 0;
+	text-align: center;
+	font-family: 'Georgia';
+}
+.sandy-store p {
+	display: block;
+	height: 50px;
 }
 .sandy-store h2 {
 	color:#000;
@@ -1052,6 +1073,12 @@ p.samsung {
 .sandy-store a {
 	text-align: center;
 	color: #000;
+	font-family: 'TradeGothic';
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	text-shadow:none;
+-webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* =============================================================================
@@ -1258,24 +1285,25 @@ header {
       line-height: 1.8em;
       position: relative;
       z-index: 1;
-      padding: 40px 0 60px 0;
+      padding: 10px 0 60px 0;
     }
 
     .robin-hood-stories h2 {
 		font-family: 'TradeGothicCond';
-		font-size: 1.7em;
+		font-size: 3em;
 		font-weight: bold;
 		text-shadow:0px -1px 0px black;
     }
 
     .robin-hood-stories h3 {
     	text-align: center;
-    	margin-top: -30px;
+    	margin-top: -50px;
     	display: block;
     	font-family: 'TradeGothicCond';
-		font-size: 1.9em;
+		font-size: 2em;
 text-transform: uppercase;
 text-shadow:none;
+letter-spacing: 1px
     }
 
     .left {
@@ -1306,7 +1334,7 @@ text-shadow:none;
     }
 
     .sponsors h3 {
-    		font-size: 22px;
+    		font-size: 28px;
 	line-height: 1.5;
 	text-align: center;
 	font-family: 'TradeGothic';
@@ -1331,108 +1359,81 @@ text-shadow:none;
       padding: 6.75em 0 6.25em 0;
     }
 
-/*
-    Supported Content Area
-    ========================================================================== */
+/* =============================================================================
+   Supported Content Area
+   ========================================================================== */
 
-    .support {
-      background: #fff;
-    }
-
-    .circle {
-      width: 18.5em;
-      height: 18.5em;
-      background: #007ac1;
-      border-radius: 9.25em;
-      text-align: center;
-      color: white;
-      padding: 2.9em 1.875em;
-      margin-top: 2.5em;
-    }
-		.lt-ie9 .circle {
-      background: url('img/ie8-circle.png');
-		}
-
-    .circle a {
-      text-decoration: none;
-      color: white;
-      font-size: 2.5em;
-      text-transform: uppercase;
-      font-family: 'League Gothic', 'Helvetica Neue', sans-serif;
-      margin-top: 0.3125em;
-      display: inline-block;
-    }
-
-    .middle { margin: 2.5em auto 0 auto; }
-
-    .last { float: right; }
-
-    .support h2 {
-      color: black;
-      margin: 1.875em 0 0.625em 0;
-    }
-
-    .circle .btn { font-size: 1.9em; padding-left: 50px; }
-    .circle .btn span {
-      left:18px;
-    }
-
-    .support-list {
-      margin: 0;
-      padding: 0;
-    }
-
-    .support-list li {
-      float: left;
-      list-style: none;
-      margin-right: 20px;
-      background: url('img/company.png') no-repeat;
-      text-indent: -3000em;
-    }
-
-    .support-list li a {
-      height: 104px;
-      display: block;
-    }
-
-    .clearchannel {
-      width: 114px;
-      background-position: 0 0;
-    }
-
-    li.iheart {
-      width: 106px;
-      background-position: -149px 0;
-    }
-
-    li.madison {
-      width: 290px;
-      background-position: -293px 0;
-    }
-
-    li.robin {
-      width: 204px;
-      background-position: -620px 0;
-    }
-
-    li.weinstein {
-      width: 160px;
-      background-position: -859px 0;
-    }
-
-    .circle .icon-facebook, .circle .icon-twitter {
-      font-size: 1.5em;
-      margin-top: 0.25em;
-      display: inline-block;
-    }
-
-    .page-content {
-      background: white;
-    }
-
-    .tweets {
-      font-size: 1em;
-    }
+.support {
+	background: #fff;
+}	
+.support h2 {
+	color: black;
+	margin: 1.875em 0 0.625em 0;
+}
+.sponsor-list {
+	margin:0;
+	padding: 0;
+	text-align: justify;
+}
+.sponsor-list:after {
+	content:"";
+	display: inline-block;
+	width:100%;
+}
+.sponsor-list li {
+	display:inline-block;
+	list-style: none;
+	margin:10px;
+}
+.sponsor-list li a {
+	background:url('img/sponsors.jpg') no-repeat;
+	height: 75px;
+	display: block;
+	overflow: hidden;
+	text-indent:100%;
+	white-space:nowrap;
+}
+.sponsor-list
+.sponsor-list li[data-sponsor="Optimum Lightpath"] a {
+	background-position:0 4px;
+	width:145px;
+}
+.sponsor-list li[data-sponsor="Samsung Galaxy"] a {
+	background-position:-190px 7px;
+	width:202px;
+}
+.sponsor-list li[data-sponsor="StateFarm"] a {
+	background-position:-439px 2px;
+	width:181px;
+}
+.sponsor-list li[data-sponsor="TWC"] a {
+	background-position:-666px 0px;
+	width:123px;
+}
+.sponsor-list li[data-sponsor="Verizon"] a {
+	background-position:-842px 3px;
+	width:159px;
+}
+.sponsor-list li[data-sponsor="ClearChannel"] a {
+	background-position:-7px -104px;
+	width:104px;
+}
+.sponsor-list li[data-sponsor="iHeartRadio"] a {
+	background-position:-207px -104px;
+	width:104px;
+}
+.sponsor-list li[data-sponsor="MSG"] a {
+	background-position:-425px -104px;
+	width:145px;
+}
+.sponsor-list li[data-sponsor="Robin Hood"] a {
+	background-position:-675px -104px;
+	width:123px;
+}
+.sponsor-list li[data-sponsor="The Weinstein Company"] a {
+	background-position:-879px -106px;
+	width:120px;
+}
 
 /*
     Footer
@@ -1535,8 +1536,8 @@ text-shadow:none;
 
     .flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{outline:none;}.slides,.flex-control-nav,.flex-direction-nav{list-style:none;margin:0;padding:0;}.flexslider{margin:0;padding:0;}.flexslider .slides > li{display:none;-webkit-backface-visibility:hidden;}.flexslider .slides img{width:100%;display:block;}.flex-pauseplay span{text-transform:capitalize;}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}* html .slides{height:1%;}.flex-direction-nav{height:0;}.flex-prev,.flex-next{opacity:1;-webkit-transition:all linear .1s;z-index:6000000;}.flex-prev:hover,.flex-next:hover{opacity:0.5;-webkit-transition:all linear .1s;}.flex-direction-nav a{width:30px;height:30px;display:block;background:url('img/bg_direction_nav.png') no-repeat 0 0;position:absolute;top:50%;z-index:1000000;cursor:pointer;text-indent:-9999px;-webkit-transition:all .3s ease;margin:-20px 0 0;}.flex-direction-nav .flex-next{background-position:100% 0;right:15px;}.flex-direction-nav .flex-prev{left:10px;}.flexslider:hover .flex-prev{opacity:0.8;left:5px;}.flex-direction-nav .flex-disabled{opacity:.3!important;filter:alpha(opacity=30);cursor:default;}.flex-control-nav{width:100%;position:absolute;bottom:10px;text-align:center;}.flex-control-nav li{zoom:1;display:inline-block;margin:0 6px;}.flex-control-paging li a{-webkit-transition:all linear .1s;width:11px;height:11px;display:block;background:#bde723;cursor:pointer;text-indent:-9999px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;border-radius:20px;box-shadow:inset 0 0 3px rgba(0,0,0,0.3);}.flex-control-paging li a:hover{background:#5b710b;-webkit-transition:all linear .1s;}.flex-control-paging li a.flex-active{background:#fff;cursor:default;}.flex-control-thumbs{position:static;overflow:hidden;margin:5px 0 0;}.flex-control-thumbs li{width:25%;float:left;margin:0;}.flex-control-thumbs img{width:100%;display:block;opacity:.7;cursor:pointer;}.flex-control-thumbs .flex-active{opacity:1;cursor:default;}html[xmlns] .slides,.no-js .slides > li:first-child{display:block;}.flexslider:hover .flex-next,.flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover,.flex-control-thumbs img:hover{opacity:1;}
 
-		.featured-img .flex-direction-nav .flex-prev { left:30px; }
-		.featured-img .flex-direction-nav .flex-next { right:30px; }
+		.featured-img .flex-direction-nav .flex-prev { left:10px; }
+		.featured-img .flex-direction-nav .flex-next { right:10px; }
 
     .tumblr-feed .flex-next, .robin-hood-stories .flex-next, .their-stories .flex-next { right: 100px; }
 
@@ -1617,423 +1618,79 @@ text-shadow:none;
 		.td {
 			display:table-cell;
 		}
+		.brand-mobile {
+			display: none
+		}
 
 /*  ==========================================================================
     Media Queries
     ========================================================================== */
 
-@media all and (max-width:64em) {
-	.support-list {
-		text-align: center;
+	@media all and (max-width: 30em) {
+		.flash {
+			display: none;
+		}
+		.brand{
+			display: none;
+		}
+		.brand-mobile {
+			display: block;
+			margin-top:-20px;
+			margin-bottom: 20px;
+		}
+		
+		.span-2,.span-1 {
+			width: 100%;
+		}
+		.main {
+			border-top: 1px solid #345d96;
+			padding: 0;
+			background: none
+		}
+		.outer-wrapper {
+			background: none
+		}
+		.donate-btn {
+			display: none
+		}
+		.to-give {
+			padding: 0;
+		}
+		.to-give p {
+			width: 100%;
+			margin:0;
+		}
+		.more {
+			float: left;
+			clear: both;
+			display: block;
+		}
+		.one-third, .left, .right, .one-fourth {
+			width: 100%
+		}
+		.arti {
+			width: 68%;
+			margin:0 auto;
+		}
+		.what-artists h2{
+			background-position: center top;
+			padding-top: 40px;
+		}
+		.nav li:nth-child(1), .nav li:nth-child(2), .nav li:nth-child(3), .nav li:nth-child(4) {
+			display: none
+		}
+		.pre-header .separator{
+			display: none
+		}
+		.nav-mobile {
+			border-top: 1px solid #345d96;
+			border-bottom: 1px solid #345d96;
+			width: 100%;
+			height: 80px;
+			float: left;
+			clear: both;
+		}
+
+
+
 	}
-	.support-list li {
-		display: inline-block;
-		float: none;
-		margin:0;
-	}
-	footer .nav {
-		margin-left: 1em;
-	}
-	footer small {
-		padding-right: 1em;
-	}
-}
-@media all and (max-width:56em) {
-	.circle {
-		height:17em;
-		width:17em;
-	}
-}
-@media all and (max-width: 48em) {
-  html {
-    font-size: 0.9em;
-  }
-
-  .aside {
-    width: 100%;
-  }
-
-  .timer {
-    border-width: 3px;
-    width: 85%;
-  }
-
-  h1 {
-    font-size: 2.2em
-  }
-
-  .tickets, .twitter {
-    padding-bottom: 50px;
-    width: 50%;
-    float: left;
-    overflow: hidden;
-  }
-
-  .twitter {
-    padding-bottom: 10px;
-    padding-top: 35px;
-  }
-
-  .featured-img {
-    width: 100%;
-  }
-
-  .featured-img iframe {
-    width: 100%;
-  }
-
-  .stories .flex-viewport {
-    width: 640px;
-    margin: 0 auto;
-  }
-
-  .stories-wrap {
-    width: 768px;
-  }
-
-  .circle {
-    width: 16em;
-    height: 16em;
-    border-radius: 8em;
-  }
-
-  .circle .icon-facebook {
-    margin-top: 10px;
-  }
-
-  .flex-next, .flex-prev {
-    display: none;
-  }
-
-  .stat-item {
-    padding-top: 50px;
-  }
-
-  .their-stories {
-    padding-top: 60px;
-  }
-
-  .stories {
-    width: 640px;
-    margin: 0 auto;
-  }
-
-  .images .flex-prev {
-    top: 14.5%;
-  }
-
-  .images .flex-next {
-    top: 14.5%;
-  }
-}
-@media all and (max-width:767px) {
-	.support .g {
-		float: none;
-		width:100%;
-	}
-	.support .g .circle {
-		float: none;
-		margin:2.5em auto 0 auto;
-	}
-}
-@media all and (max-width: 30em) {
-  .outer-wrapper {
-    height: 100%;
-  }
-
-  header {
-    padding: 2em 2em 1em 2em;
-  }
-
-  header .icon-twitter {
-    font-size: 0.7em;
-  }
-
-  .wrapper {
-    padding: 0 2em;
-  }
-
-  .tumblr-feed .wrapper {
-    padding: 0;
-  }
-
-  .flex-next {
-    right: 0;
-  }
-
-  .robin-hood-stories div {
-    width: 100%;
-  }
-
-  .robin-content {
-    width: 100%;
-    float: left;
-    padding: 0;
-  }
-
-
-  .videos .meta {
-    width: 300px;
-  }
-
-  .tickets, .twitter {
-    height: 100%;
-  }
-
-  .wrapper {
-    width: 100%;
-  }
-
-  .timer {
-    width: 60%;
-  }
-
-  .mobile {
-    display: inline;
-  }
-
-  .item-wrap {
-    width: 320px;
-  }
-
-  .tumblr-feed {
-
-  }
-
-  .tumblr-feed .wrapper {
-    width: 320px;
-    margin: 0 auto;
-    overflow: hidden
-  }
-
-  .branding {
-    width: 137px;
-    margin: 0 auto;
-    display: block;
-    float: none;
-  }
-
-  nav {
-    float: none;
-    margin: 0 auto;
-    width: 100%!important; /*Override grid*/
-    padding: 30px 0 0 0;
-  }
-
-  .nav {
-    text-align: center;
-    margin: 10px auto;
-    float: none;
-  }
-
-  .nav li {
-    display: inline;
-    margin-left: 1em;
-    float: none;
-  }
-
-  .nav li a {
-    display: inline-block;
-  }
-
-
-
-  .tickets, .twitter {
-    width: 100%;
-  }
-
-  .twitter {
-    height: 310px;
-    overflow: hidden;
-  }
-
-
-
-  .stat-item {
-    width: 100%;
-    padding: 0;
-  }
-
-
-  .robin-hood-stories img {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .col-right {
-    clear: left;
-    float: none;
-    width: 100%;
-  }
-
-  .circle {
-    margin: 20px auto 0px auto;
-  }
-
-  .support section {
-    width: 100%;
-    float: none;
-  }
-
-  .last {
-    float: none;
-  }
-
-  .supported {
-    width: 100%;
-    clear: both;
-  }
-
-  .support-list {
-    text-align: center;
-  }
-
-
-  .videos {
-    width: 320px;
-  }
-
-  .videos li {
-    height: 220px;
-    width: 320px;
-  }
-
-  .placeholder {
-    height: 220px;
-  }
-
-  .icon-play {
-    top: 50%;
-    left: 50%;
-  }
-
-  .tumblr-feed .flex-next{
-    right: 0px;
-  }
-
-  .tumblr-feed .flex-prev {
-    left: 0px;
-  }
-
-  .robin-hood-stories .flex-prev {
-    left: 36%;
-    top:85px;
-  }
-
-.robin-hood-stories .flex-next {
-    right: 36%;
-    top:85px;
-  }
-
-  .images .flex-prev {
-    left: 70px;
-    top:85px;
-  }
-
-.images .flex-next {
-    right: 70px;
-    top:85px;
-  }
-
-
-  a.overlay {
-    width: 320px;
-    height: 220px;
-    position: relative;
-  }
-
-  .their-stories {
-    height: 460px;
-  }
-
-  .support-list li {
-	display: block;
-    float: none;
-	margin:0 auto;
-  }
-  .support-list li.madison {
-	left:-10px;
-	position: relative;
-    width: 280px;
-  }
-
-  footer .nav {
-    width: 100%;
-    font-size: 0.8em;
-  }
-	footer .nav li {
-		display: inline-block;
-		margin:0;
-	}
-
-  footer small {
-    float: left;
-    clear: both;
-    text-align: center;
-    width: 100%!important;
-  }
-
-  .where-watch {
-    background: none;
-    height: 470px;
-  }
-
-  .where-watch li {
-    position: relative;
-    margin: 0 auto 25px auto;
-
-  }
-
-  .where-watch li:nth-child(2) {
-    margin-left: -34px;
-  }
-
-}
-
-#donate-popup{
-    display: none;
-    width: 460px;
-    height: 300px;
-    text-align: center;
-}
-#donate-popup p{
-    padding: 0 50px 20px 50px;
-    font-family:"Georgia", serif;
-    font-style: italic;
-    font-size: 0.9em;
-}
-#donate-popup .btn{
-    padding: 0.2em 1em 0.0em;
-}
-#donate-popup .amounts{
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-#donate-popup .amounts label{
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: middle;
-}
-#donate-popup .amounts input{
-    display: inline-block;
-    vertical-align: middle;
-}
-#donate-popup .amounts input[type=radio]{
-    margin-right: 10px;
-}
-#donate-popup .amounts input[type=text]{
-    width: 70px;
-    padding: 5px;
-}
-.donate-modal .fancybox-skin{
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-}
-.donate-modal .modal-close{
-    color: #002340;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-}

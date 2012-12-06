@@ -38,4 +38,6 @@
 			</div> <!-- .foursquare-to-give -->
 	</div> <!-- .table -->
 </div>
+</div>
+
 <?php include 'footer.php'; ?>
