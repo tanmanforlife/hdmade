@@ -9,6 +9,8 @@ $(document).ready(function() {
     });
 
     // Countdown Timer
+                    var sinceYear = new Date('01/01/2005');
+
 	$('.timer').countdown("2012/12/12 19:00:00", function(event) {
 		var $this = $(this);
 		switch(event.type) {
@@ -21,10 +23,20 @@ $(document).ready(function() {
 				$this.find('span#'+event.type).html(event.value);
 				break;
 			case "finished":
-				$this.hide();
-				break;
+                timerFinished();
+            break;
+
+
 		}
 	});
+
+    function timerFinished() {
+       // Other code for timer finished and the countup timer is in plugin js
+
+       $('.timer').attr('id', 'countup');
+
+    }
+    
 
     // Vimeo API 
     var vimeoPlayers = jQuery('.featured-img').find('iframe'),
@@ -57,6 +69,9 @@ $(document).ready(function() {
 
 
 $(window).load(function () {
+
+ 
+
 
     // Featured Image Carousel Options
     jQuery('.featured-img li').fitVids();
@@ -154,7 +169,7 @@ $(window).load(function () {
 
     // Artists Twitter Feed and Slider 
     $('.artists-tweets').jTweetsAnywhere({
-        username: '121212concert',  // Usage: For more than one Twitter feed - ['handle1' , 'handle2' , 'handle3'] etc.
+        username: '121212concert',  // Usage: For more than one Twitter feed - ['handle1' , 'handle2' , 'handle3'] etc.  
         count: 6,
         showTweetFeed: {
             showProfileImages: true,

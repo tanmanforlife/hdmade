@@ -1618,7 +1618,7 @@ letter-spacing: 1px
 		.td {
 			display:table-cell;
 		}
-		.brand-mobile {
+		.brand-mobile,.nav-mobile {
 			display: none
 		}
 
@@ -1626,10 +1626,41 @@ letter-spacing: 1px
     Media Queries
     ========================================================================== */
 
-	@media all and (max-width: 30em) {
-		.flash {
-			display: none;
+    @media all and (max-width: 48em) {
+    	.flash {
+			font-size: 20px;
 		}
+		.pre-header {
+			padding:20px;
+		}
+		.nav li {
+			margin: 0 0.3em;
+		}
+		
+		.span-2,.span-1 {
+			width: 100%;
+		}
+		.to-give p {
+			width: 100%;
+			margin:20px 0 0 0;
+		}
+		.tumblr-feed, .ticker {
+			width: 50%;
+			float: left;
+		}
+		.robin-hood-stories {
+			padding: 20px;
+		}
+
+    }
+
+
+	@media all and (max-width: 30em) {
+
+		html {
+			font-size: 0.9em
+		}
+		
 		.brand{
 			display: none;
 		}
@@ -1638,17 +1669,28 @@ letter-spacing: 1px
 			margin-top:-20px;
 			margin-bottom: 20px;
 		}
-		
-		.span-2,.span-1 {
-			width: 100%;
+		.nav-mobile {
+			display: block
 		}
+		.wrapper {
+			padding: 20px;
+		}
+		.pre-header {
+			padding: 20px 0 0 0;
+		}
+		.pre-header .donate {
+			padding-left: .5em;
+			padding-right: .5em
+		}
+		
 		.main {
 			border-top: 1px solid #345d96;
 			padding: 0;
-			background: none
+			background: none;
 		}
 		.outer-wrapper {
-			background: none
+			background: none;
+			margin-top: -20px;
 		}
 		.donate-btn {
 			display: none
@@ -1656,18 +1698,20 @@ letter-spacing: 1px
 		.to-give {
 			padding: 0;
 		}
-		.to-give p {
-			width: 100%;
-			margin:0;
-		}
+		
 		.more {
 			float: left;
 			clear: both;
 			display: block;
 		}
-		.one-third, .left, .right, .one-fourth {
+		.one-third, .left, .right,.one-half,.ticker,.timer,.tumblr-feed {
 			width: 100%
 		}
+		.timer {
+			background-position: center;
+		}
+		
+		
 		.arti {
 			width: 68%;
 			margin:0 auto;
@@ -1676,7 +1720,7 @@ letter-spacing: 1px
 			background-position: center top;
 			padding-top: 40px;
 		}
-		.nav li:nth-child(1), .nav li:nth-child(2), .nav li:nth-child(3), .nav li:nth-child(4) {
+		 .site li:nth-child(1), .site li:nth-child(2), .site li:nth-child(3), .site li:nth-child(4) {
 			display: none
 		}
 		.pre-header .separator{
@@ -1689,7 +1733,47 @@ letter-spacing: 1px
 			height: 80px;
 			float: left;
 			clear: both;
+			margin-top: -6px;
+			background: url(img/grad.png) repeat-x;
 		}
+		.nav {
+			list-style: none;
+			text-align: center;
+			padding: 27px 0 0 0;
+			margin: 0;
+		}
+		.nav li {
+			display: inline;
+			margin-right: 0.2em;
+		}
+		.nav li:last-child {
+			margin-right: 0;
+		}
+		.nav li a {
+			display: inline-block;
+			font-family: 'TradeGothic';
+			font-size:18px;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		.mobile-wrap,.twitter{
+			background: black
+		}
+		.twitter,.dynamic {
+			padding:40px;
+		}
+
+		.to-give:last-child {
+			background-position: 210px 0
+		}
+		.sponsor-list {
+			text-align: center;
+		}
+		h2 {
+			font-size: 18px
+		}
+		
+
 
 
 

@@ -42,7 +42,7 @@
 				</div> <!-- .tr -->
 				<a href="#" class="btn donate">Donate</a>
 				<nav class="" role="navigation">
-					<ul class="nav">
+					<ul class="nav site">
 						<li><a href="#">#121212 Concert</a></li>
 						<li><a href="#">Watch on TV</a></li>
 						<li><a href="#">Social</a></li>
