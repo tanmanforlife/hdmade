@@ -5,7 +5,8 @@
 			<div class="outer-wrapper cf">
 				<section class="g span-2 featured-img">
 					<ul class="slides">
-						<li><img src="carousel-images/new1.jpeg" alt="" />
+						<li><img src="carousel-images/new1.jpeg" alt="" /></li>
+						<li><img src="carousel-images/new1.jpeg" alt="" /></li>
 					</ul> <!-- .slides -->
 				</section> <!-- .g.span-2.featured-img -->
 				<section class="g span-1 last twitter" id="js-robin-hood-tweets">

@@ -78,7 +78,7 @@ $(window).load(function () {
         smoothHeight: true,
         useCSS: false,
         controlNav: true,
-        directionNav: false,
+        directionNav: true,
         slideshow: true,
         touch: false,
         before: function (slider) {
