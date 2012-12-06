@@ -494,6 +494,7 @@ h3 {
 	-ms-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
+	padding-bottom: 35px;
 }
 .pre-header {
 	padding: 28px 0;
@@ -596,7 +597,7 @@ h3 {
 .main {
 	background:#010101;
 	color:#fff;
-	margin:0 auto 35px auto;
+	margin:0 auto;
 	max-width:1070px;
 	padding:35px;
 }
@@ -922,7 +923,7 @@ p.samsung {
 	background:#bce723;
 	color:#000;
 	padding:20px 0;
-	margin-top:50px;
+	margin-top:0;
 	position: relative;
 }
 .what-artists h2 {
@@ -1362,108 +1363,81 @@ text-shadow:none;
       padding: 6.75em 0 6.25em 0;
     }
 
-/*
-    Supported Content Area
-    ========================================================================== */
+/* =============================================================================
+   Supported Content Area
+   ========================================================================== */
 
-    .support {
-      background: #fff;
-    }
-
-    .circle {
-      width: 18.5em;
-      height: 18.5em;
-      background: #007ac1;
-      border-radius: 9.25em;
-      text-align: center;
-      color: white;
-      padding: 2.9em 1.875em;
-      margin-top: 2.5em;
-    }
-		.lt-ie9 .circle {
-      background: url('img/ie8-circle.png');
-		}
-
-    .circle a {
-      text-decoration: none;
-      color: white;
-      font-size: 2.5em;
-      text-transform: uppercase;
-      font-family: 'League Gothic', 'Helvetica Neue', sans-serif;
-      margin-top: 0.3125em;
-      display: inline-block;
-    }
-
-    .middle { margin: 2.5em auto 0 auto; }
-
-    .last { float: right; }
-
-    .support h2 {
-      color: black;
-      margin: 1.875em 0 0.625em 0;
-    }
-
-    .circle .btn { font-size: 1.9em; padding-left: 50px; }
-    .circle .btn span {
-      left:18px;
-    }
-
-    .support-list {
-      margin: 0;
-      padding: 0;
-    }
-
-    .support-list li {
-      float: left;
-      list-style: none;
-      margin-right: 20px;
-      background: url('img/company.png') no-repeat;
-      text-indent: -3000em;
-    }
-
-    .support-list li a {
-      height: 104px;
-      display: block;
-    }
-
-    .clearchannel {
-      width: 114px;
-      background-position: 0 0;
-    }
-
-    li.iheart {
-      width: 106px;
-      background-position: -149px 0;
-    }
-
-    li.madison {
-      width: 290px;
-      background-position: -293px 0;
-    }
-
-    li.robin {
-      width: 204px;
-      background-position: -620px 0;
-    }
-
-    li.weinstein {
-      width: 160px;
-      background-position: -859px 0;
-    }
-
-    .circle .icon-facebook, .circle .icon-twitter {
-      font-size: 1.5em;
-      margin-top: 0.25em;
-      display: inline-block;
-    }
-
-    .page-content {
-      background: white;
-    }
-
-    .tweets {
-      font-size: 1em;
-    }
+.support {
+	background: #fff;
+}	
+.support h2 {
+	color: black;
+	margin: 1.875em 0 0.625em 0;
+}
+.sponsor-list {
+	margin:0;
+	padding: 0;
+	text-align: justify;
+}
+.sponsor-list:after {
+	content:"";
+	display: inline-block;
+	width:100%;
+}
+.sponsor-list li {
+	display:inline-block;
+	list-style: none;
+	margin:10px;
+}
+.sponsor-list li a {
+	background:url('img/sponsors.jpg') no-repeat;
+	height: 75px;
+	display: block;
+	overflow: hidden;
+	text-indent:100%;
+	white-space:nowrap;
+}
+.sponsor-list
+.sponsor-list li[data-sponsor="Optimum Lightpath"] a {
+	background-position:0 4px;
+	width:145px;
+}
+.sponsor-list li[data-sponsor="Samsung Galaxy"] a {
+	background-position:-190px 7px;
+	width:202px;
+}
+.sponsor-list li[data-sponsor="StateFarm"] a {
+	background-position:-439px 2px;
+	width:181px;
+}
+.sponsor-list li[data-sponsor="TWC"] a {
+	background-position:-666px 0px;
+	width:123px;
+}
+.sponsor-list li[data-sponsor="Verizon"] a {
+	background-position:-842px 3px;
+	width:159px;
+}
+.sponsor-list li[data-sponsor="ClearChannel"] a {
+	background-position:-7px -104px;
+	width:104px;
+}
+.sponsor-list li[data-sponsor="iHeartRadio"] a {
+	background-position:-207px -104px;
+	width:104px;
+}
+.sponsor-list li[data-sponsor="MSG"] a {
+	background-position:-425px -104px;
+	width:145px;
+}
+.sponsor-list li[data-sponsor="Robin Hood"] a {
+	background-position:-675px -104px;
+	width:123px;
+}
+.sponsor-list li[data-sponsor="The Weinstein Company"] a {
+	background-position:-879px -106px;
+	width:120px;
+}
 
 /*
     Footer
