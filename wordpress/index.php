@@ -101,12 +101,9 @@
 			<div class="tweets-holding-space"></div>
 			<div class="arti">
 				<div class="artists-tweets">
-
 				</div> <!-- .artists-tweets -->
-
 			</div> <!-- .arti -->
-															<a class="see-all">See All</a>
-
+			<a class="see-all" href="#">See All</a>
 		</div> <!-- .wrapper -->
 	</div> <!-- .what-artists -->
 	<div class="celebs-sandy">

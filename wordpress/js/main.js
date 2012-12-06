@@ -163,11 +163,14 @@ $(window).load(function () {
             showActionReply: false,
             showActionRetweet: true,
             showActionFavorite: false,
-       	autorefresh: {
-        	mode: 'trigger-insert',
-            interval: 600
-        },
-        paging: { mode: 'more' }
+       		autorefresh: {
+        		mode: 'trigger-insert',
+            	interval: 30,
+				duration:-1
+        	},
+        	paging: {
+				mode: 'more'
+			}
     	},
 	//	_tweetFeedIndicator: '.artists-tweets .jta-tweet-list',
 		isArtistsFeed: true,
@@ -176,7 +179,7 @@ $(window).load(function () {
 		},
 		customTweetElement: $('.jta-tweet-flexslider .jta-tweet-list'),
     	onReadyHandler: function() {
-	
+		
 			$('.jta-tweet-flexslider').flexslider({
 				animation: "slide",
 				selector: ".jta-tweet-list > li",
@@ -189,15 +192,13 @@ $(window).load(function () {
 			});
 			
     	},
-        onFeedPopulationHandler: function(invocations)
-        {
-        	//Fired when new tweets are added
-			var old_tweets_html = $('.jta-tweet-flexslider .flex-viewport .jta-tweet-list').html();
-			var new_tweets_html = $('.tweets-holding-space').html();
+        onFeedPopulationHandler: function(invocations) {
+			var tweets_html = $('.jta-tweet-flexslider .flex-viewport .jta-tweet-list').html();
+			console.log('updated');
 			$('.jta-tweet-flexslider').remove();
 			$('.artists-tweets .jta-tweet-list-controls').before('<div class="jta-tweet-flexslider"></div>');
-			var complete_tweets_html = '<ul class="jta-tweet-list">' + new_tweets_html + old_tweets_html + '</ul>';
-			$('.jta-tweet-flexslider').css('opacity', 0).html(complete_tweets_html);
+			tweets_html = '<ul class="jta-tweet-list">' + tweets_html + '</ul>';
+			$('.jta-tweet-flexslider').css('opacity', 0).html(tweets_html);
 			$('.jta-tweet-flexslider').flexslider({
 				animation: "slide",
 				selector: ".jta-tweet-list > li",
@@ -213,17 +214,17 @@ $(window).load(function () {
             if (tweet && tweet.text) {
                 var text = tweet.text;
 
-                if (!text.match(/#121212concert/i)) {
+                if (!text.match(/#laisjdhfg/i)) {
                     return false;
                 }
                 return true;
             }
             return false;
         }
-
-
     });
-
+	$(document).on('click', '.jta-tweet-list-autorefresh-trigger-content', function(e) {
+		$(this).remove();
+	})
     // Instagram
     /*var limit = 14;
     $.ajax({
