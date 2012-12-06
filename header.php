@@ -83,9 +83,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 				<nav class="" role="navigation">
 					<ul class="nav site">
 						<li><a href="#">#121212 Concert</a></li>
-						<li><a href="#">Watch on TV</a></li>
-						<li><a href="#">Social</a></li>
-						<li><a href="#">Shop</a></li>
+						<li><a href="broadcast.php" target="_blank">Watch on TV</a></li>
+						<li><a href="social.php" target="_blank">Social</a></li>
+						<li><a href="#" target="_blank">Shop</a></li>
 						<li><span class="separator">|</span></li>
 						<li class="share"><a href="#">Share</a></li>
 						<li class="share share-fb"><a href="#" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
