@@ -950,7 +950,6 @@ padding: 0 0 20px 0;
 	display: block;
 	position: absolute;
 	top:23px;
-	padding-bottom: 80px;
 }
 .artists-tweets .jta-tweet-user-full-name a {
 	font-size: 1em;
@@ -983,16 +982,24 @@ padding: 0 0 20px 0;
 	margin-top: 10px;
 }
 
-.see-all{
+.see-all {
+	border-color: #000;
 	font-family: 'TradeGothic';
-	font-size: 1.5em;
+	font-size: 18px;
 	color: #000;
-	border-left:1px solid #000;
 	display: block;
 	float: right;
+	letter-spacing:0;
 	text-transform: uppercase;
-	line-height: 0.7em;
+	line-height: 1;
 	padding-left: 10px;
+}
+.jla-tweet-list-autorefresh-trigger {
+	float: right;
+	line-height: 18px;
+	border-right: 1px solid #000;
+	padding-right: 10px;
+	font-size: 13px;
 }
 /* =============================================================================
    Celebs on Sandy

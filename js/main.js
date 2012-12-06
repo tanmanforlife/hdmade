@@ -214,12 +214,15 @@ $(window).load(function () {
             showActionReply: false,
             showActionRetweet: true,
             showActionFavorite: false,
-       	autorefresh: {
-        	mode: 'trigger-insert',
-            interval: 600
-        },
-        paging: { mode: 'more' }
-    	},
+       		autorefresh: {
+		        mode: 'trigger-insert',
+		      	interval: 30,
+				duration:-1
+			},
+			paging: {
+				mode: 'more'
+			}
+		},
 	//	_tweetFeedIndicator: '.artists-tweets .jta-tweet-list',
 		isArtistsFeed: true,
 		tweetFeedDecorator: function() {
@@ -242,13 +245,12 @@ $(window).load(function () {
     	},
         onFeedPopulationHandler: function(invocations)
         {
-        	//Fired when new tweets are added
-			var old_tweets_html = $('.jta-tweet-flexslider .flex-viewport .jta-tweet-list').html();
-			var new_tweets_html = $('.tweets-holding-space').html();
+        	var tweets_html = $('.jta-tweet-flexslider .flex-viewport .jta-tweet-list').html();
+			console.log('updated');
 			$('.jta-tweet-flexslider').remove();
 			$('.artists-tweets .jta-tweet-list-controls').before('<div class="jta-tweet-flexslider"></div>');
-			var complete_tweets_html = '<ul class="jta-tweet-list">' + new_tweets_html + old_tweets_html + '</ul>';
-			$('.jta-tweet-flexslider').css('opacity', 0).html(complete_tweets_html);
+			tweets_html = '<ul class="jta-tweet-list">' + tweets_html + '</ul>';
+			$('.jta-tweet-flexslider').css('opacity', 0).html(tweets_html);
 			$('.jta-tweet-flexslider').flexslider({
 				animation: "slide",
 				selector: ".jta-tweet-list > li",

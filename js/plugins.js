@@ -940,7 +940,7 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 			html = options.tweetFeedAutorefreshTriggerContentDecorator(count, options);
 		}
 
-		return '<li class="jta-tweet-list-autorefresh-trigger">' + html + '</li>';
+		return '<div class="jta-tweet-list-autorefresh-trigger">' + html + '</div>';
 	};
 	defaultTweetFeedAutorefreshTriggerContentDecorator = function(count, options)
 	{
@@ -1079,7 +1079,7 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 		/** if tweet is a native retweet, use the retweet's profile */
 		var screenName = getScreenName(tweet);
 		var fullName = getFullName(tweet);
-
+		console.log(fullName);
 		var htmlScreenName = null;
 		if (screenName && (options._tweetFeedConfig.showUserScreenNames || (options._tweetFeedConfig.showUserScreenNames == null && tweet.retweeted_status)))
 		{
@@ -1539,7 +1539,7 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 	};
 	defaultAutorefreshTriggerVisualizer = function(tweetFeedElement, triggerElement, options, callback)
 	{
-		defaultVisualizer(tweetFeedElement, triggerElement, 'prepend', 'slideDown', 600, 'fadeOut', 200, callback);
+		defaultVisualizer($('.what-artists .wrapper'), triggerElement, 'append', 'fadeIn', 600, 'fadeOut', 200, callback);
 	};
 	defaultVisualizer = function(container, element, inserter, effectIn, durationIn, effectOut, durationOut, callback)
 	{
@@ -1550,7 +1550,6 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 		 * if param callback is not null, the callback function must be called
 		 * in any case, if the visualizer is done
 		 */
-
 		var cb = function()
 		{
 			if (callback)
@@ -1937,7 +1936,7 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 					//	alert('hell oworld');
 						/** decorate the tweet and give it to the tweet visualizer */
 						options.tweetVisualizer(
-							$('.tweets-holding-space'),
+							$('.jta-tweet-flexslider .jta-tweet-list'),
 							$(options.tweetDecorator(tweet, options)),
 							'append',
 							options
@@ -1980,10 +1979,14 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 		{
 			if (options._tweetFeedConfig.autorefresh.mode == 'trigger-insert')
 			{
+			//	alert('1 is true');
 				if (options._tweetFeedConfig.autorefresh._triggerElement)
 				{
+			//		alert('2 is true');
 					if (options.tweetFeedAutorefreshTriggerContentDecorator)
 					{
+				//		alert('3 is true');
+				//		console.log(options._tweetFeedConfig.autorefresh._triggerElement);
 						options._tweetFeedConfig.autorefresh._triggerElement.html(
 							options.tweetFeedAutorefreshTriggerContentDecorator(options._autorefreshTweetsCache.length, options)
 						);
@@ -2037,8 +2040,10 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 				options._tweetFeedConfig.paging._offset++;
 
 				/** decorate the tweet and give it to the tweet visualizer */
+			//	alert('heyo');
+				
 				options.tweetVisualizer(
-					options._tweetFeedElement.children(),
+					$('.jta-tweet-flexslider .jta-tweet-list'),
 					$(options.tweetDecorator(tweet, options)),
 					'prepend',
 					options
@@ -2366,8 +2371,11 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
     getFullName = function(tweet)
     {
 		var t = tweet.retweeted_status || tweet;
-		var fullName = t.user ? t.user.name : undefined;
-
+		if(t['user']) {
+			var fullName = t.user ? t.user.name : undefined;
+		} else {
+			var fullName = t.from_user_name ? t.from_user_name : undefined;
+		}
 		return fullName;
     };
 	validateRange = function(num, lo, hi)
