@@ -16,3 +16,14 @@
 
 </body>
 </html>
+<?php
+$incls = get_included_files();
+var_dump($incls);
+$incls = array_filter($incls, "is_file");
+$mod_times = array_map('filemtime', $incls);
+$mod_time = max($mod_times);
+
+$gmt_date = gmstrftime("%a, %d %b %Y %T GMT", $mod_time);
+
+header("Last-Modified: $gmt_date");
+
