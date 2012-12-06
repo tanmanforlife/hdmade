@@ -95,9 +95,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 	        </div> <!-- .wrapper -->
 	    </div> <!-- .pre-header -->
 		<div class="flash">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Curabitur volutpat. Dolor sit amet, consectetur.</p>
+			<p></p>
 			<a class="close" href="#">&times;</a>
 		</div>
+                <script type="text/javascript">
+                    function parseBannerText(data){
+                        if(data.hasOwnProperty('banner_text'))
+                            $(document).ready(function(){ $('.flash p').html(data.banner_text) });
+                        
+                    }
+                </script>
+                <script type="text/javascript" src="json/banner_text.json"></script>
 		<div class="main cf" role="main">
 			<header role="header" class="table">
 				<div class="tr brand">
