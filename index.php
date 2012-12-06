@@ -13,9 +13,9 @@
 				<div class="nav-mobile">
 					<ul class="nav">
 						<li><a href="#">#121212 Concert</a></li>
-						<li><a href="#">Watch on TV</a></li>
-						<li><a href="#">Social</a></li>
-						<li><a href="#">Shop</a></li>
+						<li><a href="broadcast.php" target="_blank">Watch on TV</a></li>
+						<li><a href="social.php" target="_blank">Social</a></li>
+						<li><a href="#" target="_blank">Shop</a></li>
 					</ul>
 				</div>
 				<div class="twitter-wrap cf">
@@ -41,7 +41,7 @@
 			</div> <!-- .ways-to-donate -->
 			<div class="dynamic cf">
 				<div class="g span-2 instagram-feed">
-					<h2>#121212Concert on Instagram<a href="#" class="more">See All</a></h2>
+					<h2>#121212Concert on Instagram<a href="instagram.php" class="more" target="_blank">See All</a></h2>
 					<div class="instagram-grid clearfix">
 						<ul id="js-instagram" class="instagram">
 						<?php for ($i=1; $i <= 9; $i++) { ?>
