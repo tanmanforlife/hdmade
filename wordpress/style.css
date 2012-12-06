@@ -1385,55 +1385,56 @@ text-shadow:none;
 	width:100%;
 }
 .sponsor-list li {
-	background:url('img/sponsors.jpg') no-repeat;
 	display:inline-block;
 	list-style: none;
 	margin:10px;
 }
 .sponsor-list li a {
+	background:url('img/sponsors.jpg') no-repeat;
 	height: 75px;
 	display: block;
 	overflow: hidden;
 	text-indent:100%;
 	white-space:nowrap;
 }
-.sponsor-list li[data-sponsor="Optimum Lightpath"] {
+.sponsor-list
+.sponsor-list li[data-sponsor="Optimum Lightpath"] a {
 	background-position:0 4px;
 	width:145px;
 }
-.sponsor-list li[data-sponsor="Samsung Galaxy"] {
+.sponsor-list li[data-sponsor="Samsung Galaxy"] a {
 	background-position:-190px 7px;
 	width:202px;
 }
-.sponsor-list li[data-sponsor="StateFarm"] {
+.sponsor-list li[data-sponsor="StateFarm"] a {
 	background-position:-439px 2px;
 	width:181px;
 }
-.sponsor-list li[data-sponsor="TWC"] {
+.sponsor-list li[data-sponsor="TWC"] a {
 	background-position:-666px 0px;
 	width:123px;
 }
-.sponsor-list li[data-sponsor="Verizon"] {
+.sponsor-list li[data-sponsor="Verizon"] a {
 	background-position:-842px 3px;
 	width:159px;
 }
-.sponsor-list li[data-sponsor="ClearChannel"] {
+.sponsor-list li[data-sponsor="ClearChannel"] a {
 	background-position:-7px -104px;
 	width:104px;
 }
-.sponsor-list li[data-sponsor="iHeartRadio"] {
+.sponsor-list li[data-sponsor="iHeartRadio"] a {
 	background-position:-207px -104px;
 	width:104px;
 }
-.sponsor-list li[data-sponsor="MSG"] {
+.sponsor-list li[data-sponsor="MSG"] a {
 	background-position:-425px -104px;
 	width:145px;
 }
-.sponsor-list li[data-sponsor="Robin Hood"] {
+.sponsor-list li[data-sponsor="Robin Hood"] a {
 	background-position:-675px -104px;
 	width:123px;
 }
-.sponsor-list li[data-sponsor="The Weinstein Company"] {
+.sponsor-list li[data-sponsor="The Weinstein Company"] a {
 	background-position:-879px -106px;
 	width:120px;
 }
