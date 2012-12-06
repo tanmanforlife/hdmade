@@ -1,11 +1,6 @@
 
 $(document).ready(function() {
-	$(".donate-modal-link").fancybox({
-                type: 'inline',
-                closeBtn: true,
-                wrapCSS: 'donate-modal',
-                tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
-        });
+	
 
         $('.sponsor-banner').simplemarquee({
 		speed: 5000,
@@ -57,6 +52,31 @@ $(document).ready(function() {
             jQuery('.featured-img').flexslider("play");
         });
     }
+
+    $(".donate-modal-link").fancybox({
+            type: 'inline',
+            closeBtn: true,
+            wrapCSS: 'donate-modal',
+            tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
+    });
+    $('.amounts input[type=radio]').click(function(){
+       var kale = $(this).val();
+       if(kale != 'custom'){            
+            $('.amounts input.custom').removeAttr('checked');
+            $('.amounts input[type=text]').css('color', '#fff');
+       }
+       else{           
+           $('.amounts input.amount').removeAttr('checked');
+           $('.amounts input[type=text]').css('color', '#000');
+       }
+          
+    });
+    $('#amazon_amount').focus(function(){
+        $('.amounts .custom').click();
+    })
+    
+    
+
 
 });  // End Doc Ready
 
