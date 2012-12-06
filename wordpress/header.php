@@ -30,6 +30,16 @@
 	<div class="top">
     	<div class="pre-header">
 	        <div class="wrapper cf">
+	        	<div class="tr brand-mobile">
+					<h1 class="logo td">
+						<a href="/">
+							<img src="img/logo.png" alt="121212 Concert Logo" />
+						</a>
+					</h1>
+					<div class="td info">
+						<img src="img/desc.png" alt="The Concert for Sandy Relief to benefit The Robin Hood Relief Fund presented by Chase" />
+					</div> <!-- .td -->
+				</div> <!-- .tr -->
 				<a href="#" class="btn donate">Donate</a>
 				<nav class="" role="navigation">
 					<ul class="nav">
@@ -51,7 +61,7 @@
 		</div>
 		<div class="main cf" role="main">
 			<header role="header" class="table">
-				<div class="tr">
+				<div class="tr brand">
 					<h1 class="logo td">
 						<a href="/">
 							<img src="img/logo.png" alt="121212 Concert Logo" />

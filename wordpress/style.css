@@ -8,41 +8,20 @@
     Contents
     ==========================================================================
 
-    1.  User Defined Mixins or Functions
-    2.  Normalize CSS
-    3.  Micro Clearfix
-    4.  Grid System
-    5.  Font-Face
-    6.  Main Styling
-        6.1.  Top Content Area
-        6.2.  Stats Content Area
-        6.3.  Tumblr Feed Content Area
-        6.5.  Robin Hood Stories Content Area
-        6.6.  Radio Content Area
-        6.7.  Supported Content Area
-        6.8.  Footer
-    7.  Navigation
-    8.  Typography
-    9.  Buttons & Links
-    10. Icons
-    11. FlexSlider Styling
-    12. FancyBox Styling
-    13. Helper Classes
-    14. Media Queries
 
 /*  ==========================================================================
     Normalize CSS (git.io/normalize)
     ========================================================================== */
 
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+	article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
 /*  ==========================================================================
     Micro Clearfix (http://nicolasgallagher.com/micro-clearfix-hack/)
     ========================================================================== */
 
-.cf { *zoom: 1; }
-.cf:before, .cf:after { content: " "; display: table; }
-.cf:after { clear: both; }
+	.cf { *zoom: 1; }
+	.cf:before, .cf:after { content: " "; display: table; }
+	.cf:after { clear: both; }
 
 /*  ==========================================================================
     Grid (Taken from Inuit.css with some amendments, and unused removed
@@ -83,183 +62,140 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /*  ==========================================================================
     Font-Face
     ========================================================================== */
-/*
-@font-face {
-	font-family: 'League Gothic';
-	src: url("fonts/leaguegothic-regular-webfont.eot");
-	src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
+
+	@font-face {
+		font-family: 'TradeGothicCond';
+		src: url('fonts/webfonts/1935B8_00.eot');
+		src: url('fonts/webfonts/1935B8_00.eot?#iefix') format('embedded-opentype'),
+			url('fonts/webfonts/1935B8_00.woff') format('woff'),
+			url('fonts/webfonts/1935B8_00.ttf') format('truetype');
+		font-style:normal;
+		font-weight: bold;
+	}
+	 
+	@font-face {
+		font-family: 'TradeGothicCond';
+		src: url('fonts/webfonts/1935B8_10.eot');
+		src: url('fonts/webfonts/1935B8_10.eot?#iefix') format('embedded-opentype'),
+			url('fonts/webfonts/1935B8_10.woff') format('woff'),
+			url('fonts/webfonts/1935B8_10.ttf') format('truetype');
+		font-style:normal;
+		font-weight: normal;
+	}
+
+	@font-face {
 		font-family: 'TradeGothic';
-		src: url('fonts/tradegothicltstd.eot');
-		src: url('fonts/tradegothicltstd.eot?#iefix') format('embedded-opentype'),
-				 url('fonts/tradegothicltstd.woff') format('woff'),
-				 url('fonts/tradegothicltstd.ttf') format('truetype'),
-				 url('fonts/tradegothicltstd.svg#tradegothicltstd') format('svg');
+		src: url('fonts/webfonts/1935B8_20.eot');
+		src: url('fonts/webfonts/1935B8_20.eot?#iefix') format('embedded-opentype'),
+			url('fonts/webfonts/1935B8_20.woff') format('woff'),
+			url('fonts/webfonts/1935B8_20.ttf') format('truetype');
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: 'icomoon';
+		src: url("fonts/icomoon.eot");
+		src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
 		font-weight: normal;
 		font-style: normal;
-}
-@font-face {
-	font-family: 'TradeGothicCond';
-	src: url('fonts/tradegothicltstd-cn18.eot');
-	src: url('fonts/tradegothicltstd-cn18.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/tradegothicltstd-cn18.woff') format('woff'),
-		 url('fonts/tradegothicltstd-cn18.ttf') format('truetype'),
-		 url('fonts/tradegothicltstd-cn18.svg#tradegothicltstd-cn18') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'TradeGothicCond';
-	src: url('fonts/tradegothicltstd-bdcn20.eot');
-	src: url('fonts/tradegothicltstd-bdcn20.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/tradegothicltstd-bdcn20.woff') format('woff'),
-		 url('fonts/tradegothicltstd-bdcn20.ttf') format('truetype'),
-		 url('fonts/tradegothicltstd-bdcn20.svg#tradegothicltstd-bdcn20') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
-*/
-html {
-				-webkit-font-smoothing: subpixel-antialiased;
-
-}
-@font-face {
-	font-family: 'TradeGothicCond';
-	src: url('fonts/webfonts/1935B8_00.eot');
-	src: url('fonts/webfonts/1935B8_00.eot?#iefix') format('embedded-opentype'),
-		url('fonts/webfonts/1935B8_00.woff') format('woff'),
-		url('fonts/webfonts/1935B8_00.ttf') format('truetype');
-	font-style:normal;
-	font-weight: bold;
-}
- 
-@font-face {
-	font-family: 'TradeGothicCond';
-	src: url('fonts/webfonts/1935B8_10.eot');
-	src: url('fonts/webfonts/1935B8_10.eot?#iefix') format('embedded-opentype'),
-		url('fonts/webfonts/1935B8_10.woff') format('woff'),
-		url('fonts/webfonts/1935B8_10.ttf') format('truetype');
-	font-style:normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: 'TradeGothic';
-	src: url('fonts/webfonts/1935B8_20.eot');
-	src: url('fonts/webfonts/1935B8_20.eot?#iefix') format('embedded-opentype'),
-		url('fonts/webfonts/1935B8_20.woff') format('woff'),
-		url('fonts/webfonts/1935B8_20.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-}
-
-
-@font-face {
-	font-family: 'icomoon';
-	src: url("fonts/icomoon.eot");
-	src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
+	}
 
 /* =============================================================================
    Icons
    ========================================================================== */
 
-[data-icon]:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	-webkit-font-smoothing: antialiased;
-}
-[class^="icon-"]:before, [class*=" icon-"]:before {
-	font-family: 'icomoon';
-	font-style: normal;
-	speak: none;
-	font-weight: normal;
-	-webkit-font-smoothing: antialiased;
-}
-.icon-twitter:before {
-	content: "\e000";
-	font-size: 1.8em;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-	-webkit-transition: all linear 0.1s;
-}
-.icon-twitter:hover, .icon-facebook:hover {
-	color: #BDE723;
-	-webkit-transition: all linear 0.1s;
-}
-.icon-facebook:before {
-	content: "\e001";
-	font-size: 1.8em;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-	-webkit-transition: all linear 0.1s;
-}
-.icon-robin:before {
-	content: "\e005";
-	font-size: 1.1em;
-	text-align: left;
-}
-.icon-play:before {
-	content: "\e006";
-	font-size: 3em;
-}
-.icon-play {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	top: 50%;
-	margin-left: -26px;
-	color: rgba(255, 255, 255, 0.5);
-	-webkit-transition: all 0.1s ease-out;
-	-moz-transition: all 0.1s ease-out;
-	-o-transition: all 0.1s ease-out;
-	transition: all 0.1s ease-out;
-}
-.icon-twitter span, .icon-facebook span {
-	position: absolute;
-	left: -30000em;
-}
+	[data-icon]:before {
+		font-family: 'icomoon';
+		content: attr(data-icon);
+		speak: none;
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+	}
+	[class^="icon-"]:before, [class*=" icon-"]:before {
+		font-family: 'icomoon';
+		font-style: normal;
+		speak: none;
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+	}
+	.icon-twitter:before {
+		content: "\e000";
+		font-size: 1.8em;
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+		-webkit-transition: all linear 0.1s;
+	}
+	.icon-twitter:hover, .icon-facebook:hover {
+		color: #BDE723;
+		-webkit-transition: all linear 0.1s;
+	}
+	.icon-facebook:before {
+		content: "\e001";
+		font-size: 1.8em;
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+		-webkit-transition: all linear 0.1s;
+	}
+	.icon-robin:before {
+		content: "\e005";
+		font-size: 1.1em;
+		text-align: left;
+	}
+	.icon-play:before {
+		content: "\e006";
+		font-size: 3em;
+	}
+	.icon-play {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		top: 50%;
+		margin-left: -26px;
+		color: rgba(255, 255, 255, 0.5);
+		-webkit-transition: all 0.1s ease-out;
+		-moz-transition: all 0.1s ease-out;
+		-o-transition: all 0.1s ease-out;
+		transition: all 0.1s ease-out;
+	}
+	.icon-twitter span, .icon-facebook span {
+		position: absolute;
+		left: -30000em;
+	}
 
 /*  ==========================================================================
     Buttons & Links
     ========================================================================== */
 
-.btn {
-	border: none;
-	padding: 0.5em 1em 0.3em;
-	display: inline-block;
-	background: #b4dc2b;
-	color: #fff;
-	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
-	text-transform: uppercase;
-	font-family: 'TradeGothicCond';
-	font-size: 1.4rem;
-	letter-spacing: 0.0625em;
-	position: relative;
-	border-radius: 1px;
-	cursor: pointer;
-	-webkit-transition: all 0.1s ease-out;
-	-moz-transition: all 0.1s ease-out;
-	-o-transition: all 0.1s ease-out;
-	transition: all 0.1s ease-out;
-}
+	.btn {
+		border: none;
+		padding: 0.5em 1em 0.3em;
+		display: inline-block;
+		background: #b4dc2b;
+		color: #fff;
+		text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+		text-transform: uppercase;
+		font-family: 'TradeGothicCond';
+		font-size: 1.4rem;
+		letter-spacing: 0.0625em;
+		position: relative;
+		border-radius: 1px;
+		cursor: pointer;
+		-webkit-transition: all 0.1s ease-out;
+		-moz-transition: all 0.1s ease-out;
+		-o-transition: all 0.1s ease-out;
+		transition: all 0.1s ease-out;
+	}
 
-.donate {
-	background: #b4dc2b;
-	background: -moz-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b4dc2b), color-stop(51%, #b4dc2b), color-stop(51%, #a1c53c), color-stop(100%, #a1c53c));
-	background: -webkit-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: -o-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: -ms-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: linear-gradient(to bottom, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4dc2b', endColorstr='#a1c53c',GradientType=0 );
-	font-size: 2.2rem
-}
+	.donate {
+		background: #b4dc2b;
+		background: -moz-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b4dc2b), color-stop(51%, #b4dc2b), color-stop(51%, #a1c53c), color-stop(100%, #a1c53c));
+		background: -webkit-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+		background: -o-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+		background: -ms-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+		background: linear-gradient(to bottom, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4dc2b', endColorstr='#a1c53c',GradientType=0 );
+		font-size: 2.2rem
+	}
 
 .donate:hover {
 	color:#0087d6;
@@ -1682,375 +1618,79 @@ letter-spacing: 1px
 		.td {
 			display:table-cell;
 		}
+		.brand-mobile {
+			display: none
+		}
 
 /*  ==========================================================================
     Media Queries
     ========================================================================== */
 
-@media all and (max-width:64em) {
-	.support-list {
-		text-align: center;
+	@media all and (max-width: 30em) {
+		.flash {
+			display: none;
+		}
+		.brand{
+			display: none;
+		}
+		.brand-mobile {
+			display: block;
+			margin-top:-20px;
+			margin-bottom: 20px;
+		}
+		
+		.span-2,.span-1 {
+			width: 100%;
+		}
+		.main {
+			border-top: 1px solid #345d96;
+			padding: 0;
+			background: none
+		}
+		.outer-wrapper {
+			background: none
+		}
+		.donate-btn {
+			display: none
+		}
+		.to-give {
+			padding: 0;
+		}
+		.to-give p {
+			width: 100%;
+			margin:0;
+		}
+		.more {
+			float: left;
+			clear: both;
+			display: block;
+		}
+		.one-third, .left, .right, .one-fourth {
+			width: 100%
+		}
+		.arti {
+			width: 68%;
+			margin:0 auto;
+		}
+		.what-artists h2{
+			background-position: center top;
+			padding-top: 40px;
+		}
+		.nav li:nth-child(1), .nav li:nth-child(2), .nav li:nth-child(3), .nav li:nth-child(4) {
+			display: none
+		}
+		.pre-header .separator{
+			display: none
+		}
+		.nav-mobile {
+			border-top: 1px solid #345d96;
+			border-bottom: 1px solid #345d96;
+			width: 100%;
+			height: 80px;
+			float: left;
+			clear: both;
+		}
+
+
+
 	}
-	.support-list li {
-		display: inline-block;
-		float: none;
-		margin:0;
-	}
-	footer .nav {
-		margin-left: 1em;
-	}
-	footer small {
-		padding-right: 1em;
-	}
-}
-@media all and (max-width:56em) {
-	.circle {
-		height:17em;
-		width:17em;
-	}
-}
-@media all and (max-width: 48em) {
-  html {
-    font-size: 0.9em;
-  }
-
-  .aside {
-    width: 100%;
-  }
-
-  .timer {
-    border-width: 3px;
-    width: 85%;
-  }
-
-  h1 {
-    font-size: 2.2em
-  }
-
-  .tickets, .twitter {
-    padding-bottom: 50px;
-    width: 50%;
-    float: left;
-    overflow: hidden;
-  }
-
-  .twitter {
-    padding-bottom: 10px;
-    padding-top: 35px;
-  }
-
-  .featured-img {
-    width: 100%;
-  }
-
-  .featured-img iframe {
-    width: 100%;
-  }
-
-  .stories .flex-viewport {
-    width: 640px;
-    margin: 0 auto;
-  }
-
-  .stories-wrap {
-    width: 768px;
-  }
-
-  .circle {
-    width: 16em;
-    height: 16em;
-    border-radius: 8em;
-  }
-
-  .circle .icon-facebook {
-    margin-top: 10px;
-  }
-
-  .flex-next, .flex-prev {
-    display: none;
-  }
-
-  .stat-item {
-    padding-top: 50px;
-  }
-
-  .their-stories {
-    padding-top: 60px;
-  }
-
-  .stories {
-    width: 640px;
-    margin: 0 auto;
-  }
-
-  .images .flex-prev {
-    top: 14.5%;
-  }
-
-  .images .flex-next {
-    top: 14.5%;
-  }
-}
-@media all and (max-width:767px) {
-	.support .g {
-		float: none;
-		width:100%;
-	}
-	.support .g .circle {
-		float: none;
-		margin:2.5em auto 0 auto;
-	}
-}
-@media all and (max-width: 30em) {
-  .outer-wrapper {
-    height: 100%;
-  }
-
-  header {
-    padding: 2em 2em 1em 2em;
-  }
-
-  header .icon-twitter {
-    font-size: 0.7em;
-  }
-
-  .wrapper {
-    padding: 0 2em;
-  }
-
-  .tumblr-feed .wrapper {
-    padding: 0;
-  }
-
-  .flex-next {
-    right: 0;
-  }
-
-  .robin-hood-stories div {
-    width: 100%;
-  }
-
-  .robin-content {
-    width: 100%;
-    float: left;
-    padding: 0;
-  }
-
-
-  .videos .meta {
-    width: 300px;
-  }
-
-  .tickets, .twitter {
-    height: 100%;
-  }
-
-  .wrapper {
-    width: 100%;
-  }
-
-  .timer {
-    width: 60%;
-  }
-
-  .mobile {
-    display: inline;
-  }
-
-  .item-wrap {
-    width: 320px;
-  }
-
-  .tumblr-feed {
-
-  }
-
-  .tumblr-feed .wrapper {
-    width: 320px;
-    margin: 0 auto;
-    overflow: hidden
-  }
-
-  .branding {
-    width: 137px;
-    margin: 0 auto;
-    display: block;
-    float: none;
-  }
-
-  nav {
-    float: none;
-    margin: 0 auto;
-    width: 100%!important; /*Override grid*/
-    padding: 30px 0 0 0;
-  }
-
-  .nav {
-    text-align: center;
-    margin: 10px auto;
-    float: none;
-  }
-
-  .nav li {
-    display: inline;
-    margin-left: 1em;
-    float: none;
-  }
-
-  .nav li a {
-    display: inline-block;
-  }
-
-
-
-  .tickets, .twitter {
-    width: 100%;
-  }
-
-  .twitter {
-    height: 310px;
-    overflow: hidden;
-  }
-
-
-
-  .stat-item {
-    width: 100%;
-    padding: 0;
-  }
-
-
-  .robin-hood-stories img {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .col-right {
-    clear: left;
-    float: none;
-    width: 100%;
-  }
-
-  .circle {
-    margin: 20px auto 0px auto;
-  }
-
-  .support section {
-    width: 100%;
-    float: none;
-  }
-
-  .last {
-    float: none;
-  }
-
-  .supported {
-    width: 100%;
-    clear: both;
-  }
-
-  .support-list {
-    text-align: center;
-  }
-
-
-  .videos {
-    width: 320px;
-  }
-
-  .videos li {
-    height: 220px;
-    width: 320px;
-  }
-
-  .placeholder {
-    height: 220px;
-  }
-
-  .icon-play {
-    top: 50%;
-    left: 50%;
-  }
-
-  .tumblr-feed .flex-next{
-    right: 0px;
-  }
-
-  .tumblr-feed .flex-prev {
-    left: 0px;
-  }
-
-  .robin-hood-stories .flex-prev {
-    left: 36%;
-    top:85px;
-  }
-
-.robin-hood-stories .flex-next {
-    right: 36%;
-    top:85px;
-  }
-
-  .images .flex-prev {
-    left: 70px;
-    top:85px;
-  }
-
-.images .flex-next {
-    right: 70px;
-    top:85px;
-  }
-
-
-  a.overlay {
-    width: 320px;
-    height: 220px;
-    position: relative;
-  }
-
-  .their-stories {
-    height: 460px;
-  }
-
-  .support-list li {
-	display: block;
-    float: none;
-	margin:0 auto;
-  }
-  .support-list li.madison {
-	left:-10px;
-	position: relative;
-    width: 280px;
-  }
-
-  footer .nav {
-    width: 100%;
-    font-size: 0.8em;
-  }
-	footer .nav li {
-		display: inline-block;
-		margin:0;
-	}
-
-  footer small {
-    float: left;
-    clear: both;
-    text-align: center;
-    width: 100%!important;
-  }
-
-  .where-watch {
-    background: none;
-    height: 470px;
-  }
-
-  .where-watch li {
-    position: relative;
-    margin: 0 auto 25px auto;
-
-  }
-
-  .where-watch li:nth-child(2) {
-    margin-left: -34px;
-  }
-
-}
