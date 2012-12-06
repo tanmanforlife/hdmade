@@ -154,7 +154,7 @@ $(window).load(function () {
 
     // Artists Twitter Feed and Slider 
     $('.artists-tweets').jTweetsAnywhere({
-        username: '121212concert',  // Usage: For more than one Twitter feed - ['handle1' , 'handle2' , 'handle3'] etc.
+        username: '121212concert',  // Usage: For more than one Twitter feed - ['handle1' , 'handle2' , 'handle3'] etc.  
         count: 6,
         showTweetFeed: {
             showProfileImages: true,
