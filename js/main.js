@@ -59,7 +59,9 @@ $(document).ready(function() {
             wrapCSS: 'donate-modal',
             tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
     });
+    
     $('.amounts input[type=radio]').click(function(){
+       $('#donate-popup .error').html('');
        var kale = $(this).val();
        if(kale != 'custom'){            
             $('.amounts input.custom').removeAttr('checked');
@@ -73,6 +75,15 @@ $(document).ready(function() {
     });
     $('#amazon_amount').focus(function(){
         $('.amounts .custom').click();
+    })
+    $('#donate-form').submit(function(){
+        if($('.amount').is(':checked') || $.isNumeric($('#amazon_amount').val())){
+            return true;
+        }
+        else {
+            $('#donate-popup .error').html('Please select or enter an amount');
+            return false;
+        }
     })
     
     

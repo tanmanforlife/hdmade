@@ -1733,6 +1733,9 @@ letter-spacing: 1px
 #donate-popup .amounts .amount_blank{
     display: none;
 }
+#donate-popup .error{
+    color: red;
+}
 .donate-modal .fancybox-skin{
     border-radius: 0;
     -moz-border-radius: 0;
