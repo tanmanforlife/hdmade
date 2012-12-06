@@ -53,7 +53,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	margin-right:3.5%;
 }
 .one-whole { width: 100%; }
-.one-half { width: 50%; }
+.one-half { width: 50%; float: left }
 .one-third { width: 33.333%; float:left;}
 .two-thirds { width: 66.666%; }
 .one-fifth { width: 20%; float: left;}
@@ -122,6 +122,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	font-style: normal;
 }
 */
+html {
+				-webkit-font-smoothing: subpixel-antialiased;
+
+}
 @font-face {
 	font-family: 'TradeGothicCond';
 	src: url('fonts/webfonts/1935B8_00.eot');
@@ -301,7 +305,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	color: #bce723;
 	display: inline-block;
 	font-family: 'TradeGothicCond';
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: bold;
 	letter-spacing: 2px;
 	padding-right: 13px;
@@ -400,7 +404,7 @@ a:hover {
 	color:#fff;
 }
 h1 {
-	font-size: 1.9em;
+	font-size: 2em;
 	text-transform: uppercase;
 	font-family: 'TradeGothicCond';
 	letter-spacing: 1px;
@@ -414,7 +418,7 @@ h1 {
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 28px;
 	line-height: 1.5;
 	text-align: center;
 	font-family: 'TradeGothic';
@@ -513,13 +517,44 @@ h3 {
 .pre-header .donate:hover {
 	color:#0087d6;
 }
+.donate-btn {
+background: url(img/donate-btn.png);
+width: 229px;
+height: 45px;
+display: block;
+font-weight: bold;
+font-family: 'TradeGothic';
+font-size: 1.7em;
+color: white;
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+text-transform: uppercase;
+padding-left: 95px;
+padding-top: 4px;
+float: left
+}
+.btn-twitter {
+	background-position: 228px 0;
+}
+.to-give {
+	padding: 20px 60px;
+}
+.to-give p{
+text-align: center;
+display: block;
+width: 124px;
+float: left;
+font-style: italic;
+margin-left: 20px;
+margin-top: -18px;
+
+}
 
 /* -----------------------
 -- Nav -- */
 
 .pre-header nav {
 	float: right;
-	margin-top: 27px;
+	margin-top: 17px;
 }
 .pre-header ul {
 	list-style:none;
@@ -571,7 +606,7 @@ h3 {
 	background:#bce723;
 	color:#010101;
 	font-family:"TradeGothicCond";
-	font-size:22px;
+	font-size:26px;
 	font-weight: bold;
 	margin:0 auto;
 	max-width:1070px;
@@ -641,7 +676,7 @@ section.twitter {
 
 }
 section.twitter h2 {
-	font-size:22px;
+	font-size:28px;
 	margin:0;
 	text-align: left;
 }
@@ -822,7 +857,7 @@ img.show {
 	width:250px;
 	margin: 0 auto;
 	height: 138px;
-	padding-top: 45px;
+	padding-top: 40px;
 }
 
 .timer-status {
@@ -837,7 +872,7 @@ img.show {
 	content: ':';
 	position: absolute;
 	left: -10px;
-	top:-5px;
+	top:-2px;
 }
 
 .unit:first-child:before {
@@ -848,14 +883,14 @@ img.show {
 	font-family: 'TradeGothicCond';
 	font-weight: bold;
 	text-align: center;
-	font-size: 2.8em
+	font-size: 3em
 }
 
 .units {
 	text-align: center;
-	font-size: 0.9em;
+	font-size: 1em;
 	font-family: 'TradeGothicCond';
-	margin-top: -15px;
+	margin-top: -20px;
 }
 
 .unit {
@@ -882,7 +917,7 @@ img.show {
 }
 
 .foursquare .giga {
-	font-size: 3.5em;
+	font-size: 3.8em;
 	text-shadow:0px -1px 0px #000;
 	font-weight: bold;
 	letter-spacing: 0;
@@ -931,8 +966,9 @@ p.samsung {
 	display: block;
 	text-align: center;
 	background: url(img/twitter-blue.png) no-repeat 28% 0%;
-	line-height: 1.5em;
-	margin-bottom:40px;
+line-height: 1em;
+margin-bottom: 40px;
+padding: 0 0 20px 0;
 }
 .tweets-holding-space {
 	position:absolute;
@@ -1011,6 +1047,17 @@ p.samsung {
 	margin-top: 10px;
 }
 
+.see-all{
+	font-family: 'TradeGothic';
+	font-size: 1.5em;
+	color: #000;
+	border-left:1px solid #000;
+	display: block;
+	float: right;
+	text-transform: uppercase;
+	line-height: 0.7em;
+	padding-left: 10px;
+}
 /* =============================================================================
    Celebs on Sandy
    ========================================================================== */
@@ -1073,6 +1120,12 @@ p.samsung {
 .sandy-store {
 	background:#fff;
 	padding:40px 0;
+	text-align: center;
+	font-family: 'Georgia';
+}
+.sandy-store p {
+	display: block;
+	height: 50px;
 }
 .sandy-store h2 {
 	color:#000;
@@ -1084,6 +1137,12 @@ p.samsung {
 .sandy-store a {
 	text-align: center;
 	color: #000;
+	font-family: 'TradeGothic';
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	text-shadow:none;
+-webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* =============================================================================
@@ -1290,24 +1349,25 @@ header {
       line-height: 1.8em;
       position: relative;
       z-index: 1;
-      padding: 40px 0 60px 0;
+      padding: 10px 0 60px 0;
     }
 
     .robin-hood-stories h2 {
 		font-family: 'TradeGothicCond';
-		font-size: 1.7em;
+		font-size: 3em;
 		font-weight: bold;
 		text-shadow:0px -1px 0px black;
     }
 
     .robin-hood-stories h3 {
     	text-align: center;
-    	margin-top: -30px;
+    	margin-top: -50px;
     	display: block;
     	font-family: 'TradeGothicCond';
-		font-size: 1.9em;
+		font-size: 2em;
 text-transform: uppercase;
 text-shadow:none;
+letter-spacing: 1px
     }
 
     .left {
@@ -1338,7 +1398,7 @@ text-shadow:none;
     }
 
     .sponsors h3 {
-    		font-size: 22px;
+    		font-size: 28px;
 	line-height: 1.5;
 	text-align: center;
 	font-family: 'TradeGothic';
