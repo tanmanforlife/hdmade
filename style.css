@@ -2183,4 +2183,20 @@ header {
             width: 50px;
             padding: 2px;
         }
+        #donate-popup p{
+            padding: 0 10px 10px 10px;
+            font-family:"Georgia", serif;
+            font-style: italic;
+            font-size: 0.8em;
+            margin: 0;
+        }
+        #donate-popup h1{
+            margin: 0.2em 0;
+        }
+        #donate-popup .amounts{
+            margin-bottom: 10px;
+        }
+        .donate-modal .fancybox-inner{
+            height: 210px !important;
+        }
 }
