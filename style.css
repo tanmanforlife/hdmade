@@ -2200,6 +2200,9 @@ header {
         #donate-popup .amounts{
             margin-bottom: 10px;
         }
+        #donate-popup .custom_wrap{
+            display: block;
+        }
         .donate-modal .fancybox-inner{
             height: 310px !important;
         }
