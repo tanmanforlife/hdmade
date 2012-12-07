@@ -75,7 +75,6 @@
 				</div> <!-- .g.span-1 -->
 			</div> <!-- .dynamic -->
 			<div class="social cf">
-				<h2>Social</h2>
 				<div class="one-fourth">
 					<a href="#">
 						<img src="img/fb.png" />
