@@ -10,7 +10,7 @@
 					</ul> <!-- .slides -->
 				</section> <!-- .g.span-2.featured-img -->
 				
-				<div class="nav-mobile">
+				<div class="nav-mobile" aria-hidden="true">
 					<ul class="nav">
 						<li><a href="#">#121212 Concert</a></li>
 						<li><a href="broadcast.php" target="_blank">Watch on TV</a></li>
@@ -18,6 +18,7 @@
 						<li><a href="#" target="_blank">Shop</a></li>
 					</ul>
 				</div>
+				
 				<div class="twitter-wrap cf">
 					<section class="g span-1 last twitter" id="js-robin-hood-tweets">
 						<h2>@robinhoodnyc <a href="https://twitter.com/RobinHoodNYC" class="more" target="_blank">See All</a></h2>

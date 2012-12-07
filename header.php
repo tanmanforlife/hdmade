@@ -81,6 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 	}
 	</script>
 	<script type="text/javascript" src="json/banner_text.json"></script>
+	<?php /* ?>
    	<div class="pre-header">
         <div class="wrapper cf">
         	<div class="tr brand-mobile">
@@ -93,21 +94,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 					<img src="img/desc.png" alt="The Concert for Sandy Relief to benefit The Robin Hood Relief Fund presented by Chase" />
 				</div> <!-- .td -->
 			</div> <!-- .tr -->
-			<a href="#donate-popup" class="btn donate donate-modal-link">Donate</a>
-			<nav class="" role="navigation">
-				<ul class="nav site">
-					<li><a href="#">#121212 Concert</a></li>
-					<li><a href="broadcast.php" target="_blank">Watch on TV</a></li>
-					<li><a href="social.php" target="_blank">Social</a></li>
-					<li><a href="#" target="_blank">Shop</a></li>
-					<li><span class="separator">|</span></li>
-					<li class="share"><a href="#">Share</a></li>
-					<li class="share share-fb"><a href="#" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
-					<li class="share share-tw"><a href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
-				</ul> <!-- .nav -->
-			</nav> <!-- g four-fifths -->
         </div> <!-- .wrapper -->
     </div> <!-- .pre-header -->
+	<?php */ ?>
 	<div class="main cf" role="main">
 		<header role="header" class="table">
 			<div class="tr brand">
@@ -121,3 +110,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 				</div> <!-- .td -->
 			</div> <!-- .tr -->
 		</header> <!-- .table -->
+		<div class="menu-wrap cf">
+			<a href="#donate-popup" class="btn donate donate-modal-link">Donate</a>
+			<nav class="" role="navigation">
+				<ul class="nav site">
+					<li><a href="#">#121212 Concert</a></li>
+					<li><a href="broadcast.php" target="_blank">Watch on TV</a></li>
+					<li><a href="social.php" target="_blank">Social</a></li>
+					<li><a href="#" target="_blank">Shop</a></li>
+					<li><span class="separator">|</span></li>
+					<li class="share"><a href="#">Share</a></li>
+					<li class="share share-fb"><a href="#" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
+					<li class="share share-tw"><a href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
+				</ul> <!-- .nav -->
+			</nav> <!-- g four-fifths -->
+		</div> <!-- .menu-wrap -->

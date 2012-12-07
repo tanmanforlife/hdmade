@@ -241,7 +241,7 @@
 	color: #bce723;
 	display: inline-block;
 	font-family: 'TradeGothicCond';
-	font-size: 24px;
+	font-size: 21px;
 	font-weight: bold;
 	letter-spacing: 2px;
 	padding-right: 13px;
@@ -274,7 +274,7 @@ h2 .more:hover {
 	content:"";
 	display:block;
 	height:5px;
-	margin-top: -6px;
+	margin-top: -3px;
 	position: absolute;
 	right:0;
 	top:50%;
@@ -436,21 +436,23 @@ h3 {
 	background-size:cover;
 	padding-bottom: 35px;
 }
-.pre-header {
-	padding: 28px 0;
+.menu-wrap {
+	border-bottom: 1px solid #656565;
+	margin-bottom: 20px;
+	padding: 0 0 25px;
 }
 
 /* -----------------------
 -- Donate -- */
 
-.pre-header .donate {
+.menu-wrap .donate {
 	color:#fff;
 	float: left;
 	font-size:28px;
 	line-height:1;
 	padding:.5em 2em .3em;
 }
-.pre-header .donate:hover {
+.menu-wrap .donate:hover {
 	color:#0087d6;
 }
 .donate-btn {
@@ -488,32 +490,32 @@ margin-top: -18px;
 /* -----------------------
 -- Nav -- */
 
-.pre-header nav {
+.menu-wrap nav {
 	float: right;
 	margin-top: 17px;
 }
-.pre-header ul {
+.menu-wrap ul {
 	list-style:none;
 	margin:0;
 	padding:0;
 }
-.pre-header li,
-.pre-header a,
-.pre-header li > span {
+.menu-wrap li,
+.menu-wrap a,
+.menu-wrap li > span {
 	display: inline-block;
 }
-.pre-header li {
+.menu-wrap li {
 	color:#fff;
 	margin:0 .6em;
 }
-.pre-header .share-tw {
+.menu-wrap .share-tw {
 	margin:0 0 0 .4em;
 }
-.pre-header .share-fb {
+.menu-wrap .share-fb {
 	margin:0 .4em;
 }
-.pre-header a,
-.pre-header .separator {
+.menu-wrap a,
+.menu-wrap .separator {
 	color:#fff;
 	font-family:"TradeGothicCond";
 	font-size:24px;
@@ -521,17 +523,17 @@ margin-top: -18px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.pre-header a:hover {
+.menu-wrap a:hover {
 	color:#bce723;
 }
-.pre-header .share a {
+.menu-wrap .share a {
 	color:#bce723;
 }
-.pre-header .share a:hover {
+.menu-wrap .share a:hover {
 	color:#fff;
 }
-.pre-header .icon-twitter,
-.pre-header .icon-facebook {
+.menu-wrap .icon-twitter,
+.menu-wrap .icon-facebook {
 	font-size:12px;
 }
 
@@ -1326,62 +1328,62 @@ header {
     Robin Hood Stories
     ========================================================================== */
 
-    .robin-hood-stories {
-      background: #007bc1;
-      color: #fff;
-      line-height: 1.8em;
-      position: relative;
-      z-index: 1;
-      padding: 10px 0 60px 0;
-    }
+.robin-hood-stories {
+	background: #007bc1;
+	color: #fff;
+	line-height: 1.8em;
+	position: relative;
+	z-index: 1;
+	padding: 10px 0 60px 0;
+}
 
-    .robin-hood-stories h2 {
-		font-family: 'TradeGothicCond';
-		font-size: 3em;
-		font-weight: bold;
-		text-shadow:0px -1px 0px black;
-    }
+.robin-hood-stories h2 {
+	font-family: 'TradeGothicCond';
+	font-size: 3em;
+	font-weight: bold;
+	text-shadow:0px -1px 0px black;
+}
 
-    .robin-hood-stories h3 {
-    	text-align: center;
-    	margin-top: -50px;
-    	display: block;
-    	font-family: 'TradeGothicCond';
-		font-size: 2em;
-text-transform: uppercase;
-text-shadow:none;
-letter-spacing: 1px
-    }
+.robin-hood-stories h3 {
+	text-align: center;
+	margin-top: -50px;
+	display: block;
+	font-family: 'TradeGothicCond';
+	font-size: 2em;
+	text-transform: uppercase;
+	text-shadow:none;
+	letter-spacing: 1px
+}
 
-    .left {
-    	width: 50%;
-    	float: left;
-    }
+.left {
+	width: 50%;
+	float: left;
+}
 
-    .right {
-    	width: 45%;
-    	float: right;
-    }
+.right {
+	width: 45%;
+	float: right;
+}
 
-    .icon-robin {
-    	margin: 0 -10px;
-    	font-size: 0.8em;
-    	color: #bce723;
-    }
+.icon-robin {
+	margin: 0 -10px;
+	font-size: 0.8em;
+	color: #bce723;
+}
 
 
 /*
     What's Happing Now Content Area
     ========================================================================== */
 
-    .sponsors {
-    	background: #fff;
-    	margin: 0;
-    	padding: 40px 0 60px 0;
-    }
+.sponsors {
+	background: #fff;
+	margin: 0;
+	padding: 40px 0 60px 0;
+}
 
-    .sponsors h3 {
-    		font-size: 28px;
+.sponsors h3 {
+	font-size: 28px;
 	line-height: 1.5;
 	text-align: center;
 	font-family: 'TradeGothic';
@@ -1392,19 +1394,17 @@ letter-spacing: 1px
 	font-weight: normal;
 	position: relative;
 	text-shadow:none;
-    }
-
-
+}
 
 /*
     Radio Content Area
     ========================================================================== */
 
-    .radio {
-      color: #fff;
-      background: url('img/radio-logo.png') center 90px no-repeat #002340;
-      padding: 6.75em 0 6.25em 0;
-    }
+.radio {
+	color: #fff;
+	background: url('img/radio-logo.png') center 90px no-repeat #002340;
+	padding: 6.75em 0 6.25em 0;
+}
 
 /* =============================================================================
    Supported Content Area
@@ -1440,7 +1440,6 @@ letter-spacing: 1px
 	text-indent:100%;
 	white-space:nowrap;
 }
-.sponsor-list
 .sponsor-list li[data-sponsor="Optimum Lightpath"] a {
 	background-position:0 4px;
 	width:145px;
@@ -1509,73 +1508,64 @@ letter-spacing: 1px
     Navigation
     ========================================================================== */
 
-    .footer {
-      float: left;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-    }
-
-    .footer li {
-      margin-left: 0;
-      font-family: 'TradeGothicCond';
-      font-size: 0.9em;
-      letter-spacing: 0.125em;
-      text-transform: uppercase;
-      float: left;
-    }
-
-    .footer li a {
-      display: inline;
-      padding: 0 0.625em;
-      border-right: 1px solid white;
-      color: #fff;
-      font-weight: bold
-    }
-
-    .footer li:last-child a { border: 0px; }
-
-    .footer li:first-child a { padding-left: 0; }
+.footer {
+	float: left;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.footer li {
+	margin-left: 0;
+	font-family: 'TradeGothicCond';
+	font-size: 0.9em;
+	letter-spacing: 0.125em;
+	text-transform: uppercase;
+	float: left;
+}
+.footer li a {
+	display: inline;
+	padding: 0 0.625em;
+	border-right: 1px solid white;
+	color: #fff;
+	font-weight: bold
+}
+.footer li:last-child a {
+	border: 0px;
+}
+.footer li:first-child a {
+	padding-left: 0;
+}
 
 /*  ==========================================================================
     Typography
     ========================================================================== */
 
-
-
-    .four-oh-four p {
-      font-size: 3em;
-      text-align: center;
-      line-height: 1.5em;
-      text-shadow: 0px 1px 0px #fff;
-      color: rgb(233, 233, 233);
-      font-weight: bold;
-      letter-spacing: -2px;
-    }
-
-    .four-oh-four a {
-      color: rgb(233, 233, 233);
-      -webkit-transition: all .1s linear;
-         -moz-transition: all .1s linear;
-           -o-transition: all .1s linear;
-              transition: all .1s linear;
-    }
-
-    .four-oh-four a:hover {
-        color: #002340;
-        -webkit-transition: all .1s linear;
-    }
-
-    .meta {
-      font-family: georgia;
-      font-style: italic;
-      font-size: 1.3em;
-    }
-
-
-
-
+.four-oh-four p {
+	font-size: 3em;
+	text-align: center;
+	line-height: 1.5em;
+	text-shadow: 0px 1px 0px #fff;
+	color: rgb(233, 233, 233);
+	font-weight: bold;
+	letter-spacing: -2px;
+}
+.four-oh-four a {
+	color: rgb(233, 233, 233);
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+}
+.four-oh-four a:hover {
+	color: #002340;
+	-webkit-transition: all .1s linear;
+}
+.meta {
+	font-family: georgia;
+	font-style: italic;
+	font-size: 1.3em;
+}
 
 /*  ==========================================================================
     Flexslider Styling
@@ -1673,158 +1663,147 @@ letter-spacing: 1px
     Media Queries
     ========================================================================== */
 
-    @media all and (max-width: 48em) {
-    	.flash {
-			font-size: 20px;
-		}
-		.pre-header {
-			padding:20px;
-		}
-		.nav li {
-			margin: 0 0.3em;
-		}
-		
-		.span-2,.span-1 {
-			width: 100%;
-		}
-		.to-give p {
-			width: 100%;
-			margin:20px 0 0 0;
-		}
-		.tumblr-feed, .ticker {
-			width: 50%;
-			float: left;
-		}
-		.robin-hood-stories {
-			padding: 20px;
-		}
-
-    }
-
-
-	@media all and (max-width: 30em) {
-
-		html {
-			font-size: 0.9em
-		}
-		
-		.brand{
-			display: none;
-		}
-		.brand-mobile {
-			display: block;
-			margin-top:-20px;
-			margin-bottom: 20px;
-		}
-		.nav-mobile {
-			display: block
-		}
-		.wrapper {
-			padding: 20px;
-		}
-		.pre-header {
-			padding: 20px 0 0 0;
-		}
-		.pre-header .donate {
-			padding-left: .5em;
-			padding-right: .5em
-		}
-		
-		.main {
-			border-top: 1px solid #345d96;
-			padding: 0;
-			background: none;
-		}
-		.outer-wrapper {
-			background: none;
-			margin-top: -20px;
-		}
-		.donate-btn {
-			display: none
-		}
-		.to-give {
-			padding: 0;
-		}
-		
-		.more {
-			float: left;
-			clear: both;
-			display: block;
-		}
-		.one-third, .left, .right,.one-half,.ticker,.timer,.tumblr-feed {
-			width: 100%
-		}
-		.timer {
-			background-position: center;
-		}
-		
-		
-		.arti {
-			width: 68%;
-			margin:0 auto;
-		}
-		.what-artists h2{
-			background-position: center top;
-			padding-top: 40px;
-		}
-		 .site li:nth-child(1), .site li:nth-child(2), .site li:nth-child(3), .site li:nth-child(4) {
-			display: none
-		}
-		.pre-header .separator{
-			display: none
-		}
-		.nav-mobile {
-			border-top: 1px solid #345d96;
-			border-bottom: 1px solid #345d96;
-			width: 100%;
-			height: 80px;
-			float: left;
-			clear: both;
-			margin-top: -6px;
-			background: url(img/grad.png) repeat-x;
-		}
-		.nav {
-			list-style: none;
-			text-align: center;
-			padding: 27px 0 0 0;
-			margin: 0;
-		}
-		.nav li {
-			display: inline;
-			margin-right: 0.2em;
-		}
-		.nav li:last-child {
-			margin-right: 0;
-		}
-		.nav li a {
-			display: inline-block;
-			font-family: 'TradeGothic';
-			font-size:18px;
-			text-transform: uppercase;
-			color: #fff;
-		}
-		.mobile-wrap,.twitter{
-			background: black
-		}
-		.twitter,.dynamic {
-			padding:40px;
-		}
-
-		.to-give:last-child {
-			background-position: 210px 0
-		}
-		.sponsor-list {
-			text-align: center;
-		}
-		h2 {
-			font-size: 18px
-		}
-		
-
-
-
-
+@media all and (max-width:54em) { /* 864 */
+	.menu-wrap nav {
+		float: left;
 	}
+}
+
+@media all and (max-width: 48em) { /* 768 */
+	.flash {
+		font-size: 20px;
+	}
+	.nav li {
+		margin: 0 0.3em;
+	}
+	.span-2,.span-1 {
+		width: 100%;
+	}
+	.to-give p {
+		width: 100%;
+		margin:20px 0 0 0;
+	}
+	.tumblr-feed, .ticker {
+		width: 50%;
+		float: left;
+	}
+	.robin-hood-stories {
+		padding: 20px;
+	}
+}
+
+@media all and (max-width: 30em) { /* 480 */ 
+	html {
+		font-size: 0.9em
+	}
+	.brand{
+		display: none;
+	}
+	.brand-mobile {
+		display: block;
+		margin-top:-20px;
+		margin-bottom: 20px;
+	}
+	.menu-wrap nav {
+		float: right;
+	}
+	.nav-mobile {
+		display: block
+	}
+	.wrapper {
+		padding: 20px;
+	}
+	.menu-wrap .donate {
+		padding-left: .5em;
+		padding-right: .5em
+	}
+	.main {
+		border-top: 1px solid #345d96;
+		padding: 0;
+		background: none;
+	}
+	.outer-wrapper {
+		background: none;
+		margin-top: -20px;
+	}
+	.donate-btn {
+		display: none
+	}
+	.to-give {
+		padding: 0;
+	}
+	.more {
+		float: left;
+		clear: both;
+		display: block;
+	}
+	.one-third, .left, .right,.one-half,.ticker,.timer,.tumblr-feed {
+		width: 100%
+	}
+	.timer {
+		background-position: center;
+	}
+	.arti {
+		width: 68%;
+		margin:0 auto;
+	}
+	.what-artists h2{
+		background-position: center top;
+		padding-top: 40px;
+	}
+	.site li:nth-child(1), .site li:nth-child(2), .site li:nth-child(3), .site li:nth-child(4) {
+		display: none
+	}
+	.pre-header .separator{
+		display: none
+	}
+	.nav-mobile {
+		border-top: 1px solid #345d96;
+		border-bottom: 1px solid #345d96;
+		width: 100%;
+		height: 80px;
+		float: left;
+		clear: both;
+		margin-top: -6px;
+		background: url(img/grad.png) repeat-x;
+	}
+	.nav {
+   		list-style: none;
+   		text-align: center;
+   		padding: 27px 0 0 0;
+   		margin: 0;
+	}
+	.nav li {
+		display: inline;
+		margin-right: 0.2em;
+	}
+	.nav li:last-child {
+		margin-right: 0;
+	}
+	.nav li a {
+		display: inline-block;
+		font-family: 'TradeGothic';
+		font-size:18px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	.mobile-wrap,.twitter{
+		background: black
+	}
+	.twitter,.dynamic {
+		padding:40px;
+	}
+	.to-give:last-child {
+		background-position: 210px 0
+	}
+	.sponsor-list {
+		text-align: center;
+	}
+	h2 {
+		font-size: 18px
+	}
+}
+
 #donate-popup{
     display: none;
     width: 460px;
