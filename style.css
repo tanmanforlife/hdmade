@@ -285,7 +285,13 @@ h2 .more:hover {
 	transform:rotate(45deg);
 	width:5px;
 }
-
+.no-csstransforms .more:after {
+	border-color: transparent transparent transparent inherit;
+	border-width:5px 0 5px 5px;
+	border-style:solid;
+	height:0;
+	width: 0;
+}
 /*  ==========================================================================
     Main Styling
     ========================================================================== */
@@ -601,6 +607,17 @@ margin-top: -18px;
 	-ms-transform:rotate(45deg);
 	-o-transform:rotate(45deg);
 	transform:rotate(45deg);
+}
+.no-csstransforms .flash.closed .close:after {
+	border-color: #000 transparent transparent transparent;
+	border-width:5px 5px 0px 5px;
+	border-style:solid;
+	height:0;
+	top:3px;
+	width: 0;
+}
+.no-csstransforms .flash.closed .close:hover:after {
+	border-color: #fff transparent transparent transparent;
 }
 
 /* =============================================================================
@@ -1163,6 +1180,17 @@ padding: 0 0 20px 0;
 	-ms-transform:rotate(-45deg);
 	-o-transform:rotate(-45deg);
 	transform:rotate(-45deg);
+}
+.no-csstransforms .sandy-store .link:after {
+	border-color: transparent transparent transparent #000;
+	border-width:5px 0 5px 5px;
+	border-style:solid;
+	height:0;
+	top:12px;
+	width: 0;
+}
+.no-csstransforms .sandy-store .link:hover:after {
+	border-color:transparent transparent transparent #fff;
 }
 
 /* =============================================================================
