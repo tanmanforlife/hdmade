@@ -203,7 +203,7 @@ $(window).load(function () {
     //Robin Hood Twitter Feed
         $.ajax({
         //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
-        url: 'json/robinhood.json?callback=parseRes',
+        url: 'json/robinhood_1.json?callback=parseRes',
         type: 'GET',
         dataType: 'jsonp',
         jsonpCallback: "parseRes",
@@ -334,7 +334,8 @@ $(window).load(function () {
     // Instagram
     var limit = 14;
     $.ajax({
-        url: 'http://121212-feed.hdmade.com/results.json',
+        //url: 'http://121212-feed.hdmade.com/results.json',
+        url: 'http://50.57.202.190:8080/social/instagram.json',
         dataType: "jsonp",
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
@@ -366,7 +367,8 @@ $(window).load(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() + $(window).height() == $(document).height()) {
             $.ajax({
-                url: 'http://121212-feed.hdmade.com/results.json',
+                //url: 'http://121212-feed.hdmade.com/results.json',
+                url: 'http://50.57.202.190:8080/social/instagram.json',
                 dataType: "jsonp",
                 jsonp: "parseResponse",
                 jsonpCallback: "parseResponse",
@@ -396,7 +398,8 @@ $(window).load(function () {
     });
 
     $.ajax({
-        url: 'http://121212-feed.hdmade.com/results.json',
+        //url: 'http://121212-feed.hdmade.com/results.json',
+        url: 'http://50.57.202.190:8080/social/instagram.json',
         dataType: "jsonp",
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
@@ -414,7 +417,8 @@ $(window).load(function () {
     setInterval(function () {
 
         $.ajax({
-            url: 'http://121212-feed.hdmade.com/results.json',
+            //url: 'http://121212-feed.hdmade.com/results.json',
+            url: 'http://50.57.202.190:8080/social/instagram.json',
             dataType: "jsonp",
             jsonp: "parseResponse",
             jsonpCallback: "parseResponse",
@@ -433,7 +437,7 @@ $(window).load(function () {
 
             }
         });
-    }, 10000);
+    }, 60000);
 });
 // Twitter helpers
 function decorateLinks(text)
