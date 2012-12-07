@@ -129,7 +129,7 @@
 		 * When inputting actual Vimeo videos here, please make sure they have a width of 571 and a height of 320.
 		 */
 	?>
-	<div class="celeb-videos">
+	<div class="celeb-videos flexslider-fade">
 		<ul class="slides cf">
 			<li class="celeb-video">
 				<div class="celeb-video-wrap">

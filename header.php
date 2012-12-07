@@ -63,9 +63,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 		<div class="error"></div>
 	</form>
 </div>
-<a href="#" class="sponsor-banner">
-	This is a sponsor banner
-</a>
+<div class="sponsor-banner flexslider-fade">
+	<ul class="slides cf">
+		<li><a href="#"><img src="img/header-logos/optimum.png" alt="Optimum Lightpath" title="Optimum Lightpath" /></a>
+			<a href="#"><img src="img/header-logos/samsung.png" alt="Samsung Galaxy" title="Samsung Galaxy" /></a>
+			<a href="#"><img src="img/header-logos/statefarm.png" alt="Statefarm" title="Statefarm" /></a>
+			<a href="#"><img src="img/header-logos/time-warner.png" alt="Time Warner Company" title="Time Warner Company" /></a>
+			<a href="#"><img src="img/header-logos/verizon.png" alt="Verizon Foundation" title="Verizon Foundation" /></a></li>
+	</ul>
+</div>
 <div class="flash">
 	<div>
 		<p></p>

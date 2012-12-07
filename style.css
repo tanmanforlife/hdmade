@@ -419,15 +419,28 @@ h3 {
 	position: relative;
 	width:100%;
 }
-.sponsor-banner .sections {
-	left:0;
-	position: absolute;
-	top:0;
-	white-space:nowrap;
+.sponsor-banner ul {
+	margin:0 auto;
+	max-width:1000px;
+	text-align: justify;
 }
-.sponsor-banner .section {
-	padding:0 10px;
-	float: left;
+.sponsor-banner ul li {
+	padding-top: 8px;
+	text-align: justify;
+}
+.sponsor-banner a {
+	display: inline-block;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+.sponsor-banner a:hover {
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+.sponsor-banner ul li:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
 }
 
 /* =============================================================================
@@ -632,6 +645,10 @@ object {
 
 .featured-img {
 	position: relative;
+}
+.featured-img {
+	max-height:371px;
+	overflow: hidden;
 }
 .featured-img .flex-direction-nav {
 	display:none;
@@ -973,9 +990,9 @@ p.samsung {
 	display: block;
 	text-align: center;
 	background: url(img/twitter-blue.png) no-repeat 28% 0%;
-line-height: 1em;
-margin-bottom: 40px;
-padding: 0 0 20px 0;
+	line-height: 1em;
+	margin-bottom: 40px;
+	padding: 0 0 20px 0;
 }
 .tweets-holding-space {
 	position:absolute;
@@ -1131,6 +1148,8 @@ padding: 0 0 20px 0;
 .celebs-sandy .flex-direction-nav a {
 	margin:-10px 0 0;
 }
+.flexslider-fade .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+
 
 /* =============================================================================
    Tell Them You Were There

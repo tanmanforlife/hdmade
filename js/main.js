@@ -1,14 +1,6 @@
 
 $(document).ready(function() {
-	
-
-        $('.sponsor-banner').simplemarquee({
-		speed: 5000,
-		direction: 'rtl',
-		pause:true
-    });
-
-    // Countdown Timer
+	    // Countdown Timer
    	var sinceYear = new Date('01/01/2005');
 
 	$('.timer').countdown("2012/12/12 19:00:00", function(event) {
@@ -104,11 +96,22 @@ $(document).ready(function() {
 
 $(window).load(function () {
 
- 
-
+	$('.sponsor-banner').flexslider({
+		animation:"fade",
+		animationLoop:true,
+		controlNav:false,
+		directionNav:true,
+		slideshow:true,
+		itemWidth: 200,
+		itemMargin:0,
+		minItems:1,
+		maxItems:5,
+		move:1
+	});
 
     // Featured Image Carousel Options
     jQuery('.featured-img li').fitVids();
+
     jQuery(".featured-img").flexslider({
         animation: "slide",
         animationLoop: false,
@@ -122,7 +125,7 @@ $(window).load(function () {
         before: function (slider) {
             if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0) $f(slider.slides.eq(slider.currentSlide).find('iframe').attr('id')).api('pause');
         }
-    });
+    }); 
 
 	// Tumblr Flexslider
 	jQuery(".stories").flexslider({
@@ -141,7 +144,7 @@ $(window).load(function () {
 	jQuery('.celeb-videos li').fitVids();
 	
 	$('.celeb-videos').flexslider({
-		animation:"slide",
+		animation:"fade", 
 		animationLoop: true,
 		smoothHeight:true,
 		useCSS: false,
@@ -152,8 +155,15 @@ $(window).load(function () {
 			$('.celeb-video').not('.clone').each(function(i, t) {
 				var activeSlide = $(t),
 					prevSlide = activeSlide.prev(),
-					nextSlide = activeSlide.next(),
-					prevVideo = prevSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone(),
+					nextSlide = activeSlide.next();
+				if(!prevSlide.length) {
+					prevSlide = $('.celeb-video').eq(($('.celeb-video').size())-1);
+				}
+				if(!nextSlide.length) {
+					nextSlide = $(".celeb-video").eq(0);
+				}
+				
+				var	prevVideo = prevSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone(),
 					nextVideo = nextSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone();
 				prevVideo.addClass('previous-iframe');
 				nextVideo.addClass('next-iframe');
