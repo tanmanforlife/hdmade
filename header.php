@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 			<input type="radio" name="amount" class="amount" value="10" /><label>$10</label>
 			<input type="radio" name="amount" class="amount" value="50" /><label>$50</label>
 			<input type="radio" name="amount" class="amount" value="100" /><label>$100</label>
-			<input type="radio" value="custom" class="custom" /> $&nbsp;<input type="text" name="amount" id="amazon_amount" value="" />
+			<span class="custom_wrap"><input type="radio" value="custom" class="custom" /> $&nbsp;<input type="text" name="amount" id="amazon_amount" value="" /></span>
 		</div>            
 		<input type="submit" id="submit_donate" class="btn donate" value="Donate" border="0">
 		<div class="error"></div>
