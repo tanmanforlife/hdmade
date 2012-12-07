@@ -29,7 +29,7 @@
 		<div class="mobile-wrap cf">
 
 			<div class="ways-to-donate cf">
-				<h2>Ways To Donate</h2>
+				<h2>Ways To Give</h2>
 						<div class="one-half to-give">
 							<a class="donate-btn btn-amazon">Amazon</a>
 							<p>Donate using your Amazon Account</p>
