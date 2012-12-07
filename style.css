@@ -464,19 +464,19 @@ h3 {
 	color:#0087d6;
 }
 .donate-btn {
-background: url(img/donate-btn.png);
-width: 229px;
-height: 45px;
-display: block;
-font-weight: bold;
-font-family: 'TradeGothic';
-font-size: 1.7em;
-color: white;
-text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
-text-transform: uppercase;
-padding-left: 95px;
-padding-top: 8px;
-float: left
+	background: url(img/donate-btn.png);
+	width: 229px;
+	height: 45px;
+	display: block;
+	font-weight: bold;
+	font-family: 'TradeGothic';
+	font-size: 1.7em;
+	color: white;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+	text-transform: uppercase;
+	padding-left: 95px;
+	padding-top: 8px;
+	float: left
 }
 .btn-twitter {
 	background-position: 228px 0;
@@ -485,14 +485,13 @@ float: left
 	padding: 20px 60px;
 }
 .to-give p{
-text-align: center;
-display: block;
-width: 124px;
-float: left;
-font-style: italic;
-margin-left: 20px;
-margin-top: -18px;
-
+	text-align: center;
+	display: block;
+	width: 124px;
+	float: left;
+	font-style: italic;
+	margin-left: 20px;
+	margin-top: -18px;
 }
 
 /* -----------------------
@@ -664,6 +663,12 @@ object {
 
 .featured-img {
 	position: relative;
+}
+.featured-img .flex-direction-nav {
+	display:none;
+}
+.featured-img:hover .flex-direction-nav {
+	display: block;
 }
 
 /* ==|== Top =================
