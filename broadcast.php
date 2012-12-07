@@ -10,7 +10,7 @@
 				<li>WE tv</li>
 				<li>Sundance Channel</li>
 				<li>Discovery (Destination America)</li>
-				<li>Discovery Fit & Health</li>
+				<li>Discovery Fit &amp; Health</li>
 				<li>HBO</li>
 				<li>HBO Latino</li>
 				<li>Fuse</li>

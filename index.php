@@ -191,16 +191,4 @@
 		</div> <!-- .right -->
 	</div> <!-- .wrapper -->
 </div> <!-- .robin-hood-stories -->
-<div class="sponsors cf">
-	<div class="wrapper">
-		<h3>Brought To You By</h3>
-		<ul class="sponsor-list">
-			<li data-sponsor="ClearChannel"><a href="#">ClearChannel</a></li>
-			<li data-sponsor="iHeartRadio"><a href="#">iHeartRadio</a></li>
-			<li data-sponsor="MSG"><a href="#">The Madison Square Garden Company</a></li>
-			<li data-sponsor="Robin Hood"><a href="#">Robin Hood</a></li>
-			<li data-sponsor="The Weinstein Company"><a href="#">The Weinstein Company</a></li>
-		</ul>
-	</div> <!-- .wrapper -->
-</div> <!-- .sponsors -->
 <?php include 'footer.php'; ?>
