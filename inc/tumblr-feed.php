@@ -22,7 +22,6 @@
 	$input = str_replace(';','',$input);
 	$value = json_decode($input, true);
 	
-	echo count($value);
 	for($i=0; $i < count($value); $i++){
 		$postUrl = $value[$i]['post_url'];
 		$tags = $value[$i]['tags'];
