@@ -372,7 +372,6 @@ $(window).load(function () {
     // Instagram
     var limit = 14;
     $.ajax({
-        //url: 'http://121212-feed.hdmade.com/results.json',
         url: 'http://50.57.202.190:8080/social/instagram.json',
         dataType: "jsonp",
         jsonp: "parseResponse",
@@ -405,7 +404,6 @@ $(window).load(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() + $(window).height() == $(document).height()) {
             $.ajax({
-                //url: 'http://121212-feed.hdmade.com/results.json',
                 url: 'http://50.57.202.190:8080/social/instagram.json',
                 dataType: "jsonp",
                 jsonp: "parseResponse",
@@ -436,7 +434,6 @@ $(window).load(function () {
     });
 
     $.ajax({
-        //url: 'http://121212-feed.hdmade.com/results.json',
         url: 'http://50.57.202.190:8080/social/instagram.json',
         dataType: "jsonp",
         jsonp: "parseResponse",
@@ -455,7 +452,6 @@ $(window).load(function () {
     setInterval(function () {
 
         $.ajax({
-            //url: 'http://121212-feed.hdmade.com/results.json',
             url: 'http://50.57.202.190:8080/social/instagram.json',
             dataType: "jsonp",
             jsonp: "parseResponse",
