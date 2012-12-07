@@ -89,7 +89,6 @@ $(document).ready(function() {
             return false;
         }
     })
-    
 
 });  // End Doc Ready
 
@@ -194,9 +193,33 @@ $(window).load(function () {
 			'marginTop': -1*(videoHeight/2)
 		});
 	});
-	
-    //Robin Hood Twitter Feed 
-    $('#js-robin-hood-tweets').jTweetsAnywhere({
+
+    //Robin Hood Twitter Feed
+        $.ajax({
+        //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
+        url: 'json/robinhood.json?callback=parseRes',
+        type: 'GET',
+        dataType: 'jsonp',
+        jsonpCallback: "parseRes",
+        success: function(data, textStatus, xhr) {
+             var items = [];
+              $.each(data, function(i, tweet) {
+                    var timeago = relative_time(tweet.created_at);
+                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-body "><span class="jta-tweet-text">' + decorateLinks(tweet.text) + '</span><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id+'">Retweet</a></span></div><div class="jta-clear">&nbsp;</div></li>');
+              });
+
+              $('<ul/>', {
+                    'class': 'jta-tweet-list',
+                    html: items.join('')
+              }).appendTo('#js-robin-hood-tweets');
+        },
+        error : function(httpReq,status,exception){
+            console.log(status+" "+exception);
+        }
+
+    });
+    
+    /*$('#js-robin-hood-tweets').jTweetsAnywhere({
         username: 'robinhoodnyc',
         count: 3,
         showTweetFeed: {
@@ -223,8 +246,8 @@ $(window).load(function () {
             }
             return false;
         }
-    });
-
+    });*/
+    
     // Artists Twitter Feed and Slider 
     $('.artists-tweets').jTweetsAnywhere({
         username: '121212concert',  // Usage: For more than one Twitter feed - ['handle1' , 'handle2' , 'handle3'] etc. 
@@ -303,7 +326,6 @@ $(window).load(function () {
 	})
 
     // Instagram
-    
     var limit = 14;
     $.ajax({
         url: 'http://121212-feed.hdmade.com/results.json',
@@ -407,3 +429,42 @@ $(window).load(function () {
         });
     }, 10000);
 });
+// Twitter helpers
+function decorateLinks(text)
+{
+        /** the regex to markup links */
+        var decorated = text.replace(/((ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?)/gi,'<a href="$1" class="jta-tweet-a jta-tweet-link" target="_blank" rel="nofollow">$1<\/a>');
+        decorated = decorated.replace(/\B@(\w+)/gi,'@<a href="http://twitter.com/$1" class="jta-tweet-a twitter-anywhere-user" target="_blank" rel="nofollow">$1<\/a>');
+        decorated = decorated.replace(/#([a-zA-Z0-9_]+)/gi,'<a href="http://search.twitter.com/search?q=%23$1" class="jta-tweet-a jta-tweet-hashtag" title="#$1" target="_blank" rel="nofollow">#$1<\/a>');
+
+        return decorated;
+}
+function relative_time(date_str) {
+    if (!date_str) {return;}
+    date_str = $.trim(date_str);
+    date_str = date_str.replace(/\.\d\d\d+/,""); // remove the milliseconds
+    date_str = date_str.replace(/-/,"/").replace(/-/,"/"); //substitute - with /
+    date_str = date_str.replace(/T/," ").replace(/Z/," UTC"); //remove T and substitute Z with UTC
+    date_str = date_str.replace(/([\+\-]\d\d)\:?(\d\d)/," $1$2"); // +08:00 -> +0800
+    var parsed_date = new Date(date_str);
+    var relative_to = (arguments.length > 1) ? arguments[1] : new Date(); //defines relative to what ..default is now
+    var delta = parseInt((relative_to.getTime()-parsed_date)/1000);
+    delta=(delta<2)?2:delta;
+    var r = '';
+    if (delta < 60) {
+    r = delta + ' seconds ago';
+    } else if(delta < 120) {
+    r = '1 minute ago';
+    } else if(delta < (45*60)) {
+    r = (parseInt(delta / 60, 10)).toString() + ' minutes ago';
+    } else if(delta < (2*60*60)) {
+    r = '1 hour ago';
+    } else if(delta < (24*60*60)) {
+    r = '' + (parseInt(delta / 3600, 10)).toString() + ' hours ago';
+    } else if(delta < (48*60*60)) {
+    r = '1 day ago';
+    } else {
+    r = (parseInt(delta / 86400, 10)).toString() + ' days ago';
+    }
+    return  r;
+};
