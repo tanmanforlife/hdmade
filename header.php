@@ -79,13 +79,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 	</div>
 </div>
 <div class="top">
-	<script type="text/javascript">
+	<!--script type="text/javascript">
 	function parseBannerText(data){
 		if(data.hasOwnProperty('banner_text'))
 			$(document).ready(function(){ $('.flash p').html(data.banner_text) });
 	}
 	</script>
-	<script type="text/javascript" src="json/banner_text.json"></script>
+	<script type="text/javascript" src="json/banner_text.json"></script-->
 	<?php /* ?>
    	<div class="pre-header">
         <div class="wrapper cf">

@@ -13,14 +13,14 @@
 		return $words;
 	}
 	
-	$request = 'http://50.57.202.190:8080/121212-services/tumblr.json';
+	$request = 'http://50.57.202.190:8080/social/tumblr.json';
 	
 	$ci = curl_init($request);
 	curl_setopt($ci, CURLOPT_RETURNTRANSFER, TRUE);
 	$input = curl_exec($ci);
 	$input = str_replace('var tumblr_api_read = ','',$input);
 	$input = str_replace(';','',$input);
-	$value = json_decode($input, true);
+	$value = jsonp_decode($input, true);
 	
 	for($i=0; $i < count($value); $i++){
 		$postUrl = $value[$i]['post_url'];
@@ -75,5 +75,12 @@
 			</li>
 		<?php }
 	}
-	*/ 
+	*/
+
+function jsonp_decode($jsonp, $assoc = false) { // PHP 5.3 adds depth as third parameter to json_decode
+    if($jsonp[0] !== '[' && $jsonp[0] !== '{') { // we have JSONP
+       $jsonp = substr($jsonp, strpos($jsonp, '('));
+    }
+    return json_decode(trim($jsonp,'();'), $assoc);
+}
 ?>

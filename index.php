@@ -5,8 +5,8 @@
 		<div class="outer-wrapper cf">
 			<section class="g span-2 featured-img">
 				<ul class="slides">
-					<li><img src="carousel-images/carousel_1.jpg" alt="" /></li>
-					<li><img src="carousel-images/carousel_1.jpg" alt="" /></li>
+					<li><img src="carousel-images/carousel_1.jpg" alt="" height="360" width="640" /></li>
+					<li><img src="carousel-images/carousel_1.jpg" alt="" height="360" width="640" /></li>
 				</ul> <!-- .slides -->
 			</section> <!-- .g.span-2.featured-img -->
 			<div class="nav-mobile" aria-hidden="true">
@@ -111,7 +111,7 @@
 </div> <!-- .top -->
 <div class="what-artists">
 	<div class="wrapper cf">
-		<h2>Twitter #121212concert</h2>
+		<h2><span><span class="icon-twitter"></span>Twitter #121212concert</span></h2>
 		<div class="tweets-holding-space"></div>
 		<div class="arti">
 			<div class="artists-tweets">
