@@ -25,9 +25,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
         <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="icon" type="image/png" href="img/favicon.png" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!--<link rel="stylesheet" href="style.css" type="text/css"-->
+    <link rel="stylesheet" href="css/min.css" type="text/css">
+    
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
 	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
         <script type="text/javascript" src="js/selectivizr.min.js"></script>
