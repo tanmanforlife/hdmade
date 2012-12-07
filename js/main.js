@@ -113,7 +113,7 @@ $(window).load(function () {
 
     jQuery(".featured-img").flexslider({
         animation: "slide",
-        animationLoop: false,
+        animationLoop: true,
         smoothHeight: true,
         useCSS: false,
         controlNav: false,
