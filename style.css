@@ -785,6 +785,10 @@ span.jta-tweet-action-retweet a{
 	padding-left: 30px;
 	text-align: left;
 }
+.instagram-feed {
+	margin-right: 3.4%;
+	width:65.6%;
+}
 .ig {
 	border-color:#010101;
 	border-style:solid;
@@ -794,6 +798,9 @@ span.jta-tweet-action-retweet a{
 }
 .ig-1 {
 	width:50%;
+}
+.ig-6 {
+	clear: left;
 }
 .ig img {
 	display: block;
