@@ -1,3 +1,4 @@
+<?php $body_class = 'home'; ?>
 <?php include 'header.php'; ?>
 <?php /*
 <div class="top">
@@ -11,7 +12,7 @@
 			</section> <!-- .g.span-2.featured-img -->
 			<div class="nav-mobile" aria-hidden="true">
 				<ul class="nav">
-					<li><a href="#">#121212 Concert</a></li>
+					<li><span class="separator">#121212 Concert</span></li>
 					<li><a href="broadcast.php" target="_blank">Watch on TV</a></li>
 					<li><a href="social.php" target="_blank">Social</a></li>
 					<li><a href="#" target="_blank">Shop</a></li>
@@ -29,7 +30,7 @@
 				<div class="table to-give">
 					<div class="tr">
 						<div class="td">
-							<a class="btn donate" href="#">Amazon</a>
+							<a class="btn donate" href="#">Donate</a>
 						</div>
 						<div class="td">
 							<p>Donate using your Amazon Account</p>

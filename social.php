@@ -1,3 +1,4 @@
+<?php $body_class = 'social-page'; ?>
 <?php include 'header.php'; ?>
 <h1 class="page-title">Participate</h1>
 	<div class="participate cf">

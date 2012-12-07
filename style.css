@@ -1854,6 +1854,11 @@ header {
     Media Queries
     ========================================================================== */
 
+@media all and (max-width:1090px) {
+	.sponsor-banner {
+		padding:0 10px;
+	}
+}
 @media all and (max-width:64em) { /* 1024 */
 	
 }
@@ -1887,7 +1892,7 @@ header {
 	}
 }
 
-@media all and (max-width: 767px) { 
+@media all and (max-width: 640px) { 
 	html {
 		font-size: 0.9em
 	}
@@ -1919,12 +1924,20 @@ header {
 	/* -----------------------
 	-- Header -- */
 	
-	header.table {
+	.home header.table {
 		margin:0 10px;
 		padding-top: 20px;
 	}
-	.menu-wrap {
+	header.table {
+		margin:0;
+		padding-top: 20px;
+	}
+	.home .menu-wrap {
 		padding:0 10px 25px;
+	}
+	.menu-wrap {
+		padding-left:0;
+		padding-right:0;
 	}
 	.menu-wrap nav {
 		float: right;
@@ -1939,10 +1952,13 @@ header {
 		padding-left: .5em;
 		padding-right: .5em
 	}
-	.main {
+	.home .main {
 		border-top: 1px solid #345d96;
 		padding: 0;
 		background: none;
+	}
+	.main {
+		padding:10px;
 	}
 	.outer-wrapper {
 		background: none;
@@ -1992,18 +2008,35 @@ header {
 	.nav li:last-child {
 		margin-right: 0;
 	}
-	.nav li a {
+	.nav li a,
+	.nav li .separator {
 		display: inline-block;
 		font-family: 'TradeGothic';
 		font-size:18px;
 		text-transform: uppercase;
 		color: #fff;
 	}
+	footer .nav li a {
+		display: inline-block;
+		font-family: 'TradeGothic';
+		font-size:12px;
+		text-transform: uppercase;
+		color: #fff;
+		letter-spacing:0;
+		padding:0 12px 0 2px;
+	}
 	.nav li a:hover {
 		color:#bce723;
 	}
 	.mobile-wrap,.twitter{
 		background: black
+	}
+	
+	/* -----------------------
+	-- Hero -- */
+	
+	.featured-img img {
+		height:auto;
 	}
 	
 	/* -----------------------
@@ -2176,11 +2209,26 @@ header {
 	h2 {
 		font-size: 18px;
 	}
-        #donate-popup .amounts input[type=radio]{
-            margin-right: 5px;
-        }
-        #donate-popup .amounts input[type=text]{
-            width: 50px;
-            padding: 2px;
-        }
+    #donate-popup .amounts input[type=radio]{
+        margin-right: 5px;
+    }
+    #donate-popup .amounts input[type=text]{
+        width: 50px;
+        padding: 2px;
+    }
+	
+	/* -----------------------
+	-- Social page -- */
+	
+	.social-page .page-title {
+		margin-top: 30px;
+	}
+	.participate {
+		margin-top: 30px;
+	}
+	.social-page .one-fourth {
+		height:auto;
+		margin-bottom: 20px;
+		width:50%;
+	}
 }
