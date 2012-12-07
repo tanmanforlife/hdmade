@@ -117,6 +117,7 @@ $(window).load(function () {
         controlNav: false,
         directionNav: true,
         slideshow: true,
+		slideshowSpeed: 5000,
         touch: false,
         before: function (slider) {
             if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0) $f(slider.slides.eq(slider.currentSlide).find('iframe').attr('id')).api('pause');
