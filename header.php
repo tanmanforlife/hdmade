@@ -25,8 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
         <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!--<link rel="stylesheet" href="style.css" type="text/css"-->
-    <link rel="stylesheet" href="css/min.css" type="text/css">
+    <link rel="stylesheet" href="style-min.css" type="text/css">
     
     <link rel="icon" type="image/png" href="img/favicon.png">
 
