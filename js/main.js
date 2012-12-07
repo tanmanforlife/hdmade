@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
 
     // Countdown Timer
-                    var sinceYear = new Date('01/01/2005');
+   	var sinceYear = new Date('01/01/2005');
 
 	$('.timer').countdown("2012/12/12 19:00:00", function(event) {
 		var $this = $(this);
@@ -114,7 +114,7 @@ $(window).load(function () {
         animationLoop: false,
         smoothHeight: true,
         useCSS: false,
-        controlNav: true,
+        controlNav: false,
         directionNav: true,
         slideshow: true,
         touch: false,
