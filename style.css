@@ -2185,6 +2185,7 @@ header {
         }
         #donate-popup .amounts label {
             margin-right: 10px;
+            font-size: 0.8em;
         }
         #donate-popup p{
             padding: 0 10px 10px 10px;
@@ -2200,6 +2201,6 @@ header {
             margin-bottom: 10px;
         }
         .donate-modal .fancybox-inner{
-            height: 210px !important;
+            height: 310px !important;
         }
 }
