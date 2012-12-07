@@ -12,14 +12,41 @@
 		// Return the result
 		return $words;
 	}
-	$request = 'http://robinhoodnyc.tumblr.com/api/read/json';
+	
+	$request = 'http://50.57.202.190:8080/121212-services/tumblr.json';
+	
 	$ci = curl_init($request);
 	curl_setopt($ci, CURLOPT_RETURNTRANSFER, TRUE);
 	$input = curl_exec($ci);
 	$input = str_replace('var tumblr_api_read = ','',$input);
 	$input = str_replace(';','',$input);
 	$value = json_decode($input, true);
+	
+	print_r($value);
+
+	echo count($value);
+	for($i=0; $i < count($value); $i++){
+		$postUrl = $value[$i]['post_url'];
+		$tags = $value[$i]['tags'];
+		$photoUrl = $value[$i]['img_url'];
+		$photoCaption = $value[$i]['caption'];
+		$photoCaption = strip_tags($photoCaption);
+
+		?>
+		<li class="">
+				<div class="item-wrap">
+					<div class="content">
+						<a href="<?php echo $post['url'] ?>"><img src="<?php echo $photoUrl ?>" alt="tumblr photo" /></a>
+						<p><? echo limit_words($photoCaption, 20); ?></p>
+					</div>
+				</div>
+			</li>
+		<?php
+	}
+
+	/*
 	$content =  $value['posts'];
+	
 	foreach ($content as $post) {
 		$type = $post['type'];
 		if ($post['type'] == 'regular' && in_array('sandyrelief', $post['tags'])) {
@@ -37,7 +64,7 @@
 			</li>
 		<?php }
 		if ($post['type'] == 'photo' && in_array('sandyrelief', $post['tags'])) {
-			$photoUrl = $post['photo-url-400'];
+			$photoUrl = $post['img_url'];
 			$photoCaption = $post['photo-caption'];
 			$photoCaption = strip_tags($photoCaption);
 			?>
@@ -50,5 +77,6 @@
 				</div>
 			</li>
 		<?php }
-	} 
+	}
+	*/ 
 ?>
