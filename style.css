@@ -2102,8 +2102,8 @@ header {
 
 #donate-popup{
     display: none;
-    width: 460px;
-    height: 300px;
+    max-width: 460px;
+    min-height: 300px;
     text-align: center;
 }
 #donate-popup p{
