@@ -26,14 +26,24 @@
 		<div class="mobile-wrap cf">
 			<div class="ways-to-donate cf">
 				<h2>Ways To Give</h2>
-				<div class="one-half to-give">
-					<a class="donate-btn btn-amazon" href="#">Amazon</a>
-					<p>Donate using your Amazon Account</p>
-				</div> <!-- .text-to-give -->
-				<div class="one-half to-give">
-					<a class="donate-btn btn-twitter" href="">Twitter</a>
-					<p>Tweet #givey #121212concert to donate</p>
-				</div> <!-- .amazon -->
+				<div class="table to-give">
+					<div class="tr">
+						<div class="td">
+							<a class="btn donate" href="#">Amazon</a>
+						</div>
+						<div class="td">
+							<p>Donate using your Amazon Account</p>
+						</div>
+						<div class="td">
+							<a class="btn donate" href="">
+								<span class="icon-twitter"></span>Twitter
+							</a>
+						</div>
+						<div class="td">	
+							<p>Tweet #givey #121212concert to donate</p>
+						</div>
+					</div> <!-- .tr -->
+				</div> <!-- .table.to-give -->
 			</div> <!-- .ways-to-donate -->
 			<div class="dynamic cf">
 				<div class="g span-2 instagram-feed">
@@ -119,7 +129,7 @@
 		 * When inputting actual Vimeo videos here, please make sure they have a width of 571 and a height of 320.
 		 */
 	?>
-	<div class="celeb-videos">
+	<div class="celeb-videos flexslider-fade">
 		<ul class="slides cf">
 			<li class="celeb-video">
 				<div class="celeb-video-wrap">

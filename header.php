@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>121212 Concert</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--[if IE]>
         <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -63,9 +63,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 		<div class="error"></div>
 	</form>
 </div>
-<a href="#" class="sponsor-banner">
-	This is a sponsor banner
-</a>
+<div class="sponsor-banner flexslider-fade">
+	<ul class="slides cf">
+		<li><a href="#"><img src="img/header-logos/optimum.png" alt="Optimum Lightpath" title="Optimum Lightpath" /></a>
+			<a href="#"><img src="img/header-logos/samsung.png" alt="Samsung Galaxy" title="Samsung Galaxy" /></a>
+			<a href="#"><img src="img/header-logos/statefarm.png" alt="Statefarm" title="Statefarm" /></a>
+			<a href="#"><img src="img/header-logos/time-warner.png" alt="Time Warner Company" title="Time Warner Company" /></a>
+			<a href="#"><img src="img/header-logos/verizon.png" alt="Verizon Foundation" title="Verizon Foundation" /></a></li>
+	</ul>
+</div>
 <div class="flash">
 	<div>
 		<p></p>
@@ -113,13 +119,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 			<a href="#donate-popup" class="btn donate donate-modal-link">Donate</a>
 			<nav class="" role="navigation">
 				<ul class="nav site">
-					<li><a href="#">#121212 Concert</a></li>
+					<li><span class="separator">#121212Concert</span></li>
 					<li><a href="broadcast.php" target="_blank">Watch on TV</a></li>
 					<li><a href="social.php" target="_blank">Social</a></li>
 					<li><a href="#" target="_blank">Shop</a></li>
 					<li><span class="separator">|</span></li>
 					<li class="share"><a href="#">Share</a></li>
-					<li class="share share-fb"><a href="#" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
+					<li class="share share-fb"><a href="http://www.facebook.com/sharer.php?u=<?php echo urlencode('http://www.121212concert.org'); ?>" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
 					<li class="share share-tw"><a href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
 				</ul> <!-- .nav -->
 			</nav> <!-- g four-fifths -->
