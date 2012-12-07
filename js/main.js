@@ -241,8 +241,7 @@ $(window).load(function () {
 			});
 			
     	},
-        onFeedPopulationHandler: function(invocations)
-        {
+        onFeedPopulationHandler: function(invocations) {
         	var tweets_html = $('.jta-tweet-flexslider .flex-viewport .jta-tweet-list').html();
 			$('.jta-tweet-flexslider').remove();
 			$('.artists-tweets .jta-tweet-list-controls').before('<div class="jta-tweet-flexslider"></div>');

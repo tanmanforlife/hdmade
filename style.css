@@ -456,9 +456,9 @@ h3 {
 .menu-wrap .donate {
 	color:#fff;
 	float: left;
-	font-size:28px;
+	font-size:38px;
 	line-height:1;
-	padding:.5em 2em .3em;
+	padding:8px 46px 4px;
 }
 .menu-wrap .donate:hover {
 	color:#0087d6;
@@ -1735,6 +1735,10 @@ header {
 /*  ==========================================================================
     Media Queries
     ========================================================================== */
+
+@media all and (max-width:64em) { /* 1024 */
+	
+}
 
 @media all and (max-width:54em) { /* 864 */
 	.menu-wrap nav {
