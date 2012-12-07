@@ -826,6 +826,8 @@ img.show {
 }
 .item-wrap p {
 	font-style: italic;
+	font-family:Georgia, Times, serif;
+	font-size:15px;
 }
 .tumblr-feed a.flex-next, .tumblr-feed a.flex-prev  {
 	top:50%;

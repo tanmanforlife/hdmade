@@ -124,6 +124,19 @@ $(window).load(function () {
         }
     });
 
+	// Tumblr Flexslider
+	jQuery(".stories").flexslider({
+        animation: "slide",
+        animationLoop: false,
+        smoothHeight: true,
+        useCSS: false,
+        controlNav: false,
+        directionNav: true,
+        slideshow: true,
+		slideshowSpeed: 5000,
+        touch: false,
+    });
+
 	// Celev Videos Slider Options
 	jQuery('.celeb-videos li').fitVids();
 	
