@@ -276,7 +276,8 @@ $(window).load(function () {
     });
 
     // Instagram
-    /*var limit = 14;
+    
+    var limit = 14;
     $.ajax({
         url: 'http://121212-feed.hdmade.com/results.json',
         dataType: "jsonp",
@@ -324,7 +325,7 @@ $(window).load(function () {
             });
             limit += 15;
         }
-    });*/
+    });
 
     // Flash Message Close
     $('a.close').click(function (event) {
