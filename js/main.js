@@ -200,6 +200,25 @@ $(window).load(function () {
                 controlNav: false
        });
 
+
+    function getBannerText(){
+        $.ajax({
+            url: 'json/banner_text.json',
+            type: 'GET',
+            dataType: 'jsonp',
+            jsonpCallback: "parseBannerText",
+            success: function(data, textStatus, xhr) {
+                 if(data.hasOwnProperty('banner_text'))
+                            $(document).ready(function(){ $('.flash p').html(data.banner_text) });
+            },
+            error : function(httpReq,status,exception){
+                console.log(status+" "+exception);
+            }
+
+        });
+    }
+    getBannerText();
+
     //Robin Hood Twitter Feed
      $.ajax({
         //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
@@ -453,6 +472,8 @@ $(window).load(function () {
     });
 
     setInterval(function () {
+
+        getBannerText();
 
         $.ajax({
             //url: 'http://121212-feed.hdmade.com/results.json',
