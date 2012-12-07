@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
     <![endif]-->
 
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
     <!--[if (gte IE 6)&(lte IE 8)]>
