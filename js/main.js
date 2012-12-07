@@ -194,6 +194,12 @@ $(window).load(function () {
 		});
 	});
 
+       $('.tumblr-feed .stories').flexslider({
+		animation:"slide",
+		animationLoop: true,
+                controlNav: false
+       });
+
     //Robin Hood Twitter Feed
         $.ajax({
         //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
