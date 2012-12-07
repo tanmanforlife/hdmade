@@ -1,0 +1,27 @@
+CSS='../../'
+JS='../../js'
+FILELIST="minify.$$.tmp"
+COMPORESSOR="yuicompressor-2.4.2.jar"
+MINCSS="../../styles.min.css"
+
+# Minify CSS to single file
+echo -n '' > $MINCSS
+ls $CSS | grep -v min > $FILELIST
+while read LINE
+do
+  OLD="../../style.css"    
+  echo "$OLD -> $MINCSS"
+  java -jar yuicompressor-2.4.2.jar $OLD >> $MINCSS    
+done < $FILELIST
+
+# Minify JS to multiple files
+#ls $JS | grep -v min > $FILELIST
+#while read LINE
+#do
+#  OLD="$JS/$LINE"
+#  NEW=` echo "$JS/$LINE" | sed 's/.js/.min.js/g'`    
+#  echo "$OLD -> $NEW"
+#  java -jar yuicompressor-2.4.2.jar $OLD > $NEW    
+#done < $FILELIST
+
+rm -f $FILELIST
