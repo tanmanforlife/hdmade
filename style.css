@@ -187,19 +187,18 @@
 
 .donate {
 	background: #b4dc2b;
-	background: -moz-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b4dc2b), color-stop(51%, #b4dc2b), color-stop(51%, #a1c53c), color-stop(100%, #a1c53c));
-	background: -webkit-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: -o-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: -ms-linear-gradient(top, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	background: linear-gradient(to bottom, #b4dc2b 0%, #b4dc2b 51%, #a1c53c 51%, #a1c53c 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4dc2b', endColorstr='#a1c53c',GradientType=0 );
-	font-size: 2.2rem
+	-moz-box-shadow:0px -25px rgba(0,0,0,0.11) inset;
+	-webkit-box-shadow:0px -25px rgba(0,0,0,0.11) inset;
+	-o-box-shadow:0px -25px rgba(0,0,0,0.11) inset;
+	-ms-box-shadow:0px -25px rgba(0,0,0,0.11) inset;
+	box-shadow:0px -25px rgba(0,0,0,0.11) inset;
+	color:#fff;
+	font-size: 2.2rem;
 }
 
 .donate:hover {
-	color:#0087d6;
-	text-shadow:none;
+	background-color:#0087d6;
+	color:#fff;
 	-webkit-transition: all 0.1s ease-out;
 	-moz-transition: all 0.1s ease-out;
 	-o-transition: all 0.1s ease-out;
@@ -461,37 +460,7 @@ h3 {
 	padding:8px 46px 4px;
 }
 .menu-wrap .donate:hover {
-	color:#0087d6;
-}
-.donate-btn {
-	background: url(img/donate-btn.png);
-	width: 229px;
-	height: 45px;
-	display: block;
-	font-weight: bold;
-	font-family: 'TradeGothic';
-	font-size: 1.7em;
-	color: white;
-	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
-	text-transform: uppercase;
-	padding-left: 95px;
-	padding-top: 8px;
-	float: left
-}
-.btn-twitter {
-	background-position: 228px 0;
-}
-.to-give {
-	padding: 20px 60px;
-}
-.to-give p{
-	text-align: center;
-	display: block;
-	width: 124px;
-	float: left;
-	font-style: italic;
-	margin-left: 20px;
-	margin-top: -18px;
+	color:#fff;
 }
 
 /* -----------------------
@@ -758,7 +727,32 @@ span.jta-tweet-action-retweet a{
 .ways-to-donate .td {
 	padding:0 1%;
 	text-align: center;
+	vertical-align: middle;
 	width:25%;
+}
+.to-give {
+	margin-bottom: 20px;
+	width:100%;
+}
+.ways-to-donate .btn {
+	display: block;
+	font-size:36px;
+	line-height:36px;
+	padding:8px 0 6px;
+	width:100%;
+}
+.ways-to-donate .icon-twitter:before {
+	font-size:0.8em;
+	padding-right: 10px;
+}
+.to-give p{
+	text-align: center;
+	display: block;
+	font-style: italic;
+	font-family:"Georgia", Times, serif;
+	font-size:15px;
+	max-width:125px;
+	margin:0 auto;
 }
 
 /* =============================================================================
@@ -1889,11 +1883,20 @@ header {
 		margin-left:auto;
 		margin-right: auto;
 	}
-	.to-give:last-child {
-		background-position: 210px 0
-	}
 	.to-give p {
 		margin:10px 0 20px;
+		max-width:100%;
+	}
+	.to-give .btn {
+		max-width:75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.to-give,
+	.to-give .tr,
+	.to-give .td {
+		display: block;
+		width:100%;
 	}
 	
 	/* -----------------------
