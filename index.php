@@ -114,17 +114,16 @@
 				</div> <!-- .artists-tweets -->
 
 			</div> <!-- .arti -->
-															<a href="https://twitter.com/search?q=%23121212concert" class="see-all" target="_blank">See All</a>
-
+			<a href="https://twitter.com/search?q=%23121212concert" class="see-all" target="_blank">See All</a>
 		</div> <!-- .wrapper -->
 	</div> <!-- .what-artists -->
 	<div class="celebs-sandy">
-		<?php function getVimeoThumb($id) {
-			$data = file_get_contents("http://vimeo.com/api/v2/video/$id.json");
-			$data = json_decode($data);
-			return $data[0]->thumbnail_large;
-		} ?>
-		<h2>Celebs on Sandy</h2>
+		<h2>Why We Are Doing This</h2>
+		<?php
+			/** 
+			 * When inputting actual Vimeo videos here, please make sure they have a width of 571 and a height of 320.
+			 */
+		?>
 		<div class="celeb-videos">
 			<ul class="slides cf">
 				<li class="celeb-video">
