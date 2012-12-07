@@ -37,7 +37,7 @@
 			</div> <!-- .ways-to-donate -->
 			<div class="dynamic cf">
 				<div class="g span-2 instagram-feed">
-					<h2>#121212Concert on Instagram<a href="instagram.php" class="more" target="_blank">See All</a></h2>
+					<h2>Instagram #121212Concert<a href="instagram.php" class="more" target="_blank">See All</a></h2>
 					<div class="instagram-grid clearfix">
 						<ul id="js-instagram" class="instagram">
 						<?php for ($i=1; $i <= 9; $i++) { ?>
