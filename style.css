@@ -2209,34 +2209,49 @@ header {
 	h2 {
 		font-size: 18px;
 	}
-        #donate-popup .amounts input[type=radio]{
-            margin-right: 5px;
-        }
-        #donate-popup .amounts input[type=text]{
-            width: 50px;
-            padding: 2px;
-        }
-        #donate-popup .amounts label {
-            margin-right: 10px;
-            font-size: 0.8em;
-        }
-        #donate-popup p{
-            padding: 0 10px 10px 10px;
-            font-family:"Georgia", serif;
-            font-style: italic;
-            font-size: 0.8em;
-            margin: 0;
-        }
-        #donate-popup h1{
-            margin: 0.2em 0;
-        }
-        #donate-popup .amounts{
-            margin-bottom: 10px;
-        }
-        #donate-popup .custom_wrap{
-            display: block;
-        }
-        .donate-modal .fancybox-inner{
-            height: 310px !important;
-        }
+	
+	/* -----------------------
+		-- Social page -- */
+
+	.social-page .page-title {
+		margin-top: 30px;
+	}
+	.participate {
+		margin-top: 30px;
+	}
+	.social-page .one-fourth {
+		height:auto;
+		margin-bottom: 20px;
+		width:50%;
+	}
+       #donate-popup .amounts input[type=radio]{
+           margin-right: 5px;
+       }
+       #donate-popup .amounts input[type=text]{
+           width: 50px;
+           padding: 2px;
+       }
+       #donate-popup .amounts label {
+           margin-right: 10px;
+           font-size: 0.8em;
+       }
+       #donate-popup p{
+           padding: 0 10px 10px 10px;
+           font-family:"Georgia", serif;
+           font-style: italic;
+           font-size: 0.8em;
+           margin: 0;
+       }
+       #donate-popup h1{
+           margin: 0.2em 0;
+       }
+       #donate-popup .amounts{
+           margin-bottom: 10px;
+       }
+       #donate-popup .custom_wrap{
+           display: block;
+       }
+       .donate-modal .fancybox-inner{
+           height: 310px !important;
+       }
 }
