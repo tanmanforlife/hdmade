@@ -251,6 +251,7 @@ $(window).load(function () {
 				itemMargin:0,
 				minItems:1,
 				maxItems:3,
+				slideshow:false,
 				move:1
 			});
 			
@@ -268,6 +269,7 @@ $(window).load(function () {
 				itemWidth: 333,
 				itemMargin:0,
 				minItems:1,
+				slideshow:false,
 				maxItems:3,
 				move:1
 			}).css('opacity', 1);
