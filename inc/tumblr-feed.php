@@ -13,7 +13,7 @@
 		return $words;
 	}
 	
-	$request = 'http://50.57.202.190:8080/121212-services/tumblr.json';
+	$request = 'http://50.57.202.190:8080/social/tumblr.json';
 	
 	$ci = curl_init($request);
 	curl_setopt($ci, CURLOPT_RETURNTRANSFER, TRUE);
