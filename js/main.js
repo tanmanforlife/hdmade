@@ -329,8 +329,15 @@ $(window).load(function () {
 
     // Flash Message Close
     $('a.close').click(function (event) {
+		$('.flash').toggleClass('closed');
+		if($('.flash').hasClass('closed')) {
+			$('.flash .close').html('Expand');
+			$('.flash p').slideUp();
+		} else {
+			$('.flash .close').html('<span>x</span>');
+			$('.flash p').slideDown();
+		}
     	event.preventDefault();
-        $('.flash').slideUp();
     });
 
     $.ajax({
