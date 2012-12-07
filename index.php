@@ -27,18 +27,18 @@
 			<div class="ways-to-donate cf">
 				<h2>Ways To Give</h2>
 				<div class="one-half to-give">
-					<a class="donate-btn btn-amazon">Amazon</a>
+					<a class="donate-btn btn-amazon" href="#">Amazon</a>
 					<p>Donate using your Amazon Account</p>
 				</div> <!-- .text-to-give -->
 				<div class="one-half to-give">
-					<a class="donate-btn btn-twitter">Twitter</a>
+					<a class="donate-btn btn-twitter" href="">Twitter</a>
 					<p>Tweet #givey #121212concert to donate</p>
 				</div> <!-- .amazon -->
 			</div> <!-- .ways-to-donate -->
 			<div class="dynamic cf">
 				<div class="g span-2 instagram-feed">
 					<h2>Instagram #121212Concert<a href="instagram.php" class="more" target="_blank">See All</a></h2>
-					<div class="instagram-grid clearfix">
+					<div class="instagram-grid cf">
 						<ul id="js-instagram" class="instagram">
 						<?php for ($i=1; $i <= 9; $i++) { ?>
 							<li class="ig ig-<?=$i?>">
@@ -109,7 +109,7 @@
 			</div> <!-- .artists-tweets -->
 
 		</div> <!-- .arti -->
-		<a href="https://twitter.com/search?q=%23121212concert" class="see-all" target="_blank">See All</a>
+		<a href="https://twitter.com/search?q=%23121212concert" class="see-all more" target="_blank">See All</a>
 	</div> <!-- .wrapper -->
 </div> <!-- .what-artists -->
 <div class="celebs-sandy">
@@ -157,7 +157,7 @@
 	</div> <!-- .celeb-videos -->
 </div> <!-- .celebs-sandy -->
 <div class="sandy-store cf">
-	<div class="wrapper">
+	<div class="wrapper cf">
 		<h2>Support the Cause</h2>
 		<div class="one-third">
 			<img src="img/hoodies.png" alt="Merchandise Hoodes" />
@@ -179,7 +179,7 @@
 	</div>
 </div> <!-- .sandy-store -->
 <div class="robin-hood-stories cf">
-	<div class="wrapper">
+	<div class="wrapper cf">
 		<hgroup>
 			<h2>Robin <span class="icon-robin"></span> Hood</h2>
 		</hgroup>

@@ -306,10 +306,12 @@ html {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 1em;
 	background: #003a62;
+	overflow-x:hidden;
 	-webkit-font-smoothing: antialiased;
 }
 
 body {
+	overflow-x:hidden;
 	line-height: 1.5;
 }
 
@@ -473,7 +475,7 @@ color: white;
 text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 text-transform: uppercase;
 padding-left: 95px;
-padding-top: 4px;
+padding-top: 8px;
 float: left
 }
 .btn-twitter {
@@ -589,6 +591,7 @@ margin-top: -18px;
 }
 .flash.closed .close {
 	font-size:14px;
+	right:23px;
 	top:13px;
 }
 .flash.closed .close:after {
@@ -1061,13 +1064,18 @@ padding: 0 0 20px 0;
 	line-height: 1;
 	padding-left: 10px;
 }
-.jla-tweet-list-autorefresh-trigger {
+.jta-tweet-list-autorefresh-trigger {
+	cursor:pointer;
 	float: right;
 	line-height: 18px;
 	border-right: 1px solid #000;
 	padding-right: 10px;
 	font-size: 13px;
 }
+.jta-tweet-list-controls-button-more {
+	display: none !important;
+}
+
 /* =============================================================================
    Celebs on Sandy
    ========================================================================== */
@@ -1757,17 +1765,16 @@ header {
 	}
 }
 
-@media all and (max-width: 30em) { /* 480 */ 
+@media all and (max-width: 767px) { 
 	html {
 		font-size: 0.9em
 	}
-	.brand{
-		display: none;
+	header.table {
+		margin:0 10px;
+		padding-top: 20px;
 	}
-	.brand-mobile {
-		display: block;
-		margin-top:-20px;
-		margin-bottom: 20px;
+	.menu-wrap {
+		padding:0 10px 25px;
 	}
 	.menu-wrap nav {
 		float: right;
@@ -1776,7 +1783,7 @@ header {
 		display: block
 	}
 	.wrapper {
-		padding: 20px;
+		padding: 10px;
 	}
 	.menu-wrap .donate {
 		padding-left: .5em;
@@ -1790,9 +1797,6 @@ header {
 	.outer-wrapper {
 		background: none;
 		margin-top: -20px;
-	}
-	.donate-btn {
-		display: none
 	}
 	.to-give {
 		padding: 0;
@@ -1808,14 +1812,7 @@ header {
 	.timer {
 		background-position: center;
 	}
-	.arti {
-		width: 68%;
-		margin:0 auto;
-	}
-	.what-artists h2{
-		background-position: center top;
-		padding-top: 40px;
-	}
+	
 	.site li:nth-child(1), .site li:nth-child(2), .site li:nth-child(3), .site li:nth-child(4) {
 		display: none
 	}
@@ -1826,7 +1823,7 @@ header {
 		border-top: 1px solid #345d96;
 		border-bottom: 1px solid #345d96;
 		width: 100%;
-		height: 80px;
+		height: 60px;
 		float: left;
 		clear: both;
 		margin-top: -6px;
@@ -1835,7 +1832,7 @@ header {
 	.nav {
    		list-style: none;
    		text-align: center;
-   		padding: 27px 0 0 0;
+   		padding: 17px 0 0 0;
    		margin: 0;
 	}
 	.nav li {
@@ -1852,18 +1849,136 @@ header {
 		text-transform: uppercase;
 		color: #fff;
 	}
+	.nav li a:hover {
+		color:#bce723;
+	}
 	.mobile-wrap,.twitter{
 		background: black
 	}
+	
+	/* -----------------------
+	-- RH Twitter -- */
+	
 	.twitter,.dynamic {
-		padding:40px;
+		padding:20px;
+	}
+	#js-robin-hood-tweets {
+		padding-bottom: 20px;
+	}
+	#js-robin-hood-tweets .jta-tweet-list li:last-child {
+		margin-bottom: 0;
+	}
+	
+	/* -----------------------
+	-- Ways To Donate -- */
+	
+	.ways-to-donate {
+		margin-top: 0;
+	}
+	.donate-btn {
+		float: none;
+		margin-left:auto;
+		margin-right: auto;
 	}
 	.to-give:last-child {
 		background-position: 210px 0
 	}
+	.to-give p {
+		margin:10px 0 20px;
+	}
+	
+	/* -----------------------
+	-- Instagram -- */
+	
+	.dynamic {
+		padding-top: 0;
+	}
+	.instagram-feed {
+		border-bottom: 1px solid #666;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+	
+	/* -----------------------
+	-- Social -- */
+	
+	.social {
+		margin:30px 10px 0;
+	}
+	.social .one-fourth {
+		padding:0 2%;
+	}
+	
+	/* -----------------------
+	-- What Artists -- */
+	.what-artists .wrapper {
+		position: relative;
+	}
+	.arti {
+		margin:0 40px;
+		width:auto;
+	}
+	.what-artists h2 {
+		background-position:left 0;
+		line-height:25px;
+		margin-top: 0;
+		padding-left: 40px;
+		text-align: left;
+	}
+	.what-artists .see-all {
+		float: none;
+		position: absolute;
+		top:13px;
+		right:10px;
+	}
+	.what-artists .see-all:after {
+		margin-top: -5px;
+	}
+	.jta-tweet-list-autorefresh-trigger {
+		position: absolute;
+		right:92px;
+		top:12px;
+	}
+	
+	/* -----------------------
+	-- RH Stories -- */
+	
+	.robin-hood-stories .wrapper img {
+		margin-bottom: 20px;
+	}
+	
+	/* -----------------------
+	-- Sponsors -- */
+	
+	.sponsors h3 {
+		margin:10px 0;
+	}
+	
 	.sponsor-list {
 		text-align: center;
 	}
+	
+	/* -----------------------
+	-- Footer -- */
+	
+	footer {
+		padding:15px 0 10px;
+	}
+	footer nav {
+		float: none;
+	}
+	.nav.footer {
+		padding: 0 0 10px;
+	}
+	nav .footer  li {
+		display: inline-block;
+		float: none;
+	}
+	footer small {
+		float: none;
+		text-align: center;
+	}
+	
 	h2 {
 		font-size: 18px
 	}

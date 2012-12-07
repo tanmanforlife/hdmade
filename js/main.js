@@ -203,7 +203,7 @@ $(window).load(function () {
 
     // Artists Twitter Feed and Slider 
     $('.artists-tweets').jTweetsAnywhere({
-        username: '121212concert',  // Usage: For more than one Twitter feed - ['handle1' , 'handle2' , 'handle3'] etc.  
+        username: '121212concert',  // Usage: For more than one Twitter feed - ['handle1' , 'handle2' , 'handle3'] etc. 
         count: 6,
         showTweetFeed: {
             showProfileImages: true,
@@ -244,7 +244,6 @@ $(window).load(function () {
         onFeedPopulationHandler: function(invocations)
         {
         	var tweets_html = $('.jta-tweet-flexslider .flex-viewport .jta-tweet-list').html();
-			console.log('updated');
 			$('.jta-tweet-flexslider').remove();
 			$('.artists-tweets .jta-tweet-list-controls').before('<div class="jta-tweet-flexslider"></div>');
 			tweets_html = '<ul class="jta-tweet-list">' + tweets_html + '</ul>';
@@ -274,6 +273,9 @@ $(window).load(function () {
 
 
     });
+	$(document).on('click', '.jta-tweet-list-autorefresh-trigger', function(e) {
+		$(this).remove();
+	})
 
     // Instagram
     

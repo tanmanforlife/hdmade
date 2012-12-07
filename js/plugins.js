@@ -1079,7 +1079,6 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 		/** if tweet is a native retweet, use the retweet's profile */
 		var screenName = getScreenName(tweet);
 		var fullName = getFullName(tweet);
-		console.log(fullName);
 		var htmlScreenName = null;
 		if (screenName && (options._tweetFeedConfig.showUserScreenNames || (options._tweetFeedConfig.showUserScreenNames == null && tweet.retweeted_status)))
 		{
