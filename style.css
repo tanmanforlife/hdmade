@@ -577,7 +577,7 @@ h3 {
 	font-size:14px;
 	line-height: 1;
 	position: absolute;
-	right:7px;
+	right:10px;
 	top:4px;
 }
 .flash .close:hover {
@@ -1853,6 +1853,14 @@ header {
 /*  ==========================================================================
     Media Queries
     ========================================================================== */
+/* Smartphones  ----------- */
+@media only all and (max-device-width: 480px) and (orientation: landscape) {
+	.artists-tweets{ width: 333px; margin:0 auto; }
+}
+/*Galaxy S3*/
+@media only screen and (max-device-width: 1280px) and (orientation:landscape) {
+	.artists-tweets { width: 333px; margin:0 auto; }
+}
 
 @media all and (max-width:64em) { /* 1024 */
 	
@@ -2215,6 +2223,7 @@ header {
     width: 70px;
     padding: 5px;
 }
+
 #donate-popup .amounts .amount_blank{
     display: none;
 }
@@ -2245,13 +2254,3 @@ header {
 #crash header .logo{ width: 260px; float: left; margin: 10px 0 0 0;}
 
 
-=======
-        #donate-popup .amounts input[type=radio]{
-            margin-right: 5px;
-        }
-        #donate-popup .amounts input[type=text]{
-            width: 50px;
-            padding: 2px;
-        }
-}
->>>>>>> a8e0360913113896bf48a278e22ed14a4a6c11dc
