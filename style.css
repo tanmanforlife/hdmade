@@ -927,6 +927,14 @@ p.samsung {
 .social h2 {
 	margin-bottom: 32px;
 }
+.social a {
+	opacity:1;
+	filter:alpha(opacity=1);
+}
+.social a:hover{
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
 
 /* =============================================================================
    What Artists
