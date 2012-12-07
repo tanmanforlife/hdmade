@@ -5,8 +5,8 @@
 		<div class="outer-wrapper cf">
 			<section class="g span-2 featured-img">
 				<ul class="slides">
-					<li><img src="carousel-images/carousel_1.jpg" alt="" /></li>
-					<li><img src="carousel-images/carousel_1.jpg" alt="" /></li>
+					<li><img src="carousel-images/carousel_1.jpg" alt="" height="360" width="640" /></li>
+					<li><img src="carousel-images/carousel_1.jpg" alt="" height="360" width="640" /></li>
 				</ul> <!-- .slides -->
 			</section> <!-- .g.span-2.featured-img -->
 			<div class="nav-mobile" aria-hidden="true">

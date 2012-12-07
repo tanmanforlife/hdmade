@@ -94,7 +94,9 @@ $(document).ready(function() {
 
 
 $(window).load(function () {
-
+	if($("html").hasClass('lt-ie9')) {
+		$('.top').css( "background-size", "cover" );
+	}
 	$('.sponsor-banner').flexslider({
 		animation:"fade",
 		animationLoop:true,

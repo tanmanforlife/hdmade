@@ -210,6 +210,12 @@
 	-o-transition: all 0.1s ease-out;
 	transition: all 0.1s ease-out;
 }
+.lt-ie9 .donate {
+	background:url(img/ie8-btn.png) no-repeat left center;
+}
+.lt-ie9 .donate:hover {
+	background-position:right center;
+}
 
 .play {
 	padding: 2px 0 0 0;
@@ -291,12 +297,20 @@ h2 .more:hover {
 	width:5px;
 }
 .no-csstransforms .more:after {
-	border-color: transparent transparent transparent inherit;
-	border-width:5px 0 5px 5px;
-	border-style:solid;
-	height:0;
-	width: 0;
+	border-width:0;
+	content:"►";
+	font-size:12px;
+	top:10px;
+	right:4px;
 }
+.no-csstransforms .what-artists .more:after {
+	top:6px;
+}
+.ie9 .donate .icon-twitter:before {
+	font-size:30px;
+	line-height:30px;
+}
+
 /*  ==========================================================================
     Main Styling
     ========================================================================== */
@@ -650,10 +664,12 @@ object {
    ====================================== */
 
 .featured-img {
+	margin-right: 5%;
 	position: relative;
+	width:64%;
 }
 .featured-img {
-	max-height:371px;
+	max-height:360px;
 	overflow: hidden;
 }
 .featured-img .flex-direction-nav {
@@ -681,10 +697,19 @@ section.twitter h2 {
 	padding:0;
 	list-style: none;
 }
+section.twitter .jta-tweet-list {
+	margin-top: 8px;
+}
 .jta-tweet-list li {
 	font-size: 0.8em;
 	border-bottom: 1px solid #404040;
-	margin-bottom: 23px;
+	margin-bottom: 8px;
+}
+.twitter-wrap .jta-tweet-body {
+	padding-bottom: 5px;
+}
+.twitter-wrap .jta-clear {
+	display: none;
 }
 
 .jta-tweet-list li:last-child {
@@ -1230,15 +1255,13 @@ p.samsung {
 	transform:rotate(-45deg);
 }
 .no-csstransforms .sandy-store .link:after {
-	border-color: transparent transparent transparent #000;
-	border-width:5px 0 5px 5px;
-	border-style:solid;
-	height:0;
-	top:12px;
-	width: 0;
+	border-width:0;
+	content:"►";
+	font-size:.8em;
+	top:8px;
 }
 .no-csstransforms .sandy-store .link:hover:after {
-	border-color:transparent transparent transparent #fff;
+
 }
 
 /* =============================================================================
