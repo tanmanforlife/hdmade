@@ -194,10 +194,16 @@ $(window).load(function () {
 		});
 	});
 
+       $('.tumblr-feed .stories').flexslider({
+		animation:"slide",
+		animationLoop: true,
+                controlNav: false
+       });
+
     //Robin Hood Twitter Feed
-        $.ajax({
+     $.ajax({
         //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
-        url: 'json/robinhood.json?callback=parseRes',
+        url: 'json/robinhood_1.json?callback=parseRes',
         type: 'GET',
         dataType: 'jsonp',
         jsonpCallback: "parseRes",
@@ -212,6 +218,43 @@ $(window).load(function () {
                     'class': 'jta-tweet-list',
                     html: items.join('')
               }).appendTo('#js-robin-hood-tweets');
+        },
+        error : function(httpReq,status,exception){
+            console.log(status+" "+exception);
+        }
+
+    });
+
+    $.ajax({
+        //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
+        url: 'json/artists.json?callback=parseArtistTweets',
+        type: 'GET',
+        dataType: 'jsonp',
+        jsonpCallback: "parseArtistTweets",
+        success: function(data, textStatus, xhr) {
+             var items = [];
+              $.each(data, function(i, tweet) {
+                    var timeago = relative_time(tweet.created_at);
+                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-profile-image"><a class="jta-tweet-profile-image-link" href="http://twitter.com/'+tweet.from_user+'" target="_blank"><img src="'+tweet.profile_image_url+'" alt="'+tweet.from_user+'" title="'+tweet.from_user_name+'"></a></div><div class="jta-tweet-body jta-tweet-body-list-profile-image-present"><span class="jta-tweet-text"><span class="jta-tweet-user-name"><span class="jta-tweet-user-screen-name"><a class="jta-tweet-user-screen-name-link" href="http://twitter.com/'+tweet.from_user_name+'" target="_blank">'+tweet.from_user_name+'</a></span><span class="jta-tweet-user-full-name"><a class="jta-tweet-user-full-name-link" href="http://twitter.com/'+tweet.from_user+'" name="'+tweet.from_user+'" target="_blank">'+tweet.from_user_name+'</a></span></span>'+decorateLinks(tweet.text)+'<span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id+'">Retweet</a></span></span></span></div><div class="jta-clear">&nbsp;</div></li>');
+              });
+              $('<div/>', {
+                    'class' : 'jta-tweet-flexslider'
+              }).appendTo('.artists-tweets');
+              $('<ul/>', {
+                    'class': 'jta-tweet-list',
+                    html: items.join('')
+              }).appendTo('.jta-tweet-flexslider');
+              $('.jta-tweet-flexslider').flexslider({
+                    animation: "slide",
+                    selector: ".jta-tweet-list > li",
+                    controlNav:false,
+                    itemWidth: 333,
+                    itemMargin:0,
+                    minItems:1,
+                    maxItems:3,
+                    slideshow:false,
+                    move:1
+            });
         },
         error : function(httpReq,status,exception){
             console.log(status+" "+exception);
@@ -246,7 +289,7 @@ $(window).load(function () {
             }
             return false;
         }
-    });*/
+    });
     
     // Artists Twitter Feed and Slider 
     $('.artists-tweets').jTweetsAnywhere({
@@ -321,6 +364,7 @@ $(window).load(function () {
 
 
     });
+    */
 	$(document).on('click', '.jta-tweet-list-autorefresh-trigger', function(e) {
 		$(this).remove();
 	})
@@ -328,7 +372,8 @@ $(window).load(function () {
     // Instagram
     var limit = 14;
     $.ajax({
-        url: 'http://121212-feed.hdmade.com/results.json',
+        //url: 'http://121212-feed.hdmade.com/results.json',
+        url: 'http://50.57.202.190:8080/social/instagram.json',
         dataType: "jsonp",
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
@@ -360,7 +405,8 @@ $(window).load(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() + $(window).height() == $(document).height()) {
             $.ajax({
-                url: 'http://121212-feed.hdmade.com/results.json',
+                //url: 'http://121212-feed.hdmade.com/results.json',
+                url: 'http://50.57.202.190:8080/social/instagram.json',
                 dataType: "jsonp",
                 jsonp: "parseResponse",
                	jsonpCallback: "parseResponse",
@@ -390,7 +436,8 @@ $(window).load(function () {
     });
 
     $.ajax({
-        url: 'http://121212-feed.hdmade.com/results.json',
+        //url: 'http://121212-feed.hdmade.com/results.json',
+        url: 'http://50.57.202.190:8080/social/instagram.json',
         dataType: "jsonp",
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
@@ -408,7 +455,8 @@ $(window).load(function () {
     setInterval(function () {
 
         $.ajax({
-            url: 'http://121212-feed.hdmade.com/results.json',
+            //url: 'http://121212-feed.hdmade.com/results.json',
+            url: 'http://50.57.202.190:8080/social/instagram.json',
             dataType: "jsonp",
             jsonp: "parseResponse",
             jsonpCallback: "parseResponse",
@@ -427,7 +475,7 @@ $(window).load(function () {
 
             }
         });
-    }, 10000);
+    }, 60000);
 });
 // Twitter helpers
 function decorateLinks(text)
