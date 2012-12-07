@@ -73,7 +73,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 	</div>
 </div>
 <div class="top">
-
 	<script type="text/javascript">
 	function parseBannerText(data){
 		if(data.hasOwnProperty('banner_text'))
