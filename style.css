@@ -1331,7 +1331,7 @@ header {
 .robin-hood-stories {
 	background: #007bc1;
 	color: #fff;
-	line-height: 1.8em;
+	line-height: 1.5;
 	position: relative;
 	z-index: 1;
 	padding: 10px 0 60px 0;
@@ -1345,14 +1345,18 @@ header {
 }
 
 .robin-hood-stories h3 {
-	text-align: center;
-	margin-top: -50px;
 	display: block;
-	font-family: 'TradeGothicCond';
+	font-family: 'TradeGothic';
 	font-size: 2em;
+	letter-spacing: 1px;
+	margin:0 0 .5em;
 	text-transform: uppercase;
 	text-shadow:none;
-	letter-spacing: 1px
+}
+.robin-hood-stories p {
+	font-family:"Georgia", Times, serif;
+	font-size:15px;
+	font-style: italic;
 }
 
 .left {

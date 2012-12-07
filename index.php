@@ -191,11 +191,12 @@
 		<div class="wrapper">
 			<hgroup>
 				<h2>Robin <span class="icon-robin"></span> Hood</h2>
-				<h3>Sandy Relief Fund</h3>
 			</hgroup>
 			<img src="img/robin-hood-cleanup.jpg" alt="" class="left">
 			<div class="right">
+				<h3>The Robin Hood Relief Fund</h3>
 				<p>Robin Hood has launched a large-scale relief effort to aid our neighbors in the tri-state area whose lives have been shattered by Hurricane Sandy. Within hours of the storm, Robin Hood-funded non-profits were providing blankets, hot food, heaters, generators and more to residents in Red Hook, Coney Island, the Rockaways and all across the region. Now, one month out from the storm, thanks to our supporters, Robin Hood has been able to provide over $8 million in grants to more than 90 different groups.</p>
+				<p>Thanks to the generosity of concert ogranizers, sponsors, and Robin Hood's board of directors, every single penny from ticket purchases and donations will go to the best community organizations serving the victims of Hurricane Sandy through the Robin Hood Relief Fund.</p>
 			</div> <!-- .right -->
 		</div> <!-- .wrapper -->
 	</div> <!-- .robin-hood-stories -->
