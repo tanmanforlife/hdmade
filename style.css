@@ -1127,15 +1127,42 @@ padding: 0 0 20px 0;
 	margin:0 auto;
 	display: block;
 }
-.sandy-store a {
+.sandy-store .link {
+	background:#bce723;
+	border-color:#000;
 	text-align: center;
 	color: #000;
 	font-family: 'TradeGothic';
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 1.3em;
+	font-size: 18px;
 	text-shadow:none;
--webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
+	padding:5px 30px 3px 10px;
+	display: inline-block;
+	position: relative;
+}
+.sandy-store .link:hover {
+	background:#127abf;
+	border-color: #fff;
+	color:#fff;
+}
+.sandy-store .link:after {
+	border-color:inherit;
+	border-style:solid;
+	border-width:0px 3px 3px 0;
+	content:"";
+	display: block;
+	height:5px;
+	position: absolute;
+	right:14px;
+	top:13px;
+	width:5px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
 }
 
 /* =============================================================================

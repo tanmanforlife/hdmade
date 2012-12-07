@@ -162,19 +162,19 @@
 		<div class="one-third">
 			<img src="img/hoodies.png" alt="Merchandise Hoodes" />
 			<p><em>Merchandise proceeds go to the Robin Hood Relief Fund</em></p>
-			<a class="#" href="#">Buy</a>
+			<a class="link" href="#">Buy</a>
 		</div>
 
 		<div class="one-third">
 			<a href="http://www.iheart.com/live/6146/?autoplay=true"><img src="img/1212merch.png" alt="Listen to the Artists" /></a>
 			<p><em>Listen to all the artists on<br>121212 Radio</em></p>
-			<a class="http://www.iheart.com/live/6146/?autoplay=true" href="#">Listen</a>
+			<a class="link" href="http://www.iheart.com/live/6146/?autoplay=true">Listen</a>
 		</div>
 
 		<div class="one-third">
-			<img />
+			<img src="img/placeholder-itunes.png" alt="" />
 			<p><em>Check out the<br>121212 Soundtrack on iTunes</em></p>
-			<a class="#" href="#">Listen</a>
+			<a class="link" href="#">Listen</a>
 		</div>
 	</div>
 </div> <!-- .sandy-store -->
