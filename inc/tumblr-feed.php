@@ -22,8 +22,6 @@
 	$input = str_replace(';','',$input);
 	$value = json_decode($input, true);
 	
-	print_r($value);
-
 	echo count($value);
 	for($i=0; $i < count($value); $i++){
 		$postUrl = $value[$i]['post_url'];
