@@ -2183,6 +2183,9 @@ header {
             width: 50px;
             padding: 2px;
         }
+        #donate-popup .amounts label {
+            margin-right: 10px;
+        }
         #donate-popup p{
             padding: 0 10px 10px 10px;
             font-family:"Georgia", serif;
