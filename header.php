@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 			<a href="#donate-popup" class="btn donate donate-modal-link">Donate</a>
 			<nav class="" role="navigation">
 				<ul class="nav site">
-					<li><a href="#">#121212 Concert</a></li>
+					<li><span class="separator">#121212Concert</span></li>
 					<li><a href="broadcast.php" target="_blank">Watch on TV</a></li>
 					<li><a href="social.php" target="_blank">Social</a></li>
 					<li><a href="#" target="_blank">Shop</a></li>
