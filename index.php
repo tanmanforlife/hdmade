@@ -29,7 +29,7 @@
 				<div class="table to-give">
 					<div class="tr">
 						<div class="td">
-							<a class="btn donate" href="#">Amazon</a>
+							<a class="btn donate" href="#">Donate</a>
 						</div>
 						<div class="td">
 							<p>Donate using your Amazon Account</p>
