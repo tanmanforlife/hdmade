@@ -224,10 +224,10 @@ $(window).load(function () {
     //Robin Hood Twitter Feed
      $.ajax({
         //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
-        url: 'json/robinhood_1.json?callback=parseRes',
+        url: 'json/robinhood_1.json?callback=parseResult',
         type: 'GET',
         dataType: 'jsonp',
-        jsonpCallback: "parseRes",
+        jsonpCallback: "parseResult",
         success: function(data, textStatus, xhr) {
              var items = [];
               $.each(data, function(i, tweet) {
