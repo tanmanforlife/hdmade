@@ -111,7 +111,7 @@
 </div> <!-- .top -->
 <div class="what-artists">
 	<div class="wrapper cf">
-		<h2>Twitter #121212concert</h2>
+		<h2><span><span class="icon-twitter"></span>Twitter #121212concert</span></h2>
 		<div class="tweets-holding-space"></div>
 		<div class="arti">
 			<div class="artists-tweets">

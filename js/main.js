@@ -363,7 +363,7 @@ $(window).load(function () {
                 url: 'http://121212-feed.hdmade.com/results.json',
                 dataType: "jsonp",
                 jsonp: "parseResponse",
-                jsonpCallback: "parseResponse",
+               	jsonpCallback: "parseResponse",
                 success: function parseResponse(result) {
                     var list = $('ul#js-instagram-all li');
 

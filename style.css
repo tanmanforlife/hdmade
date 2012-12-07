@@ -14,7 +14,13 @@
     ========================================================================== */
 
 	article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
-
+	
+	a,
+	a:hover,
+	a:focus,
+	a:active {
+		outline:none !important;
+	}
 /*  ==========================================================================
     Micro Clearfix (http://nicolasgallagher.com/micro-clearfix-hack/)
     ========================================================================== */
@@ -996,10 +1002,17 @@ p.samsung {
 	color:#000;
 	display: block;
 	text-align: center;
-	background: url(img/twitter-blue.png) no-repeat 28% 0%;
 	line-height: 1em;
 	margin-bottom: 40px;
 	padding: 0 0 20px 0;
+}
+.what-artists h2 > span {
+	display: block;
+}
+.what-artists h2 > span span.icon-twitter:before {
+	color:#002340;
+	font-size:.9em;
+	padding-right: 10px;
 }
 .tweets-holding-space {
 	position:absolute;
@@ -1800,6 +1813,34 @@ header {
 	html {
 		font-size: 0.9em
 	}
+	
+	/* -----------------------
+	-- Sponsors -- */
+	
+	.sponsor-banner {
+		padding:0 10px;
+	}
+	.sponsor-banner ul li {
+		padding-top: 10px;
+	}
+	.sponsor-banner a {
+		max-width:18%;
+	}
+	
+	/* -----------------------
+	-- Flash -- */
+	
+	.flash > div {
+		padding:20px;
+	}
+	.flash {
+		font-size:15px;
+		line-height:1.4;
+	}
+	
+	/* -----------------------
+	-- Header -- */
+	
 	header.table {
 		margin:0 10px;
 		padding-top: 20px;
@@ -1888,23 +1929,46 @@ header {
 	}
 	
 	/* -----------------------
+	-- More -- */
+	
+	h2 .more {
+		top:0px;
+	}
+	.more {
+		font-size:18px;
+		letter-spacing:0;
+	}
+	.more:after {
+		margin-top: -4px;
+	}
+	
+	/* -----------------------
 	-- RH Twitter -- */
 	
 	.twitter,.dynamic {
 		padding:20px;
 	}
 	#js-robin-hood-tweets {
-		padding-bottom: 20px;
+		padding-bottom: 20px 20px 50px;
+		position: relative;
 	}
 	#js-robin-hood-tweets .jta-tweet-list li:last-child {
 		margin-bottom: 0;
+	}
+	#js-robin-hood-tweets h2 {
+		position: static;
+	}
+	#js-robin-hood-tweets .more {
+		bottom:5px;
+		right:10px;
+		top:auto;
 	}
 	
 	/* -----------------------
 	-- Ways To Donate -- */
 	
 	.ways-to-donate {
-		margin-top: 0;
+		margin: 0 20px 20px;
 	}
 	.donate-btn {
 		float: none;
@@ -1936,7 +2000,29 @@ header {
 	.instagram-feed {
 		border-bottom: 1px solid #666;
 		margin-bottom: 20px;
-		padding-bottom: 20px;
+		padding-bottom: 50px;
+		position: relative;
+	}
+	.instagram-feed h2 {
+		position: static;
+	}
+	.instagram-feed h2 .more {
+		bottom:5px;
+		top:auto;
+	}
+	
+	/* -----------------------
+	-- Tumblr -- */
+	
+	.tumblr-feed {
+		padding-bottom: 30px;
+	}
+	.tumblr-feed h2 {
+		position: static;
+	}
+	.tumblr-feed h2 .more {
+		bottom:0;
+		top:auto;
 	}
 	
 	/* -----------------------
@@ -1962,22 +2048,12 @@ header {
 		background-position:left 0;
 		line-height:25px;
 		margin-top: 0;
-		padding-left: 40px;
+		padding-left: 0;
 		text-align: left;
 	}
 	.what-artists .see-all {
-		float: none;
-		position: absolute;
-		top:13px;
-		right:10px;
-	}
-	.what-artists .see-all:after {
-		margin-top: -5px;
-	}
-	.jta-tweet-list-autorefresh-trigger {
-		position: absolute;
-		right:92px;
-		top:12px;
+		float: right;
+		clear: none;
 	}
 	
 	/* -----------------------
@@ -2020,7 +2096,7 @@ header {
 	}
 	
 	h2 {
-		font-size: 18px
+		font-size: 18px;
 	}
 }
 
