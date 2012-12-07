@@ -5,8 +5,8 @@
 			<div class="outer-wrapper cf">
 				<section class="g span-2 featured-img">
 					<ul class="slides">
-						<li><img src="carousel-images/new1.jpeg" alt="" /></li>
-						<li><img src="carousel-images/new1.jpeg" alt="" /></li>
+						<li><img src="carousel-images/carousel_1.jpg" alt="" /></li>
+						<li><img src="carousel-images/carousel_1.jpg" alt="" /></li>
 					</ul> <!-- .slides -->
 				</section> <!-- .g.span-2.featured-img -->
 				
@@ -193,7 +193,7 @@
 				<h2>Robin <span class="icon-robin"></span> Hood</h2>
 				<h3>Sandy Relief Fund</h3>
 			</hgroup>
-			<img src="img/robin-hood.png" alt="" class="left">
+			<img src="img/robin-hood-cleanup.jpg" alt="" class="left">
 			<div class="right">
 				<p>Robin Hood has launched a large-scale relief effort to aid our neighbors in the tri-state area whose lives have been shattered by Hurricane Sandy. Within hours of the storm, Robin Hood-funded non-profits were providing blankets, hot food, heaters, generators and more to residents in Red Hook, Coney Island, the Rockaways and all across the region. Now, one month out from the storm, thanks to our supporters, Robin Hood has been able to provide over $8 million in grants to more than 90 different groups.</p>
 			</div> <!-- .right -->
