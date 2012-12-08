@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 <body<?php if(isset($body_class)) echo ' class="'.$body_class.'"'; ?>>
 <div id="donate-popup" style="display: none;">
 	<h1>Donate</h1>
-	<p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Releif Fund.  You will be redirected to Amazon to complete the payment process.</p>
+	<p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Relief Fund.  You will be redirected to Amazon to complete the payment process.</p>
 	<!--a href="" class="btn donate">Donate</a-->
 	<form id="donate-form" action="https://authorize.payments-sandbox.amazon.com/pba/paypipeline" method="post" target="_blank">
 		<input type="hidden" name="returnUrl" value="http://www.121212concert.org/" >
