@@ -673,7 +673,6 @@ section.twitter {
 }
 .twitter-wrap{
     overflow: hidden;
-    overflow-y: scroll;
 }
 section.twitter h2 {
 	font-size:28px;

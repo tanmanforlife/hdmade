@@ -226,7 +226,7 @@ $(window).load(function () {
             cache: true,
             ifModified: true,
             success: function(data, textStatus, xhr) {
-                 if(data.hasOwnProperty('banner_text'))
+                 //if(data.hasOwnProperty('banner_text'))
                             $(document).ready(function(){ $('.flash p').html(data.banner_text) });
             },
             error : function(httpReq,status,exception){
@@ -249,6 +249,7 @@ $(window).load(function () {
         success: function(data, textStatus, xhr) {
              var items = [];
               $.each(data, function(i, tweet) {
+                    if(i > 1) return false;
                     var timeago = relative_time(tweet.created_at);
                     items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-body "><span class="jta-tweet-text">' + decorateLinks(tweet.text) + '</span><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'">Retweet</a></span></div><div class="jta-clear">&nbsp;</div></li>');
               });
