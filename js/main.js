@@ -209,6 +209,8 @@ $(window).load(function () {
             type: 'GET',
             dataType: 'jsonp',
             jsonpCallback: "parseBannerText",
+            cache: true,
+            ifModified: true,
             success: function(data, textStatus, xhr) {
                  if(data.hasOwnProperty('banner_text'))
                             $(document).ready(function(){ $('.flash p').html(data.banner_text) });
@@ -227,6 +229,8 @@ $(window).load(function () {
         type: 'GET',
         dataType: 'jsonp',
         jsonpCallback: "parseResult",
+        cache: true,
+        ifModified: true,
         success: function(data, textStatus, xhr) {
              var items = [];
               $.each(data, function(i, tweet) {
@@ -250,6 +254,8 @@ $(window).load(function () {
         type: 'GET',
         dataType: 'jsonp',
         jsonpCallback: "parseResult",
+        cache: true,
+        ifModified: true,
         success: function(data, textStatus, xhr) {
              var items = [];
               $.each(data, function(i, tweet) {
@@ -391,11 +397,12 @@ $(window).load(function () {
     // Instagram
     var limit = 14;
     $.ajax({
-        //url: 'http://121212-feed.hdmade.com/results.json',
         url: 'http://test.121212concert.org/social/instagram.json',
         dataType: "jsonp",
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
+        cache: true,
+        ifModified: true,
         success: function parseResponse(result) {
             var list = $('ul#js-instagram-all li');
             limit = 14;
@@ -428,6 +435,8 @@ $(window).load(function () {
                 dataType: "jsonp",
                 jsonp: "parseResponse",
                	jsonpCallback: "parseResponse",
+                cache: true,
+                ifModified: true,
                 success: function parseResponse(result) {
                     var list = $('ul#js-instagram-all li');
 
@@ -458,6 +467,8 @@ $(window).load(function () {
         dataType: "jsonp",
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
+        cache: true,
+        ifModified: true,
         success: function parseResponse(result) {
             var list = $('ul#js-instagram li');
 
@@ -478,6 +489,8 @@ $(window).load(function () {
             dataType: "jsonp",
             jsonp: "parseResponse",
             jsonpCallback: "parseResponse",
+            cache: true,
+            ifModified: true,
             success: function parseResponse(result) {
 
                 var min = 1;
