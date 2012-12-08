@@ -454,7 +454,7 @@ h3 {
    ========================================================================== */
 
 .top {
-	background:url('img/bg.jpg') no-repeat center top;
+	background:url('img/Extendedbackground.final.jpg') no-repeat center top;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-ms-background-size:cover;
@@ -554,6 +554,7 @@ h3 {
 	padding:20px;
 	position: relative;
 }
+
 .flash p {
 	margin:0;
 }
@@ -576,10 +577,13 @@ h3 {
 	font-weight: normal;
 	text-transform: none;
 }
+.flash.closed > div{
+    padding: 21px 0 0 0;
+}
 .flash.closed .close {
 	font-size:14px;
 	right:23px;
-	top:13px;
+	top:4px;
 }
 .flash.closed .close:after {
 	border-color:inherit;

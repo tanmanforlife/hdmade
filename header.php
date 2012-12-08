@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
         <script type="text/javascript" src="js/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="style.min.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script src="js/modernizr.min.js"></script>
