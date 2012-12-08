@@ -123,8 +123,31 @@ $(window).load(function () {
         slideshow: true,
 		slideshowSpeed: 5000,
         touch: false,
+        start: function(slider){
+            $('.twitter-wrap').height(slider.slides.eq(slider.currentSlide).height());            
+            /*var th = 150;
+            $('.twitter-wrap li').each(function(index, value){
+                th = th + $(this).height();
+                //alert(th + '\n' + slider.slides.eq(slider.currentSlide).height());
+                if(th > slider.slides.eq(slider.currentSlide).height())
+                    $(this).hide();
+                else
+                    $(this).show();
+            });*/
+        },
         before: function (slider) {
             if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0) $f(slider.slides.eq(slider.currentSlide).find('iframe').attr('id')).api('pause');
+        },
+        after: function (slider) {
+            $('.twitter-wrap').height(slider.slides.eq(slider.currentSlide).height());
+            /*var th = 150;
+            $('.twitter-wrap li').each(function(index, value){
+                th = th + $(this).height();
+                if(th > slider.slides.eq(slider.currentSlide).height())
+                    $(this).hide();
+                else
+                    $(this).show();
+            });*/
         }
     }); 
 
@@ -138,7 +161,7 @@ $(window).load(function () {
         directionNav: true,
         slideshow: true,
 		slideshowSpeed: 5000,
-        touch: false,
+        touch: false
     });
 
 	// Celev Videos Slider Options
@@ -225,7 +248,8 @@ $(window).load(function () {
 
     //Robin Hood Twitter Feed
      $.ajax({
-        url: 'http://test.121212concert.org/social/robinhood.json',
+        url: 'http://test.121212concert.org/social/robinhood.json?callback=parseResult',
+        //url: 'json/robinhood.json',
         type: 'GET',
         dataType: 'jsonp',
         jsonpCallback: "parseResult",
@@ -241,51 +265,55 @@ $(window).load(function () {
               $('<ul/>', {
                     'class': 'jta-tweet-list',
                     html: items.join('')
-              }).appendTo('#js-robin-hood-tweets');
+              }).appendTo('#js-robin-hood-tweets');              
+
         },
         error : function(httpReq,status,exception){
             console.log(status+" "+exception);
-        }
+        },
+        complete : function(){
+            $.ajax({
+                url: 'http://test.121212concert.org/social/artists.json',
+                type: 'GET',
+                dataType: 'jsonp',
+                jsonpCallback: "parseResult",
+                cache: true,
+                ifModified: true,
+                success: function(data, textStatus, xhr) {
+                     var items = [];
+                      $.each(data, function(i, tweet) {
+                            var timeago = relative_time(tweet.created_at);
+                            items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-profile-image"><a class="jta-tweet-profile-image-link" href="http://twitter.com/'+tweet.from_user+'" target="_blank"><img src="'+tweet.profile_image_url+'" alt="'+tweet.from_user+'" title="'+tweet.from_user_name+'"></a></div><div class="jta-tweet-body jta-tweet-body-list-profile-image-present"><span class="jta-tweet-text"><span class="jta-tweet-user-name"><span class="jta-tweet-user-screen-name"><a class="jta-tweet-user-screen-name-link" href="http://twitter.com/'+tweet.from_user_name+'" target="_blank">'+tweet.from_user_name+'</a></span><span class="jta-tweet-user-full-name"><a class="jta-tweet-user-full-name-link" href="http://twitter.com/'+tweet.from_user+'" name="'+tweet.from_user+'" target="_blank">'+tweet.from_user_name+'</a></span></span>'+decorateLinks(tweet.text)+'<span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'">Retweet</a></span></span></span></div><div class="jta-clear">&nbsp;</div></li>');
+                      });
+                      $('<div/>', {
+                            'class' : 'jta-tweet-flexslider'
+                      }).appendTo('.artists-tweets');
+                      $('<ul/>', {
+                            'class': 'jta-tweet-list',
+                            html: items.join('')
+                      }).appendTo('.jta-tweet-flexslider');
+                      $('.jta-tweet-flexslider').flexslider({
+                            animation: "slide",
+                            selector: ".jta-tweet-list > li",
+                            controlNav:false,
+                            itemWidth: 333,
+                            itemMargin:0,
+                            minItems:1,
+                            maxItems:3,
+                            slideshow:false,
+                            move:1
+                    });
+                },
+                error : function(httpReq,status,exception){
+                    console.log(status+" "+exception);
+                }
 
-    });
-
-    $.ajax({
-        url: 'http://test.121212concert.org/social/artists.json',
-        type: 'GET',
-        dataType: 'jsonp',
-        jsonpCallback: "parseResult",
-        cache: true,
-        ifModified: true,
-        success: function(data, textStatus, xhr) {
-             var items = [];
-              $.each(data, function(i, tweet) {
-                    var timeago = relative_time(tweet.created_at);
-                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-profile-image"><a class="jta-tweet-profile-image-link" href="http://twitter.com/'+tweet.from_user+'" target="_blank"><img src="'+tweet.profile_image_url+'" alt="'+tweet.from_user+'" title="'+tweet.from_user_name+'"></a></div><div class="jta-tweet-body jta-tweet-body-list-profile-image-present"><span class="jta-tweet-text"><span class="jta-tweet-user-name"><span class="jta-tweet-user-screen-name"><a class="jta-tweet-user-screen-name-link" href="http://twitter.com/'+tweet.from_user_name+'" target="_blank">'+tweet.from_user_name+'</a></span><span class="jta-tweet-user-full-name"><a class="jta-tweet-user-full-name-link" href="http://twitter.com/'+tweet.from_user+'" name="'+tweet.from_user+'" target="_blank">'+tweet.from_user_name+'</a></span></span>'+decorateLinks(tweet.text)+'<span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'">Retweet</a></span></span></span></div><div class="jta-clear">&nbsp;</div></li>');
-              });
-              $('<div/>', {
-                    'class' : 'jta-tweet-flexslider'
-              }).appendTo('.artists-tweets');
-              $('<ul/>', {
-                    'class': 'jta-tweet-list',
-                    html: items.join('')
-              }).appendTo('.jta-tweet-flexslider');
-              $('.jta-tweet-flexslider').flexslider({
-                    animation: "slide",
-                    selector: ".jta-tweet-list > li",
-                    controlNav:false,
-                    itemWidth: 333,
-                    itemMargin:0,
-                    minItems:1,
-                    maxItems:3,
-                    slideshow:false,
-                    move:1
             });
-        },
-        error : function(httpReq,status,exception){
-            console.log(status+" "+exception);
         }
 
     });
+
+    
     
     /*$('#js-robin-hood-tweets').jTweetsAnywhere({
         username: 'robinhoodnyc',

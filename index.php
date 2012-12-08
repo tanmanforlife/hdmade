@@ -176,17 +176,18 @@
 			<a class="link" href="#">Buy</a>
 		</div>
 
+                <div class="one-third">
+			<img src="img/itunes.png" alt="" />
+			<p><em>Check out the<br>121212 Soundtrack on iTunes</em></p>
+			<a class="link" href="#">Order</a>
+		</div>
+
 		<div class="one-third">
 			<a href="http://www.iheart.com/live/6146/?autoplay=true"><img src="img/1212merch.png" alt="Listen to the Artists" /></a>
 			<p><em>Listen to all the artists on<br>121212 Radio</em></p>
 			<a class="link" href="http://www.iheart.com/live/6146/?autoplay=true">Listen</a>
 		</div>
-
-		<div class="one-third">
-			<img src="img/placeholder-itunes.png" alt="" />
-			<p><em>Check out the<br>121212 Soundtrack on iTunes</em></p>
-			<a class="link" href="#">Listen</a>
-		</div>
+		
 	</div>
 </div> <!-- .sandy-store -->
 <div class="robin-hood-stories cf">
