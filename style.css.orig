@@ -35,8 +35,14 @@
 	float: left;
 	margin-right:3.5%;
 }
+.one-whole { width: 100%; }
 .one-half { width: 50%; float: left }
 .one-third { width: 33.333%; float:left;}
+.two-thirds { width: 66.666%; }
+.one-fifth { width: 20%; float: left;}
+.one-fifths { width: 40%; }
+.three-fifths { width: 60%; }
+.four-fifths { width: 80%; }
 .one-fourth {
 	width: 25%;
 	float: left;
@@ -48,6 +54,10 @@
 }
 .span-2 {
 	width:65.5%;
+}
+.span-3 {
+	margin-right: 0;
+	width:100%;
 }
 .g.last {
 	margin-right: 0;
@@ -99,11 +109,57 @@
    Icons
    ========================================================================== */
 
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+	content: "\e000";
+	font-size: 1.8em;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all linear 0.1s;
+}
 .icon-twitter:hover, .icon-facebook:hover {
 	color: #BDE723;
 	-webkit-transition: all linear 0.1s;
 }
-
+.icon-facebook:before {
+	content: "\e001";
+	font-size: 1.8em;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all linear 0.1s;
+}
+.icon-robin:before {
+	content: "\e005";
+	font-size: 1.1em;
+	text-align: left;
+}
+.icon-play:before {
+	content: "\e006";
+	font-size: 3em;
+}
+.icon-play {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	top: 50%;
+	margin-left: -26px;
+	color: rgba(255, 255, 255, 0.5);
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
 .icon-twitter span, .icon-facebook span {
 	position: absolute;
 	left: -30000em;
@@ -152,9 +208,29 @@
 	-o-transition: all 0.1s ease-out;
 	transition: all 0.1s ease-out;
 }
-
+.lt-ie9 .donate {
+	background:url(img/ie8-btn.png) no-repeat left center;
+}
 .lt-ie9 .donate:hover {
 	background-position:right center;
+}
+
+.play {
+	padding: 2px 0 0 0;
+	background: #0087d6;
+	background: -moz-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0087d6), color-stop(51%, #0087d6), color-stop(51%, #007ac1), color-stop(100%, #007ac1));
+	background: -webkit-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: -o-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: -ms-linear-gradient(top, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	background: linear-gradient(to bottom, #0087d6 0%, #0087d6 51%, #007ac1 51%, #007ac1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0087d6', endColorstr='#007ac1',GradientType=0 );
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.75em;
+	font-size: 1.8rem;
 }
 
 .play:hover {
@@ -200,6 +276,38 @@ h2 .more:hover {
 	border-color: #fff;
 	color:#fff;
 }
+.more:after {
+	border-color: inherit;
+	border-style:inherit;
+	border-width:3px 3px 0 0;
+	content:"";
+	display:block;
+	height:5px;
+	margin-top: -3px;
+	position: absolute;
+	right:0;
+	top:50%;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+	width:5px;
+}
+.no-csstransforms .more:after {
+	border-width:0;
+	content:"►";
+	font-size:12px;
+	top:10px;
+	right:4px;
+}
+.no-csstransforms .what-artists .more:after {
+	top:6px;
+}
+.ie9 .donate .icon-twitter:before {
+	font-size:30px;
+	line-height:30px;
+}
 
 /*  ==========================================================================
     Main Styling
@@ -236,6 +344,9 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 }
+.lt-ie9 .wrapper {
+	min-width:1000px;
+}
 
 /* ==|== Main =================
    Type
@@ -263,6 +374,10 @@ h1 {
 	text-align: center;
 }
 
+.page-title {
+	margin-top: 90px;
+}
+
 h2 {
 	font-size: 28px;
 	line-height: 1.5;
@@ -283,6 +398,31 @@ h3 {
 	font-weight: normal;
 	font-style: normal;
 	text-shadow: 0px -1px rgba(0, 0, 0, 0.9);
+}
+
+.radio h2 {
+	font-family: Helvetica;
+	font-size: 1.4em;
+	margin: 2.5em 0 1em 0;
+	display: block;
+	text-align: center;
+}
+
+.giga {
+	font-size: 2.1875em;
+	line-height: 1.37143;
+	font-family: 'TradeGothicCond';
+	letter-spacing: 0.125em;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.mega {
+	font-size: 8em;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 2px 0px #333;
+	margin-bottom: -30px;
 }
 
 /* ==========================================================================
@@ -448,7 +588,28 @@ h3 {
 	font-weight: normal;
 	text-transform: none;
 }
-
+.flash.closed .close {
+	font-size:14px;
+	right:23px;
+	top:13px;
+}
+.flash.closed .close:after {
+	border-color:inherit;
+	border-style:solid;
+	border-width:0px 3px 3px 0;
+	content:"";
+	display: block;
+	height:5px;
+	position: absolute;
+	right:-15px;
+	top:1px;
+	width:5px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
 .no-csstransforms .flash.closed .close:after {
 	border-color: #000 transparent transparent transparent;
 	border-width:5px 5px 0px 5px;
