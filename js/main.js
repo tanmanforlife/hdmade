@@ -124,16 +124,7 @@ $(window).load(function () {
 		slideshowSpeed: 5000,
         touch: false,
         start: function(slider){
-            $('.twitter-wrap').height(slider.slides.eq(slider.currentSlide).height());            
-            /*var th = 150;
-            $('.twitter-wrap li').each(function(index, value){
-                th = th + $(this).height();
-                //alert(th + '\n' + slider.slides.eq(slider.currentSlide).height());
-                if(th > slider.slides.eq(slider.currentSlide).height())
-                    $(this).hide();
-                else
-                    $(this).show();
-            });*/
+                $('.twitter-wrap').height(slider.height());
         },
         before: function (slider) {
             if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0) $f(slider.slides.eq(slider.currentSlide).find('iframe').attr('id')).api('pause');
