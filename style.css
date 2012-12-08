@@ -677,11 +677,18 @@ section.twitter {
 }
 .twitter-wrap{
     overflow: hidden;
+    position: relative;
+    padding-bottom: 40px;
 }
 section.twitter h2 {
 	font-size:28px;
 	margin:0;
 	text-align: left;
+        position: static;
+}
+.twitter-wrap h2 .more{
+    top: auto;
+    bottom: 3px;
 }
 
 .jta-tweet-list {
@@ -2042,5 +2049,15 @@ abbr[title] {
         }
         .donate-modal .fancybox-inner{
             height: 310px !important;
+        }
+
+        .sandy-store .pushup{
+            margin-top: -40px;
+        }
+        .sandy-store p{
+            margin-bottom: 0.1em;
+        }
+        .sandy-store .one-third{
+            margin: 30px 0 60px;
         }
 }
