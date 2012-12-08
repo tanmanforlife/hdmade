@@ -693,6 +693,7 @@ section.twitter h2 {
 	font-size: 0.8em;
 	border-bottom: 1px solid #404040;
 	margin-bottom: 23px;
+        margin-right: 10px;
 }
 
 .jta-tweet-list li:last-child {
@@ -1629,6 +1630,61 @@ abbr[title] {
 			display: none
 		}
 
+#donate-popup{
+    display: none;
+    max-width: 460px;
+    min-height: 300px;
+    text-align: center;
+}
+#donate-popup p{
+    padding: 0 50px 20px 50px;
+    font-family:"Georgia", serif;
+    font-style: italic;
+    font-size: 0.9em;
+}
+#donate-popup .btn{
+    padding: 0.2em 1em 0.0em;
+}
+#donate-popup .amounts{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#donate-popup .amounts label{
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+#donate-popup .amounts input{
+    display: inline-block;
+    vertical-align: middle;
+}
+#donate-popup .amounts input[type=radio]{
+    margin-right: 10px;
+}
+#donate-popup .amounts input[type=text]{
+    width: 70px;
+    padding: 5px;
+}
+#donate-popup .amounts .amount_blank{
+    display: none;
+}
+#donate-popup .error{
+    color: red;
+}
+.donate-modal .fancybox-skin{
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.donate-modal .modal-close{
+    color: #002340;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+
 /*  ==========================================================================
     Media Queries
     ========================================================================== */
@@ -1707,6 +1763,7 @@ abbr[title] {
 	}
 	.menu-wrap nav {
 		float: right;
+                margin-top: 5px;
 	}
 	.nav-mobile {
 		display: block
@@ -1716,7 +1773,8 @@ abbr[title] {
 	}
 	.menu-wrap .donate {
 		padding-left: .5em;
-		padding-right: .5em
+		padding-right: .5em;
+                font-size: 28px;
 	}
 	.main {
 		border-top: 1px solid #345d96;
@@ -1955,58 +2013,34 @@ abbr[title] {
 	h2 {
 		font-size: 18px;
 	}
-}
-
-#donate-popup{
-    display: none;
-    width: 460px;
-    height: 300px;
-    text-align: center;
-}
-#donate-popup p{
-    padding: 0 50px 20px 50px;
-    font-family:"Georgia", serif;
-    font-style: italic;
-    font-size: 0.9em;
-}
-#donate-popup .btn{
-    padding: 0.2em 1em 0.0em;
-}
-#donate-popup .amounts{
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-#donate-popup .amounts label{
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: middle;
-}
-#donate-popup .amounts input{
-    display: inline-block;
-    vertical-align: middle;
-}
-#donate-popup .amounts input[type=radio]{
-    margin-right: 10px;
-}
-#donate-popup .amounts input[type=text]{
-    width: 70px;
-    padding: 5px;
-}
-#donate-popup .amounts .amount_blank{
-    display: none;
-}
-#donate-popup .error{
-    color: red;
-}
-.donate-modal .fancybox-skin{
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-}
-.donate-modal .modal-close{
-    color: #002340;
-    position: absolute;
-    right: 20px;
-    top: 10px;
+        #donate-popup .amounts input[type=radio]{
+            margin-right: 5px;
+        }
+        #donate-popup .amounts input[type=text]{
+            width: 50px;
+            padding: 2px;
+        }
+        #donate-popup .amounts label {
+            margin-right: 10px;
+            font-size: 0.8em;
+        }
+        #donate-popup p{
+            padding: 0 10px 10px 10px;
+            font-family:"Georgia", serif;
+            font-style: italic;
+            font-size: 0.8em;
+            margin: 0;
+        }
+        #donate-popup h1{
+            margin: 0.2em 0;
+        }
+        #donate-popup .amounts{
+            margin-bottom: 10px;
+        }
+        #donate-popup .custom_wrap{
+            display: block;
+        }
+        .donate-modal .fancybox-inner{
+            height: 310px !important;
+        }
 }
