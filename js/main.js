@@ -202,9 +202,11 @@ $(window).load(function () {
 
     //Robin Hood Twitter Feed
      $.ajax({
-        //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
+        //url: 'http://test.121212concert.org/social/robinhood.json?callback=parseRes',
         url: 'json/robinhood_1.json?callback=parseRes',
         type: 'GET',
+        cache: true,
+        ifModified: true,
         dataType: 'jsonp',
         jsonpCallback: "parseRes",
         success: function(data, textStatus, xhr) {
@@ -226,9 +228,11 @@ $(window).load(function () {
     });
 
     $.ajax({
-        //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
+        //url: 'http://test.121212concert.org/social/robinhood.json?callback=parseRes',
         url: 'json/artists.json?callback=parseArtistTweets',
         type: 'GET',
+        cache: true,
+        ifModified: true,
         dataType: 'jsonp',
         jsonpCallback: "parseArtistTweets",
         success: function(data, textStatus, xhr) {
@@ -372,8 +376,10 @@ $(window).load(function () {
     // Instagram
     var limit = 14;
     $.ajax({
-        url: 'http://50.57.202.190:8080/social/instagram.json',
+        url: 'http://test.121212concert.org/social/instagram.json',
         dataType: "jsonp",
+        cache: true,
+        ifModified: true,
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
         success: function parseResponse(result) {
@@ -404,7 +410,7 @@ $(window).load(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() + $(window).height() == $(document).height()) {
             $.ajax({
-                url: 'http://50.57.202.190:8080/social/instagram.json',
+                url: 'http://test.121212concert.org/social/instagram.json',
                 dataType: "jsonp",
                 jsonp: "parseResponse",
                	jsonpCallback: "parseResponse",
@@ -434,8 +440,10 @@ $(window).load(function () {
     });
 
     $.ajax({
-        url: 'http://50.57.202.190:8080/social/instagram.json',
+        url: 'http://test.121212concert.org/social/instagram.json',
         dataType: "jsonp",
+        cache: true,
+        ifModified: true,
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
         success: function parseResponse(result) {
@@ -452,9 +460,11 @@ $(window).load(function () {
     setInterval(function () {
 
         $.ajax({
-            url: 'http://50.57.202.190:8080/social/instagram.json',
+            url: 'http://test.121212concert.org/social/instagram.json',
             dataType: "jsonp",
             jsonp: "parseResponse",
+            cache: true,
+            ifModified: true,
             jsonpCallback: "parseResponse",
             success: function parseResponse(result) {
 
