@@ -28,9 +28,9 @@ $(document).ready(function() {
        $('.timer').attr('id', 'countup');
 
     }
-    
 
-    // Vimeo API 
+
+    // Vimeo API
     var vimeoPlayers = jQuery('.featured-img').find('iframe'),
         player;
 
@@ -63,19 +63,19 @@ $(document).ready(function() {
             wrapCSS: 'donate-modal',
             tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
     });
-    
+
     $('.amounts input[type=radio]').click(function(){
        $('#donate-popup .error').html('');
        var kale = $(this).val();
-       if(kale != 'custom'){            
+       if(kale != 'custom'){
             $('.amounts input.custom').removeAttr('checked');
             $('.amounts input[type=text]').css('color', '#fff');
        }
-       else{           
+       else{
            $('.amounts input.amount').removeAttr('checked');
            $('.amounts input[type=text]').css('color', '#000');
        }
-          
+
     });
     $('#amazon_amount').focus(function(){
         $('.amounts .custom').click();
@@ -140,7 +140,7 @@ $(window).load(function () {
                     $(this).show();
             });*/
         }
-    }); 
+    });
 
 	// Tumblr Flexslider
 	jQuery(".stories").flexslider({
@@ -157,9 +157,9 @@ $(window).load(function () {
 
 	// Celev Videos Slider Options
 	jQuery('.celeb-videos li').fitVids();
-	
+
 	$('.celeb-videos').flexslider({
-		animation:"fade", 
+		animation:"fade",
 		animationLoop: true,
 		smoothHeight:true,
 		useCSS: false,
@@ -177,7 +177,7 @@ $(window).load(function () {
 				if(!nextSlide.length) {
 					nextSlide = $(".celeb-video").eq(0);
 				}
-				
+
 				var	prevVideo = prevSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone(),
 					nextVideo = nextSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone();
 				prevVideo.addClass('previous-iframe');
@@ -257,7 +257,7 @@ $(window).load(function () {
               $('<ul/>', {
                     'class': 'jta-tweet-list',
                     html: items.join('')
-              }).appendTo('#js-robin-hood-tweets');              
+              }).appendTo('#js-robin-hood-tweets');
 
         },
         error : function(httpReq,status,exception){
@@ -304,7 +304,7 @@ $(window).load(function () {
         }
 
     });
-            
+
 	$(document).on('click', '.jta-tweet-list-autorefresh-trigger', function(e) {
 		$(this).remove();
 	})
