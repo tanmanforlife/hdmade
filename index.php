@@ -177,7 +177,7 @@
 		</div>
 
                 <div class="one-third">
-			<img src="img/itunes.png" alt="" />
+			<img src="img/itunes-order.png" alt="" />
 			<p><em>Check out the<br>121212 Soundtrack on iTunes</em></p>
 			<a class="link" href="#">Order</a>
 		</div>
