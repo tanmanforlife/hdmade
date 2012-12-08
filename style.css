@@ -710,7 +710,7 @@ section.twitter h2 {
 	font-size: 0.8em;
 	border-bottom: 1px solid #404040;
 	margin-bottom: 23px;
-        margin-right: 10px;
+        padding-right: 50px;
 }
 
 .jta-tweet-list li:last-child {

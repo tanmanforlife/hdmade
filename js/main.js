@@ -211,10 +211,10 @@ $(window).load(function () {
 	});
 
        $('.tumblr-feed .stories').flexslider({
-		animation:"slide",
+		slideshow: false,
+                animation:"slide",
 		animationLoop: true,
-                controlNav: false,
-                slideshow: false
+                controlNav: false
        });
 
 
