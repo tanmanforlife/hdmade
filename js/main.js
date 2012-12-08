@@ -377,28 +377,7 @@ $(window).load(function () {
     	event.preventDefault();
     });
 
-    $.ajax({
-        url: 'http://test.121212concert.org/social/instagram.json',
-        dataType: "jsonp",
-        jsonp: "parseResponse",
-        jsonpCallback: "parseResponse",
-        cache: true,
-        ifModified: true,
-        success: function parseResponse(result) {
-            var list = $('ul#js-instagram li');
-
-
-            $.each(list, function (index, value) {
-            	$('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr('href', result[index]['standard_res']);
-                $('ul#js-instagram li:nth-child(' + (index + 1) + ') img.photo').attr('src', result[index]['standard_res']);
-            });
-        }
-    });
-
-    setInterval(function () {
-
-        getBannerText();
-
+    if($('#js-instagram').length){
         $.ajax({
             url: 'http://test.121212concert.org/social/instagram.json',
             dataType: "jsonp",
@@ -407,21 +386,45 @@ $(window).load(function () {
             cache: true,
             ifModified: true,
             success: function parseResponse(result) {
-
-                var min = 1;
-                var max = $('ul#js-instagram li').size();
-                var maxer = 15;
-                var random = Math.floor(Math.random() * (max - min + 1)) + min;
-                var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
-
-                $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
-                	$('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', result[randomer]['standard_res']).fadeIn();
-            	});
+                var list = $('ul#js-instagram li');
 
 
+                $.each(list, function (index, value) {
+                    $('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr('href', result[index]['standard_res']);
+                    $('ul#js-instagram li:nth-child(' + (index + 1) + ') img.photo').attr('src', result[index]['standard_res']);
+                });
             }
         });
-    }, 60000);
+
+
+        setInterval(function () {
+
+            getBannerText();
+
+            $.ajax({
+                url: 'http://test.121212concert.org/social/instagram.json',
+                dataType: "jsonp",
+                jsonp: "parseResponse",
+                jsonpCallback: "parseResponse",
+                cache: true,
+                ifModified: true,
+                success: function parseResponse(result) {
+
+                    var min = 1;
+                    var max = $('ul#js-instagram li').size();
+                    var maxer = 15;
+                    var random = Math.floor(Math.random() * (max - min + 1)) + min;
+                    var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
+
+                    $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
+                            $('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', result[randomer]['standard_res']).fadeIn();
+                    });
+
+
+                }
+            });
+        }, 60000);
+    }
 });
 // Twitter helpers
 function decorateLinks(text)

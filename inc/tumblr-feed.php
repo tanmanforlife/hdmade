@@ -13,11 +13,11 @@
 		return $words;
 	}
 	
-  $input = file_get_contents("../social/tumblr.json");
+  $input = file_get_contents($_SERVER['DOCUMENT_ROOT']."/social/tumblr.json");
 	$input = str_replace('var tumblr_api_read = ','',$input);
 	$input = str_replace(';','',$input);
 	$value = jsonp_decode($input, true);
-
+        
 	for($i=0; $i < count($value); $i++){
 		$postUrl = $value[$i]['post_url'];
 		$tags = $value[$i]['tags'];
