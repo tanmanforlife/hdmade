@@ -16,13 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 <head>
     <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script> <!-- start Chartbeat -->
    
-	<script> // Springsteen Fix
-	var shorturl=/121212bruce/g;
-		if(shorturl.test(document.referrer)) {
-   			window.location = "http://youtu.be/1mRHNiVJl4U";
-	}
-	</script>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>121212 Concert</title>
