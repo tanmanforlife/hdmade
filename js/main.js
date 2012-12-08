@@ -223,8 +223,7 @@ $(window).load(function () {
 
     //Robin Hood Twitter Feed
      $.ajax({
-        //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
-        url: 'json/robinhood_1.json?callback=parseResult',
+        url: 'http://test.121212concert.org/social/robinhood.json',
         type: 'GET',
         dataType: 'jsonp',
         jsonpCallback: "parseResult",
@@ -232,7 +231,7 @@ $(window).load(function () {
              var items = [];
               $.each(data, function(i, tweet) {
                     var timeago = relative_time(tweet.created_at);
-                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-body "><span class="jta-tweet-text">' + decorateLinks(tweet.text) + '</span><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id+'">Retweet</a></span></div><div class="jta-clear">&nbsp;</div></li>');
+                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-body "><span class="jta-tweet-text">' + decorateLinks(tweet.text) + '</span><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'">Retweet</a></span></div><div class="jta-clear">&nbsp;</div></li>');
               });
 
               $('<ul/>', {
@@ -247,16 +246,15 @@ $(window).load(function () {
     });
 
     $.ajax({
-        //url: 'http://50.57.202.190:8080/social/robinhood.json?callback=parseRes',
-        url: 'json/artists.json?callback=parseArtistTweets',
+        url: 'http://test.121212concert.org/social/artists.json',
         type: 'GET',
         dataType: 'jsonp',
-        jsonpCallback: "parseArtistTweets",
+        jsonpCallback: "parseResult",
         success: function(data, textStatus, xhr) {
              var items = [];
               $.each(data, function(i, tweet) {
                     var timeago = relative_time(tweet.created_at);
-                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-profile-image"><a class="jta-tweet-profile-image-link" href="http://twitter.com/'+tweet.from_user+'" target="_blank"><img src="'+tweet.profile_image_url+'" alt="'+tweet.from_user+'" title="'+tweet.from_user_name+'"></a></div><div class="jta-tweet-body jta-tweet-body-list-profile-image-present"><span class="jta-tweet-text"><span class="jta-tweet-user-name"><span class="jta-tweet-user-screen-name"><a class="jta-tweet-user-screen-name-link" href="http://twitter.com/'+tweet.from_user_name+'" target="_blank">'+tweet.from_user_name+'</a></span><span class="jta-tweet-user-full-name"><a class="jta-tweet-user-full-name-link" href="http://twitter.com/'+tweet.from_user+'" name="'+tweet.from_user+'" target="_blank">'+tweet.from_user_name+'</a></span></span>'+decorateLinks(tweet.text)+'<span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id+'">Retweet</a></span></span></span></div><div class="jta-clear">&nbsp;</div></li>');
+                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-profile-image"><a class="jta-tweet-profile-image-link" href="http://twitter.com/'+tweet.from_user+'" target="_blank"><img src="'+tweet.profile_image_url+'" alt="'+tweet.from_user+'" title="'+tweet.from_user_name+'"></a></div><div class="jta-tweet-body jta-tweet-body-list-profile-image-present"><span class="jta-tweet-text"><span class="jta-tweet-user-name"><span class="jta-tweet-user-screen-name"><a class="jta-tweet-user-screen-name-link" href="http://twitter.com/'+tweet.from_user_name+'" target="_blank">'+tweet.from_user_name+'</a></span><span class="jta-tweet-user-full-name"><a class="jta-tweet-user-full-name-link" href="http://twitter.com/'+tweet.from_user+'" name="'+tweet.from_user+'" target="_blank">'+tweet.from_user_name+'</a></span></span>'+decorateLinks(tweet.text)+'<span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'">Retweet</a></span></span></span></div><div class="jta-clear">&nbsp;</div></li>');
               });
               $('<div/>', {
                     'class' : 'jta-tweet-flexslider'
@@ -394,7 +392,7 @@ $(window).load(function () {
     var limit = 14;
     $.ajax({
         //url: 'http://121212-feed.hdmade.com/results.json',
-        url: 'http://50.57.202.190:8080/social/instagram.json',
+        url: 'http://test.121212concert.org/social/instagram.json',
         dataType: "jsonp",
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
@@ -426,8 +424,7 @@ $(window).load(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() + $(window).height() == $(document).height()) {
             $.ajax({
-                //url: 'http://121212-feed.hdmade.com/results.json',
-                url: 'http://50.57.202.190:8080/social/instagram.json',
+                url: 'http://test.121212concert.org/social/instagram.json',
                 dataType: "jsonp",
                 jsonp: "parseResponse",
                	jsonpCallback: "parseResponse",
@@ -457,8 +454,7 @@ $(window).load(function () {
     });
 
     $.ajax({
-        //url: 'http://121212-feed.hdmade.com/results.json',
-        url: 'http://50.57.202.190:8080/social/instagram.json',
+        url: 'http://test.121212concert.org/social/instagram.json',
         dataType: "jsonp",
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
@@ -478,8 +474,7 @@ $(window).load(function () {
         getBannerText();
 
         $.ajax({
-            //url: 'http://121212-feed.hdmade.com/results.json',
-            url: 'http://50.57.202.190:8080/social/instagram.json',
+            url: 'http://test.121212concert.org/social/instagram.json',
             dataType: "jsonp",
             jsonp: "parseResponse",
             jsonpCallback: "parseResponse",
