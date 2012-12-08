@@ -22,7 +22,7 @@
 		<small class="one-half">&copy; 2002-2012 Robin Hood Foundation</small>
 	</div>
 </footer>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
