@@ -107,6 +107,16 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'TeeFraMed';
+	src: url('fonts/TeeFraMed.eot');
+	src: url('fonts/TeeFraMed.eot?#iefix') format('embedded-opentype'),
+		url('fonts/TeeFraMed.woff') format('woff'),
+		url('fonts/TeeFraMed.ttf') format('truetype');
+	font-style:normal;
+	font-weight: bold;
+}
+
 /* =============================================================================
    Icons
    ========================================================================== */
@@ -763,6 +773,9 @@ span.jta-tweet-action-retweet a{
 	margin:20px 0;
 	padding:20px 0;
 }
+.ways-to-donate h2, .twitter-wrap h2, .tumblr-feed h2, .instagram-feed h2, .what-artists h2, .celebs-sandy h2, .sandy-store h2, .sponsors h3, .robin-hood-stories h2{
+    font-family: "TeeFraMed", sans-serif;
+}
 .ways-to-donate .td {
 	padding:0 1%;
 	text-align: center;
@@ -1322,8 +1335,8 @@ abbr[title] {
 
 .robin-hood-stories h3 {
 	display: block;
-	font-family: 'TradeGothic';
-	font-size: 2em;
+	font-family: "TeeFraMed", sans-serif;
+	font-size: 1.8em;
 	letter-spacing: 1px;
 	margin:0 0 .5em;
 	text-transform: uppercase;
@@ -1382,7 +1395,7 @@ abbr[title] {
 	font-size: 28px;
 	line-height: 1.5;
 	text-align: center;
-	font-family: 'TradeGothic';
+	font-family: "TeeFraMed", sans-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	display: block;
