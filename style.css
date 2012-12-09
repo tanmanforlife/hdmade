@@ -1194,6 +1194,7 @@ p.samsung {
 	top:50%;
 	right:0;
 	width:35%;
+        cursor: pointer;
 }
 .celeb-video-wrap > .bg-video-overlay {
 	background:#000;
