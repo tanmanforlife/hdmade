@@ -2115,4 +2115,7 @@ abbr[title] {
             display: inline-block;
             width: 12%;
         }
+        .artists-tweets .jta-tweet-text{
+            padding-right: 0;
+        }
 }
