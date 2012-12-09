@@ -152,16 +152,16 @@ $(window).load(function () {
 
 	// Tumblr Flexslider
 	jQuery(".stories").flexslider({
-        animation: "slide",
-        animationLoop: false,
-        smoothHeight: true,
-        useCSS: false,
-        controlNav: false,
-        directionNav: true,
-        slideshow: true,
-		slideshowSpeed: 5000,
-        touch: false
-    });
+            animation: "slide",
+            animationLoop: false,
+            smoothHeight: true,
+            useCSS: false,
+            controlNav: false,
+            directionNav: true,
+            slideshow: false,
+            slideshowSpeed: 5000,
+            touch: false
+        });
 
 	// Celev Videos Slider Options
 	jQuery('.celeb-videos li').fitVids();
@@ -217,13 +217,7 @@ $(window).load(function () {
 			'marginTop': -1*(videoHeight/2)
 		});
 	});
-
-       $('.tumblr-feed .stories').flexslider({
-		slideshow: false,
-                animation:"slide",
-		animationLoop: true,
-                controlNav: false
-       });
+       
 
 
     function getBannerText(){
