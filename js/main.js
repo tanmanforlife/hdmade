@@ -89,6 +89,14 @@ $(document).ready(function() {
             return false;
         }
     })
+    $('.jta-tweet-action-retweet a').live('click', function(){
+        popup($(this).attr('href'), 'twitterwin');
+        return false;
+    })
+    $('.nav .share a').click(function(){
+        popup($(this).attr('href'), 'socialwin');
+        return false;
+    });
 
 });  // End Doc Ready
 
@@ -252,7 +260,7 @@ $(window).load(function () {
               $.each(data, function(i, tweet) {
                     if(i>1) return false;
                     var timeago = relative_time(tweet.created_at);
-                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-body "><span class="jta-tweet-text">' + decorateLinks(tweet.text) + '</span><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'">Retweet</a></span></div><div class="jta-clear">&nbsp;</div></li>');
+                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-body "><span class="jta-tweet-text">' + decorateLinks(tweet.text) + '</span><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'" target=_blank>Retweet</a></span></div><div class="jta-clear">&nbsp;</div></li>');
               });
 
               $('<ul/>', {
@@ -276,7 +284,7 @@ $(window).load(function () {
                      var items = [];
                       $.each(data, function(i, tweet) {
                             var timeago = relative_time(tweet.created_at);
-                            items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-profile-image"><a class="jta-tweet-profile-image-link" href="http://twitter.com/'+tweet.from_user+'" target="_blank"><img src="'+tweet.profile_image_url+'" alt="'+tweet.from_user+'" title="'+tweet.from_user_name+'"></a></div><div class="jta-tweet-body jta-tweet-body-list-profile-image-present"><span class="jta-tweet-text"><span class="jta-tweet-user-name"><span class="jta-tweet-user-screen-name"><a class="jta-tweet-user-screen-name-link" href="http://twitter.com/'+tweet.from_user_name+'" target="_blank">'+tweet.from_user_name+'</a></span><span class="jta-tweet-user-full-name"><a class="jta-tweet-user-full-name-link" href="http://twitter.com/'+tweet.from_user+'" name="'+tweet.from_user+'" target="_blank">'+tweet.from_user_name+'</a></span></span>'+decorateLinks(tweet.text)+'</div><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'">Retweet</a></span></span></span><div class="jta-clear">&nbsp;</div></li>');
+                            items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-profile-image"><a class="jta-tweet-profile-image-link" href="http://twitter.com/'+tweet.from_user+'" target="_blank"><img src="'+tweet.profile_image_url+'" alt="'+tweet.from_user+'" title="'+tweet.from_user_name+'"></a></div><div class="jta-tweet-body jta-tweet-body-list-profile-image-present"><span class="jta-tweet-text"><span class="jta-tweet-user-name"><span class="jta-tweet-user-screen-name"><a class="jta-tweet-user-screen-name-link" href="http://twitter.com/'+tweet.from_user_name+'" target="_blank">'+tweet.from_user_name+'</a></span><span class="jta-tweet-user-full-name"><a class="jta-tweet-user-full-name-link" href="http://twitter.com/'+tweet.from_user+'" name="'+tweet.from_user+'" target="_blank">'+tweet.from_user_name+'</a></span></span>'+decorateLinks(tweet.text)+'</div><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'" target=_blank>Retweet</a></span></span></span><div class="jta-clear">&nbsp;</div></li>');
                       });
                       $('<div/>', {
                             'class' : 'jta-tweet-flexslider'
@@ -343,27 +351,28 @@ $(window).load(function () {
         }
         return count;
     }
+    if($('#js-instagram-all').length){
+        $(window).scroll(function () {
+            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                $.ajax({
+                    url: 'http://test.121212concert.org/social/instagram.json',
+                    dataType: "jsonp",
+                    jsonp: "parseResponse",
+                    jsonpCallback: "parseResponse",
+                    cache: true,
+                    ifModified: true,
+                    success: function parseResponse(result) {
+                        var list = $('ul#js-instagram-all li');
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-            $.ajax({
-                url: 'http://test.121212concert.org/social/instagram.json',
-                dataType: "jsonp",
-                jsonp: "parseResponse",
-               	jsonpCallback: "parseResponse",
-                cache: true,
-                ifModified: true,
-                success: function parseResponse(result) {
-                    var list = $('ul#js-instagram-all li');
-
-                    for (var i = limit; i < limit + 15; i++) {
-                        $('ul#js-instagram-all').append('<a href="'+ result[limit]['standard_res'] +'"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
+                        for (var i = limit; i < limit + 15; i++) {
+                            $('ul#js-instagram-all').append('<a href="'+ result[limit]['standard_res'] +'"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
+                        }
                     }
-                }
-            });
-            limit += 15;
-        }
-    });
+                });
+                limit += 15;
+            }
+        });
+    }
 
     // Flash Message Close
     $('a.close').click(function (event) {
@@ -466,3 +475,9 @@ function relative_time(date_str) {
     }
     return  r;
 };
+
+function popup(url, target)
+{
+    mywindow = window.open(url, target, "location=0,toolbar=0,status=1,scrollbars=1,  width=500,height=400");
+    mywindow.moveTo(0, 0);
+}
