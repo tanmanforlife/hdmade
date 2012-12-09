@@ -179,7 +179,7 @@
 		<div class="one-third">
 			<img src="img/hoodies.png" alt="Merchandise Hoodes" />
 			<p><em>Merchandise proceeds go to the Robin Hood Relief Fund</em></p>
-			<a class="link" href="#">Buy</a>
+			<a class="link" href="http://store.121212concert.org" target="_blank">Buy</a>
 		</div>
 
                 <div class="one-third">
@@ -191,7 +191,7 @@
 		<div class="one-third">
 			<a href="http://www.iheart.com/live/6146/?autoplay=true"><img src="img/1212merch.png" alt="Listen to the Artists" /></a>
 			<p><em>Listen to all the artists on<br>121212 Radio</em></p>
-			<a class="link" href="http://www.iheart.com/live/6146/?autoplay=true">Listen</a>
+			<a class="link" href="http://www.iheart.com/live/6146/?autoplay=true" target="_blank">Listen</a>
 		</div>
 		
 	</div>
