@@ -2,11 +2,11 @@
 	<div class="wrapper">
 		<h3>Brought To You By</h3>
 		<ul class="sponsor-list">
-			<li data-sponsor="ClearChannel"><a href="#">ClearChannel</a></li>
-			<li data-sponsor="iHeartRadio"><a href="#">iHeartRadio</a></li>
-			<li data-sponsor="MSG"><a href="#">The Madison Square Garden Company</a></li>
-			<li data-sponsor="Robin Hood"><a href="#">Robin Hood</a></li>
-			<li data-sponsor="The Weinstein Company"><a href="#">The Weinstein Company</a></li>
+			<li data-sponsor="ClearChannel"><span>ClearChannel</span></li>
+			<li data-sponsor="iHeartRadio"><span>iHeartRadio</span></li>
+			<li data-sponsor="MSG"><span>The Madison Square Garden Company</span></li>
+			<li data-sponsor="Robin Hood"><span>Robin Hood</span></li>
+			<li data-sponsor="The Weinstein Company"><span>The Weinstein Company</span></li>
 		</ul>
 	</div> <!-- .wrapper -->
 </div> <!-- .sponsors -->
@@ -14,9 +14,9 @@
 	<div class="wrapper cf">
 		<nav class="one-half cf">
 			<ul class="nav footer">
-				<li><a href="#privacy" class="lightbox-text">Robin Hood</a></li>
-				<li><a href="" class="lightbox-text">Privacy Policy</a></li>
-				<li><a href="" class="lightbox-text">Terms of Use</a></li>
+				<li><a href="http://www.robinhood.org" class="lightbox-text" target="_blank">Robin Hood</a></li>
+				<li><a href="http://www.robinhood.org/legal/privacy-policy" class="lightbox-text" target="_blank">Privacy Policy</a></li>
+				<li><a href="http://www.robinhood.org/legal/terms-of-use" class="lightbox-text" target="_blank">Terms of Use</a></li>
 			</ul>
 		</nav>
 		<small class="one-half">&copy; 2002-2012 Robin Hood Foundation</small>

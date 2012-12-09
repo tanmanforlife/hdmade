@@ -67,11 +67,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 </div>
 <div class="sponsor-banner flexslider-fade">
 	<ul class="slides cf">
-		<li><a href="#"><img src="img/header-logos/optimum.png" alt="Optimum Lightpath" title="Optimum Lightpath" /></a>
-			<a href="#"><img src="img/header-logos/samsung.png" alt="Samsung Galaxy" title="Samsung Galaxy" /></a>
-			<a href="#"><img src="img/header-logos/statefarm.png" alt="Statefarm" title="Statefarm" /></a>
-			<a href="#"><img src="img/header-logos/time-warner.png" alt="Time Warner Company" title="Time Warner Company" /></a>
-			<a href="#"><img src="img/header-logos/verizon.png" alt="Verizon Foundation" title="Verizon Foundation" /></a></li>
+		<li>
+			<img src="img/header-logos/optimum.png" alt="Optimum Lightpath" title="Optimum Lightpath" />
+			<img src="img/header-logos/samsung.png" alt="Samsung Galaxy" title="Samsung Galaxy" />
+			<img src="img/header-logos/statefarm.png" alt="Statefarm" title="Statefarm" />
+			<img src="img/header-logos/time-warner.png" alt="Time Warner Company" title="Time Warner Company" />
+			<img src="img/header-logos/verizon.png" alt="Verizon Foundation" title="Verizon Foundation" />
+		</li>
 	</ul>
 </div>
 <div class="flash">
@@ -126,9 +128,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 					<li><a href="social.php" target="_blank">Connect</a></li>
 					<li><a href="http://store.121212concert.org" target="_blank">Shop</a></li>
 					<li><span class="separator">|</span></li>
-					<li class="share"><a href="#">Share</a></li>
+					<li class="share"><span>Share</span></li>
 					<li class="share share-fb"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo urlencode('http://www.121212concert.org'); ?>" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
-					<li class="share share-tw"><a target="_blank" href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
+					<li class="share share-tw"><a target="_blank" href="http://twitter.com/share?text=The%20concert%20for%20Sandy%20relief&url=http://www.121212concert.org" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
 				</ul> <!-- .nav -->
 			</nav> <!-- g four-fifths -->
 		</div> <!-- .menu-wrap -->
