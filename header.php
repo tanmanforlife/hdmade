@@ -86,6 +86,7 @@ function auto_version($file) {
 		<div class="error"></div>
 	</form>
 </div>
+<!--
 <div class="sponsor-banner flexslider-fade">
 	<ul class="slides cf">
 		<li>
@@ -97,6 +98,7 @@ function auto_version($file) {
 		</li>
 	</ul>
 </div>
+-->
 <div class="flash">
 	<div>
 		<p></p>
