@@ -36,13 +36,13 @@
 				<div class="table to-give">
 					<div class="tr">
 						<div class="td">
-							<a class="btn donate" href="#">Donate</a>
+							<a class="btn donate donate-modal-link" href="#donate-popup">Donate</a>
 						</div>
 						<div class="td">
 							<p>Donate using your Amazon Account</p>
 						</div>
 						<div class="td">
-							<a class="btn donate" href="">
+							<a class="btn donate" href="#>
 								<span class="icon-twitter"></span>Twitter
 							</a>
 						</div>
