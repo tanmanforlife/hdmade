@@ -2103,4 +2103,15 @@ abbr[title] {
           -webkit-appearance: none;
           -webkit-border-radius: 0;
         }
+        .sponsor-banner{
+            /*height: 100px;*/
+        }
+        .sponsor-banner .slides li{
+            text-align: center;
+        }
+        .sponsor-banner .slides li img{
+            margin: 5px 10px;
+            display: inline-block;
+            width: 13%;
+        }
 }
