@@ -2065,7 +2065,7 @@ abbr[title] {
             font-size: 0.8em;
         }
         #donate-popup p{
-            padding: 0 10px 10px 10px;
+            padding: 0 10px;
             font-family:"Georgia", serif;
             font-style: italic;
             font-size: 0.8em;
@@ -2079,7 +2079,7 @@ abbr[title] {
         }
         #donate-popup .custom_wrap{
             display: block;
-            margin-top: 20px;
+            margin-top: 10px;
         }
         .donate-modal .fancybox-inner{
             height: 240px !important;
