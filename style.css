@@ -1798,11 +1798,11 @@ abbr[title] {
 		padding-top: 20px;
 	}
 	.menu-wrap {
-		padding:0 10px 25px;
+		padding:0 10px 15px;
 	}
 	.menu-wrap nav {
 		float: right;
-                margin-top: 5px;
+                margin-top: 10px;
 	}
 	.nav-mobile {
 		display: block
@@ -1814,7 +1814,11 @@ abbr[title] {
 		padding-left: .5em;
 		padding-right: .5em;
                 font-size: 28px;
+                margin-top: 5px;
 	}
+        .menu-wrap .separator{
+            display: none;
+        }
 	.main {
 		border-top: 1px solid #345d96;
 		padding: 0;
