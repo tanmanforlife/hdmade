@@ -128,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 					<li><a href="social.php" target="_blank">Connect</a></li>
 					<li><a href="http://store.121212concert.org" target="_blank">Shop</a></li>
 					<li><span class="separator">|</span></li>
-					<li class="share"><a href="#">Share</a></li>
+					<li class="share"><span>Share</span></li>
 					<li class="share share-fb"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo urlencode('http://www.121212concert.org'); ?>" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
 					<li class="share share-tw"><a target="_blank" href="http://twitter.com/share?text=The%20concert%20for%20Sandy%20relief&url=http://www.121212concert.org" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
 				</ul> <!-- .nav -->

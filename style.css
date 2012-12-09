@@ -524,6 +524,7 @@ h3 {
 	margin:0 .4em;
 }
 .menu-wrap a,
+.menu-wrap span,
 .menu-wrap .separator {
 	color:#fff;
 	font-family:"TradeGothicCond";
@@ -535,7 +536,10 @@ h3 {
 .menu-wrap a:hover {
 	color:#bce723;
 }
-.menu-wrap .share a {
+.menu-wrap .share{
+
+}
+.menu-wrap .share a, .menu-wrap .share span {
 	color:#bce723;
 }
 .menu-wrap .share a:hover {
