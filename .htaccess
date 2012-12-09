@@ -1,2 +1,10 @@
 # Enable content negotiation for clean URLs.
 Options +MultiViews
+
+# Enable arbitrary numbers in CSS/JS paths, a la:
+# main.198294720.js
+RewriteEngine On
+# Make sure that the file doesn't actually exist
+RewriteCond %{REQUEST_FILENAME} !-s
+# Strip out the version number
+RewriteRule ^(.*)\.[\d]+\.(css|js)$ $1.$2 [L]
