@@ -1,5 +1,5 @@
-archive_clean_wp/*
 nbproject
+archive_clean_wp/*
 sql_1.sql
 .DS_Store
 wp-config.php
