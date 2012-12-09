@@ -15,6 +15,12 @@ function auto_version($file) {
     $root_path .= "/";
   }
 
+  if(strstr($_SERVER['HTTP_HOST'], 'localhost') || strstr($_SERVER['HTTP_HOST'], 'hdmade')){
+      if(strstr($file, 'style')){          
+          return 'style.css';
+      }
+  }
+
   // Get the file modified time and put it into the filename.
   $mtime = filemtime($file);
   return $root_path . preg_replace('{\\.([^./]+)$}', ".$mtime.\$1", $file);

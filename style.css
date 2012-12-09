@@ -2096,4 +2096,7 @@ abbr[title] {
         .twitter-wrap{
             overflow: visible;
         }
+        .home > .top{
+            padding-bottom: 0;
+        }
 }
