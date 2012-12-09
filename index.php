@@ -141,34 +141,34 @@
 			<li class="celeb-video">
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
-						<iframe src="http://player.vimeo.com/video/54423646?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						<iframe src="http://player.vimeo.com/video/55133889?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</div>
 				</div>
-				<p>Alicia Keys talks about the impact of Sandy.</p>
+				<p>Jon Bon Jovi talks about seeing the destruction Hurricane Sandy wreaked on his hometown and the need for the relief effort.</p>
 			</li>
 			<li class="celeb-video">
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
-						<iframe src="http://player.vimeo.com/video/53745876?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						<iframe src="http://player.vimeo.com/video/55133887?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</div>
 				</div>
-				<p>Alicia Keys talks about the impact of Sandy.</p>
+				<p>Billy Joel talks about being in New York during Hurricane Sandy and the need for the relief effort.</p>
 			</li>
 			<li class="celeb-video">
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
-						<iframe src="http://player.vimeo.com/video/54658957?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						<iframe src="http://player.vimeo.com/video/55133888?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</div>
 				</div>
-				<p>Alicia Keys talks about the impact of Sandy.</p>
+				<p>Alicia Keys talks about the lingering effects of Hurricane Sandy on New York and the need for the relief effort.</p>
 			</li>
 			<li class="celeb-video">
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
-						<iframe src="http://player.vimeo.com/video/54626679?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						<iframe src="http://player.vimeo.com/video/55138860?byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</div>
 				</div>
-				<p>Alicia Keys talks about the impact of Sandy.</p>
+				<p>Bruce Springsteen talks about the destruction Hurricane Sandy caused to the Jersey Shore and the need to raise money for the relief effort.</p>
 			</li>
 		</ul>
 	</div> <!-- .celeb-videos -->
