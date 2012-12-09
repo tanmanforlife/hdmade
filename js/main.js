@@ -268,7 +268,7 @@ $(window).load(function () {
         },
         complete : function(){
             $.ajax({
-                url: 'http://akamaitest.121212concert.org/social/artists.json',
+                url: 'http://test.121212concert.org/social/favs.json',
                 type: 'GET',
                 dataType: 'jsonp',
                 jsonpCallback: "parseResult",
