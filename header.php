@@ -6,6 +6,19 @@ ob_start();
 if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD') {
   header("Cache-Control: public, max-age=300");
 }
+
+function auto_version($file) {
+  // Detect the path to the root, just in case someone is running this on
+  // http://localhost/121212concert/, for example.
+  $root_path = dirname($_SERVER["SCRIPT_NAME"]);
+  if ($root_path !== "/") {
+    $root_path .= "/";
+  }
+
+  // Get the file modified time and put it into the filename.
+  $mtime = filemtime($file);
+  return $root_path . preg_replace('{\\.([^./]+)$}', ".$mtime.\$1", $file);
+}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -15,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 <html>
 <head>
     <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script> <!-- start Chartbeat -->
-   
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>121212 Concert</title>
@@ -23,15 +36,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!--[if IE]>
-        <script type="text/javascript" src="js/html5.js"></script>
+      <script type="text/javascript" src="<?php echo auto_version('js/html5.js'); ?>"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="<?php echo auto_version('style.min.css'); ?>" type="text/css" />
+    <link rel="icon" type="image/png" href="<?php echo auto_version('img/favicon.png'); ?>" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-	<script src="js/modernizr.min.js"></script>
+    <script src="<?php echo auto_version('js/modernizr.min.js'); ?>"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
-        <script type="text/javascript" src="js/selectivizr.min.js"></script>
+      <script type="text/javascript" src="<?php echo auto_version('js/selectivizr.min.js') ?>"></script>
     <![endif]-->
 
 </head>
