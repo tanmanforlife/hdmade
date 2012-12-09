@@ -1185,7 +1185,7 @@ p.samsung {
 	position: relative;
 }
 .celeb-video-frame {
-	padding:0 20%;
+	margin:0 20%;
 	position: relative;
 }
 .celeb-video-wrap > iframe,
