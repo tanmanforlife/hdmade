@@ -218,6 +218,12 @@ $(window).load(function () {
 			'marginTop': -1*(videoHeight/2)
 		});
 	});
+        $('.celeb-videos  .bgvo-right').live('click',function(){
+            $('.celeb-videos .flex-next').click();
+        });
+        $('.celeb-videos  .bgvo-left').live('click',function(){
+            $('.celeb-videos .flex-prev').click();
+        });
        
 
 
