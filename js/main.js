@@ -61,7 +61,7 @@ $(document).ready(function() {
             type: 'inline',
             closeBtn: true,
             wrapCSS: 'donate-modal',
-            transitionIn: 'none',            
+            openEffect: 'none',
             tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
     });
 
