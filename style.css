@@ -446,10 +446,14 @@ h3 {
 }
 .sponsor-banner a {
 	display: inline-block;
+}
+
+.sponsor-banner img{
 	opacity:0.7;
 	filter:alpha(opacity=70);
 }
-.sponsor-banner a:hover {
+
+.sponsor-banner a:hover img {
 	opacity:1;
 	filter:alpha(opacity=100);
 }
@@ -1430,7 +1434,7 @@ abbr[title] {
 	list-style: none;
 	margin:10px;
 }
-.sponsor-list li a {
+.sponsor-list li span {
 	background:url('img/sponsors-big.png') no-repeat;
 	height: 75px;
 	display: block;
@@ -1442,43 +1446,43 @@ abbr[title] {
 	opacity:0.7;
 	filter:alpha(opacity=70);
 }
-.sponsor-list li[data-sponsor="Optimum Lightpath"] a {
+.sponsor-list li[data-sponsor="Optimum Lightpath"] span {
 	background-position:0 4px;
 	width:145px;
 }
-.sponsor-list li[data-sponsor="Samsung Galaxy"] a {
+.sponsor-list li[data-sponsor="Samsung Galaxy"] span {
 	background-position:-190px 7px;
 	width:202px;
 }
-.sponsor-list li[data-sponsor="StateFarm"] a {
+.sponsor-list li[data-sponsor="StateFarm"] span {
 	background-position:-439px 2px;
 	width:181px;
 }
-.sponsor-list li[data-sponsor="TWC"] a {
+.sponsor-list li[data-sponsor="TWC"] span {
 	background-position:-666px 0px;
 	width:123px;
 }
-.sponsor-list li[data-sponsor="Verizon"] a {
+.sponsor-list li[data-sponsor="Verizon"] span {
 	background-position:-842px 3px;
 	width:159px;
 }
-.sponsor-list li[data-sponsor="ClearChannel"] a {
+.sponsor-list li[data-sponsor="ClearChannel"] span {
 	background-position:13px -2px;
 	width:104px;
 }
-.sponsor-list li[data-sponsor="iHeartRadio"] a {
+.sponsor-list li[data-sponsor="iHeartRadio"] span {
 	background-position:-160px -4px;
 	width:104px;
 }
-.sponsor-list li[data-sponsor="MSG"] a {
+.sponsor-list li[data-sponsor="MSG"] span {
 	background-position:-348px -7px;
 	width:204px;
 }
-.sponsor-list li[data-sponsor="Robin Hood"] a {
+.sponsor-list li[data-sponsor="Robin Hood"] span {
 	background-position:-615px -8px;
 	width:148px;
 }
-.sponsor-list li[data-sponsor="The Weinstein Company"] a {
+.sponsor-list li[data-sponsor="The Weinstein Company"] span {
 	background-position:-832px -6px;
 	width:148px;
 }

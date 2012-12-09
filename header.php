@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
         <script type="text/javascript" src="js/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="style.min.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script src="js/modernizr.min.js"></script>
@@ -67,11 +67,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 </div>
 <div class="sponsor-banner flexslider-fade">
 	<ul class="slides cf">
-		<li><a href="#"><img src="img/header-logos/optimum.png" alt="Optimum Lightpath" title="Optimum Lightpath" /></a>
-			<a href="#"><img src="img/header-logos/samsung.png" alt="Samsung Galaxy" title="Samsung Galaxy" /></a>
-			<a href="#"><img src="img/header-logos/statefarm.png" alt="Statefarm" title="Statefarm" /></a>
-			<a href="#"><img src="img/header-logos/time-warner.png" alt="Time Warner Company" title="Time Warner Company" /></a>
-			<a href="#"><img src="img/header-logos/verizon.png" alt="Verizon Foundation" title="Verizon Foundation" /></a></li>
+		<li>
+			<img src="img/header-logos/optimum.png" alt="Optimum Lightpath" title="Optimum Lightpath" />
+			<img src="img/header-logos/samsung.png" alt="Samsung Galaxy" title="Samsung Galaxy" />
+			<img src="img/header-logos/statefarm.png" alt="Statefarm" title="Statefarm" />
+			<img src="img/header-logos/time-warner.png" alt="Time Warner Company" title="Time Warner Company" />
+			<img src="img/header-logos/verizon.png" alt="Verizon Foundation" title="Verizon Foundation" />
+		</li>
 	</ul>
 </div>
 <div class="flash">
