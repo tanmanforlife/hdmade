@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 <html>
 <head>
     <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script> <!-- start Chartbeat -->
-   
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>121212 Concert</title>
