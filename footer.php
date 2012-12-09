@@ -23,8 +23,8 @@
 	</div>
 </footer>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="<?php echo auto_version('js/plugins.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo auto_version('js/main.js'); ?>"></script>
 
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
