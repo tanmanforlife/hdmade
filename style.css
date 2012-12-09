@@ -2081,7 +2081,7 @@ abbr[title] {
             display: block;
         }
         .donate-modal .fancybox-inner{
-            height: 310px !important;
+            height: 240px !important;
         }
 
         .sandy-store .pushup{
@@ -2098,5 +2098,9 @@ abbr[title] {
         }
         .home > .top{
             padding-bottom: 0;
+        }
+        input, textarea {
+          -webkit-appearance: none;
+          -webkit-border-radius: 0;
         }
 }
