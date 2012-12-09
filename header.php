@@ -36,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 
 </head>
 <body<?php if(isset($body_class)) echo ' class="'.$body_class.'"'; ?>>
+<!-- This is Steven's new change for the load test. -->
 <div id="donate-popup" style="display: none;">
 	<h1>Donate</h1>
 	<p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Releif Fund.  You will be redirected to Amazon to complete the payment process.</p>
