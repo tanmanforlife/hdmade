@@ -1332,6 +1332,11 @@ abbr[title] {
 	padding: 10px 0 60px 0;
 }
 
+.robin-hood-stories hgroup{
+    text-align: center;
+    margin: 40px 0;
+}
+
 .robin-hood-stories h2 {
 	font-family: 'TradeGothicCond';
 	font-size: 3em;

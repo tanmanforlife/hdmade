@@ -199,7 +199,8 @@
 <div class="robin-hood-stories cf">
 	<div class="wrapper cf">
 		<hgroup>
-			<h2>Robin <span class="icon-robin"></span> Hood</h2>
+			<!--h2>Robin <span class="icon-robin"></span> Hood</h2-->
+                        <img src="img/RHlogo.png" />
 		</hgroup>
 		<img src="img/robin-hood-cleanup.jpg" alt="" class="left">
 		<div class="right">
