@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 					<li><span class="separator">#121212Concert</span></li>
 					<li><a href="broadcast.php" target="_blank">Watch</a></li>
 					<li><a href="social.php" target="_blank">Connect</a></li>
-					<li><a href="#" target="_blank">Shop</a></li>
+					<li><a href="http://store.121212concert.org" target="_blank">Shop</a></li>
 					<li><span class="separator">|</span></li>
 					<li class="share"><a href="#">Share</a></li>
 					<li class="share share-fb"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo urlencode('http://www.121212concert.org'); ?>" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
