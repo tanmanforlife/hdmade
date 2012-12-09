@@ -1,0 +1,2 @@
+# Enable content negotiation for clean URLs.
+Options +MultiViews
