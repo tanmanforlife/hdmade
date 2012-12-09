@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-
+<?php header("HTTP/1.1 404 Not Found"); ?>
 	<div class="wrapper four-oh-four">
 
 		<h1 class="mega">Error 404 - Not Found</h1>

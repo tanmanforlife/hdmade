@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
         <script type="text/javascript" src="js/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="style.min.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script src="js/modernizr.min.js"></script>
@@ -36,9 +36,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 
 </head>
 <body<?php if(isset($body_class)) echo ' class="'.$body_class.'"'; ?>>
+<!-- This is Steven's newer change for the load test. -->
 <div id="donate-popup" style="display: none;">
 	<h1>Donate</h1>
-	<p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Releif Fund.  You will be redirected to Amazon to complete the payment process.</p>
+	<p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Relief Fund.  You will be redirected to Amazon to complete the payment process.</p>
 	<!--a href="" class="btn donate">Donate</a-->
 	<form id="donate-form" action="https://authorize.payments-sandbox.amazon.com/pba/paypipeline" method="post" target="_blank">
 		<input type="hidden" name="returnUrl" value="http://www.121212concert.org/" >
@@ -123,11 +124,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 					<li><span class="separator">#121212Concert</span></li>
 					<li><a href="broadcast.php" target="_blank">Watch</a></li>
 					<li><a href="social.php" target="_blank">Connect</a></li>
-					<li><a href="#" target="_blank">Shop</a></li>
+					<li><a href="http://store.121212concert.org" target="_blank">Shop</a></li>
 					<li><span class="separator">|</span></li>
 					<li class="share"><a href="#">Share</a></li>
-					<li class="share share-fb"><a href="http://www.facebook.com/sharer.php?u=<?php echo urlencode('http://www.121212concert.org'); ?>" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
-					<li class="share share-tw"><a href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
+					<li class="share share-fb"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo urlencode('http://www.121212concert.org'); ?>" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
+					<li class="share share-tw"><a target="_blank" href="#" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
 				</ul> <!-- .nav -->
 			</nav> <!-- g four-fifths -->
 		</div> <!-- .menu-wrap -->

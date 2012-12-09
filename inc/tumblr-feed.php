@@ -13,15 +13,11 @@
 		return $words;
 	}
 	
-	$request = 'http://50.57.202.190:8080/social/tumblr.json';
-	
-	$ci = curl_init($request);
-	curl_setopt($ci, CURLOPT_RETURNTRANSFER, TRUE);
-	$input = curl_exec($ci);
+  $input = file_get_contents($_SERVER['DOCUMENT_ROOT']."/social/tumblr.json");
 	$input = str_replace('var tumblr_api_read = ','',$input);
 	$input = str_replace(';','',$input);
 	$value = jsonp_decode($input, true);
-	
+        
 	for($i=0; $i < count($value); $i++){
 		$postUrl = $value[$i]['post_url'];
 		$tags = $value[$i]['tags'];
@@ -34,7 +30,7 @@
 				<div class="item-wrap">
 					<div class="content">
 						<a href="<?php echo $postUrl ?>"><img src="<?php echo $photoUrl ?>" alt="tumblr photo" /></a>
-						<p><? echo limit_words($photoCaption, 20); ?></p>
+						<p><?php echo limit_words($photoCaption, 20); ?></p>
 					</div>
 				</div>
 			</li>

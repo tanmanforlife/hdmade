@@ -5,10 +5,16 @@
 	<div class="main" role="main"> */ ?>
 		<div class="outer-wrapper cf">
 			<section class="g span-2 featured-img">
+				
+				<iframe src="http://static.iheart.com/121212/player.html?partner=robinhood" width="100%" height="371px" scrolling="no" frameborder="0"></iframe>
+
+				<!--
 				<ul class="slides">
 					<!--li><img src="carousel-images/carousel_1.jpg" alt="" height="360" width="640" /></li-->
                                     <li><iframe src="http://static.iheart.com/121212/player.html?partner=robinhood" width="100%" height="371px" scrolling="no" frameborder="0"></iframe></li>
 				</ul> <!-- .slides -->
+		
+
 			</section> <!-- .g.span-2.featured-img -->
 			<div class="nav-mobile" aria-hidden="true">
 				<ul class="nav">
@@ -178,7 +184,7 @@
 
                 <div class="one-third">
 			<img src="img/itunes-order.png" alt="" />
-			<p><em>Check out the<br>121212 Soundtrack on iTunes</em></p>
+			<p class="pushup"><em>Check out the<br>121212 Soundtrack on iTunes</em></p>
 			<a class="link" href="#">Order</a>
 		</div>
 
@@ -193,7 +199,8 @@
 <div class="robin-hood-stories cf">
 	<div class="wrapper cf">
 		<hgroup>
-			<h2>Robin <span class="icon-robin"></span> Hood</h2>
+			<!--h2>Robin <span class="icon-robin"></span> Hood</h2-->
+                        <img src="img/RHlogo.png" />
 		</hgroup>
 		<img src="img/robin-hood-cleanup.jpg" alt="" class="left">
 		<div class="right">

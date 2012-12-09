@@ -13,8 +13,8 @@
     Normalize CSS (git.io/normalize)
     ========================================================================== */
 
-	article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}small{font-size:80%;}img{border:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}body,figure{margin:0;}
-
+	article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+	
 	a,
 	a:hover,
 	a:focus,
@@ -78,7 +78,7 @@
 	font-style:normal;
 	font-weight: bold;
 }
-
+ 
 @font-face {
 	font-family: 'TradeGothicCond';
 	src: url('fonts/webfonts/1935B8_10.eot');
@@ -105,16 +105,6 @@
 	src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
-}
-
-@font-face {
-	font-family: 'TeeFraMed';
-	src: url('fonts/TeeFraMed.eot');
-	src: url('fonts/TeeFraMed.eot?#iefix') format('embedded-opentype'),
-		url('fonts/TeeFraMed.woff') format('woff'),
-		url('fonts/TeeFraMed.ttf') format('truetype');
-	font-style:normal;
-	font-weight: bold;
 }
 
 /* =============================================================================
@@ -464,7 +454,7 @@ h3 {
    ========================================================================== */
 
 .top {
-	background:url('img/Extendedbackground.final.jpg') no-repeat center top;
+	background:url('img/bg.jpg') no-repeat center top;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-ms-background-size:cover;
@@ -564,7 +554,6 @@ h3 {
 	padding:20px;
 	position: relative;
 }
-
 .flash p {
 	margin:0;
 }
@@ -587,13 +576,10 @@ h3 {
 	font-weight: normal;
 	text-transform: none;
 }
-.flash.closed > div{
-    padding: 21px 0 0 0;
-}
 .flash.closed .close {
 	font-size:14px;
 	right:23px;
-	top:4px;
+	top:13px;
 }
 .flash.closed .close:after {
 	border-color:inherit;
@@ -681,24 +667,13 @@ object {
    Twitter
    ====================================== */
 
-
 section.twitter {
-    width: 100%;
-}
-.twitter-wrap{
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 40px;
+
 }
 section.twitter h2 {
 	font-size:28px;
 	margin:0;
 	text-align: left;
-        position: static;
-}
-.twitter-wrap h2 .more{
-    top: auto;
-    bottom: 3px;
 }
 
 .jta-tweet-list {
@@ -707,7 +682,7 @@ section.twitter h2 {
 	list-style: none;
 }
 .jta-tweet-list li {
-	font-size: 0.9em;
+	font-size: 0.8em;
 	border-bottom: 1px solid #404040;
 	margin-bottom: 23px;
 }
@@ -770,14 +745,7 @@ span.jta-tweet-action-retweet a{
 	border-style:solid;
 	border-width: 1px 0;
 	margin:20px 0;
-	padding:0 0 20px 0;
-        height: 170px;
-}
-.ways-to-donate h2, .twitter-wrap h2, .tumblr-feed h2, .instagram-feed h2, .what-artists h2, .celebs-sandy h2, .sandy-store h2, .sponsors h3, .robin-hood-stories h2{
-    font-family: "TeeFraMed", sans-serif;
-}
-.ways-to-donate h2{
-    margin-top: 15px;
+	padding:20px 0;
 }
 .ways-to-donate .td {
 	padding:0 1%;
@@ -795,7 +763,6 @@ span.jta-tweet-action-retweet a{
 	line-height:36px;
 	padding:8px 0 6px;
 	width:100%;
-        margin-left: 50px;
 }
 .ways-to-donate .icon-twitter:before {
 	font-size:0.8em;
@@ -1070,9 +1037,7 @@ p.samsung {
 	width: 50px;
 	top:0px;
 }
-.artists-tweets .jta-tweet-text{
-    padding-right: 50px;
-}
+
 
 .artists-tweets .jta-tweet-body {
 	width: 100%;
@@ -1318,8 +1283,159 @@ abbr[title] {
 	border-bottom: none;
 }
 
-/*
 
+/*  ==========================================================================
+    Top Content Area
+    ==========================================================================
+
+header {
+	padding: 0.6em 0.6em 0.1em 0.6em;
+}
+
+
+.twitter .slides li {
+	z-index: 1;
+	position: relative;
+}
+
+.branding {
+	width: 137px;
+	height: 52px;
+	display: block;
+	background: url(img/logo.png) no-repeat left center;
+}
+
+.tickets, .twitter {
+	background: #007bc1;
+	color: #fff;
+	text-align: center;
+	height: 336px;
+	padding: 1.2em;
+}
+.tickets .td {
+	vertical-align: middle;
+}
+.tickets .td h1 {
+	margin-top: 0;
+}
+
+.twitter, .twitter h2 {
+	background: #bde723;
+	color: #002340;
+}
+
+
+.avatar {
+	width: 48px;
+	display: block;
+	margin: 1.875em auto;
+	border-radius: 3px;
+}
+
+.featured-img {
+	position: relative;
+	z-index: 1;
+	background: #000;
+	overflow: hidden;
+}
+
+.featured-img img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+.featured-img iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border: none;
+	max-height: 672px;
+}
+
+.timer {
+	border: 3px solid white;
+	margin: 0 auto;
+	width: 83%;
+	padding: 0.9375em 0 0.3125em 0;
+}
+.digits {
+	font-family: 'League Gothic', 'Helvetica Neue', sans-serif;
+	font-size: 2.5em;
+}
+.unit {
+	float: left;
+	width: 33.3%;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+}
+.unit:after {
+	content: ':';
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 0;
+	font-size: 2rem;
+}
+.last-unit:after { content: ''; }
+.timer-unit {
+	float: left;
+	width: 33.3%;
+	display: inline-block;
+	text-align: center;
+	font-size: 0.8rem;
+	font-family: "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+}
+.twitter .icon-twitter:hover { color: #002340; }
+
+/* =============================================================================
+   Tumblr Feed Content Area
+   ==========================================================================
+
+    .stats, .tumblr-feed, .their-stories, .robin-hood-stories, .images, .radio, .support {
+      padding: 4.375em 0 5.375em 0;
+      position: relative;
+    }
+
+    .tumblr-feed li {
+      text-align: center;
+      line-height: 1.8em;
+    }
+
+    .tumblr-feed li img {
+      width: 100%;
+      height: auto;
+      border-top: 3px solid #fff;
+    }
+
+    .item-wrap { padding: 1.25em; }
+
+    .content { height: 478px; }
+		.content > a,
+		.content > a img { display: block; }
+		.content .meta {
+			font-size:1.125em;
+			line-height:1;
+			margin:1.388888889em 0 0;
+			-webkit-font-smoothing: subpixel-antialiased;
+		}
+		.content p { margin-top: .5em;}
+
+    .stories, .tumblr-feed { overflow: hidden; }
+
+    .tumblr-feed, .tumblr-feed h2 {
+      background: #fff;
+      color: #003a62;
+    }
+
+/*
     Robin Hood Stories
     ========================================================================== */
 
@@ -1332,11 +1448,6 @@ abbr[title] {
 	padding: 10px 0 60px 0;
 }
 
-.robin-hood-stories hgroup{
-    text-align: center;
-    margin: 40px 0;
-}
-
 .robin-hood-stories h2 {
 	font-family: 'TradeGothicCond';
 	font-size: 3em;
@@ -1346,8 +1457,8 @@ abbr[title] {
 
 .robin-hood-stories h3 {
 	display: block;
-	font-family: "TeeFraMed", sans-serif;
-	font-size: 1.8em;
+	font-family: 'TradeGothic';
+	font-size: 2em;
 	letter-spacing: 1px;
 	margin:0 0 .5em;
 	text-transform: uppercase;
@@ -1406,7 +1517,7 @@ abbr[title] {
 	font-size: 28px;
 	line-height: 1.5;
 	text-align: center;
-	font-family: "TeeFraMed", sans-serif;
+	font-family: 'TradeGothic';
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	display: block;
@@ -1661,10 +1772,338 @@ abbr[title] {
 			display: none
 		}
 
+/*  ==========================================================================
+    Media Queries
+    ========================================================================== */
+
+@media all and (max-width:64em) { /* 1024 */
+	
+}
+
+@media all and (max-width:54em) { /* 864 */
+	.menu-wrap nav {
+		float: left;
+	}
+}
+
+@media all and (max-width: 48em) { /* 768 */
+	.flash {
+		font-size: 20px;
+	}
+	.nav li {
+		margin: 0 0.3em;
+	}
+	.span-2,.span-1 {
+		width: 100%;
+	}
+	.to-give p {
+		width: 100%;
+		margin:20px 0 0 0;
+	}
+	.tumblr-feed, .ticker {
+		width: 50%;
+		float: left;
+	}
+	.robin-hood-stories {
+		padding: 20px;
+	}
+}
+
+@media all and (max-width: 767px) { 
+	html {
+		font-size: 0.9em
+	}
+	
+	/* -----------------------
+	-- Sponsors -- */
+	
+	.sponsor-banner {
+		padding:0 10px;
+	}
+	.sponsor-banner ul li {
+		padding-top: 10px;
+	}
+	.sponsor-banner a {
+		max-width:18%;
+	}
+	
+	/* -----------------------
+	-- Flash -- */
+	
+	.flash > div {
+		padding:20px;
+	}
+	.flash {
+		font-size:15px;
+		line-height:1.4;
+	}
+	
+	/* -----------------------
+	-- Header -- */
+	
+	header.table {
+		margin:0 10px;
+		padding-top: 20px;
+	}
+	.menu-wrap {
+		padding:0 10px 25px;
+	}
+	.menu-wrap nav {
+		float: right;
+	}
+	.nav-mobile {
+		display: block
+	}
+	.wrapper {
+		padding: 10px;
+	}
+	.menu-wrap .donate {
+		padding-left: .5em;
+		padding-right: .5em
+	}
+	.main {
+		border-top: 1px solid #345d96;
+		padding: 0;
+		background: none;
+	}
+	.outer-wrapper {
+		background: none;
+		margin-top: -20px;
+	}
+	.to-give {
+		padding: 0;
+	}
+	.more {
+		float: left;
+		clear: both;
+		display: block;
+	}
+	.one-third, .left, .right,.one-half,.ticker,.timer,.tumblr-feed {
+		width: 100%
+	}
+	.timer {
+		background-position: center;
+	}
+	
+	.site li:nth-child(1), .site li:nth-child(2), .site li:nth-child(3), .site li:nth-child(4) {
+		display: none
+	}
+	.pre-header .separator{
+		display: none
+	}
+	.nav-mobile {
+		border-top: 1px solid #345d96;
+		border-bottom: 1px solid #345d96;
+		width: 100%;
+		height: 60px;
+		float: left;
+		clear: both;
+		margin-top: -6px;
+		background: url(img/grad.png) repeat-x;
+	}
+	.nav {
+   		list-style: none;
+   		text-align: center;
+   		padding: 17px 0 0 0;
+   		margin: 0;
+	}
+	.nav li {
+		display: inline;
+		margin-right: 0.2em;
+	}
+	.nav li:last-child {
+		margin-right: 0;
+	}
+	.nav li a {
+		display: inline-block;
+		font-family: 'TradeGothic';
+		font-size:18px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	.nav li a:hover {
+		color:#bce723;
+	}
+	.mobile-wrap,.twitter{
+		background: black
+	}
+	
+	/* -----------------------
+	-- More -- */
+	
+	h2 .more {
+		top:0px;
+	}
+	.more {
+		font-size:18px;
+		letter-spacing:0;
+	}
+	.more:after {
+		margin-top: -4px;
+	}
+	
+	/* -----------------------
+	-- RH Twitter -- */
+	
+	.twitter,.dynamic {
+		padding:20px;
+	}
+	#js-robin-hood-tweets {
+		padding-bottom: 20px 20px 50px;
+		position: relative;
+	}
+	#js-robin-hood-tweets .jta-tweet-list li:last-child {
+		margin-bottom: 0;
+	}
+	#js-robin-hood-tweets h2 {
+		position: static;
+	}
+	#js-robin-hood-tweets .more {
+		bottom:5px;
+		right:10px;
+		top:auto;
+	}
+	
+	/* -----------------------
+	-- Ways To Donate -- */
+	
+	.ways-to-donate {
+		margin: 0 20px 20px;
+	}
+	.donate-btn {
+		float: none;
+		margin-left:auto;
+		margin-right: auto;
+	}
+	.to-give p {
+		margin:10px 0 20px;
+		max-width:100%;
+	}
+	.to-give .btn {
+		max-width:75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.to-give,
+	.to-give .tr,
+	.to-give .td {
+		display: block;
+		width:100%;
+	}
+	
+	/* -----------------------
+	-- Instagram -- */
+	
+	.dynamic {
+		padding-top: 0;
+	}
+	.instagram-feed {
+		border-bottom: 1px solid #666;
+		margin-bottom: 20px;
+		padding-bottom: 50px;
+		position: relative;
+	}
+	.instagram-feed h2 {
+		position: static;
+	}
+	.instagram-feed h2 .more {
+		bottom:5px;
+		top:auto;
+	}
+	
+	/* -----------------------
+	-- Tumblr -- */
+	
+	.tumblr-feed {
+		padding-bottom: 30px;
+	}
+	.tumblr-feed h2 {
+		position: static;
+	}
+	.tumblr-feed h2 .more {
+		bottom:0;
+		top:auto;
+	}
+	
+	/* -----------------------
+	-- Social -- */
+	
+	.social {
+		margin:30px 10px 0;
+	}
+	.social .one-fourth {
+		padding:0 2%;
+	}
+	
+	/* -----------------------
+	-- What Artists -- */
+	.what-artists .wrapper {
+		position: relative;
+	}
+	.arti {
+		margin:0 40px;
+		width:auto;
+	}
+	.what-artists h2 {
+		background-position:left 0;
+		line-height:25px;
+		margin-top: 0;
+		padding-left: 0;
+		text-align: left;
+	}
+	.what-artists .see-all {
+		float: right;
+		clear: none;
+	}
+	
+	/* -----------------------
+	-- RH Stories -- */
+	
+	.robin-hood-stories .wrapper img {
+		margin-bottom: 20px;
+	}
+	
+	/* -----------------------
+	-- Sponsors -- */
+	
+	.sponsors h3 {
+		margin:10px 0;
+	}
+	
+	.sponsor-list {
+		text-align: center;
+	}
+	
+	/* -----------------------
+	-- Footer -- */
+	
+	footer {
+		padding:15px 0 10px;
+	}
+	footer nav {
+		float: none;
+	}
+	.nav.footer {
+		padding: 0 0 10px;
+	}
+	nav .footer  li {
+		display: inline-block;
+		float: none;
+	}
+	footer small {
+		float: none;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 18px;
+	}
+}
+
 #donate-popup{
     display: none;
-    max-width: 460px;
-    min-height: 300px;
+    width: 460px;
+    height: 300px;
     text-align: center;
 }
 #donate-popup p{
@@ -1716,376 +2155,3 @@ abbr[title] {
 }
 
 
-/*  ==========================================================================
-    Media Queries
-    ========================================================================== */
-
-@media all and (max-width:64em) { /* 1024 */
-
-}
-
-@media all and (max-width:54em) { /* 864 */
-	.menu-wrap nav {
-		float: left;
-	}
-}
-
-@media all and (max-width: 48em) { /* 768 */
-	.flash {
-		font-size: 20px;
-	}
-	.nav li {
-		margin: 0 0.3em;
-	}
-	.span-2,.span-1 {
-		width: 100%;
-	}
-	.to-give p {
-		width: 100%;
-		margin:20px 0 0 0;
-	}
-	.tumblr-feed, .ticker {
-		width: 50%;
-		float: left;
-	}
-	.robin-hood-stories {
-		padding: 20px;
-	}
-}
-
-@media all and (max-width: 767px) {
-	html {
-		font-size: 0.9em
-	}
-
-	/* -----------------------
-	-- Sponsors -- */
-
-	.sponsor-banner {
-		padding:0 10px;
-	}
-	.sponsor-banner ul li {
-		padding-top: 10px;
-	}
-	.sponsor-banner a {
-		max-width:18%;
-	}
-
-	/* -----------------------
-	-- Flash -- */
-
-	.flash > div {
-		padding:20px;
-	}
-	.flash {
-		font-size:15px;
-		line-height:1.4;
-	}
-
-	/* -----------------------
-	-- Header -- */
-
-	header.table {
-		margin:0 10px;
-		padding-top: 20px;
-	}
-	.menu-wrap {
-		padding:0 10px 25px;
-	}
-	.menu-wrap nav {
-		float: right;
-                margin-top: 5px;
-	}
-	.nav-mobile {
-		display: block
-	}
-	.wrapper {
-		padding: 10px;
-	}
-	.menu-wrap .donate {
-		padding-left: .5em;
-		padding-right: .5em;
-                font-size: 28px;
-	}
-	.main {
-		border-top: 1px solid #345d96;
-		padding: 0;
-		background: none;
-	}
-	.outer-wrapper {
-		background: none;
-		margin-top: -20px;
-	}
-	.to-give {
-		padding: 0;
-	}
-	.more {
-		float: left;
-		clear: both;
-		display: block;
-	}
-	.one-third, .left, .right,.one-half,.ticker,.timer,.tumblr-feed {
-		width: 100%
-	}
-	.timer {
-		background-position: center;
-	}
-
-	.site li:nth-child(1), .site li:nth-child(2), .site li:nth-child(3), .site li:nth-child(4) {
-		display: none
-	}
-	.pre-header .separator{
-		display: none
-	}
-	.nav-mobile {
-		border-top: 1px solid #345d96;
-		border-bottom: 1px solid #345d96;
-		width: 100%;
-		height: 60px;
-		float: left;
-		clear: both;
-		margin-top: -6px;
-		background: url(img/grad.png) repeat-x;
-	}
-	.nav {
-   		list-style: none;
-   		text-align: center;
-   		padding: 17px 0 0 0;
-   		margin: 0;
-	}
-	.nav li {
-		display: inline;
-		margin-right: 0.2em;
-	}
-	.nav li:last-child {
-		margin-right: 0;
-	}
-	.nav li a {
-		display: inline-block;
-		font-family: 'TradeGothic';
-		font-size:18px;
-		text-transform: uppercase;
-		color: #fff;
-	}
-	.nav li a:hover {
-		color:#bce723;
-	}
-	.mobile-wrap,.twitter{
-		background: black
-	}
-
-	/* -----------------------
-	-- More -- */
-
-	h2 .more {
-		top:0px;
-	}
-	.more {
-		font-size:18px;
-		letter-spacing:0;
-	}
-	.more:after {
-		margin-top: -4px;
-	}
-
-	/* -----------------------
-	-- RH Twitter -- */
-
-	.twitter,.dynamic {
-		padding:20px;
-	}
-	#js-robin-hood-tweets {
-		padding-bottom: 20px 20px 50px;
-		position: relative;
-	}
-	#js-robin-hood-tweets .jta-tweet-list li:last-child {
-		margin-bottom: 0;
-	}
-	#js-robin-hood-tweets h2 {
-		position: static;
-	}
-	#js-robin-hood-tweets .more {
-		bottom:5px;
-		right:10px;
-		top:auto;
-	}
-
-	/* -----------------------
-	-- Ways To Donate -- */
-
-	.ways-to-donate {
-		margin: 0 20px 20px;
-                height: auto;
-	}
-	.donate-btn {
-		float: none;
-		margin-left:auto;
-		margin-right: auto;
-	}
-	.to-give p {
-		margin:10px 0 20px;
-		max-width:100%;
-	}
-	.to-give .btn {
-		max-width:75%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.to-give,
-	.to-give .tr,
-	.to-give .td {
-		display: block;
-		width:100%;
-	}
-
-	/* -----------------------
-	-- Instagram -- */
-
-	.dynamic {
-		padding-top: 0;
-	}
-	.instagram-feed {
-		border-bottom: 1px solid #666;
-		margin-bottom: 20px;
-		padding-bottom: 50px;
-		position: relative;
-	}
-	.instagram-feed h2 {
-		position: static;
-	}
-	.instagram-feed h2 .more {
-		bottom:5px;
-		top:auto;
-	}
-
-	/* -----------------------
-	-- Tumblr -- */
-
-	.tumblr-feed {
-		padding-bottom: 30px;
-	}
-	.tumblr-feed h2 {
-		position: static;
-	}
-	.tumblr-feed h2 .more {
-		bottom:0;
-		top:auto;
-	}
-
-	/* -----------------------
-	-- Social -- */
-
-	.social {
-		margin:30px 10px 0;
-	}
-	.social .one-fourth {
-		padding:0 2%;
-	}
-
-	/* -----------------------
-	-- What Artists -- */
-	.what-artists .wrapper {
-		position: relative;
-	}
-	.arti {
-		margin:0 40px;
-		width:auto;
-	}
-	.what-artists h2 {
-		background-position:left 0;
-		line-height:25px;
-		margin-top: 0;
-		padding-left: 0;
-		text-align: left;
-	}
-	.what-artists .see-all {
-		float: right;
-		clear: none;
-	}
-
-	/* -----------------------
-	-- RH Stories -- */
-
-	.robin-hood-stories .wrapper img {
-		margin-bottom: 20px;
-	}
-
-	/* -----------------------
-	-- Sponsors -- */
-
-	.sponsors h3 {
-		margin:10px 0;
-	}
-
-	.sponsor-list {
-		text-align: center;
-	}
-
-	/* -----------------------
-	-- Footer -- */
-
-	footer {
-		padding:15px 0 10px;
-	}
-	footer nav {
-		float: none;
-	}
-	.nav.footer {
-		padding: 0 0 10px;
-	}
-	nav .footer  li {
-		display: inline-block;
-		float: none;
-	}
-	footer small {
-		float: none;
-		text-align: center;
-	}
-
-	h2 {
-		font-size: 18px;
-	}
-        #donate-popup .amounts input[type=radio]{
-            margin-right: 5px;
-        }
-        #donate-popup .amounts input[type=text]{
-            width: 50px;
-            padding: 2px;
-        }
-        #donate-popup .amounts label {
-            margin-right: 10px;
-            font-size: 0.8em;
-        }
-        #donate-popup p{
-            padding: 0 10px 10px 10px;
-            font-family:"Georgia", serif;
-            font-style: italic;
-            font-size: 0.8em;
-            margin: 0;
-        }
-        #donate-popup h1{
-            margin: 0.2em 0;
-        }
-        #donate-popup .amounts{
-            margin-bottom: 10px;
-        }
-        #donate-popup .custom_wrap{
-            display: block;
-        }
-        .donate-modal .fancybox-inner{
-            height: 310px !important;
-        }
-
-        .sandy-store .pushup{
-            margin-top: -40px;
-        }
-        .sandy-store p{
-            margin-bottom: 0.1em;
-        }
-        .sandy-store .one-third{
-            margin: 30px 0 60px;
-        }
-        .twitter-wrap{
-            overflow: visible;
-        }
-}

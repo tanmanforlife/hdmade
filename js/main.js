@@ -28,9 +28,9 @@ $(document).ready(function() {
        $('.timer').attr('id', 'countup');
 
     }
-    
 
-    // Vimeo API 
+
+    // Vimeo API
     var vimeoPlayers = jQuery('.featured-img').find('iframe'),
         player;
 
@@ -63,19 +63,19 @@ $(document).ready(function() {
             wrapCSS: 'donate-modal',
             tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
     });
-    
+
     $('.amounts input[type=radio]').click(function(){
        $('#donate-popup .error').html('');
        var kale = $(this).val();
-       if(kale != 'custom'){            
+       if(kale != 'custom'){
             $('.amounts input.custom').removeAttr('checked');
             $('.amounts input[type=text]').css('color', '#fff');
        }
-       else{           
+       else{
            $('.amounts input.amount').removeAttr('checked');
            $('.amounts input[type=text]').css('color', '#000');
        }
-          
+
     });
     $('#amazon_amount').focus(function(){
         $('.amounts .custom').click();
@@ -89,6 +89,14 @@ $(document).ready(function() {
             return false;
         }
     })
+    $('.jta-tweet-action-retweet a').live('click', function(){
+        popup($(this).attr('href'), 'twitterwin');
+        return false;
+    })
+    $('.nav .share a').click(function(){
+        popup($(this).attr('href'), 'socialwin');
+        return false;
+    });
 
 });  // End Doc Ready
 
@@ -140,26 +148,26 @@ $(window).load(function () {
                     $(this).show();
             });*/
         }
-    }); 
+    });
 
 	// Tumblr Flexslider
 	jQuery(".stories").flexslider({
-        animation: "slide",
-        animationLoop: false,
-        smoothHeight: true,
-        useCSS: false,
-        controlNav: false,
-        directionNav: true,
-        slideshow: true,
-		slideshowSpeed: 5000,
-        touch: false
-    });
+            animation: "slide",
+            animationLoop: false,
+            smoothHeight: true,
+            useCSS: false,
+            controlNav: false,
+            directionNav: true,
+            slideshow: false,
+            slideshowSpeed: 5000,
+            touch: false
+        });
 
 	// Celev Videos Slider Options
 	jQuery('.celeb-videos li').fitVids();
-	
+
 	$('.celeb-videos').flexslider({
-		animation:"fade", 
+		animation:"fade",
 		animationLoop: true,
 		smoothHeight:true,
 		useCSS: false,
@@ -177,7 +185,7 @@ $(window).load(function () {
 				if(!nextSlide.length) {
 					nextSlide = $(".celeb-video").eq(0);
 				}
-				
+
 				var	prevVideo = prevSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone(),
 					nextVideo = nextSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone();
 				prevVideo.addClass('previous-iframe');
@@ -209,12 +217,7 @@ $(window).load(function () {
 			'marginTop': -1*(videoHeight/2)
 		});
 	});
-
-       $('.tumblr-feed .stories').flexslider({
-		animation:"slide",
-		animationLoop: true,
-                controlNav: false
-       });
+       
 
 
     function getBannerText(){
@@ -249,15 +252,15 @@ $(window).load(function () {
         success: function(data, textStatus, xhr) {
              var items = [];
               $.each(data, function(i, tweet) {
-                    if(i > 1) return false;
+                    if(i>1) return false;
                     var timeago = relative_time(tweet.created_at);
-                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-body "><span class="jta-tweet-text">' + decorateLinks(tweet.text) + '</span><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'">Retweet</a></span></div><div class="jta-clear">&nbsp;</div></li>');
+                    items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-body "><span class="jta-tweet-text">' + decorateLinks(tweet.text) + '</span><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'" target=_blank>Retweet</a></span></div><div class="jta-clear">&nbsp;</div></li>');
               });
 
               $('<ul/>', {
                     'class': 'jta-tweet-list',
                     html: items.join('')
-              }).appendTo('#js-robin-hood-tweets');              
+              }).appendTo('#js-robin-hood-tweets');
 
         },
         error : function(httpReq,status,exception){
@@ -275,7 +278,7 @@ $(window).load(function () {
                      var items = [];
                       $.each(data, function(i, tweet) {
                             var timeago = relative_time(tweet.created_at);
-                            items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-profile-image"><a class="jta-tweet-profile-image-link" href="http://twitter.com/'+tweet.from_user+'" target="_blank"><img src="'+tweet.profile_image_url+'" alt="'+tweet.from_user+'" title="'+tweet.from_user_name+'"></a></div><div class="jta-tweet-body jta-tweet-body-list-profile-image-present"><span class="jta-tweet-text"><span class="jta-tweet-user-name"><span class="jta-tweet-user-screen-name"><a class="jta-tweet-user-screen-name-link" href="http://twitter.com/'+tweet.from_user_name+'" target="_blank">'+tweet.from_user_name+'</a></span><span class="jta-tweet-user-full-name"><a class="jta-tweet-user-full-name-link" href="http://twitter.com/'+tweet.from_user+'" name="'+tweet.from_user+'" target="_blank">'+tweet.from_user_name+'</a></span></span>'+decorateLinks(tweet.text)+'<span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'">Retweet</a></span></span></span></div><div class="jta-clear">&nbsp;</div></li>');
+                            items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-profile-image"><a class="jta-tweet-profile-image-link" href="http://twitter.com/'+tweet.from_user+'" target="_blank"><img src="'+tweet.profile_image_url+'" alt="'+tweet.from_user+'" title="'+tweet.from_user_name+'"></a></div><div class="jta-tweet-body jta-tweet-body-list-profile-image-present"><span class="jta-tweet-text"><span class="jta-tweet-user-name"><span class="jta-tweet-user-screen-name"><a class="jta-tweet-user-screen-name-link" href="http://twitter.com/'+tweet.from_user_name+'" target="_blank">'+tweet.from_user_name+'</a></span><span class="jta-tweet-user-full-name"><a class="jta-tweet-user-full-name-link" href="http://twitter.com/'+tweet.from_user+'" name="'+tweet.from_user+'" target="_blank">'+tweet.from_user_name+'</a></span></span>'+decorateLinks(tweet.text)+'</div><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'" target=_blank>Retweet</a></span></span></span><div class="jta-clear">&nbsp;</div></li>');
                       });
                       $('<div/>', {
                             'class' : 'jta-tweet-flexslider'
@@ -304,7 +307,7 @@ $(window).load(function () {
         }
 
     });
-            
+
 	$(document).on('click', '.jta-tweet-list-autorefresh-trigger', function(e) {
 		$(this).remove();
 	})
@@ -342,27 +345,28 @@ $(window).load(function () {
         }
         return count;
     }
+    if($('#js-instagram-all').length){
+        $(window).scroll(function () {
+            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                $.ajax({
+                    url: 'http://test.121212concert.org/social/instagram.json',
+                    dataType: "jsonp",
+                    jsonp: "parseResponse",
+                    jsonpCallback: "parseResponse",
+                    cache: true,
+                    ifModified: true,
+                    success: function parseResponse(result) {
+                        var list = $('ul#js-instagram-all li');
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-            $.ajax({
-                url: 'http://test.121212concert.org/social/instagram.json',
-                dataType: "jsonp",
-                jsonp: "parseResponse",
-               	jsonpCallback: "parseResponse",
-                cache: true,
-                ifModified: true,
-                success: function parseResponse(result) {
-                    var list = $('ul#js-instagram-all li');
-
-                    for (var i = limit; i < limit + 15; i++) {
-                        $('ul#js-instagram-all').append('<a href="'+ result[limit]['standard_res'] +'"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
+                        for (var i = limit; i < limit + 15; i++) {
+                            $('ul#js-instagram-all').append('<a href="'+ result[limit]['standard_res'] +'"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
+                        }
                     }
-                }
-            });
-            limit += 15;
-        }
-    });
+                });
+                limit += 15;
+            }
+        });
+    }
 
     // Flash Message Close
     $('a.close').click(function (event) {
@@ -377,28 +381,7 @@ $(window).load(function () {
     	event.preventDefault();
     });
 
-    $.ajax({
-        url: 'http://test.121212concert.org/social/instagram.json',
-        dataType: "jsonp",
-        jsonp: "parseResponse",
-        jsonpCallback: "parseResponse",
-        cache: true,
-        ifModified: true,
-        success: function parseResponse(result) {
-            var list = $('ul#js-instagram li');
-
-
-            $.each(list, function (index, value) {
-            	$('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr('href', result[index]['standard_res']);
-                $('ul#js-instagram li:nth-child(' + (index + 1) + ') img.photo').attr('src', result[index]['standard_res']);
-            });
-        }
-    });
-
-    setInterval(function () {
-
-        getBannerText();
-
+    if($('#js-instagram').length){
         $.ajax({
             url: 'http://test.121212concert.org/social/instagram.json',
             dataType: "jsonp",
@@ -407,21 +390,45 @@ $(window).load(function () {
             cache: true,
             ifModified: true,
             success: function parseResponse(result) {
-
-                var min = 1;
-                var max = $('ul#js-instagram li').size();
-                var maxer = 15;
-                var random = Math.floor(Math.random() * (max - min + 1)) + min;
-                var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
-
-                $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
-                	$('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', result[randomer]['standard_res']).fadeIn();
-            	});
+                var list = $('ul#js-instagram li');
 
 
+                $.each(list, function (index, value) {
+                    $('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr('href', result[index]['standard_res']);
+                    $('ul#js-instagram li:nth-child(' + (index + 1) + ') img.photo').attr('src', result[index]['standard_res']);
+                });
             }
         });
-    }, 60000);
+
+
+        setInterval(function () {
+
+            getBannerText();
+
+            $.ajax({
+                url: 'http://test.121212concert.org/social/instagram.json',
+                dataType: "jsonp",
+                jsonp: "parseResponse",
+                jsonpCallback: "parseResponse",
+                cache: true,
+                ifModified: true,
+                success: function parseResponse(result) {
+
+                    var min = 1;
+                    var max = $('ul#js-instagram li').size();
+                    var maxer = 15;
+                    var random = Math.floor(Math.random() * (max - min + 1)) + min;
+                    var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
+
+                    $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
+                            $('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', result[randomer]['standard_res']).fadeIn();
+                    });
+
+
+                }
+            });
+        }, 60000);
+    }
 });
 // Twitter helpers
 function decorateLinks(text)
@@ -462,3 +469,9 @@ function relative_time(date_str) {
     }
     return  r;
 };
+
+function popup(url, target)
+{
+    mywindow = window.open(url, target, "location=0,toolbar=0,status=1,scrollbars=1,  width=500,height=400");
+    mywindow.moveTo(0, 0);
+}
