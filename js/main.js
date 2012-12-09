@@ -222,10 +222,10 @@ $(window).load(function () {
 
     function getBannerText(){
         $.ajax({
-            url: 'json/banner_text.json',
+            url: 'http://test.121212concert.org/social/topalert.json',
             type: 'GET',
             dataType: 'jsonp',
-            jsonpCallback: "parseBannerText",
+            jsonpCallback: "rseBannerText",
             cache: true,
             ifModified: true,
             success: function(data, textStatus, xhr) {
