@@ -42,7 +42,7 @@
 							<p>Donate using your Amazon Account</p>
 						</div>
 						<div class="td">
-							<a class="btn donate" href="#>
+							<a class="btn donate" href="#">
 								<span class="icon-twitter"></span>Twitter
 							</a>
 						</div>
