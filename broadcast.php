@@ -13,131 +13,7 @@
         #section-6 .pane-section table tr td{
             width: 50%;
         }
-        </style>
-        <!--h1 class="page-title">Ways to Watch</h1>
-
-	<section class="location cf">
-		<h2><abbr title="United States">US</abbr></h2>
-		<div class="one-third broadcast-list">
-			<ul class="broadcast-list">
-				<li>AMC</li>
-				<li>IFC</li>
-				<li>WE tv</li>
-				<li>Sundance Channel</li>
-				<li>Discovery (Destination America)</li>
-				<li>Discovery Fit &amp; Health</li>
-				<li>HBO</li>
-				<li>HBO Latino</li>
-				<li>Fuse</li>
-				<li>Fox Movie Channel</li>
-				<li>mundoFox</li>
-			</ul>
-		</div>
-
-		<div class="one-third">
-			<ul class="broadcast-list">
-				<li>G4</li>
-				<li>Encore</li>
-				<li>Cooking Channel</li>
-				<li>VH1 Classic - VH1C</li>
-				<li>Palladia</li>
-				<li>EPIX</li>
-				<li>Bloomberg</li>
-				<li>ABC Live Well</li>
-				<li>Showtime</li>
-				<li>Smiths onian Channel</li>
-				<li>BIO</li>
-			</ul>
-		</div>
-
-		<div class="one-third">
-			<ul class="broadcast-list">
-				<li>Military History</li>
-				<li>Lifetime Real Women</li>
-				<li>Hallmark Movie Channel</li>
-				<li>Ovation</li>
-				<li>ION</li>
-				<li>AXS</li>
-				<li>WNET</li>
-				<li>WLIW</li>
-				<li>WNJ</li>
-				<li>MSG</li>
-				<li>MSG+</li>
-			</ul>
-		</div>
-	</section>
-
-	<section class="location cf">
-		<h2><abbr title="United States">International</abbr></h2>
-		<div class="one-third broadcast-list">
-			<ul class="broadcast-list">
-				<li>Sundance Channel Global (Worldwide)</li>
-				<li>WE tv Asia</li>
-				<li>Multishow - Globo (Brasil)</li>
-				<li>Sky Arts 1 (UK)</li>
-				<li>Telehit - Televisa (Latin America)</li>
-				<li>Sky 1 Italy</li>
-				<li>Sky Germany</li>
-			</ul>
-		</div>
-
-		<div class="one-third">
-			<ul class="broadcast-list">
-				<li>Movie Networks Austrailia</li>
-				<li>Directv Latin America</li>
-				<li>Fox International</li>
-				<li>DirecTV PanAmericana (S. America)</li>
-				<li>DirecTV Brazil</li>
-				<li>HOT Telecommunication (Israel)</li>
-				<li>RTL (Belgium)</li>
-			</ul>
-		</div>
-
-		<div class="one-third">
-			<ul class="broadcast-list">
-				<li>MTV Networks Int'l</li>
-				<li>Starpics (Australia)</li>
-				<li>Wanachi Prog. Ltd. (Kenya)</li>
-				<li>Yes (Israel)</li>
-				<li>HBO latin America</li>
-				<li>Armed Forces Network</li>
-				<li>MGM Latino</li>
-			</ul>
-		</div>
-	</section>
-
-	<section class="location">
-		<h2><abbr title="United States">Online</abbr></h2>
-		<div class="one-third broadcast-list">
-			<ul class="broadcast-list">
-				<li>YouTube</li>
-				<li>Yahoo Sites</li>
-				<li>AOL</li>
-				<li>iHeartRadio</li>
-			</ul>
-		</div>
-
-		<div class="one-third">
-			<ul class="broadcast-list">
-				<li>Hulu</li>
-				<li>MTV</li>
-				<li>Crackle</li>
-				<li>Time</li>
-			</ul>
-		</div>
-
-		<div class="one-third">
-			<ul class="broadcast-list">
-				<li>People</li>
-				<li>EW.com</li>
-				<li>Vevo</li>
-				<li>InStyle</li>
-			</ul>
-		</div>
-	</section>
-</div>
-
-</div-->
+        </style>        
 
 
 <div class="field-item even"><div id="section-1" class="pane-wrapper first">
@@ -150,7 +26,7 @@
 
     <div class="pane-section">
         <h2><span style="color:#ffffff;"><span style="font-size: 72px;">WHERE TO WATCH</span></span></h2>
-        <p style="text-align: center;"><br><span style="color:#bde724;"><span class="ww-gothic-font">Accessible by 1 billion people worldwide<br>34 US Networks &amp; Television feeds to North &amp; South America, Asia, Europe, Africa &amp; Australia</span></span><br><span style="color:#bde724;"><span class="ww-gothic-font">SIMULCAST, FREE of CHARGE, IN SELECT THEATERS IN HURRICANE-AFFECTED AREAS.<br>Global streaming </span></span><br>&nbsp;</p><p style="text-align: center;"><span style="color:#ffffff;"><span style=""><em><span style="font-family: georgia;">&nbsp;</span></em></span></span><span style="color:#ffffff;"><span style=""><em><span style="font-family: georgia;">Starting at 7:30 p.m. EST, on December 12, "12-12-12," The Concert for Sandy Relief, will be broadcast live from Madison Square Garden via a global network of US and International television stations, Clear Channel </span></em></span></span><span style=""><em><span style="font-family: georgia;"><a href="#section-6"><span style="color:#bde724;">radio stations</span></a></span></em></span><span style="color:#ffffff;"><span style=""><em><span style="font-family: georgia;"> and leading web sites.</span></em></span></span><span style="color:#ffffff;"><span style=""><em><span style="font-family: georgia;"> Check the listings below to see where to tune in to watch or listen to this legendary event.</span></em></span></span></p><table height="31" border="0" cellpadding="1" cellspacing="1" width="100%"><tbody><tr><td style="text-align: center;"><a href="#section-2"><img alt="" src="http://img.robinhood.org/sites/default/files/user-uploaded-images/circle1_stream.png" style="width: 178px; height: 178px;"></a></td><td style="text-align: center;"><a href="#section-3"><img alt="" src="http://img.robinhood.org/sites/default/files/user-uploaded-images/circle2_us.png" style="width: 178px; height: 178px;"></a></td><td style="text-align: center;"><a href="#section-4"><img alt="" src="http://img.robinhood.org/sites/default/files/user-uploaded-images/circle3_global.png" style="width: 178px; height: 178px;"></a></td><td style="text-align: center;"><a href="#section-5"><img alt="" src="http://img.robinhood.org/sites/default/files/user-uploaded-images/circle4_theater.png" style="width: 178px; height: 178px;"></a></td></tr></tbody></table><p>&nbsp;</p>
+        <p style="text-align: center;"><br><span style="color:#bde724;"><span >Accessible by 1 billion people worldwide<br>34 US Networks &amp; Television feeds to North &amp; South America, Asia, Europe, Africa &amp; Australia</span></span><br><span style="color:#bde724;"><span >SIMULCAST, FREE of CHARGE, IN SELECT THEATERS IN HURRICANE-AFFECTED AREAS.<br>Global streaming </span></span><br>&nbsp;</p><p style="text-align: center;"><span style="color:#ffffff;"><span style=""><em><span style="font-family: georgia;">&nbsp;</span></em></span></span><span style="color:#ffffff;"><span style=""><em><span style="font-family: georgia;">Starting at 7:30 p.m. EST, on December 12, "12-12-12," The Concert for Sandy Relief, will be broadcast live from Madison Square Garden via a global network of US and International television stations, Clear Channel </span></em></span></span><span style=""><em><span style="font-family: georgia;"><a href="#section-6"><span style="color:#bde724;">radio stations</span></a></span></em></span><span style="color:#ffffff;"><span style=""><em><span style="font-family: georgia;"> and leading web sites.</span></em></span></span><span style="color:#ffffff;"><span style=""><em><span style="font-family: georgia;"> Check the listings below to see where to tune in to watch or listen to this legendary event.</span></em></span></span></p><table height="31" border="0" cellpadding="1" cellspacing="1" width="100%"><tbody><tr><td style="text-align: center;"><a href="#section-2"><img alt="" src="img/circle1_stream.png" style="width: 178px; height: 178px;"></a></td><td style="text-align: center;"><a href="#section-3"><img alt="" src="img/circle2_us.png" style="width: 178px; height: 178px;"></a></td><td style="text-align: center;"><a href="#section-4"><img alt="" src="img/circle3_global.png" style="width: 178px; height: 178px;"></a></td><td style="text-align: center;"><a href="#section-5"><img alt="" src="img/circle4_theater.png" style="width: 178px; height: 178px;"></a></td></tr></tbody></table><p>&nbsp;</p>
     </div>
 
 
@@ -236,7 +112,7 @@
   <div class="pane thirds">
 
     <div class="pane-section">
-      <p style="text-align: center;"><span style="font-size:36px;"><span style="color: rgb(0, 122, 193);"><span class="ww-gothic-font">US TELEVISION CHANNELS</span></span></span></p>
+      <h2 style="text-align: center;"><span style="font-size:36px;"><span style="color: rgb(0, 122, 193);"><span >US TELEVISION CHANNELS</span></span></span></h2>
     </div>
 
 
@@ -284,7 +160,7 @@
   <div class="pane thirds">
 
     <div class="pane-section">
-      <p style="text-align: center;"><span style="font-size:36px;"><span style="color: rgb(245, 128, 37);"><span class="ww-gothic-font">INTERNATIONAL TELEVISION CHANNELS</span></span></span></p>
+      <h2 style="text-align: center;"><span style="font-size:36px;"><span style="color: rgb(245, 128, 37);"><span >INTERNATIONAL TELEVISION CHANNELS</span></span></span></h2>
     </div>
 
 
@@ -332,7 +208,7 @@
   <div class="pane thirds">
 
     <div class="pane-section">
-      <p style="text-align: center;"><span style="color:#ffffff;"><span style="font-size: 36px;"><span class="ww-gothic-font" style="">Movie theaters</span></span></span></p>
+      <h2 style="text-align: center;"><span style="color:#ffffff;"><span style="font-size: 36px;"><span  style="">Movie theaters</span></span></span></h2>
     </div>
 
 
@@ -376,7 +252,7 @@
   <div class="pane thirds">
 
     <div class="pane-section">
-      <p style="text-align: center;"><span style="font-size:36px;"><span style="color: rgb(189, 231, 36);"><span class="ww-gothic-font">Us Radio stations</span></span></span></p>
+      <h2 style="text-align: center;"><span style="font-size:36px;"><span style="color: rgb(189, 231, 36);"><span >Us Radio stations</span></span></span></h2>
     </div>
 
 
