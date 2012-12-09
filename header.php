@@ -61,19 +61,21 @@ function auto_version($file) {
 	<p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Relief Fund.  You will be redirected to Amazon to complete the payment process.</p>
 	<!--a href="" class="btn donate">Donate</a-->
 	<form id="donate-form" action="https://authorize.payments.amazon.com/pba/paypipeline" method="post" target="_blank">
-		<input type="hidden" name="returnUrl" value="http://www.121212concert.org/" >
-		<input type="hidden" name="processImmediate" value="1" >
-		<input type="hidden" name="accessKey" value="11SEM03K88SD016FS1G2" >
-		<input type="hidden" name="signatureMethod" value="HmacSHA256" >
-		<input type="hidden" name="collectShippingAddress" value="0" >
-		<input type="hidden" name="isDonationWidget" value="1" >
-		<input type="hidden" name="amazonPaymentsAccountId" value="WKAEVFSXUGQC4TVUGH8F423RR51BA6P6QSX2GK" >
-		<input type="hidden" name="cobrandingStyle" value="logo" >
-		<input type="hidden" name="immediateReturn" value="1" >
-		<input type="hidden" name="description" value="Donate to Benefit the Robin Hood Relief Fund" >
-		<input type="hidden" name="abandonUrl" value="http://www.121212concert.org/" >
-		<input type="hidden" name="signatureVersion" value="2" >
-		<input type="hidden" name="signature" value="qwD5Qdi+npJNx7bWeu3fG8JxRU5KKStFjZIyXiepHpU=" >
+			
+		  <input type="hidden" name="returnUrl" value="http://121212concert.org" >
+		  <input type="hidden" name="processImmediate" value="1" >
+		  <input type="hidden" name="accessKey" value="11SEM03K88SD016FS1G2" >
+		  <input type="hidden" name="signatureMethod" value="HmacSHA256" >
+		  <input type="hidden" name="collectShippingAddress" value="1" >
+		  <input type="hidden" name="isDonationWidget" value="1" >
+		  <input type="hidden" name="amazonPaymentsAccountId" value="WKAEVFSXUGQC4TVUGH8F423RR51BA6P6QSX2GK" >
+		  <input type="hidden" name="cobrandingStyle" value="logo" >
+		  <input type="hidden" name="immediateReturn" value="1" >
+		  <input type="hidden" name="description" value="Donate to Benefit the Robin Hood Relief Fund" >
+		  <input type="hidden" name="abandonUrl" value="http://121212concert.org" >
+		  <input type="hidden" name="signatureVersion" value="2" >
+		  <input type="hidden" name="signature" value="dzp+dJ1q9LpYjGocFWiyNHTGQVA9FIusU+tjvxscEtQ=" >
+
 		<div class="amounts">
 			<input type="radio" name="amount" class="amount" value="10" /><label>$10</label>
 			<input type="radio" name="amount" class="amount" value="50" /><label>$50</label>
