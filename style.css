@@ -2079,6 +2079,7 @@ abbr[title] {
         }
         #donate-popup .custom_wrap{
             display: block;
+            margin-top: 20px;
         }
         .donate-modal .fancybox-inner{
             height: 240px !important;
@@ -2099,7 +2100,7 @@ abbr[title] {
         .home > .top{
             padding-bottom: 0;
         }
-        input, textarea {
+        .btn {
           -webkit-appearance: none;
           -webkit-border-radius: 0;
         }
