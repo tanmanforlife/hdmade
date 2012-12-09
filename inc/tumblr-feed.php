@@ -29,7 +29,7 @@
 		<li class="">
 				<div class="item-wrap">
 					<div class="content">
-						<a href="<?php echo $postUrl ?>"><img src="<?php echo $photoUrl ?>" alt="tumblr photo" /></a>
+						<a href="<?php echo $postUrl ?>" target="_blank"><img src="<?php echo $photoUrl ?>" alt="tumblr photo" /></a>
 						<p><?php echo limit_words($photoCaption, 20); ?></p>
 					</div>
 				</div>
