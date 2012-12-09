@@ -7,4 +7,4 @@ RewriteEngine On
 # Make sure that the file doesn't actually exist
 RewriteCond %{REQUEST_FILENAME} !-s
 # Strip out the version number
-RewriteRule ^(.*)\.[\d]+\.(css|js)$ $1.$2 [L]
+RewriteRule ^(.*)\.[\d]+\.(css|js|png|jpg|gif)$ $1.$2 [L]
