@@ -5,12 +5,12 @@
 	<div class="main" role="main"> */ ?>
 		<div class="outer-wrapper cf">
 			<section class="g span-2 featured-img">
-				
-				<!--<iframe src="http://static.iheart.com/121212/player.html?partner=robinhood" width="100%" height="371px" scrolling="no" frameborder="0"></iframe>-->
-				
+								
 				<ul class="slides">
-					<li><img src="carousel-images/carousel_1.jpg" alt="" height="360" width="640" /></li>
-					<li><img src="carousel-images/carousel_1.jpg" alt="" height="360" width="640" /></li>
+					<li><img src="carousel-images/message1_8.jpg" alt="" height="360" width="640" /></li>
+					<li><iframe src="http://player.vimeo.com/video/55138860?title=0&amp;byline=0&amp;badge=0" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li> 
+					<li><a href="broadcast.php" target="_blank"><img src="carousel-images/streamhere.png" alt="" height="360" width="640" /></a></li>
+					<li><a href="http://www.robinhood.org/rhsandy" target="_blank"><img src="carousel-images/rebuild.png" alt="" height="360" width="640" /></a></li>
 					<!--<li><iframe src="http://static.iheart.com/121212/player.html?partner=robinhood" width="100%" height="371px" scrolling="no" frameborder="0"></iframe></li>-->
 				</ul> <!-- .slides -->
 		
