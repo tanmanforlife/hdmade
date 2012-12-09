@@ -328,7 +328,7 @@ $(window).load(function () {
                 if (index > limit) {
                     return false;
                 } else {
-                    $('ul#js-instagram-all').append('<li><a href="'+ result[index]['standard_res'] +'"><img src="' + result[index]['standard_res'] + '" alt="" /></a></li>');
+                    $('ul#js-instagram-all').append('<li><a href="'+ result[index]['permalink'] +'" target="_blank"><img src="' + result[index]['standard_res'] + '" alt="" /></a></li>');
                 }
             });
         }
@@ -359,7 +359,7 @@ $(window).load(function () {
                         var list = $('ul#js-instagram-all li');
 
                         for (var i = limit; i < limit + 15; i++) {
-                            $('ul#js-instagram-all').append('<a href="'+ result[limit]['standard_res'] +'"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
+                            $('ul#js-instagram-all').append('<a href="'+ result[limit]['permalink'] +'" target="_blank"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
                         }
                     }
                 });
@@ -394,7 +394,7 @@ $(window).load(function () {
 
 
                 $.each(list, function (index, value) {
-                    $('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr('href', result[index]['standard_res']);
+                    $('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr({'href': result[index]['permalink'], 'target': '_blank'});
                     $('ul#js-instagram li:nth-child(' + (index + 1) + ') img.photo').attr('src', result[index]['standard_res']);
                 });
             }
