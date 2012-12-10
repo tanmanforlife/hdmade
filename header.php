@@ -45,7 +45,7 @@ function auto_version($file) {
       <script type="text/javascript" src="<?php echo auto_version('js/html5.js'); ?>"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="<?php echo auto_version('style.min.css'); ?>" type="text/css" />
+    <link rel="stylesheet" href="<?php echo auto_version('style.css'); ?>" type="text/css" />
     <link rel="icon" type="image/png" href="<?php echo auto_version('img/favicon.png'); ?>" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="<?php echo auto_version('js/modernizr.min.js'); ?>"></script>
