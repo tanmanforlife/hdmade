@@ -29,37 +29,38 @@
 					<li><a href="http://store.121212concert.org/" target="_blank">Shop</a></li>
 				</ul>
 			</div>
-			<div class="twitter-wrap cf">
+			<div class="ways-to-give g span-1 last cf">
+				<h2>Ways to Give</h2>
+				<div class="ways-to-give-donate">
+					<a class="btn donate donate-modal-link-off" href="https://www.robinhood.org/take-action/SandyRelief.aspx" target="_blank">Donate</a>
+					<p>Donate to the Robin Hood Relief Fund</p>
+				</div>
+				<div class="ways-to-give-text">
+					<img src="img/TexttoGiveIcon.png" />
+					<p>TEXT TO GIVE, Presented by Chase. Text ROBINHOOD to 50555 to donate $10. <a class="text-to-give-modal-link" href="#text-to-give-popup" title="Terms">Terms</a>.
+					</p>
+				</div>
+				<?php /* ?>
 				<section class="g span-1 last twitter" id="js-robin-hood-tweets">
 					<h2>@robinhoodnyc <a href="https://twitter.com/RobinHoodNYC" class="more" target="_blank">See All</a></h2>
 				</section> <!-- .g.span-1.last.twitter -->
+				<?php */ ?>
 			</div>
 		</div> <!-- .outer-wrapper -->
 		<div class="mobile-wrap cf">
-			<div class="ways-to-donate cf">
-				<h2>Ways To Give</h2>
-				<div class="table to-give">
-					<div class="tr">
-						<div class="td">
-							<a class="btn donate donate-modal-link-off" href="https://www.robinhood.org/take-action/SandyRelief.aspx" target="_blank">Donate</a>
-						</div>
-						<div class="td">
-							<p>Donate to the Robin Hood Relief Fund</p>
-						</div>
-						<div class="td-2">
-							<!--<a class="btn donate" href="#">
-								<span class="icon-twitter"></span>Twitter
-							</a>-->
-							<img src="img/TexttoGiveIcon.png" />
-						</div>
-						<div class="td-3">	
-							<p>
-								TEXT TO GIVE, Presented by Chase. Text ROBINHOOD to 50555 to donate $10. <a class="text-to-give-modal-link" href="#text-to-give-popup" title="Terms">Terms</a>
-							</p>
-						</div>
-					</div> <!-- .tr -->
-				</div> <!-- .table.to-give -->
-			</div> <!-- .ways-to-donate -->
+			<div class="what-artists">
+				<div class="wrapper cf">
+					<h2><span><span class="icon-twitter"></span>Twitter #121212concert</span></h2>
+					<div class="tweets-holding-space"></div>
+					<div class="arti">
+						<div class="artists-tweets">
+
+						</div> <!-- .artists-tweets -->
+
+					</div> <!-- .arti -->
+					<a href="https://twitter.com/search?q=%23121212concert" class="see-all more" target="_blank">See All</a>
+				</div> <!-- .wrapper -->
+			</div> <!-- .what-artists -->
 			<div class="dynamic cf">
 				<div class="g span-2 instagram-feed">
 					<h2>Instagram #121212Concert<a href="instagram.php" class="more" target="_blank">See All</a></h2>
@@ -124,19 +125,6 @@
 		</div> <!-- .mobile-wrap -->
 	</div> <!-- .main -->
 </div> <!-- .top -->
-<div class="what-artists">
-	<div class="wrapper cf">
-		<h2><span><span class="icon-twitter"></span>Twitter #121212concert</span></h2>
-		<div class="tweets-holding-space"></div>
-		<div class="arti">
-			<div class="artists-tweets">
-
-			</div> <!-- .artists-tweets -->
-
-		</div> <!-- .arti -->
-		<a href="https://twitter.com/search?q=%23121212concert" class="see-all more" target="_blank">See All</a>
-	</div> <!-- .wrapper -->
-</div> <!-- .what-artists -->
 <div class="celebs-sandy">
 	<h2>Why We Are Doing This</h2>
 	<?php
