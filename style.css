@@ -1939,7 +1939,7 @@ abbr[title] {
 
 @media all and (max-width: 48em) { /* 768 */
 	.flash {
-		font-size: 20px;
+		font-size: 25px;
 	}
 	.nav li {
 		margin: 0 0.3em;
@@ -2001,7 +2001,7 @@ abbr[title] {
 		padding:20px;
 	}
 	.flash {
-		font-size:15px;
+		font-size:25px;
 		line-height:1.4;
 	}
 
