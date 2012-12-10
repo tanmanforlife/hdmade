@@ -172,7 +172,7 @@ function auto_version($file) {
 					<li><span class="separator">|</span></li>
 					<li class="share"><span>Share</span></li>
 					<li class="share share-fb"><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=<?php echo urlencode('"12-12-12" The Concert for Sandy Relief ')?>&p[url]=http%3A%2F%2Fwww.121212concert.org&p[summary]=<?php echo urlencode('On Wednesday at 7:30pm ET, I\'ll be watching "12-12-12" The Concert for Sandy Relief featuring: Bon Jovi, Eric Clapton, Dave Grohl, Billy Joel, Alicia Keys, Chris Martin, The Rolling Stones, Bruce Springsteen & the E Street Band, Eddie Vedder, Roger Waters, Kanye West, The Who, Paul McCartney.  The concert benefits the Robin Hood Relief Fund, which provides grants to community organizers in the tri-state area that are helping Hurricane Sandy victims rebuild and recover.')?>&p[images][0]=" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
-					<li class="share share-tw"><a target="_blank" href="http://twitter.com/share?text=The%20%23121212Concert%20for%20%23SandyRelief%20featuring%20iconic%20artists%20airs%20live%20%40%207%3A30pm%20ET%20http%3A%2F%2Fwww.121212concert.org" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
+					<li class="share share-tw"><a target="_blank" href="http://twitter.com/share?text=The%20%23121212Concert%20for%20%23SandyRelief%20featuring%20iconic%20artists%20airs%20live%20%40%207%3A30pm%20ET" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
 				</ul> <!-- .nav -->
 			</nav> <!-- g four-fifths -->
 		</div> <!-- .menu-wrap -->
