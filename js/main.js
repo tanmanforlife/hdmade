@@ -387,6 +387,92 @@ $(window).load(function () {
         return count;
     }
 
+    
+
+    // Flash Message Close
+    $('a.close').click(function (event) {
+		$('.flash').toggleClass('closed');
+		if($('.flash').hasClass('closed')) {
+			$('.flash .close').html('Expand');
+			$('.flash p').slideUp();
+		} else {
+			$('.flash .close').html('<span>x</span>');
+			$('.flash p').slideDown();
+		}
+    	event.preventDefault();
+    });
+
+    // Homepage
+    /**
+     * Trigger updates to banner text and instagram social feeds.
+     */
+    var instagram_data = '';
+    function updateFeeds() {
+        getBannerText();
+        
+        $.ajax({
+            url: '/social/instagram.json',
+            dataType: "jsonp",
+            jsonp: false,
+            jsonpCallback: "parseResponse",
+            cache: true,
+            ifModified: true,
+            success: function(result, textStatus, xhr) {
+
+                /*var min = 1;
+                var max = $('ul#js-instagram li').size();
+                var maxer = 15;
+                var random = Math.floor(Math.random() * (max - min + 1)) + min;
+                var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
+
+                $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
+                        $('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', result[randomer]['standard_res']).fadeIn();
+                });*/
+                if(result)
+                    instagram_data = result;
+
+                // requeue update
+                setTimeout(updateFeeds, 60000);
+            }
+        });
+    }
+    function randomPic() {
+        var min = 1;
+        var max = $('ul#js-instagram li').size();
+        var maxer = 15;
+        var random = Math.floor(Math.random() * (max - min + 1)) + min;
+        var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
+
+        if(instagram_data[randomer]){
+            $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
+                $('ul#js-instagram li:nth-child(' + random + ') a').attr('href', instagram_data[randomer]['permalink']);
+                $('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', instagram_data[randomer]['standard_res']).fadeIn();
+            });
+        }
+    }
+    setInterval(randomPic, 5000);
+    if($('#js-instagram').length){
+        $.ajax({
+            url: '/social/instagram.json',
+            dataType: "jsonp",
+            jsonp: false,
+            jsonpCallback: "parseResponse",
+            cache: true,
+            ifModified: true,
+            success: function(result, textStatus, xhr) {
+                var list = $('ul#js-instagram li');
+                instagram_data = result;
+
+                $.each(list, function (index, value) {
+                    $('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr({'href': result[index]['permalink'], 'target': '_blank'});
+                    $('ul#js-instagram li:nth-child(' + (index + 1) + ') img.photo').attr('src', result[index]['standard_res']);
+                });
+            }
+        });
+
+        // queue first update to banner text and instagram
+        setTimeout(updateFeeds, 60000);
+    }
     // Instagram.php only
     if($('#js-instagram-all').length){
         var limit = 14;
@@ -419,82 +505,16 @@ $(window).load(function () {
                     ifModified: true,
                     success: function(result, textStatus, xhr) {
                         var list = $('ul#js-instagram-all li');
-
                         for (var i = limit; i < limit + 15; i++) {
-                            $('ul#js-instagram-all').append('<a href="'+ result[i]['permalink'] +'" target="_blank"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
+                            if(result && result[i]){
+                                $('ul#js-instagram-all').append('<a href="'+ result[i]['permalink'] +'" target="_blank"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
+                                limit++;
+                            }
                         }
                     }
                 });
-                limit += 15;
             }
         });
-    }
-
-    // Flash Message Close
-    $('a.close').click(function (event) {
-		$('.flash').toggleClass('closed');
-		if($('.flash').hasClass('closed')) {
-			$('.flash .close').html('Expand');
-			$('.flash p').slideUp();
-		} else {
-			$('.flash .close').html('<span>x</span>');
-			$('.flash p').slideDown();
-		}
-    	event.preventDefault();
-    });
-
-    // Homepage
-    /**
-     * Trigger updates to banner text and instagram social feeds.
-     */
-    function updateFeeds() {
-        getBannerText();
-
-        $.ajax({
-            url: '/social/instagram.json',
-            dataType: "jsonp",
-            jsonp: false,
-            jsonpCallback: "parseResponse",
-            cache: true,
-            ifModified: true,
-            success: function(result, textStatus, xhr) {
-
-                var min = 1;
-                var max = $('ul#js-instagram li').size();
-                var maxer = 15;
-                var random = Math.floor(Math.random() * (max - min + 1)) + min;
-                var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
-
-                $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
-                        $('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', result[randomer]['standard_res']).fadeIn();
-                });
-
-                // requeue update
-                setTimeout(updateFeeds, 60000);
-            }
-        });
-    }
-    if($('#js-instagram').length){
-        $.ajax({
-            url: '/social/instagram.json',
-            dataType: "jsonp",
-            jsonp: false,
-            jsonpCallback: "parseResponse",
-            cache: true,
-            ifModified: true,
-            success: function(result, textStatus, xhr) {
-                var list = $('ul#js-instagram li');
-
-
-                $.each(list, function (index, value) {
-                    $('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr({'href': result[index]['permalink'], 'target': '_blank'});
-                    $('ul#js-instagram li:nth-child(' + (index + 1) + ') img.photo').attr('src', result[index]['standard_res']);
-                });
-            }
-        });
-
-        // queue first update to banner text and instagram
-        setTimeout(updateFeeds, 60000);
     }
 });
 // Twitter helpers
