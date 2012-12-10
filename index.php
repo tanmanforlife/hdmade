@@ -2,7 +2,7 @@
 <?php include 'header.php'; ?>
 <?php /*
 <div class="top">
-	<div class="main" role="main"> */ ?>
+	<div class="main" role="main"> */ ?>	
 		<div class="outer-wrapper cf">
 			<section class="g span-2 featured-img">
 								
@@ -10,7 +10,16 @@
 					<li><img src="carousel-images/message1_8.jpg" alt="" /></li>
 					<li><a href="broadcast.php" target="_blank"><img src="carousel-images/streamhere.png" alt="" /></a></li>
 					<li><a href="http://www.robinhood.org/rhsandy" target="_blank"><img src="carousel-images/rebuild.png" alt="" /></a></li>
-					<!--<li><iframe src="http://static.iheart.com/121212/player.html?partner=robinhood" width="100%" height="371px" scrolling="no" frameborder="0"></iframe></li>-->
+					<?php /* <li><iframe src="http://static.iheart.com/121212/player.html?partner=robinhood" width="100%" height="371px" scrolling="no" frameborder="0"></iframe></li> */ ?>
+					<?php /*
+						// Use this exact HTML to embed any vimeo video in this section, only switch out the video ID.
+					<li>
+						<iframe src="http://player.vimeo.com/video/55138860?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=featuredvideo1" width="655" height="371" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen data-vimeo="true" id="featuredvideo1"></iframe>
+					</li>
+					*/ ?>
+					<li>
+						<iframe src="http://player.vimeo.com/video/55138860?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=featuredvideo1" width="655" height="371" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen data-vimeo="true" id="featuredvideo1"></iframe>
+					</li>
 				</ul> <!-- .slides -->
 		
 
@@ -18,9 +27,12 @@
 			<div class="nav-mobile" aria-hidden="true">
 				<ul class="nav">
 					<li><span class="separator">#121212 Concert</span></li>
+
 					<li><a href="broadcast" target="_blank">Watch on TV</a></li>
 					<li><a href="social" target="_blank">Social</a></li>
 					<li><a href="#" target="_blank">Shop</a></li>
+
+
 				</ul>
 			</div>
 			<div class="twitter-wrap cf">
