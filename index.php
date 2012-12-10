@@ -48,7 +48,7 @@
 						</div>
 						<div class="td-3">	
 							<p>
-								TEXT TO GIVE, Presented by Chase. Text ROBINHOOD to 50555 to donate $10. <a class="text-to-give-modal" href="#text-to-give-popup" title="Terms">Terms</a>
+								TEXT TO GIVE, Presented by Chase. Text ROBINHOOD to 50555 to donate $10. <a class="text-to-give-modal-link" href="#text-to-give-popup" title="Terms">Terms</a>
 							</p>
 						</div>
 					</div> <!-- .tr -->
