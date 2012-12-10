@@ -2123,4 +2123,7 @@ abbr[title] {
         .artists-tweets .jta-tweet-text{
             padding-right: 0;
         }
+        .robin-hood-stories h3{
+            font-size: 1.3em;
+        }
 }

@@ -182,9 +182,9 @@
 		</div>
 
                 <div class="one-third">
-			<img src="img/itunes-order.png" alt="" />
-			<p class="pushup"><em>Check out the<br>121212 Soundtrack on iTunes</em></p>
-			<a class="link" href="#">Order</a>
+			<img src="img/DonatePic.jpg" alt="" />
+			<p class="pushup"><em>Donate using your Amazon account</em></p>
+			<a class="link donate-modal-link" href="#donate-popup">Donate</a>
 		</div>
 
 		<div class="one-third">
