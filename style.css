@@ -567,7 +567,7 @@ h3 {
 	background:#bce723;
 	color:#010101;
 	font-family:"TradeGothicCond";
-	font-size:26px;
+	font-size:29px;
 	font-weight: bold;
 	margin:0 auto;
 	max-width:100%;
@@ -575,6 +575,15 @@ h3 {
 	text-align: center;
 	text-transform: uppercase;
 }
+
+.flash a{
+	color: #003A63;
+}
+
+.flash a:hover, .flash a:active{
+	color: #fff;
+}
+
 .flash > div {
 	margin:0 auto;
 	max-width:1070px;
