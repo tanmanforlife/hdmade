@@ -13,7 +13,7 @@
 		return $words;
 	}
 	
-  $input = file_get_contents($_SERVER['DOCUMENT_ROOT']."/social/tumblr.json");
+  $input = file_get_contents("http://test.121212concert.org/social/tumblr.json");
 	$input = str_replace('var tumblr_api_read = ','',$input);
 	$input = str_replace(';','',$input);
 	$value = jsonp_decode($input, true);
@@ -29,7 +29,7 @@
 		<li class="">
 				<div class="item-wrap">
 					<div class="content">
-						<a href="<?php echo $postUrl ?>"><img src="<?php echo $photoUrl ?>" alt="tumblr photo" /></a>
+						<a href="<?php echo $postUrl ?>" target="_blank"><img src="<?php echo $photoUrl ?>" alt="tumblr photo" /></a>
 						<p><?php echo limit_words($photoCaption, 20); ?></p>
 					</div>
 				</div>

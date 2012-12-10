@@ -1,13 +1,14 @@
 <div class="sponsors cf">
 	<div class="wrapper">
-		<h3>Brought To You By</h3>
-		<ul class="sponsor-list">
+		<h3>With Support From</h3>
+		<!--ul class="sponsor-list">
 			<li data-sponsor="ClearChannel"><span>ClearChannel</span></li>
 			<li data-sponsor="iHeartRadio"><span>iHeartRadio</span></li>
 			<li data-sponsor="MSG"><span>The Madison Square Garden Company</span></li>
 			<li data-sponsor="Robin Hood"><span>Robin Hood</span></li>
 			<li data-sponsor="The Weinstein Company"><span>The Weinstein Company</span></li>
-		</ul>
+		</ul-->
+                <img src="img/sponsors_btm.png" />
 	</div> <!-- .wrapper -->
 </div> <!-- .sponsors -->
 <footer class="cf" role="contentinfo">

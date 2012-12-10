@@ -15,6 +15,12 @@ function auto_version($file) {
     $root_path .= "/";
   }
 
+  if(strstr($_SERVER['HTTP_HOST'], 'localhost') || strstr($_SERVER['HTTP_HOST'], 'hdmade')){
+      if(strstr($file, 'style')){          
+          return 'style.css';
+      }
+  }
+
   // Get the file modified time and put it into the filename.
   $mtime = filemtime($file);
   return $root_path . preg_replace('{\\.([^./]+)$}', ".$mtime.\$1", $file);
@@ -54,20 +60,22 @@ function auto_version($file) {
 	<h1>Donate</h1>
 	<p>Your donation will serve the victims of Hurricane Sandy through the Robin Hood Relief Fund.  You will be redirected to Amazon to complete the payment process.</p>
 	<!--a href="" class="btn donate">Donate</a-->
-	<form id="donate-form" action="https://authorize.payments-sandbox.amazon.com/pba/paypipeline" method="post" target="_blank">
-		<input type="hidden" name="returnUrl" value="http://www.121212concert.org/" >
-		<input type="hidden" name="processImmediate" value="1" >
-		<input type="hidden" name="accessKey" value="11SEM03K88SD016FS1G2" >
-		<input type="hidden" name="signatureMethod" value="HmacSHA256" >
-		<input type="hidden" name="collectShippingAddress" value="0" >
-		<input type="hidden" name="isDonationWidget" value="1" >
-		<input type="hidden" name="amazonPaymentsAccountId" value="LDAYRQYTKPGM5JEC2MMHHS2UDUZ3CE882PINP9" >
-		<input type="hidden" name="cobrandingStyle" value="logo" >
-		<input type="hidden" name="immediateReturn" value="1" >
-		<input type="hidden" name="description" value="Donate to Benefit the Robin Hood Relief Fund" >
-		<input type="hidden" name="abandonUrl" value="http://www.121212concert.org/" >
-		<input type="hidden" name="signatureVersion" value="2" >
-		<input type="hidden" name="signature" value="sZLo+VGDub96fDdPbM8v5uP7sVV4GW58nXmLw7mRgcc=" >
+	<form id="donate-form" action="https://authorize.payments.amazon.com/pba/paypipeline" method="post" target="_blank">
+			
+		  <input type="hidden" name="returnUrl" value="http://121212concert.org" >
+		  <input type="hidden" name="processImmediate" value="1" >
+		  <input type="hidden" name="accessKey" value="11SEM03K88SD016FS1G2" >
+		  <input type="hidden" name="signatureMethod" value="HmacSHA256" >
+		  <input type="hidden" name="collectShippingAddress" value="1" >
+		  <input type="hidden" name="isDonationWidget" value="1" >
+		  <input type="hidden" name="amazonPaymentsAccountId" value="WKAEVFSXUGQC4TVUGH8F423RR51BA6P6QSX2GK" >
+		  <input type="hidden" name="cobrandingStyle" value="logo" >
+		  <input type="hidden" name="immediateReturn" value="1" >
+		  <input type="hidden" name="description" value="Donate to Benefit the Robin Hood Relief Fund" >
+		  <input type="hidden" name="abandonUrl" value="http://121212concert.org" >
+		  <input type="hidden" name="signatureVersion" value="2" >
+		  <input type="hidden" name="signature" value="dzp+dJ1q9LpYjGocFWiyNHTGQVA9FIusU+tjvxscEtQ=" >
+
 		<div class="amounts">
 			<input type="radio" name="amount" class="amount" value="10" /><label>$10</label>
 			<input type="radio" name="amount" class="amount" value="50" /><label>$50</label>
@@ -78,6 +86,26 @@ function auto_version($file) {
 		<div class="error"></div>
 	</form>
 </div>
+
+
+<div id="text-to-give-popup" style="display: none;">
+	<h1>Terms</h1>
+	<p>
+		$10.00 donation to the Robin Hood Foundation. Charges will appear on your wireless bill, or be deducted from your prepaid balance. All purchases must be 
+		authorized by account holder. Must be 18 years of age or have parental permission to paticipate. Message and Data Rates may apply.
+		Text STOP to 50555 to STOP.
+		Text HELP to 50555 for HELP.
+	</p>
+	<p>
+		Full Terms:<br>
+		<a href="http://www.mGive.org/T" target="_blank">mGive.org/T</a><br>
+		<a href="http://www.mgivefoundation.org/privacy.aspx" target="_blank">Privacy Policy</a>
+		</p>
+
+</div>
+
+
+<!--
 <div class="sponsor-banner flexslider-fade">
 	<ul class="slides cf">
 		<li>
@@ -89,6 +117,7 @@ function auto_version($file) {
 		</li>
 	</ul>
 </div>
+-->
 <div class="flash">
 	<div>
 		<p></p>
@@ -133,17 +162,17 @@ function auto_version($file) {
 			</div> <!-- .tr -->
 		</header> <!-- .table -->
 		<div class="menu-wrap cf">
-			<a href="#donate-popup" class="btn donate donate-modal-link">Donate</a>
+			<a href="https://www.robinhood.org/take-action/SandyRelief.aspx" class="btn donate donate-modal-link-off" target="_blank">Donate</a>
 			<nav class="" role="navigation">
 				<ul class="nav site">
-					<li><span class="separator">#121212Concert</span></li>
+					<li><span class="separator"><a href="https://twitter.com/search?q=%23121212Concert&src=hash" target="_blank">#121212Concert</a></span></li>
 					<li><a href="broadcast.php" target="_blank">Watch</a></li>
-					<li><a href="social.php" target="_blank">Connect</a></li>
+					<!--li><a href="social.php" target="_blank">Connect</a></li-->
 					<li><a href="http://store.121212concert.org" target="_blank">Shop</a></li>
 					<li><span class="separator">|</span></li>
 					<li class="share"><span>Share</span></li>
-					<li class="share share-fb"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo urlencode('http://www.121212concert.org'); ?>" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
-					<li class="share share-tw"><a target="_blank" href="http://twitter.com/share?text=The%20concert%20for%20Sandy%20relief&url=http://www.121212concert.org" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
+					<li class="share share-fb"><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=<?php echo urlencode('"12-12-12" The Concert for Sandy Relief ')?>&p[url]=http%3A%2F%2Fwww.121212concert.org&p[summary]=<?php echo urlencode('On Wednesday at 7:30pm ET, I\'ll be watching "12-12-12" The Concert for Sandy Relief featuring: Bon Jovi, Eric Clapton, Dave Grohl, Billy Joel, Alicia Keys, Chris Martin, The Rolling Stones, Bruce Springsteen & the E Street Band, Eddie Vedder, Roger Waters, Kanye West, The Who, Paul McCartney.  The concert benefits the Robin Hood Relief Fund, which provides grants to community organizers in the tri-state area that are helping Hurricane Sandy victims rebuild and recover.')?>&p[images][0]=" class="icon-facebook"><span aria-hidden="true">Facebook</span></a></li>
+					<li class="share share-tw"><a target="_blank" href="http://twitter.com/share?text=The%20%20%23121212Concert%20for%20%23SandyRelief%20featuring%20iconic%20artists%20airs%20live%20%40%207%3A30pm%20ET%20http%3A%2F%2Fwww.121212concert.org%2F&url=http%3A%2F%2Fwww.121212concert.org" class="icon-twitter"><span aria-hidden="true">Twitter</span></a></li>
 				</ul> <!-- .nav -->
 			</nav> <!-- g four-fifths -->
 		</div> <!-- .menu-wrap -->

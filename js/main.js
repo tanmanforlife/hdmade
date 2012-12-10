@@ -61,6 +61,15 @@ $(document).ready(function() {
             type: 'inline',
             closeBtn: true,
             wrapCSS: 'donate-modal',
+            openEffect: 'none',
+            tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
+    });
+
+    $(".text-to-give-modal-link").fancybox({
+            type: 'inline',
+            closeBtn: true,
+            wrapCSS: 'text-to-give-modal',
+            openEffect: 'none',
             tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
     });
 
@@ -217,6 +226,12 @@ $(window).load(function () {
 			'marginTop': -1*(videoHeight/2)
 		});
 	});
+        $('.celeb-videos  .bgvo-right').live('click',function(){
+            $('.celeb-videos .flex-next').click();
+        });
+        $('.celeb-videos  .bgvo-left').live('click',function(){
+            $('.celeb-videos .flex-prev').click();
+        });
        
 
 
@@ -268,7 +283,7 @@ $(window).load(function () {
         },
         complete : function(){
             $.ajax({
-                url: 'http://akamaitest.121212concert.org/social/artists.json',
+                url: 'http://test.121212concert.org/social/favs.json',
                 type: 'GET',
                 dataType: 'jsonp',
                 jsonpCallback: "parseResult",
@@ -328,7 +343,7 @@ $(window).load(function () {
                 if (index > limit) {
                     return false;
                 } else {
-                    $('ul#js-instagram-all').append('<li><a href="'+ result[index]['standard_res'] +'"><img src="' + result[index]['standard_res'] + '" alt="" /></a></li>');
+                    $('ul#js-instagram-all').append('<li><a href="'+ result[index]['permalink'] +'" target="_blank"><img src="' + result[index]['standard_res'] + '" alt="" /></a></li>');
                 }
             });
         }
@@ -359,7 +374,7 @@ $(window).load(function () {
                         var list = $('ul#js-instagram-all li');
 
                         for (var i = limit; i < limit + 15; i++) {
-                            $('ul#js-instagram-all').append('<a href="'+ result[limit]['standard_res'] +'"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
+                            $('ul#js-instagram-all').append('<a href="'+ result[limit]['permalink'] +'" target="_blank"><li><img src="' + result[i]['standard_res'] + '" alt="" /></a></li>');
                         }
                     }
                 });
@@ -394,7 +409,7 @@ $(window).load(function () {
 
 
                 $.each(list, function (index, value) {
-                    $('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr('href', result[index]['standard_res']);
+                    $('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr({'href': result[index]['permalink'], 'target': '_blank'});
                     $('ul#js-instagram li:nth-child(' + (index + 1) + ') img.photo').attr('src', result[index]['standard_res']);
                 });
             }

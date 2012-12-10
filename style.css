@@ -778,8 +778,8 @@ span.jta-tweet-action-retweet a{
 	border-style:solid;
 	border-width: 1px 0;
 	margin:20px 0;
-	padding:0 0 20px 0;
-        height: 170px;
+	/*padding:0 0 20px 0;
+        height: 180px;*/
 }
 .ways-to-donate h2, .twitter-wrap h2, .tumblr-feed h2, .instagram-feed h2, .what-artists h2, .celebs-sandy h2, .sandy-store h2, .sponsors h3, .robin-hood-stories h2{
     font-family: "TeeFraMed", sans-serif;
@@ -787,12 +787,24 @@ span.jta-tweet-action-retweet a{
 .ways-to-donate h2{
     margin-top: 15px;
 }
-.ways-to-donate .td {
+.ways-to-donate .td, .ways-to-donate .td-2, .ways-to-donate .td-3 {
 	padding:0 1%;
 	text-align: center;
 	vertical-align: middle;
 	width:25%;
+	float: left;
 }
+
+.ways-to-donate .td-2{
+	width: 25%;
+}
+
+.ways-to-donate .td-3{
+	width: 25%;
+        margin-left: -60px;
+
+}
+
 .to-give {
 	margin-bottom: 20px;
 	width:100%;
@@ -803,7 +815,7 @@ span.jta-tweet-action-retweet a{
 	line-height:36px;
 	padding:8px 0 6px;
 	width:100%;
-        margin-left: 50px;
+        margin: 10px 0 0 51px;
 }
 .ways-to-donate .icon-twitter:before {
 	font-size:0.8em;
@@ -817,6 +829,10 @@ span.jta-tweet-action-retweet a{
 	font-size:15px;
 	max-width:125px;
 	margin:0 auto;
+}
+
+.to-give .td-3 p{
+	max-width: 320px;
 }
 
 /* =============================================================================
@@ -1185,7 +1201,7 @@ p.samsung {
 	position: relative;
 }
 .celeb-video-frame {
-	padding:0 20%;
+	margin:0 20%;
 	position: relative;
 }
 .celeb-video-wrap > iframe,
@@ -1194,6 +1210,7 @@ p.samsung {
 	top:50%;
 	right:0;
 	width:35%;
+        cursor: pointer;
 }
 .celeb-video-wrap > .bg-video-overlay {
 	background:#000;
@@ -1669,19 +1686,22 @@ abbr[title] {
 			display: none
 		}
 
-#donate-popup{
+#donate-popup, #text-to-give-popup{
     display: none;
     max-width: 460px;
     min-height: 300px;
     text-align: center;
 }
-#donate-popup p{
+#donate-popup p, #text-to-give-popup p{
     padding: 0 50px 20px 50px;
     font-family:"Georgia", serif;
     font-style: italic;
     font-size: 0.9em;
 }
-#donate-popup .btn{
+#text-to-give-popup p a{
+	color: #003a63;
+}
+#donate-popup .btn, #text-to-give-popup .btn{
     padding: 0.2em 1em 0.0em;
 }
 #donate-popup .amounts{
@@ -1711,12 +1731,12 @@ abbr[title] {
 #donate-popup .error{
     color: red;
 }
-.donate-modal .fancybox-skin{
+.donate-modal .fancybox-skin, .text-to-give-modal .fancybox-skin{
     border-radius: 0;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
 }
-.donate-modal .modal-close{
+.donate-modal .modal-close, .text-to-give-modal .modal-close{
     color: #002340;
     position: absolute;
     right: 20px;
@@ -1798,11 +1818,11 @@ abbr[title] {
 		padding-top: 20px;
 	}
 	.menu-wrap {
-		padding:0 10px 25px;
+		padding:0 10px 15px;
 	}
 	.menu-wrap nav {
 		float: right;
-                margin-top: 5px;
+                margin-top: 10px;
 	}
 	.nav-mobile {
 		display: block
@@ -1814,7 +1834,11 @@ abbr[title] {
 		padding-left: .5em;
 		padding-right: .5em;
                 font-size: 28px;
+                margin-top: 5px;
 	}
+        .menu-wrap .separator{
+            display: none;
+        }
 	.main {
 		border-top: 1px solid #345d96;
 		padding: 0;
@@ -2065,7 +2089,7 @@ abbr[title] {
             font-size: 0.8em;
         }
         #donate-popup p{
-            padding: 0 10px 10px 10px;
+            padding: 0 10px;
             font-family:"Georgia", serif;
             font-style: italic;
             font-size: 0.8em;
@@ -2079,9 +2103,10 @@ abbr[title] {
         }
         #donate-popup .custom_wrap{
             display: block;
+            margin-top: 10px;
         }
         .donate-modal .fancybox-inner{
-            height: 310px !important;
+            height: 240px !important;
         }
 
         .sandy-store .pushup{
@@ -2096,4 +2121,42 @@ abbr[title] {
         .twitter-wrap{
             overflow: visible;
         }
+        .home > .top{
+            padding-bottom: 0;
+        }
+        .btn {
+          -webkit-appearance: none;
+          -webkit-border-radius: 0;
+        }
+        .sponsor-banner{
+            /*height: 100px;*/
+        }
+        .sponsor-banner .slides li{
+            text-align: center;
+        }
+        .sponsor-banner .slides li img{
+            margin: 5px 10px;
+            display: inline-block;
+            width: 12%;
+        }
+        .artists-tweets .jta-tweet-text{
+            padding-right: 0;
+        }
+        .robin-hood-stories h3{
+            font-size: 1.3em;
+        }
+        .to-give .td-3 p {
+            margin-right: 0;
+            padding: 0;
+            max-width: none;
+            width: 100%;
+        }
+        .ways-to-donate .td-2{
+            width: 100%;
+        }
+        .ways-to-donate .td-3 {
+            width: 100%;
+            margin: 0;
+        }
+
 }
