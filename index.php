@@ -35,10 +35,10 @@
 				<div class="table to-give">
 					<div class="tr">
 						<div class="td">
-							<a class="btn donate donate-modal-link" href="#donate-popup">Donate</a>
+							<a class="btn donate donate-modal-link-off" href="http://www.robinhood.org/rhsandy" target="_blank">Donate</a>
 						</div>
 						<div class="td">
-							<p>Donate using your Amazon Account</p>
+							<p>Donate to the Robin Hood Relief Fund</p>
 						</div>
 						<div class="td-2">
 							<!--<a class="btn donate" href="#">
