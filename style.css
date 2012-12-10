@@ -1697,6 +1697,9 @@ abbr[title] {
     font-style: italic;
     font-size: 0.9em;
 }
+#text-to-give-popup p a{
+	color: #003a63;
+}
 #donate-popup .btn, #text-to-give-popup .btn{
     padding: 0.2em 1em 0.0em;
 }
