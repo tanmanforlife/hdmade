@@ -2067,6 +2067,13 @@ abbr[title] {
 	.mobile-wrap,.twitter{
 		background: black
 	}
+	
+	/* -----------------------
+	-- Ways To Give -- */
+	
+	.ways-to-give {
+		background:#000;
+	}
 
 	/* -----------------------
 	-- More -- */
@@ -2181,13 +2188,14 @@ abbr[title] {
 	.what-artists .wrapper {
 		position: relative;
 	}
-	.arti {
-		margin:0 40px;
+	.what-artists .arti {
+		margin:0 30px;
 		width:auto;
 	}
 	.what-artists h2 {
 		background-position:left 0;
 		line-height:25px;
+		margin-bottom: 0px;
 		margin-top: 0;
 		padding-left: 0;
 		text-align: left;
@@ -2196,7 +2204,24 @@ abbr[title] {
 		float: right;
 		clear: none;
 	}
-
+	.artists-tweets .flex-direction-nav .flex-prev {
+		left:6px;
+	}
+	.artists-tweets .flex-direction-nav .flex-next {
+		right:6px;
+	}
+	.artists-tweets .jta-tweet-profile-image {
+		left:0;
+	}
+	.artists-tweets .jta-tweet-text {
+		padding-left: 0;
+	}
+	.artists-tweets .jta-tweet-attributes {
+		margin-left: 0;
+	}
+	.artists-tweets .jta-tweet-list-item {
+		margin-bottom: 0;
+	}
 	/* -----------------------
 	-- RH Stories -- */
 
