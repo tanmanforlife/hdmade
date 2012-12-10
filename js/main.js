@@ -325,6 +325,7 @@ $(window).load(function () {
                             minItems:1,
                             maxItems:3,
                             slideshow:false,
+							animationLoop:false,
                             move:1
                     });
                 },
