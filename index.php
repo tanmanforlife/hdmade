@@ -7,9 +7,9 @@
 			<section class="g span-2 featured-img">
 								
 				<ul class="slides">
-					<li><img src="carousel-images/message1_8.jpg" alt="" height="360" width="640" /></li>
-					<li><a href="broadcast.php" target="_blank"><img src="carousel-images/streamhere.png" alt="" height="360" width="640" /></a></li>
-					<li><a href="http://www.robinhood.org/rhsandy" target="_blank"><img src="carousel-images/rebuild.png" alt="" height="360" width="640" /></a></li>
+					<li><img src="carousel-images/message1_8.jpg" alt="" /></li>
+					<li><a href="broadcast.php" target="_blank"><img src="carousel-images/streamhere.png" alt="" /></a></li>
+					<li><a href="http://www.robinhood.org/rhsandy" target="_blank"><img src="carousel-images/rebuild.png" alt="" /></a></li>
 					<!--<li><iframe src="http://static.iheart.com/121212/player.html?partner=robinhood" width="100%" height="371px" scrolling="no" frameborder="0"></iframe></li>-->
 				</ul> <!-- .slides -->
 		
