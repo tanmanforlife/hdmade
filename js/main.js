@@ -484,7 +484,7 @@ $(window).load(function () {
 
                 }
             });
-        }, 60000);
+        }, 5000);
     }
 });
 // Twitter helpers
