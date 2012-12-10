@@ -496,6 +496,7 @@ function parseTwitterDate(tdate) {
     var user_date = new Date();
     if (K.ie) {
         system_date = Date.parse(tdate.replace(/( \+)/, ' UTC$1'))
+        return '';
     }
     var diff = Math.floor((user_date - system_date) / 1000);
     if (diff <= 1) {return "just now";}
