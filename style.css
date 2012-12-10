@@ -779,7 +779,7 @@ span.jta-tweet-action-retweet a{
 	border-width: 1px 0;
 	margin:20px 0;
 	padding:0 0 20px 0;
-        height: 170px;
+        height: 180px;
 }
 .ways-to-donate h2, .twitter-wrap h2, .tumblr-feed h2, .instagram-feed h2, .what-artists h2, .celebs-sandy h2, .sandy-store h2, .sponsors h3, .robin-hood-stories h2{
     font-family: "TeeFraMed", sans-serif;
@@ -792,14 +792,16 @@ span.jta-tweet-action-retweet a{
 	text-align: center;
 	vertical-align: middle;
 	width:25%;
+	float: left;
 }
 
 .ways-to-donate .td-2{
-	width: 10%;
+	width: 25%;
 }
 
 .ways-to-donate .td-3{
-	width: 35%;
+	width: 25%;
+
 }
 
 .to-give {
@@ -829,7 +831,7 @@ span.jta-tweet-action-retweet a{
 }
 
 .to-give .td-3 p{
-	max-width: 300px;
+	max-width: 320px;
 }
 
 /* =============================================================================

@@ -44,7 +44,7 @@
 							<!--<a class="btn donate" href="#">
 								<span class="icon-twitter"></span>Twitter
 							</a>-->
-							test
+							<img src="img/TexttoGiveIcon.png" />
 						</div>
 						<div class="td-3">	
 							<p>
