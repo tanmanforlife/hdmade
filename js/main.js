@@ -433,7 +433,7 @@ $(window).load(function () {
                     var max = $('ul#js-instagram li').size();
                     var maxer = 15;
                     var random = Math.floor(Math.random() * (max - min + 1)) + min;
-                    var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
+                    var randomer = Math.floor(Math.random() * (maxer - min + 1));
 
                     $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
                             $('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', result[randomer]['standard_res']).fadeIn();
