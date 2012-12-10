@@ -27,7 +27,7 @@
 			<div class="nav-mobile" aria-hidden="true">
 				<ul class="nav">
 					<li><span class="separator">#121212 Concert</span></li>
-					<li><a href="broadcast.php" target="_blank">Watch on TV</a></li>
+					<li><a href="broadcast.php" target="_blank">Watch</a></li>
 					<li><a href="social.php" target="_blank">Social</a></li>
 					<li><a href="#" target="_blank">Shop</a></li>
 				</ul>

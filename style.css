@@ -846,9 +846,10 @@ span.jta-tweet-action-retweet a{
 	display: block;
 	font-size:36px;
 	line-height:36px;
+	margin:10px auto 0;
 	padding:8px 0 6px;
 	width:100%;
-        margin: 10px 0 0 51px;
+      /*  margin: 10px 0 0 51px; */
 }
 .ways-to-donate .icon-twitter:before {
 	font-size:0.8em;
@@ -1824,7 +1825,7 @@ abbr[title] {
 	}
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 655px) {
 	html {
 		font-size: 0.9em
 	}
@@ -1935,7 +1936,8 @@ abbr[title] {
 	.nav li:last-child {
 		margin-right: 0;
 	}
-	.nav li a {
+	.nav li a,
+	.nav li .separator {
 		display: inline-block;
 		font-family: 'TradeGothic';
 		font-size:18px;
