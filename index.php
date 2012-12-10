@@ -17,9 +17,6 @@
 						<iframe src="http://player.vimeo.com/video/55138860?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=featuredvideo1" width="655" height="371" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen data-vimeo="true" id="featuredvideo1"></iframe>
 					</li>
 					*/ ?>
-					<li>
-						<iframe src="http://player.vimeo.com/video/55138860?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=featuredvideo1" width="655" height="371" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen data-vimeo="true" id="featuredvideo1"></iframe>
-					</li>
 				</ul> <!-- .slides -->
 		
 
