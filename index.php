@@ -182,15 +182,15 @@
 		</div>
 
                 <div class="one-third">
-			<img src="img/itunes-order.png" alt="" />
-			<p class="pushup"><em>Check out the<br>121212 Soundtrack on iTunes</em></p>
-			<a class="link" href="#">Order</a>
+			<img src="img/DonatePic.jpg" alt="" />
+			<p><em>Donate using your Amazon account</em></p>
+			<a class="link donate-modal-link" href="#donate-popup">Donate</a>
 		</div>
 
 		<div class="one-third">
 			<a href="http://www.iheart.com/live/6146/?autoplay=true"><img src="img/1212merch.png" alt="Listen to the Artists" /></a>
 			<p><em>Listen to all the artists on<br>121212 Radio</em></p>
-			<a class="link" href="http://www.iheart.com/live/6146/?autoplay=true" target="_blank">Listen</a>
+			<a class="link" href="http://www.iheart.com/live/6146/?autoplay=true" target="_blank">Share</a>
 		</div>
 		
 	</div>
