@@ -190,7 +190,7 @@
 		<div class="one-third">
 			<a href="http://www.iheart.com/live/6146/?autoplay=true"><img src="img/1212merch.png" alt="Listen to the Artists" /></a>
 			<p><em>Listen to all the artists on<br>121212 Radio</em></p>
-			<a class="link" href="http://www.iheart.com/live/6146/?autoplay=true" target="_blank">Listen</a>
+			<a class="link" href="http://www.iheart.com/live/6146/?autoplay=true" target="_blank">Share</a>
 		</div>
 		
 	</div>
