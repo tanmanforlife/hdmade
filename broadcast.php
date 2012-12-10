@@ -82,7 +82,7 @@
 
 
     <div class="pane-section middle">
-      <p><span style="color:#ffffff;"><span style="">Fuse.tv<br>Hulu<br>Ifc.com<br>iHeartRadio<br>InStyle.com<br>Livewellnetwork.com<br>MTV.com<br>My Space<br>Ovationtv.com<<br>TheGarden.com/span></span></p>
+      <p><span style="color:#ffffff;"><span style="">Fuse.tv<br>Hulu<br>Ifc.com<br>iHeartRadio<br>InStyle.com<br>Livewellnetwork.com<br>MTV.com<br>My Space<br>Ovationtv.com<br>TheGarden.com</span></span></p>
     </div>
 
 
