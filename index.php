@@ -35,7 +35,7 @@
 				<div class="table to-give">
 					<div class="tr">
 						<div class="td">
-							<a class="btn donate donate-modal-link-off" href="http://www.robinhood.org/rhsandy" target="_blank">Donate</a>
+							<a class="btn donate donate-modal-link-off" href="https://www.robinhood.org/take-action/SandyRelief.aspx" target="_blank">Donate</a>
 						</div>
 						<div class="td">
 							<p>Donate to the Robin Hood Relief Fund</p>

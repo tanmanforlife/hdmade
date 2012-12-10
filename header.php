@@ -162,7 +162,7 @@ function auto_version($file) {
 			</div> <!-- .tr -->
 		</header> <!-- .table -->
 		<div class="menu-wrap cf">
-			<a href="http://www.robinhood.org/rhsandy" class="btn donate donate-modal-link-off" target="_blank">Donate</a>
+			<a href="https://www.robinhood.org/take-action/SandyRelief.aspx" class="btn donate donate-modal-link-off" target="_blank">Donate</a>
 			<nav class="" role="navigation">
 				<ul class="nav site">
 					<li><span class="separator">#121212Concert</span></li>
