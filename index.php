@@ -95,24 +95,24 @@
 			</div> <!-- .dynamic -->
 			<div class="social cf">
 				<div class="one-fourth">
-					<a href="http://www.facebook.com/121212concert" target="_blank">
+					<!--<a href="http://www.facebook.com/121212concert" target="_blank">-->
 						<img src="img/fb.png" />
-					</a>
+					<!--</a>-->
 				</div> <!-- .td -->
 				<div class="one-fourth">
-					<a href="https://twitter.com/121212Concert" target="_blank">
+					<!--<a href="https://twitter.com/121212Concert" target="_blank">-->
 						<img src="img/twitter.png" />
-					</a>
+					<!--</a>-->
 				</div> <!-- .td -->
 				<div class="one-fourth">
-					<a href="http://foursquare.com" target="_blank">
+					<!--<a href="http://foursquare.com" target="_blank">-->
 						<img src="img/foursquare.png" />
-					</a>
+					<!--</a>-->
 				</div> <!-- .td -->
 				<div class="one-fourth">
-					<a href="http://getglue.com/tv_shows/121212_concert_for_sandy_relief" target="_blank">
+					<!--<a href="http://getglue.com/tv_shows/121212_concert_for_sandy_relief" target="_blank">-->
 						<img src="img/glue.png" />
-					</a>
+					<!--</a>-->
 				</div> <!-- .td -->
 			</div> <!-- .social -->
 		</div> <!-- .mobile-wrap -->
