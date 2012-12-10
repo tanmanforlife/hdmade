@@ -267,9 +267,35 @@ $(window).load(function () {
 
         });
     }
-    getBannerText();
-
-    //Robin Hood Twitter Feed
+	getBannerText();
+	window.onorientationchange = detectIPadOrientation;
+	function detectIPadOrientation() {
+		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
+			if ( orientation == 0 ) {  
+				return 'portrait';
+			}  
+			else if ( orientation == 90 ) {  
+				return 'landscape';
+			}  
+			else if ( orientation == -90 ) {  
+				return 'landscape';
+			}  
+			else if ( orientation == 180 ) {  
+				return 'portrait';
+			}
+		}
+	}
+	var tweet_width, 
+		move_amount = 3;
+	if(detectIPadOrientation() == 'portrait') {		
+		tweet_width = 349;
+		move_amount = 2;
+	} else if(detectIPadOrientation() == 'landscape') {
+		tweet_width = 308;
+	} else {
+		tweet_width = 320;
+	}
+	//Robin Hood Twitter Feed
      $.ajax({
         url: '/social/robinhood.json?callback=parseResult',
         //url: 'json/robinhood.json',
@@ -320,10 +346,10 @@ $(window).load(function () {
                             animation: "slide",
                             selector: ".jta-tweet-list > li",
                             controlNav:false,
-                            itemWidth: 320,
+                            itemWidth: tweet_width,
                             itemMargin:0,
                             minItems:1,
-                            maxItems:3,
+                            maxItems:move_amount,
                             slideshow:false,
 							animationLoop:false,
                             move:1

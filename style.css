@@ -1207,6 +1207,11 @@ p.samsung {
 .jta-tweet-list-controls-button-more {
 	display: none !important;
 }
+@media only screen and (max-width:768px) {
+	.artists-tweets .jta-tweet-list-item {
+		max-width:349px;
+	}
+}
 
 /* =============================================================================
    Celebs on Sandy
@@ -1278,7 +1283,7 @@ p.samsung {
 }
 .sandy-store p {
 	display: block;
-	height: 50px;
+	min-height: 50px;
 }
 .sandy-store h2 {
 	color:#000;
