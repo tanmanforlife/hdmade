@@ -251,7 +251,7 @@ $(window).load(function () {
 
     function getBannerText(){
         $.ajax({
-            url: 'http://test.121212concert.org/social/topalert.json',
+            url: '../social/topalert.json',
             type: 'GET',
             dataType: 'jsonp',
             jsonpCallback: "rseBannerText",
@@ -271,7 +271,7 @@ $(window).load(function () {
 
     //Robin Hood Twitter Feed
      $.ajax({
-        url: 'http://test.121212concert.org/social/robinhood.json?callback=parseResult',
+        url: '../social/robinhood.json?callback=parseResult',
         //url: 'json/robinhood.json',
         type: 'GET',
         dataType: 'jsonp',
@@ -297,7 +297,7 @@ $(window).load(function () {
         },
         complete : function(){
             $.ajax({
-                url: 'http://test.121212concert.org/social/favs.json',
+                url: '../social/favs.json',
                 type: 'GET',
                 dataType: 'jsonp',
                 jsonpCallback: "parseResult",
@@ -344,7 +344,7 @@ $(window).load(function () {
     // Instagram
     var limit = 14;
     $.ajax({
-        url: 'http://test.121212concert.org/social/instagram.json',
+        url: '../social/instagram.json',
         dataType: "jsonp",
         jsonp: "parseResponse",
         jsonpCallback: "parseResponse",
@@ -378,7 +378,7 @@ $(window).load(function () {
         $(window).scroll(function () {
             if ($(window).scrollTop() + $(window).height() == $(document).height()) {
                 $.ajax({
-                    url: 'http://test.121212concert.org/social/instagram.json',
+                    url: '../social/instagram.json',
                     dataType: "jsonp",
                     jsonp: "parseResponse",
                     jsonpCallback: "parseResponse",
@@ -412,7 +412,7 @@ $(window).load(function () {
 
     if($('#js-instagram').length){
         $.ajax({
-            url: 'http://test.121212concert.org/social/instagram.json',
+            url: '../social/instagram.json',
             dataType: "jsonp",
             jsonp: "parseResponse",
             jsonpCallback: "parseResponse",
@@ -435,7 +435,7 @@ $(window).load(function () {
             getBannerText();
 
             $.ajax({
-                url: 'http://test.121212concert.org/social/instagram.json',
+                url: '../social/instagram.json',
                 dataType: "jsonp",
                 jsonp: "parseResponse",
                 jsonpCallback: "parseResponse",
@@ -447,7 +447,9 @@ $(window).load(function () {
                     var max = $('ul#js-instagram li').size();
                     var maxer = 15;
                     var random = Math.floor(Math.random() * (max - min + 1)) + min;
+
                     var randomer = (Math.floor(Math.random() * (maxer - min + 1)) + min) -1;
+
                     $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
                             $('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', result[randomer]['standard_res']).fadeIn();
                     });

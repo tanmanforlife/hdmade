@@ -24,9 +24,12 @@
 			<div class="nav-mobile" aria-hidden="true">
 				<ul class="nav">
 					<li><span class="separator">#121212 Concert</span></li>
-					<li><a href="broadcast.php" target="_blank">Watch</a></li>
-					<li><a href="social.php" target="_blank">Social</a></li>
-					<li><a href="http://store.121212concert.org/" target="_blank">Shop</a></li>
+
+					<li><a href="broadcast" target="_blank">Watch on TV</a></li>
+					<li><a href="social" target="_blank">Social</a></li>
+					<li><a href="#" target="_blank">Shop</a></li>
+
+
 				</ul>
 			</div>
 			<div class="ways-to-give g span-1 last cf">
@@ -63,7 +66,7 @@
 			</div> <!-- .what-artists -->
 			<div class="dynamic cf">
 				<div class="g span-2 instagram-feed">
-					<h2>Instagram #121212Concert<a href="instagram.php" class="more" target="_blank">See All</a></h2>
+					<h2>Instagram #121212Concert<a href="instagram" class="more" target="_blank">See All</a></h2>
 					<div class="instagram-grid cf">
 						<ul id="js-instagram" class="instagram">
 						<?php for ($i=1; $i <= 9; $i++) { ?>

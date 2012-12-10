@@ -45,7 +45,7 @@ function auto_version($file) {
       <script type="text/javascript" src="<?php echo auto_version('js/html5.js'); ?>"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="<?php echo auto_version('style.min.css'); ?>" type="text/css" />
+    <link rel="stylesheet" href="<?php echo auto_version('style.css'); ?>" type="text/css" />
     <link rel="icon" type="image/png" href="<?php echo auto_version('img/favicon.png'); ?>" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="<?php echo auto_version('js/modernizr.min.js'); ?>"></script>
@@ -167,8 +167,8 @@ function auto_version($file) {
 			<nav class="" role="navigation">
 				<ul class="nav site">
 					<li><span class="separator"><a href="https://twitter.com/search?q=%23121212Concert&src=hash" target="_blank">#121212Concert</a></span></li>
-					<li><a href="broadcast.php" target="_blank">Watch</a></li>
-					<!--li><a href="social.php" target="_blank">Connect</a></li-->
+					<li><a href="broadcast" target="_blank">Watch</a></li>
+					<!--li><a href="social" target="_blank">Connect</a></li-->
 					<li><a href="http://store.121212concert.org" target="_blank">Shop</a></li>
 					<li><span class="separator">|</span></li>
 					<li class="share"><span>Share</span></li>
