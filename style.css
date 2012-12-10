@@ -2154,5 +2154,9 @@ abbr[title] {
         .ways-to-donate .td-2{
             width: 100%;
         }
+        .ways-to-donate .td-3 {
+            width: 100%;
+            margin: 0;
+        }
 
 }
