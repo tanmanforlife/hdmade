@@ -13,7 +13,7 @@
 		return $words;
 	}
 	
-	$input = file_get_contents("../social/tumblr.json");	
+	$input = file_get_contents("/social/tumblr.json");	
 	$input = str_replace('var tumblr_api_read = ','',$input);
 	$input = str_replace(';','',$input);
 	$value = jsonp_decode($input, true);
