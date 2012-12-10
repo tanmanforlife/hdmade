@@ -268,7 +268,7 @@ $(window).load(function () {
              var items = [];
               $.each(data, function(i, tweet) {
                     if(i>1) return false;
-                    var timeago = relative_time(tweet.created_at);
+                    var timeago = parseTwitterDate(tweet.created_at);
                     items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-body "><span class="jta-tweet-text">' + decorateLinks(tweet.text) + '</span><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'" target=_blank>Retweet</a></span></div><div class="jta-clear">&nbsp;</div></li>');
               });
 
@@ -292,7 +292,7 @@ $(window).load(function () {
                 success: function(data, textStatus, xhr) {
                      var items = [];
                       $.each(data, function(i, tweet) {
-                            var timeago = relative_time(tweet.created_at);
+                            var timeago = parseTwitterDate(tweet.created_at);
                             items.push('<li class="jta-tweet-list-item"><div class="jta-tweet-profile-image"><a class="jta-tweet-profile-image-link" href="http://twitter.com/'+tweet.from_user+'" target="_blank"><img src="'+tweet.profile_image_url+'" alt="'+tweet.from_user+'" title="'+tweet.from_user_name+'"></a></div><div class="jta-tweet-body jta-tweet-body-list-profile-image-present"><span class="jta-tweet-text"><span class="jta-tweet-user-name"><span class="jta-tweet-user-screen-name"><a class="jta-tweet-user-screen-name-link" href="http://twitter.com/'+tweet.from_user_name+'" target="_blank">'+tweet.from_user_name+'</a></span><span class="jta-tweet-user-full-name"><a class="jta-tweet-user-full-name-link" href="http://twitter.com/'+tweet.from_user+'" name="'+tweet.from_user+'" target="_blank">'+tweet.from_user_name+'</a></span></span>'+decorateLinks(tweet.text)+'</div><span class="jta-tweet-attributes"><span class="timeago" title="'+tweet.created_at+'">'+timeago+'</span></span><span class="jta-tweet-actions"><span class="jta-tweet-action-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.id_str+'" target=_blank>Retweet</a></span></span></span><div class="jta-clear">&nbsp;</div></li>');
                       });
                       $('<div/>', {
@@ -462,8 +462,7 @@ function relative_time(date_str) {
     date_str = date_str.replace(/-/,"/").replace(/-/,"/"); //substitute - with /
     date_str = date_str.replace(/T/," ").replace(/Z/," UTC"); //remove T and substitute Z with UTC
     date_str = date_str.replace(/([\+\-]\d\d)\:?(\d\d)/," $1$2"); // +08:00 -> +0800
-    //var parsed_date = new Date(date_str);
-    var parsed_date = Date.parse(date_str);
+    var parsed_date = new Date(date_str);    
     var relative_to = (arguments.length > 1) ? arguments[1] : new Date(); //defines relative to what ..default is now
     var delta = parseInt((relative_to.getTime()-parsed_date)/1000);
     delta=(delta<2)?2:delta;
@@ -491,3 +490,32 @@ function popup(url, target)
     mywindow = window.open(url, target, "location=0,toolbar=0,status=1,scrollbars=1,  width=500,height=400");
     mywindow.moveTo(0, 0);
 }
+
+function parseTwitterDate(tdate) {
+    var system_date = new Date(Date.parse(tdate));
+    var user_date = new Date();
+    if (K.ie) {
+        system_date = Date.parse(tdate.replace(/( \+)/, ' UTC$1'))
+    }
+    var diff = Math.floor((user_date - system_date) / 1000);
+    if (diff <= 1) {return "just now";}
+    if (diff < 20) {return diff + " seconds ago";}
+    if (diff < 40) {return "half a minute ago";}
+    if (diff < 60) {return "less than a minute ago";}
+    if (diff <= 90) {return "one minute ago";}
+    if (diff <= 3540) {return Math.round(diff / 60) + " minutes ago";}
+    if (diff <= 5400) {return "1 hour ago";}
+    if (diff <= 86400) {return Math.round(diff / 3600) + " hours ago";}
+    if (diff <= 129600) {return "1 day ago";}
+    if (diff < 604800) {return Math.round(diff / 86400) + " days ago";}
+    if (diff <= 777600) {return "1 week ago";}
+    return "on " + system_date;
+}
+
+// from http://widgets.twimg.com/j/1/widget.js
+var K = function () {
+    var a = navigator.userAgent;
+    return {
+        ie: a.match(/MSIE\s([^;]*)/)
+    }
+}();
