@@ -40,13 +40,16 @@
 						<div class="td">
 							<p>Donate using your Amazon Account</p>
 						</div>
-						<div class="td">
-							<a class="btn donate" href="#">
+						<div class="td-2">
+							<!--<a class="btn donate" href="#">
 								<span class="icon-twitter"></span>Twitter
-							</a>
+							</a>-->
+							test
 						</div>
-						<div class="td">	
-							<p>Tweet #givey #121212concert to donate</p>
+						<div class="td-3">	
+							<p>
+								TEXT TO GIVE, Presented by Chase. Text ROBINHOOD to 50555 to donate $10. <a class="text-to-give-modal" href="#text-to-give-popup" title="Terms">Terms</a>
+							</p>
 						</div>
 					</div> <!-- .tr -->
 				</div> <!-- .table.to-give -->

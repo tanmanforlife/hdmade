@@ -86,6 +86,25 @@ function auto_version($file) {
 		<div class="error"></div>
 	</form>
 </div>
+
+
+<div id="text-to-give-popup" style="display: none;">
+	<h1>Terms</h1>
+	<p>
+		$10.00 donation to the Robin Hood Foundation. Charges will appear on your wireless bill, or be deducted from your prepaid balance. All purchases much be 
+		authorized by account holder. Must be 18 years of age or have parental permission to paticipate. Message and Data Rates may apply.
+		Text STOP to 50555 to STOP.
+		Text HELP to 50555 for HELP.
+	</p>
+	<p>
+		Full Terms:<br>
+		<a href="http://www.mGive.org/T" target="_blank">mGive.org/T</a><br>
+		<a href="http://www.mgivefoundation.org/privacy.aspx" target="_blank">Privacy Policy</a>
+		</p>
+
+</div>
+
+
 <!--
 <div class="sponsor-banner flexslider-fade">
 	<ul class="slides cf">

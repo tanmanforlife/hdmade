@@ -65,6 +65,14 @@ $(document).ready(function() {
             tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
     });
 
+    $(".text-to-give-modal-link").fancybox({
+            type: 'inline',
+            closeBtn: true,
+            wrapCSS: 'text-to-give-modal',
+            openEffect: 'none',
+            tpl: { closeBtn : '<a title="Close" class="modal-close" href="javascript:;">x</a>' }
+    });
+
     $('.amounts input[type=radio]').click(function(){
        $('#donate-popup .error').html('');
        var kale = $(this).val();
