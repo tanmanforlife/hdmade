@@ -183,7 +183,7 @@
 
                 <div class="one-third">
 			<img src="img/DonatePic.jpg" alt="" />
-			<p class="pushup"><em>Donate using your Amazon account</em></p>
+			<p><em>Donate using your Amazon account</em></p>
 			<a class="link donate-modal-link" href="#donate-popup">Donate</a>
 		</div>
 
