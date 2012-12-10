@@ -2,10 +2,10 @@
 <?php include 'header.php'; ?>
 
 <h1 class="page-title" id="section-1">Where to watch</h1>
-<p class="green">Accessible by 2 billion people worldwide<br />
+<p class="green"><strong>Accessible by 2 billion people worldwide<br />
 34 US Networks &amp; Television feeds to North &amp; South America, Asia, Europe, Africa &amp; Australia
 SIMULCAST, FREE of CHARGE, IN SELECT THEATERS IN HURRICANE-AFFECTED AREAS.<br />
-Global streaming</p>
+Global streaming</strong></p>
 <p class="georgia"><em>Starting at 7:30 p.m. ET, on December 12, "12-12-12," The Concert for Sandy Relief, will be broadcast live from Madison Square Garden via a global network of US and International television stations, Clear Channel radio stations and leading web sites. Check the listings below to see where to tune in to watch or listen to this legendary event.</em></p>
 <div class="table broadcast-images">
 	<div class="tr">
