@@ -211,7 +211,6 @@
 	color:#fff;
 	font-size: 2.2rem;
 }
-
 .donate:hover {
 	background-color:#0087d6;
 	color:#fff;
@@ -219,6 +218,12 @@
 	-moz-transition: all 0.1s ease-out;
 	-o-transition: all 0.1s ease-out;
 	transition: all 0.1s ease-out;
+}
+.lt-ie9 .donate {
+	background:url(img/ie8-btn.png) no-repeat left center;
+}
+.lt-ie9 .donate:hover {
+	background-position:right center;
 }
 
 .play {
@@ -301,12 +306,16 @@ h2 .more:hover {
 	width:5px;
 }
 .no-csstransforms .more:after {
-	border-color: transparent transparent transparent inherit;
+	border-color: transparent transparent transparent #bce723;
 	border-width:5px 0 5px 5px;
 	border-style:solid;
 	height:0;
 	width: 0;
 }
+.no-csstransforms .more:hover:after {
+	border-color:transparent transparent transparent #fff;
+}
+
 /*  ==========================================================================
     Main Styling
     ========================================================================== */
@@ -331,7 +340,7 @@ body {
 }
 
 .outer-wrapper {
-	max-width: 1270px;
+	max-width: 1000px;
 	height: 100%;
 	margin: 0 auto;
 	background: #000;
@@ -642,6 +651,9 @@ h3 {
 	margin:0 auto;
 	max-width:1070px;
 	padding:35px;
+}
+.lt-ie9 .main {
+	max-width:1000px;
 }
 .main ::-moz-selection {
 	background:#fff;
@@ -1193,6 +1205,12 @@ p.samsung {
 .jta-tweet-list-controls-button-more {
 	display: none !important;
 }
+.no-csstransforms .see-all.more:after {
+	border-color: transparent transparent transparent #000;
+}
+.no-csstransforms .see-all.more:hover:after {
+	border-color:transparent transparent transparent #fff;
+}
 
 /* =============================================================================
    Celebs on Sandy
@@ -1320,6 +1338,10 @@ p.samsung {
 }
 .no-csstransforms .sandy-store .link:hover:after {
 	border-color:transparent transparent transparent #fff;
+}
+.lt-ie9 .sandy-store .link {
+	padding-bottom: 4px;
+	padding-top:2px;
 }
 
 /* =============================================================================
