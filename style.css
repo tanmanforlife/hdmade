@@ -335,7 +335,7 @@ body {
 	height: 100%;
 	margin: 0 auto;
 	background: #000;
-	overflow: hidden;
+	overflow: visible;
 }
 
 .wrapper {
@@ -676,13 +676,34 @@ object {
 }
 .featured-img {
 	max-height:371px;
+}
+.featured-img .slides {
+	max-height:371px;
 	overflow: hidden;
+}
+.featured-img iframe,
+.featured-img li img {
+	display: block;
 }
 .featured-img .flex-direction-nav {
 	display:none;
 }
 .featured-img:hover .flex-direction-nav {
 	display: block;
+}
+.touch .featured-img .flex-direction-nav {
+	display: block;
+}
+.touch .featured-img .flex-direction-nav a {
+	z-index:1000;
+}
+@media only screen and (min-device-width:768px) {
+	.touch .featured-img .flex-direction-nav .flex-prev {
+		left:-32px;
+	}
+	.touch .featured-img .flex-direction-nav .flex-next {
+		right:-30px;
+	}
 }
 
 /* ==|== Top =================

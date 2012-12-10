@@ -15,7 +15,7 @@ function auto_version($file) {
     $root_path .= "/";
   }
 
-  if(strstr($_SERVER['HTTP_HOST'], 'localhost') || strstr($_SERVER['HTTP_HOST'], 'hdmade')){
+  if(strstr($_SERVER['HTTP_HOST'], 'localhost') || strstr($_SERVER['HTTP_HOST'], 'hdmade') || strstr($_SERVER['HTTP_HOST'], 'imarc')) {
       if(strstr($file, 'style')){          
           return 'style.css';
       }
@@ -49,6 +49,7 @@ function auto_version($file) {
     <link rel="icon" type="image/png" href="<?php echo auto_version('img/favicon.png'); ?>" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="<?php echo auto_version('js/modernizr.min.js'); ?>"></script>
+	<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script type="text/javascript" src="<?php echo auto_version('js/selectivizr.min.js') ?>"></script>
     <![endif]-->
