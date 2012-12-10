@@ -462,7 +462,8 @@ function relative_time(date_str) {
     date_str = date_str.replace(/-/,"/").replace(/-/,"/"); //substitute - with /
     date_str = date_str.replace(/T/," ").replace(/Z/," UTC"); //remove T and substitute Z with UTC
     date_str = date_str.replace(/([\+\-]\d\d)\:?(\d\d)/," $1$2"); // +08:00 -> +0800
-    var parsed_date = new Date(date_str);
+    //var parsed_date = new Date(date_str);
+    var parsed_date = Date.parse(date_str);
     var relative_to = (arguments.length > 1) ? arguments[1] : new Date(); //defines relative to what ..default is now
     var delta = parseInt((relative_to.getTime()-parsed_date)/1000);
     delta=(delta<2)?2:delta;
