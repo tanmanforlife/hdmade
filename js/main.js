@@ -380,51 +380,6 @@ $(window).load(function () {
         return count;
     }
     if($('#js-instagram-all').length){
-        // Instagram
-        var limit = 14;
-        var instagram_data = '';
-        $.ajax({
-            url: '/social/instagram.json',
-            dataType: "jsonp",
-            jsonp: "parseResponse",
-            jsonpCallback: "parseResponse",
-            cache: true,
-            ifModified: true,
-            success: function(result) {
-                var list = $('ul#js-instagram-all li');
-                limit = 14;
-                instagram_data = result;
-                $.each(result, function (index, value) {
-                    if (index > limit) {
-                        return false;
-                    } else {
-                        $('ul#js-instagram-all').append('<li><a href="'+ result[index]['permalink'] +'" target="_blank"><img src="' + result[index]['standard_res'] + '" alt="" /></a></li>');
-                    }
-                });
-
-                setInterval(function () {
-
-                    
-                            var min = 1;
-                            var max = $('ul#js-instagram li').size();
-                            var maxer = 15;
-                            var random = Math.floor(Math.random() * (max - min + 1)) + min;
-
-                            var randomer = (Math.floor(Math.random() * (maxer - min + 1)) + min) -1;
-
-                            $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
-                                  $('ul#js-instagram li:nth-child(' + random + ') a').attr('href',  instagram_data[randomer]['permalink']);
-                                  $('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', instagram_data[randomer]['standard_res']).fadeIn();
-                            });
-
-
-                }, 10000);
-            },
-            error : function(httpReq,status,exception){
-                alert(status+" "+exception);
-            }
-        });
-
         $(window).scroll(function () {
             if ($(window).scrollTop() + $(window).height() == $(document).height()) {
                 $.ajax({
@@ -480,7 +435,50 @@ $(window).load(function () {
         });
 
 
-        
+        // Instagram
+        var limit = 14;
+        var instagram_data = '';
+        $.ajax({
+            url: '/social/instagram.json',
+            dataType: "jsonp",
+            jsonp: "parseResponse",
+            jsonpCallback: "parseResponse",
+            cache: true,
+            ifModified: true,
+            success: function(result) {
+                var list = $('ul#js-instagram-all li');
+                limit = 14;
+                instagram_data = result;
+                $.each(result, function (index, value) {
+                    if (index > limit) {
+                        return false;
+                    } else {
+                        $('ul#js-instagram-all').append('<li><a href="'+ result[index]['permalink'] +'" target="_blank"><img src="' + result[index]['standard_res'] + '" alt="" /></a></li>');
+                    }
+                });
+
+                setInterval(function () {
+
+                    
+                            var min = 1;
+                            var max = $('ul#js-instagram li').size();
+                            var maxer = 15;
+                            var random = Math.floor(Math.random() * (max - min + 1)) + min;
+
+                            var randomer = (Math.floor(Math.random() * (maxer - min + 1)) + min) -1;
+
+                            $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
+                                  $('ul#js-instagram li:nth-child(' + random + ') a').attr('href',  instagram_data[randomer]['permalink']);
+                                  $('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', instagram_data[randomer]['standard_res']).fadeIn();
+                            });
+
+
+                }, 10000);
+            },
+            error : function(httpReq,status,exception){
+                console.log(status+" "+exception);
+            }
+        });
 
         setInterval(function () {
 
