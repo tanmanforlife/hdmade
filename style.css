@@ -1445,6 +1445,11 @@ abbr[title] {
 	font-size: 0.8em;
 	color: #bce723;
 }
+@media only screen and (max-width:1070px) {
+	.robin-hood-stories .wrapper {
+		padding:0 30px;
+	}
+}
 
 
 /*
