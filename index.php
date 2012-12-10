@@ -186,8 +186,8 @@
 
                 <div class="one-third">
 			<img src="img/DonatePic.jpg" alt="" />
-			<p><em>Donate using your Amazon account</em></p>
-			<a class="link donate-modal-link" href="#donate-popup">Donate</a>
+			<p><em>Donate to the Robin Hood Relief Fund</em></p>
+			<a class="link donate-modal-link-off" href="https://www.robinhood.org/take-action/SandyRelief.aspx" target="_blank">Donate</a>
 		</div>
 
 		<div class="one-third">
