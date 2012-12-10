@@ -257,7 +257,7 @@ $(window).load(function () {
 
     function getBannerText(){
         $.ajax({
-            url: '../social/topalert.json',
+            url: '/social/topalert.json',
             type: 'GET',
             dataType: 'jsonp',
             jsonpCallback: "rseBannerText",
@@ -277,7 +277,7 @@ $(window).load(function () {
 
     //Robin Hood Twitter Feed
      $.ajax({
-        url: '../social/robinhood.json?callback=parseResult',
+        url: '/social/robinhood.json?callback=parseResult',
         //url: 'json/robinhood.json',
         type: 'GET',
         dataType: 'jsonp',
@@ -303,7 +303,7 @@ $(window).load(function () {
         },
         complete : function(){
             $.ajax({
-                url: '../social/favs.json',
+                url: '/social/favs.json',
                 type: 'GET',
                 dataType: 'jsonp',
                 jsonpCallback: "parseResult",
@@ -363,7 +363,7 @@ $(window).load(function () {
     if($('#js-instagram-all').length){
         var limit = 14;
         $.ajax({
-            url: '../social/instagram.json',
+            url: '/social/instagram.json',
             dataType: "jsonp",
             jsonpCallback: "parseResponse",
             cache: true,
@@ -384,7 +384,7 @@ $(window).load(function () {
         $(window).scroll(function () {
             if ($(window).scrollTop() + $(window).height() == $(document).height()) {
                 $.ajax({
-                    url: '../social/instagram.json',
+                    url: '/social/instagram.json',
                     dataType: "jsonp",
                     jsonpCallback: "parseResponse",
                     cache: true,
@@ -423,7 +423,7 @@ $(window).load(function () {
         getBannerText();
 
         $.ajax({
-            url: '../social/instagram.json',
+            url: '/social/instagram.json',
             dataType: "jsonp",
             jsonp: false,
             jsonpCallback: "parseResponse",
