@@ -73,7 +73,7 @@
 
 
     <div class="pane-section middle-left">
-      <p><span style="color:#ffffff;"><span style="">Amctv.com<br>AOL<br>Clear Channel Media and Entertainment<br>Clear Channel Outdoor&nbsp;<br>Cookingchannel.com<br>Crackle<br>epixHD.com<br>EW.com<br>Foxmoviechannel.com</span></span></p>
+      <p><span style="color:#ffffff;"><span style="">Amctv.com<br>AOL<br>Clear Channel Media and Entertainment<br>Clear Channel Outdoor&nbsp;<br>Cookingchannel.com<br>Crackle<br>epixHD.com<br>EW.com<br>Foxmoviechannel.com<br>NBA.com</span></span></p>
     </div>
 
 
@@ -92,7 +92,7 @@
 
 
     <div class="pane-section middle-right">
-      <p><span style=""><span style="color: rgb(255, 255, 255);">People.com<br>SiriusXM Radio<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube</span></span></p>
+      <p><span style=""><span style="color: rgb(255, 255, 255);">People.com<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube<br>VH1.com</span></span></p>
     </div>
 
 
@@ -121,7 +121,7 @@
 
 
     <div class="pane-section middle-left">
-      <p><span style="color:#ffffff;"><span style="">AMC<br>AXS TV<br>BIO<br>Bloomberg<br>CBS<br>Cooking Channel<br>Destination America<br>Discovery Fit &amp; Health<br>ENCORE<br>EPIX<br>FX Movie Channel</span></span><br><span style="color:#ffffff;"><span style="">FEARnet<br>Fuse</span></span><br><span style=""><span style="color: rgb(255, 255, 255);">G4</span></span></p>
+      <p><span style="color:#ffffff;"><span style="">AMC<br>AXS TV<br>BIO<br>Bloomberg<br>Cooking Channel<br>Destination America<br>Discovery Fit &amp; Health<br>ENCORE<br>EPIX<br>FX Movie Channel</span></span><br><span style="color:#ffffff;"><span style="">FEARnet<br>Fuse</span></span><br><span style=""><span style="color: rgb(255, 255, 255);">G4</span></span></p>
     </div>
 
 
