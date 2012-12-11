@@ -32,13 +32,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
     <!--[if (gte IE 6)&(lte IE 8)]>
         <script type="text/javascript" src="js/selectivizr.min.js"></script>
     <![endif]-->
-
+	<style>
+		#video-stream {
+			padding-top:56.25%;
+			position: relative;
+		}
+		#video-stream object {
+			bottom:0;
+			display: block;
+			height:100%;
+			left:0;
+			position: absolute;
+			right:0;
+			top:0;
+			width:100%;
+		}
+	</style>
 </head>
 <body id="crash">
-
-<a href="#" class="sponsor-banner">
-    This is a sponsor banner
-</a>
 
 <div class="top">
     <script type="text/javascript">
@@ -68,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
         <header role="header" class="cf">
                 <h1 class="logo">
                     <a href="/">
-                        <img src="img/121212-logo-404.png" alt="121212 Concert Logo" />
+                        <img src="img/logo.png" alt="121212 Concert Logo" />
                     </a>
                 </h1>
                 
@@ -109,9 +120,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
                 <param name="allowFullScreen" value="true">
                 <param name="allowScriptAccess" value="always"><param name="wmode" value="direct">
                 <param name="bgColor" value="#000000">
-                <param name="flashvars" value="settings_url=http://static.iheart.com/121212/amp.clearchannel/player.flash.xml&amp;auto_play=false&amp;data_feed_url=http://static.iheart.com/121212/amp.clearchannel/feed.json&amp;ticker_text_url=http://static.iheart.com/121212/resources/ticker.txt&amp;ticker_polling_interval=3000&amp;ticker_speed=2&amp;report_playerId=iHeartRadioAkamaiEventPlayer&amp;report_device=undefined"><
+                <param name="flashvars" value="settings_url=http://static.iheart.com/121212/amp.clearchannel/player.flash.xml&amp;auto_play=false&amp;data_feed_url=http://static.iheart.com/121212/amp.clearchannel/feed.json&amp;ticker_text_url=http://static.iheart.com/121212/resources/ticker.txt&amp;ticker_polling_interval=3000&amp;ticker_speed=2&amp;report_playerId=iHeartRadioAkamaiEventPlayer&amp;report_device=undefined">
             </object>
         </div>
         <!-- #video stream -->
 </div> <!-- .top -->
+</div>
 <?php include 'footer.php'; ?>

@@ -686,7 +686,6 @@ header .info {
 object {
 	width: 100%;
 	height: 100%;
-	max-height: 422px;
 }
 /* ==|== Top =================
    Featured Img
@@ -1517,14 +1516,14 @@ abbr[title] {
 .bd .table {
 	width:100%;
 }
-.bd .td {
+.bd .broadcast-content .td {
 	padding:0 2%;
 	width:33.3%;
 }
-.bd .td:first-child {
+.bd .broadcast-content .td:first-child {
 	padding-left: 0;
 }
-.bd .td:last-child {
+.bd .broadcast-content .td:last-child {
 	padding-right: 0;
 }
 .bd .broadcast-images {
@@ -1570,7 +1569,7 @@ abbr[title] {
 .bd .locations {
 	margin-bottom: 2.5em;
 }
-.bd #section-6 .table, .bd #section-7 .table {
+.bd #section-6 .table, .bd #section-4 .table {
 	font-size:12px;
 }
 .bd .radio-table span {
@@ -1591,9 +1590,9 @@ abbr[title] {
 		font-size:54px;
 		margin:22px 0;
 	}
-	.bd .table,
-	.bd .tr,
-	.bd .td {
+	.bd .broadcast-content .table,
+	.bd .broadcast-content .tr,
+	.bd .broadcast-content .td {
 		display: block;
 		padding:0;
 		width:100%;
@@ -1608,6 +1607,9 @@ abbr[title] {
 		display:table-cell;
 		padding:0 1%;
 		width:25%;
+	}
+	.bd .locations {
+		text-align: left;
 	}
 }
 
