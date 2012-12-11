@@ -1355,6 +1355,18 @@ p.samsung {
 	padding-bottom: 4px;
 	padding-top:2px;
 }
+.sandy-store .itunes {
+	background: url(img/itunes-btn.png);
+	width: 86px;
+	height: 25px;
+}
+.sandy-store .itunes::after {
+	display: none
+}
+.sandy-store .itunes:hover {
+	background: url(img/itunes-btn.png);
+}
+
 
 /* =============================================================================
    Broadcast
