@@ -23,10 +23,10 @@
 		</div> <!-- .foursquare-to-give -->
 
 	</div> <!-- .table -->
-	<div class="participate cf">
+	<div class="participate cf last">
 		<div class="one-fourth give-option">
 			<figure><img src="img/ways-to-donate-text.png" alt="Donate via Text" /></figure>
-			<p>Text <strong>GIVE</strong> to 50555 to donate $10</p>
+			<p>TEXT TO GIVE, Presented by Chase Text ROBINHOOD to 50555 to donate $10 <span class="micro terms">Terms*</span></p>
 		</div> <!-- .text-to-give -->
 
 		<div class="one-fourth give-option">
@@ -40,6 +40,10 @@
 		</div> <!-- .tweet-to-give -->
 
 	</div> <!-- .table -->
+	<p class="meta micro"><em>*$10.00 donation to the Robin Hood Foundation. Charges will appear on your wireless bill, or bededucted from your prepaid balance. All purchases must be authorized by account holder. Must be 18 years of age or have parental
+		permission to participate.Message and Data Rates May Apply. Text STOP to 50555 to STOP.  Text HELP to 50555 for HELP.</em></p>
+
+	<p class="meta micro"><em>Full Terms: <a href="https://mgive.org/terms-of-service.aspx">mGive.org/T</a>.    <a href="https://mgive.org/privacy.aspx">Privacy Policy</a>.</em></p>
 	</div>
 </div>
 <?php include 'footer.php'; ?>

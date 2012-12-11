@@ -1205,13 +1205,14 @@ p.samsung {
 
 .see-all {
 	font-family: 'TradeGothic';
-	font-size: 18px;
+	font-size: 21px;
 	display: block;
 	float: right;
 	letter-spacing:0;
 	text-transform: uppercase;
 	line-height: 1;
 	padding-left: 10px;
+	font-weight: normal;
 }
 .jta-tweet-list-autorefresh-trigger {
 	cursor:pointer;
@@ -1441,7 +1442,7 @@ abbr[title] {
 	margin:0 auto;
 }
 
-.participate:last-child {
+.participate.last{
 	border-bottom: none;
 }
 
@@ -1874,6 +1875,15 @@ abbr[title] {
 	font-style: italic;
 	font-size: 1.3em;
 }
+.micro {
+	font-size: 0.9rem;
+	text-align: center;
+}
+.terms {
+	font-size: 0.8rem;
+	display: block;
+	text-align: center;
+}
 
 /*  ==========================================================================
     Flexslider Styling
@@ -2107,6 +2117,7 @@ abbr[title] {
 }
 
 @media all and (max-width: 655px) {
+
 	html {
 		font-size: 0.9em
 	}
@@ -2269,7 +2280,7 @@ abbr[title] {
 		top:0px;
 	}
 	.more {
-		font-size:18px;
+		font-size:21px;
 		letter-spacing:0;
 	}
 	.more:after {
