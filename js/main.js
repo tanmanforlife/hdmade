@@ -164,7 +164,7 @@ $(window).load(function () {
 			for (var i = 0, length = vim_players.length; i < length; i++) {
 				player = vim_players[i];
 				$f(player).api('pause');
-			}			
+			}
         },
         after: function (slider) {
 			$('.twitter-wrap').height(slider.slides.eq(slider.currentSlide).height());
@@ -252,7 +252,7 @@ $(window).load(function () {
         $('.celeb-videos  .bgvo-left').live('click',function(){
             $('.celeb-videos .flex-prev').click();
         });
-       
+
 
 
     function getBannerText(){
@@ -277,23 +277,23 @@ $(window).load(function () {
 	window.onorientationchange = detectIPadOrientation;
 	function detectIPadOrientation() {
 		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
-			if ( orientation == 0 ) {  
+			if ( orientation == 0 ) {
 				return 'portrait';
-			}  
-			else if ( orientation == 90 ) {  
+			}
+			else if ( orientation == 90 ) {
 				return 'landscape';
-			}  
-			else if ( orientation == -90 ) {  
+			}
+			else if ( orientation == -90 ) {
 				return 'landscape';
-			}  
-			else if ( orientation == 180 ) {  
+			}
+			else if ( orientation == 180 ) {
 				return 'portrait';
 			}
 		}
 	}
-	var tweet_width, 
+	var tweet_width,
 		move_amount = 3;
-	if(detectIPadOrientation() == 'portrait') {		
+	if(detectIPadOrientation() == 'portrait') {
 		tweet_width = 349;
 		move_amount = 2;
 	} else if(detectIPadOrientation() == 'landscape') {
@@ -387,7 +387,7 @@ $(window).load(function () {
         return count;
     }
 
-    
+
 
     // Flash Message Close
     $('a.close').click(function (event) {
@@ -409,7 +409,7 @@ $(window).load(function () {
     var instagram_data = '';
     function updateFeeds() {
         getBannerText();
-        
+
         $.ajax({
             url: '/social/instagram.json',
             dataType: "jsonp",
@@ -432,7 +432,7 @@ $(window).load(function () {
                     instagram_data = result;
 
                 // requeue update
-                setTimeout(updateFeeds, 60000);
+                setTimeout(updateFeeds, 2000);
             }
         });
     }
@@ -534,7 +534,7 @@ function relative_time(date_str) {
     date_str = date_str.replace(/-/,"/").replace(/-/,"/"); //substitute - with /
     date_str = date_str.replace(/T/," ").replace(/Z/," UTC"); //remove T and substitute Z with UTC
     date_str = date_str.replace(/([\+\-]\d\d)\:?(\d\d)/," $1$2"); // +08:00 -> +0800
-    var parsed_date = new Date(date_str);    
+    var parsed_date = new Date(date_str);
     var relative_to = (arguments.length > 1) ? arguments[1] : new Date(); //defines relative to what ..default is now
     var delta = parseInt((relative_to.getTime()-parsed_date)/1000);
     delta=(delta<2)?2:delta;
