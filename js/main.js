@@ -322,7 +322,10 @@ $(window).load(function () {
             ifModified: true,
             success: function(data, textStatus, xhr) {
                  //if(data.hasOwnProperty('banner_text'))
-                            $(document).ready(function(){ $('.flash p').html(data.banner_text) });
+				$(document).ready(function(){
+					$('.flash .close').removeClass('visuallyhidden');
+					$('.flash p').html(data.banner_text)
+				});
             },
             error : function(httpReq,status,exception){
                 console.log(status+" "+exception);

@@ -122,7 +122,7 @@ function auto_version($file) {
 <div class="flash">
 	<div>
 		<p></p>
-		<a class="close" href="#"><span>x</span></a>
+		<a class="close visuallyhidden" href="#"><span>x</span></a>
 	</div>
 </div>
 <div class="top">
