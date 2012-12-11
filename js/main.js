@@ -9,7 +9,7 @@ $(document).ready(function() {
 	    // Countdown Timer
    	var sinceYear = new Date('01/01/2005');
 
-	$('.timer').countdown("2012/12/12 19:00:00", function(event) {
+	$('#timer-until-event').countdown("2012/12/12 19:30:00", function(event) {
 		var $this = $(this);
 		switch(event.type) {
 			case "seconds":
@@ -29,11 +29,15 @@ $(document).ready(function() {
 	});
 
     function timerFinished() {
-       // Other code for timer finished and the countup timer is in plugin js
-
-       $('.timer').attr('id', 'countup');
-
+		$('#timer-until-event').addClass('visuallyhidden');
+		$('#timer-event').removeClass('visuallyhidden');
+		$('#timer-event').countUp({
+			'lang':'en', 
+			'format':'full', 
+			'sinceDate': '12/12/2012-19:30:00'
+		});
     }
+
 
 
     // Vimeo API
