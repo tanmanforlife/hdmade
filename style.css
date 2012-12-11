@@ -1500,6 +1500,21 @@ abbr[title] {
     	font-size: 1.1em;
     	font-family: georgia
     }
+
+    .callout-copy {
+    	font-size: 1.5em;
+    	font-family: georgia;
+    	line-height: 2em;
+    }
+    .callout-copy a {
+    	font-size: 1.2rem;
+    	font-style: italic;
+    }
+    .callout-copy .icon-robin {
+    	font-size: 2.5em
+    }
+
+
     .partner-content h1.page-title {
     	font-size: 1.5em;
     	font-family:'TeeFraMed';
@@ -2110,7 +2125,7 @@ abbr[title] {
         .menu-wrap .separator{
             display: none;
         }
-		
+
 	.main {
 		padding:0 10px;
 	}
@@ -2374,10 +2389,10 @@ abbr[title] {
 	.sponsor-list {
 		text-align: center;
 	}
-	
+
 	/* -----------------------
 	-- Participate -- */
-	
+
 	.participate .one-fourth {
 		width:100%;
 	}
