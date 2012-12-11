@@ -52,19 +52,27 @@
 			</div>
 		</div> <!-- .outer-wrapper -->
 		<div class="mobile-wrap cf">
-			<div class="what-artists">
-				<div class="wrapper cf">
-					<h2><span><span class="icon-twitter"></span>Twitter #121212concert</span></h2>
-					<div class="tweets-holding-space"></div>
-					<div class="arti">
-						<div class="artists-tweets">
-
-						</div> <!-- .artists-tweets -->
-
-					</div> <!-- .arti -->
-					<a href="https://twitter.com/search?q=%23121212concert" class="see-all more" target="_blank">See All</a>
-				</div> <!-- .wrapper -->
-			</div> <!-- .what-artists -->
+			<div class="ways-to-donate cf">
+				<h2>Ways To Give</h2>
+				<div class="table to-give">
+					<div class="tr">
+						<div class="td">
+							<a class="btn donate" href="#">Donate</a>
+						</div>
+						<div class="td">
+							<p>Donate using your Amazon Account</p>
+						</div>
+						<div class="td">
+							<a class="btn donate" href="">
+								<span class="icon-twitter"></span>Twitter
+							</a>
+						</div>
+						<div class="td">	
+							<p>Tweet #givey #121212concert to donate</p>
+						</div>
+					</div> <!-- .tr -->
+				</div> <!-- .table.to-give -->
+			</div> <!-- .ways-to-donate -->
 			<div class="dynamic cf">
 				<div class="g span-2 instagram-feed">
 					<h2>Instagram #121212Concert<a href="instagram" class="more" target="_blank">See All</a></h2>
