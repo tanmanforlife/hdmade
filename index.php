@@ -144,6 +144,15 @@
 	<div class="celeb-videos flexslider-fade">
 		<ul class="slides cf">
 			<li class="celeb-video">
+			
+			<li class="celeb-video">
+				<div class="celeb-video-wrap">
+					<div class="celeb-video-frame">
+						<iframe src="http://player.vimeo.com/video/55362033?title=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</div>
+				</div>
+				<p>Roger Waters reflects on his experience in New York during Hurricane Sandy.</p>
+			</li>
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
 						<iframe src="http://player.vimeo.com/video/55133889?byline=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=celeb-video-1" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen id="celeb-video-1"></iframe>
