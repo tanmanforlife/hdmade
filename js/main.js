@@ -32,8 +32,8 @@ $(document).ready(function() {
 		$('#timer-until-event').addClass('visuallyhidden');
 		$('#timer-event').removeClass('visuallyhidden');
 		$('#timer-event').countUp({
-			'lang':'en', 
-			'format':'full', 
+			'lang':'en',
+			'format':'full',
 			'sinceDate': '12/12/2012-19:30:00'
 		});
     }
@@ -188,12 +188,12 @@ $(window).load(function () {
             animation: "slide",
             animationLoop: false,
             smoothHeight: true,
-            useCSS: false,
+            useCSS: true,
             controlNav: false,
             directionNav: true,
             slideshow: false,
             slideshowSpeed: 5000,
-            touch: false
+            touch: true
         });
 
 	// Celev Videos Slider Options
@@ -216,7 +216,7 @@ $(window).load(function () {
 			}
 			t.addClass('paused');
 		}
-		
+
 	});
 	*/
 	var celebAnimation = "fade";
@@ -230,7 +230,7 @@ $(window).load(function () {
 		useCSS: false,
 		controlNav:false,
 		slideshow:false,
-		touch:false,
+		touch:true,
 		start: function(slider) {
 			if(celebAnimation == "fade") {
 				$('.celeb-video').not('.clone').each(function(i, t) {
@@ -310,7 +310,7 @@ $(window).load(function () {
 		var cvs = $('.celeb-videos').data('flexslider')
 		cvs.flexslider(goToSlide);
 	});
-	
+
 
     function getBannerText(){
         $.ajax({

@@ -950,6 +950,7 @@ img.show {
 	right: 1%;
 }
 
+
 .tumblr-feed a.flex-prev {
 	left: 1%;
 }
@@ -1963,6 +1964,10 @@ abbr[title] {
 	    width: 1px;
 	}
 
+	.hidden {
+		display: none
+	}
+
     img {
       max-width: 100%;
     }
@@ -2125,6 +2130,10 @@ abbr[title] {
 		width:100%;
 		margin-right: 0;
 		margin-left: 0;
+	}
+	main {
+		width: 100%;
+		overflow: hidden;
 	}
 
 	/* -----------------------
@@ -2370,6 +2379,7 @@ abbr[title] {
 		bottom:0;
 		top:auto;
 	}
+
 
 	/* -----------------------
 	-- Social -- */

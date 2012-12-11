@@ -105,7 +105,7 @@
 						$d = strtotime('December 12, 2012 19:30 EST');
 						$now = strtotime('Now');
 						?>
-						<div id="timer-event" class="timer cf <?php if($d > $now): ?>visuallyhidden<?php endif; ?>"></div>
+						<div id="timer-event" class="timer cf <?php if($d > $now): ?>hidden<?php endif; ?>"></div>
 					</div> <!-- .ticker -->
 				</div> <!-- .g.span-1 -->
 			</div> <!-- .dynamic -->
