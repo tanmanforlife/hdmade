@@ -2159,7 +2159,11 @@ abbr[title] {
 		width:50%;
 	}
 }
-
+@media all and (max-width:655px) and (min-width:321px) {
+	.artists-tweets .jta-tweet-body {
+		padding-right: 30px;
+	}
+}
 @media all and (max-width: 655px) {
 
 	html {
