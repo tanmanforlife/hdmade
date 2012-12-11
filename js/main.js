@@ -220,7 +220,7 @@ $(window).load(function () {
 	});
 	*/
 	var celebAnimation = "fade";
-	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
+	if((navigator.userAgent.match(/iPad/i))) {
 		celebAnimation = "slide";
 	}
 	$('.celeb-videos').flexslider({
