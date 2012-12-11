@@ -358,6 +358,8 @@ $(window).load(function () {
 		move_amount = 2;
 	} else if(detectIPadOrientation() == 'landscape') {
 		tweet_width = 308;
+	} else if ($(window).width > 321 && $(window).width() < 655) {
+		tweet_width = 320;
 	} else {
 		tweet_width = 320;
 	}
