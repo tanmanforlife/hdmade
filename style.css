@@ -603,6 +603,18 @@ h3 {
 	position: absolute;
 	right:7px;
 	top:4px;
+	-webkit-transition-property: color, border-color;
+	-webkit-transition-duration:0.2s;
+	-webkit-transition-easing:ease;
+	-o-transition-property: color, color, border-color;
+	-o-transition-duration:0.2s;
+	-o-transition-easing:ease;
+	-moz-transition-property: color, border-color;
+	-moz-transition-duration:0.2s;
+	-moz-transition-easing:ease;
+	transition-property: color, border-color;
+	transition-duration:0.2s;
+	transition-easing:ease;
 }
 .flash .close:hover {
 	border-color: #fff;
