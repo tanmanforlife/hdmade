@@ -2448,6 +2448,10 @@ abbr[title] {
 		margin-top: 40px;
 		padding-bottom: 40px;
 	}
+	.tumblr-feed img {
+		height:auto;
+		max-width:80%;
+	}
 
 
 	/* -----------------------
