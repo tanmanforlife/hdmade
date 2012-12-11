@@ -759,7 +759,7 @@ section.twitter h2 {
 .jta-tweet-list li {
 	font-size: 0.9em;
 	border-bottom: 1px solid #404040;
-	margin-bottom: 23px;
+	margin-bottom: 13px;
 }
 
 .jta-tweet-list li:last-child {
@@ -1090,7 +1090,7 @@ p.samsung {
 	text-align: center;
 	line-height: 1em;
 	margin-bottom: 40px;
-	padding: 0 0 20px 0;
+	padding: 0 0 10px 0;
 }
 .what-artists h2 > span {
 	display: block;
@@ -1130,7 +1130,7 @@ p.samsung {
 
 .artists-tweets .jta-tweet-text, .artists-tweets .jta-tweet-text a {
 	color: #fff;
-	font-size: 1rem;
+	/*font-size: 1rem;*/
 	line-height: 1.7em;
 }
 
