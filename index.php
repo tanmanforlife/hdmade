@@ -23,7 +23,7 @@
 			</section> <!-- .g.span-2.featured-img -->
 			<div class="nav-mobile" aria-hidden="true">
 				<ul class="nav">
-					<li><span class="separator">#121212 Concert</span></li>
+					<li><a href="https://twitter.com/search?q=%23121212Concert&src=hash" target="_blank"><span class="separator">#121212 Concert</span></a></li>
 
 					<li><a href="broadcast" target="_blank">Watch</a></li>
 					<li><a href="participate" target="_blank">Participate</a></li>
@@ -142,7 +142,7 @@
 		 */
 	?>
 	<div class="celeb-videos flexslider-fade">
-		<ul class="slides cf">		
+		<ul class="slides cf">
 			<li class="celeb-video">
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
