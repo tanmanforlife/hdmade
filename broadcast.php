@@ -211,6 +211,9 @@
 					<span>Poland</span><i>UPC Poland</i>
 					<span>Poland</span><i>Cyfrowy Polsat</i>
 					<span>Turkey</span><i>Digiturk</i>
+					<span>Turkey</span><i>NTV</i>
+					<span>Turkey</span><i>CNBC-E</i>
+					<span>Turkey</span><i>E-2</i>
 					<span>Portugal</span><i>ZON Media</i>
 					<span>Romania</span><i>UPC Direct (Focusat)</i>
 					<span>Romania</span><i>UPC Romania</i>
@@ -283,11 +286,11 @@
 	<div id="section-5">
 		<h2 class="movie-heading">Movie Theatres</h2>
 		<div class="ticket-info">
-			<p>TICKETS:<br />FREE tickets are available starting December 5th at the theater box offices on a first-come, first-serve basis.</p>
-			<p>WHEN:<br />Wednesday, December 12, 2012 at 7:30 pm<br />Doors open at 6:45pm<br />Presentation to run until approximately 11:30pm.</p>
+			<p><strong>TICKETS:</strong><br />FREE tickets are available starting December 5th at the theater box offices on a first-come, first-serve basis.</p>
+			<p><strong>WHEN:</strong><br />Wednesday, December 12, 2012 at 7:30 pm<br />Doors open at 6:45pm<br />Presentation to run until approximately 11:30pm.</p>
 		</div> <!-- .ticket-info -->
 		<div class="locations ny-loc">
-			New York Locations<br />
+			<strong>New York Locations</strong><br />
 			Clearview’s Grand Avenue Cinemas,1849 Grand Avenue, Baldwin, NY<br />
 			Clearview’s Franklin Square Cinemas, 989 Hempstead Turnpike, Franklin Square NY<br />
 			Clearview’s Babylon Cinemas, 34 Main Street, Babylon, NY<br />
@@ -302,7 +305,7 @@
 			National Amusements’ Farmingdale Multiplex, 1001 Broad Hollow Road, Farmingdale, NY
 		</div>
 		<div class="locations nj-loc">
-			New Jersey Locations<br />
+			<strong>New Jersey Locations</strong><br />
 			Clearview’s Middlebrook Galleria Cin.10, 1502 Rte 35 South, Ocean, NJ<br />
 			Clearview’s Closter Cinema, 130 Closter Plaza, Closter, NJ<br />
 			Clearview’s Kinnelon, 25 Kinnelon Rd, Kinnelon, NJ<br />
@@ -319,8 +322,27 @@
 			Rave Cinemas, Hazlet Multiplex, 2821 State Route 35, Hazlet, NJ
 		</div>
 		<div class="locations ct-loc">
-			Connecticut Locations<br />
+			<strong>Connecticut Locations</strong><br />
 			Bow Tie Cinemas, Regent 8, 64 North Main Street, SouthNorwalk, CT
+		</div>
+		
+		<div class="loactions nat-loc">
+			<strong>National Locations</strong><br />The following Cinemark Theaters will simulcast the concert for regular Child admission. 100% of the of the proceeds will go to the Robin Hood Relief Fund.<br/><br/>
+		    Holiday Village 4, 1776 Park Avenue #4, Park City, UT 84060<br/>
+			Century 16, 125 East 3300 South, Salt Lake City, UT	84115<br/>
+			Century 16 Union Heights, 7670 S. Union Park Ave., Sandy, UT 84047<br/>
+			Cinemark University Mall, 1010 South 800 East, Orem, UT 84097<br/>
+			Cinemark Bountiful 8, 206 South 625 West, Suite 1230, West Bountiful, UT 84010<br/>
+			Cinemark Draper, 12101 South Factory Drive, Draper, UT 84025<br/>
+			Cinemark Farmington at Station Park, 900 W. Clark Ln., Farmington, UT 84025<br/>
+			Cinemark Tinseltown USA	3004 Linden Drive, Bristol, VA 24201<br/>
+			Cinemark 18, 880 North Military Highway, Norfolk, VA 23502<br/>
+			Cinemark Chesapeake, 2413 Chesapeake Square Ring Rd, Chesapeake, VA 23321<br/>
+			Century Federal Way, 2001 S Commons, 320th &amp; Hwy 99, Federal Way, WA 98003<br/>
+			Century Olympia, 625 Black lake Lane, Westfield Capital, Olympia,	WA 98512<br/>
+			Cinemark Tinseltown USA, Southport Plaza, 7101 70th Court, Kenosha, WI 53142<br/>
+			Cinemark, 2399 Meadowbrook Rd., Clarksville, WV	26330<br/>
+			Cinemark Huntington Mall, 500 East Mall Rd. Suite 700, Barboursville, WV 25504		    
 		</div>
 	</div> <!-- #section-5 -->
 	<div id="section-6">
