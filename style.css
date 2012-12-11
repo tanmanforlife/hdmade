@@ -189,7 +189,7 @@
 	color: #fff;
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
 	text-transform: uppercase;
-	font-family: 'TradeGothicCond';
+	font-family: 'TradeGothicCond', "TeeFraMed";
 	font-size: 1.4rem;
 	letter-spacing: 0.0625em;
 	position: relative;
@@ -260,7 +260,7 @@
 	clear: both;
 	color: #bce723;
 	display: inline-block;
-	font-family: 'TradeGothicCond';
+	font-family: 'TradeGothicCond', "TeeFraMed";
 	font-size: 21px;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -374,7 +374,7 @@ a:hover {
 h1 {
 	font-size: 2em;
 	text-transform: uppercase;
-	font-family: 'TradeGothicCond';
+	font-family: 'TradeGothicCond', "TeeFraMed";
 	letter-spacing: 1px;
 	line-height: 1.2;
 	font-weight: normal;
@@ -390,7 +390,7 @@ h2 {
 	font-size: 28px;
 	line-height: 1.5;
 	text-align: center;
-	font-family: 'TradeGothic';
+	font-family: 'TradeGothic', "TeeFraMed";
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	display: block;
@@ -419,7 +419,7 @@ h3 {
 .giga {
 	font-size: 2.1875em;
 	line-height: 1.37143;
-	font-family: 'TradeGothicCond';
+	font-family: 'TradeGothicCond', "TeeFraMed";
 	letter-spacing: 0.125em;
 	line-height: 1.5;
 	text-transform: uppercase;
@@ -537,7 +537,7 @@ h3 {
 .menu-wrap span,
 .menu-wrap .separator {
 	color:#fff;
-	font-family:"TradeGothicCond";
+	font-family:"TradeGothicCond", "TeeFraMed";
 	font-size:24px;
 	line-height:1;
 	text-transform: uppercase;
@@ -567,7 +567,7 @@ h3 {
 .flash {
 	background:#bce723;
 	color:#010101;
-	font-family:"TradeGothicCond";
+	font-family:"TradeGothicCond", "TeeFraMed";
 	font-size:30px;
 	font-weight: bold;
 	margin:0 auto;
@@ -621,7 +621,7 @@ h3 {
 	color:#fff;
 }
 .flash .close span {
-	font-family:"TradeGothic";
+	font-family:"TradeGothic", "TeeFraMed";
 	font-size:26px;
 	font-weight: normal;
 	text-transform: none;
@@ -1004,7 +1004,7 @@ img.show {
 
 .timer-status {
 	font-size: 1.5em;
-	font-family: 'TradeGothicCond';
+	font-family: 'TradeGothicCond', "TeeFraMed";
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
@@ -1022,7 +1022,7 @@ img.show {
 }
 
 .digits {
-	font-family: 'TradeGothicCond';
+	font-family: 'TradeGothicCond', "TeeFraMed";
 	font-weight: bold;
 	text-align: center;
 	font-size: 3em;
@@ -1033,7 +1033,7 @@ img.show {
 .units {
 	text-align: center;
 	font-size: 1em;
-	font-family: 'TradeGothicCond';
+	font-family: 'TradeGothicCond', "TeeFraMed";
 }
 
 .unit {
@@ -1356,7 +1356,7 @@ p.samsung {
 	border-color:#000;
 	text-align: center;
 	color: #000;
-	font-family: 'TradeGothic';
+	font-family: 'TradeGothic', "TeeFraMed";
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 18px;
@@ -1428,7 +1428,7 @@ p.samsung {
 .broadcast-list li {
 	text-align: center;
 	margin-bottom: 20px;
-	font-family: 'TradeGothic';
+	font-family: 'TradeGothic', "TeeFraMed";
 }
 .location {
 	margin-bottom: 100px;
@@ -1495,7 +1495,7 @@ abbr[title] {
 }
 
 .robin-hood-stories h2 {
-	font-family: 'TradeGothicCond';
+	font-family: 'TradeGothicCond', "TeeFraMed";
 	font-size: 3em;
 	font-weight: bold;
 	text-shadow:0px -1px 0px black;
@@ -1614,7 +1614,7 @@ abbr[title] {
    ========================================================================== */
 
 .bd .page-title {
-	font-family:"TradeGothicCond";
+	font-family:"TradeGothicCond", "TeeFraMed";
 	font-size:72px;
 	margin:45px 0;
 }
@@ -1855,7 +1855,7 @@ abbr[title] {
 }
 .footer li {
 	margin-left: 0;
-	font-family: 'TradeGothicCond';
+	font-family: 'TradeGothicCond', "TeeFraMed";
 	font-size: 0.9em;
 	letter-spacing: 0.125em;
 	text-transform: uppercase;
@@ -2307,7 +2307,7 @@ abbr[title] {
 	.nav li a,
 	.nav li .separator {
 		display: inline-block;
-		font-family: 'TradeGothic';
+		font-family: 'TradeGothic', "TeeFraMed";
 		font-size:18px;
 		text-transform: uppercase;
 		color: #fff;
