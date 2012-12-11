@@ -71,7 +71,7 @@
 					<div class="instagram-grid cf">
 						<ul id="js-instagram" class="instagram">
 						<?php for ($i=1; $i <= 9; $i++) { ?>
-							<li class="ig ig-<?=$i?>">
+							<li class="ig ig-<?=$i?>" data-photo-id="">
 								<a href="" class="insta-link"><img class="photo" src="" alt="" /></a>
 							</li>
 						<?php } ?>

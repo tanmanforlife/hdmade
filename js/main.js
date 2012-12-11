@@ -493,21 +493,49 @@ $(window).load(function () {
             }
         });
     }
+	function in_array(needle, haystack) {
+		var length = haystack.length;
+		for (var i = 0; i < length; i++) {
+			if(haystack[i] == needle) return true;
+		}
+		return false;
+	}
+	function makeRandom(max, min, haystack) {
+		var needle = Math.floor(Math.random() * (max - min + 1)) + min;
+		if(in_array(needle, haystack)) {
+			makeRandom(max, min, haystack);
+		} else {
+			return needle;
+		}
+	}
     function randomPic() {
-        var min = 1;
-        var max = $('ul#js-instagram li').size();
-        var maxer = 15;
-        var random = Math.floor(Math.random() * (max - min + 1)) + min;
-        var randomer = Math.floor(Math.random() * (maxer - min + 1)) + min;
-
-        if(instagram_data[randomer]){
-            $('ul#js-instagram li:nth-child(' + random + ') img.photo').fadeOut(function() {
-                $('ul#js-instagram li:nth-child(' + random + ') a').attr('href', instagram_data[randomer]['permalink']);
-                $('ul#js-instagram li:nth-child(' + random + ') img.photo').attr('src', instagram_data[randomer]['standard_res']).fadeIn();
+		var min_li = 1,
+			max_li = $('ul#js-instagram li').size(),
+			upper = 15,
+			lower = 0,
+			current_ids = [],
+			random_li = Math.floor(Math.random()*(max_li - min_li + 1)) + min_li;
+		$('#js-instagram li').each(function(idx, t) {
+			var id = $(t).attr('data-photo-id');
+			current_ids.push(parseInt(id));
+		});
+		while(current_ids.length <= max_li+1) {
+			var random_number = Math.round(Math.random()*(upper - lower + 1) + lower);
+			if (current_ids.indexOf(random_number) == -1) { 
+				current_ids.push(random_number);
+			}
+		}
+		var randomer = current_ids[current_ids.length-1];
+		
+		if(instagram_data[randomer]){
+			$('ul#js-instagram li:nth-child('+ (random_li) +')').attr('data-photo-id', randomer);
+            $('ul#js-instagram li:nth-child(' + random_li + ') img.photo').fadeOut(function() {
+                $('ul#js-instagram li:nth-child(' + random_li + ') a').attr('href', instagram_data[randomer]['permalink']);
+                $('ul#js-instagram li:nth-child(' + random_li + ') img.photo').attr('src', instagram_data[randomer]['standard_res']).fadeIn();
             });
         }
     }
-    setInterval(randomPic, 2000);
+    setInterval(randomPic, 5000);
     if($('#js-instagram').length){
         $.ajax({
             url: '/social/instagram.json',
@@ -521,6 +549,7 @@ $(window).load(function () {
                 instagram_data = result;
 
                 $.each(list, function (index, value) {
+					$('ul#js-instagram li:nth-child('+ (index + 1) +')').attr('data-photo-id', index);
                     $('ul#js-instagram li:nth-child('+ (index + 1) +') a.insta-link').attr({'href': result[index]['permalink'], 'target': '_blank'});
                     $('ul#js-instagram li:nth-child(' + (index + 1) + ') img.photo').attr('src', result[index]['standard_res']);
                 });
