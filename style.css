@@ -1442,6 +1442,10 @@ abbr[title] {
 	border-bottom: none;
 }
 
+.broadcast-content #section-5, #section-5 h2.movie-heading {
+	text-align:left !important;
+}
+
 /* =============================================================================
    Social
    ========================================================================== */
