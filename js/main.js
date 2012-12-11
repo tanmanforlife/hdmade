@@ -219,8 +219,12 @@ $(window).load(function () {
 		
 	});
 	*/
+	var celebAnimation = "fade";
+	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
+		celebAnimation = "slide";
+	}
 	$('.celeb-videos').flexslider({
-		animation:"fade",
+		animation:celebAnimation,
 		animationLoop: true,
 		smoothHeight:true,
 		useCSS: false,
@@ -228,39 +232,41 @@ $(window).load(function () {
 		slideshow:false,
 		touch:false,
 		start: function(slider) {
-			$('.celeb-video').not('.clone').each(function(i, t) {
-				var activeSlide = $(t),
-					prevSlide = activeSlide.prev(),
-					nextSlide = activeSlide.next();
-				if(!prevSlide.length) {
-					prevSlide = $('.celeb-video').eq(($('.celeb-video').size())-1);
-				}
-				if(!nextSlide.length) {
-					nextSlide = $(".celeb-video").eq(0);
-				}
+			if(celebAnimation == "fade") {
+				$('.celeb-video').not('.clone').each(function(i, t) {
+					var activeSlide = $(t),
+						prevSlide = activeSlide.prev(),
+						nextSlide = activeSlide.next();
+					if(!prevSlide.length) {
+						prevSlide = $('.celeb-video').eq(($('.celeb-video').size())-1);
+					}
+					if(!nextSlide.length) {
+						nextSlide = $(".celeb-video").eq(0);
+					}
 
-				var	prevVideo = prevSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone(),
-					nextVideo = nextSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone();
-				prevVideo.addClass('previous-iframe');
-				nextVideo.addClass('next-iframe');
-				var	videoHeight = ($(window).width() * 0.35) * 0.5625;
-				prevVideo.css({
-					'height': videoHeight,
-					'marginTop': -1*(videoHeight/2)
+					var	prevVideo = prevSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone(),
+						nextVideo = nextSlide.children('.celeb-video-wrap').children('.celeb-video-frame').find('iframe').clone();
+					prevVideo.addClass('previous-iframe');
+					nextVideo.addClass('next-iframe');
+					var	videoHeight = ($(window).width() * 0.35) * 0.5625;
+					prevVideo.css({
+						'height': videoHeight,
+						'marginTop': -1*(videoHeight/2)
+					});
+					nextVideo.css({
+						'height': videoHeight,
+						'marginTop': -1*(videoHeight/2)
+					});
+					activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before($(prevVideo));
+					activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before('<div class="bg-video-overlay bgvo-left"></div>');
+					activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before($(nextVideo));
+					activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before('<div class="bg-video-overlay bgvo-right"></div>');
+					$('.bg-video-overlay').css({
+						'height': videoHeight,
+						'marginTop': -1*(videoHeight/2)
+					});
 				});
-				nextVideo.css({
-					'height': videoHeight,
-					'marginTop': -1*(videoHeight/2)
-				});
-				activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before($(prevVideo));
-				activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before('<div class="bg-video-overlay bgvo-left"></div>');
-				activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before($(nextVideo));
-				activeSlide.children('.celeb-video-wrap').children('.celeb-video-frame').before('<div class="bg-video-overlay bgvo-right"></div>');
-				$('.bg-video-overlay').css({
-					'height': videoHeight,
-					'marginTop': -1*(videoHeight/2)
-				});
-			});
+			}
 		},
 		before: function(slider) {
 			for (var i = 0, length = celeb_players.length; i < length; i++) {
@@ -270,11 +276,13 @@ $(window).load(function () {
 		}
 	});
 	$(window).resize(function() {
-		var	videoHeight = ($(window).width() * 0.35) * 0.5625;
-		$('.previous-iframe, .next-iframe, .bg-video-overlay').css({
-			'height': videoHeight,
-			'marginTop': -1*(videoHeight/2)
-		});
+		if(celebAnimation == "fade") {
+			var	videoHeight = ($(window).width() * 0.35) * 0.5625;
+			$('.previous-iframe, .next-iframe, .bg-video-overlay').css({
+				'height': videoHeight,
+				'marginTop': -1*(videoHeight/2)
+			});
+		}
 	});
 	$(document).on('click', '.celeb-videos .bgvo-left', function(e) {
 		var t = $(this),
