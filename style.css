@@ -1243,6 +1243,8 @@ p.samsung {
 	line-height: 1;
 	padding-left: 10px;
 	font-weight: normal;
+		letter-spacing: 2px;
+
 }
 .jta-tweet-list-autorefresh-trigger {
 	cursor:pointer;
@@ -2353,7 +2355,7 @@ abbr[title] {
 	}
 	.more {
 		font-size:21px;
-		letter-spacing:0;
+	letter-spacing: 2px;
 	}
 	.more:after {
 		margin-top: -4px;

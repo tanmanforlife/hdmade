@@ -16,104 +16,104 @@
 	</ul>
 
 
-		<h2>platinum Partners</h2>
+		<h2>Platinum Partners</h2>
 		<ul>
-		<li>samsung</li>
-		<li>state Farm</li>
+		<li>Samsung</li>
+		<li>State Farm</li>
 		</ul>
 
 
-		<h2>gold Partners</h2>
+		<h2>Gold Partners</h2>
 		<ul>
-		<li>blackrock</li>
-		<li>ge</li>
-		<li>optimum</li>
-		<li>time Warner Cable</li>
-		<li>verizon</li>
-		<li>foundation</li>
+		<li>Blackrock</li>
+		<li>GE</li>
+		<li>Optimum</li>
+		<li>Time Warner Cable</li>
+		<li>Verizon</li>
+		<li>Foundation</li>
 		</ul>
 
 
-		<h2>silver Partners</h2>
+		<h2>Silver Partners</h2>
 		<ul>
-		<li>delta</li>
-		<li>poland Spring</li>
+		<li>Delta</li>
+		<li>Poland Spring</li>
 		</ul>
 
 
-		<h2>bronze Partners</h2>
+		<h2>Bronze Partners</h2>
 		<ul>
-		<li>duracell</li>
-		<li>powermat</li>
-		<li>hyundai</li>
-		<li>nrg</li>
-		<li>pepsi</li>
+		<li>Duracell</li>
+		<li>Powermat</li>
+		<li>Hyundai</li>
+		<li>NRG</li>
+		<li>Pepsi</li>
 		</ul>
 
 
-		<h2>production Partners</h2>
+		<h2>Production Partners</h2>
 		<ul>
-		<li>dempsey Productions</li>
-		<li>diversified Production Services (dps)</li>
-		<li>otto Printing & Entertainment Graphics</li>
+		<li>Dempsey Productions</li>
+		<li>Diversified Production Services (DPS)</li>
+		<li>Otto Printing & Entertainment Graphics</li>
 		</ul>
 
 
-		<h2>digital Partners</h2>
+		<h2>Digital Partners</h2>
 		<ul>
-		<li>facebook</li>
-		<li>foursquare</li>
-		<li>getglue</li>
-		<li>google</li>
-		<li>hd Made</li>
-		<li>mahaya</li>
-		<li>paypal</li>
-		<li>phase2 Technology</li>
-		<li>shazam</li>
-		<li>theaudience</li>
-		<li>tumblr</li>
-		<li>twitter</li>
+		<li>Facebook</li>
+		<li>Foursquare</li>
+		<li>GetGlue</li>
+		<li>Google</li>
+		<li>HD MADE</li>
+		<li>Mahaya</li>
+		<li>PayPal</li>
+		<li>Phase2 Technology</li>
+		<li>Shazam</li>
+		<li>theAudience</li>
+		<li>Tumblr</li>
+		<li>Twitter</li>
 		</ul>
 
 
-		<h2>additional Partners</h2>
+		<h2>Additional Partners</h2>
 		<ul>
-		<li>aaacommunications</li>
-		<li>affinia Hotel</li>
-		<li>akamai</li>
-		<li>all Access</li>
-		<li>all Mobile Video</li>
-		<li>allen Kelman - Kz</li>
-		<li>video Consultants, Inc. Line Producer</li>
-		<li>american Furniture Rentals</li>
-		<li>ariston Flowers</li>
-		<li>arnett Designs</li>
-		<li>atomic Design</li>
-		<li>atomic Lighting</li>
-		<li>bml</li>
-		<li>cat Power</li>
-		<li>control Freak</li>
-		<li>courier Car Rentals</li>
-		<li>drape Kings</li>
-		<li>firehouse Production</li>
-		<li>gayle De Poli</li>
-		<li>istreamplanetjim Flynn Rentals</li>
-		<li>level 3</li>
-		<li>liman Video Rental</li>
-		<li>milford Hotel</li>
-		<li>music Mix Mobile</li>
-		<li>nocturne Productions</li>
-		<li>ny Dec</li>
-		<li>paramount Hotel</li>
-		<li>performance Environment</li>
-		<li>design Group Llc Labor</li>
-		<li>production Staffing Group</li>
-		<li>royal Flush Studio Instrument Rentals</li>
-		<li>tv Prompt</li>
-		<li>usi Strike Force</li>
-		<li>whose Catering</li>
-		<li>y.e.ii Inc -</li>
-		<li>richard York</li>
+		<li>AAAcommunications</li>
+		<li>Affinia Hotel</li>
+		<li>Akamai</li>
+		<li>All Access</li>
+		<li>All Mobile Video</li>
+		<li>Allen Kelman - KZ</li>
+		<li>Video Consultants, Inc. Line Producer</li>
+		<li>American Furniture Rentals</li>
+		<li>Ariston Flowers</li>
+		<li>Arnett Designs</li>
+		<li>Atomic Design</li>
+		<li>Atomic Lighting</li>
+		<li>BML</li>
+		<li>CAT Power</li>
+		<li>Control Freak</li>
+		<li>Courier Car Rentals</li>
+		<li>Drape Kings</li>
+		<li>Firehouse Production</li>
+		<li>Gayle De Poli</li>
+		<li>iStreamPlanetJim Flynn Rentals</li>
+		<li>Level 3</li>
+		<li>Liman Video Rental</li>
+		<li>Milford Hotel</li>
+		<li>Music Mix Mobile</li>
+		<li>Nocturne Productions</li>
+		<li>NY Dec</li>
+		<li>Paramount Hotel</li>
+		<li>Performance Environment</li>
+		<li>Design Group Llc Labor</li>
+		<li>Production Staffing Group</li>
+		<li>Royal Flush Studio Instrument Rentals</li>
+		<li>TV Prompt</li>
+		<li>USI Strike Force</li>
+		<li>Whose Catering</li>
+		<li>Y.E.II Inc -</li>
+		<li>Richard York</li>
 	</ul>
 </section>
 </div></div>
