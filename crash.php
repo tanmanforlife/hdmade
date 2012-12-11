@@ -47,6 +47,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
 			top:0;
 			width:100%;
 		}
+		header .logo {
+			float: left;
+			margin:0 3% 0 0;
+			width:30%;
+		}
+		header .info {
+			float: left;
+			margin-top: 1%;
+			width:37%;
+		}
+		header .btn-wrap {
+			float: left;
+			text-align: center;
+			width:30%;
+		}
+		header .btn-wrap .donate {
+			height:50px;
+			margin-top: 8%;
+			padding:0 20%;
+		}
+		@media only screen and (max-width:655px) {
+			header {
+				padding: 1em;
+			}
+			header .logo {
+				width:40.5%;
+			}
+			header .info {
+				margin-top: 0;
+				width:56.5%;
+			}
+			header .btn-wrap {
+				clear: left;
+				width:100%;
+			}
+		}
 	</style>
 </head>
 <body id="crash">
@@ -77,11 +113,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD
     <?php */ ?>
     <div class="main cf" role="main">
         <header role="header" class="cf">
-                <h1 class="logo">
-                    <a href="/">
-                        <img src="img/logo.png" alt="121212 Concert Logo" />
-                    </a>
-                </h1>
+			<h1 class="logo">
+			    <a href="/">
+			        <img src="img/logo.png" alt="121212 Concert Logo" />
+			    </a>
+			</h1>
+			<div class="info">
+				<img src="img/desc.png" alt="The Concert for Sandy Relief to benefit The Robin Hood Relief Fund presented by Chase" />
+			</div>
+			<div class="btn-wrap">
+				<a href="https://www.robinhood.org/take-action/SandyRelief.aspx" class="btn donate donate-modal-link-off" target="_blank">Donate</a>
+			</div>
                 
                     <!-- Donate -->
                     <div id="donate-popup">
