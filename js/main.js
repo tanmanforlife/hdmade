@@ -451,10 +451,10 @@ $(window).load(function () {
 		$('.flash').toggleClass('closed');
 		if($('.flash').hasClass('closed')) {
 			$('.flash .close').html('Expand');
-			$('.flash p').slideUp();
+			$('.flash p').slideUp(100);
 		} else {
 			$('.flash .close').html('<span>x</span>');
-			$('.flash p').slideDown();
+			$('.flash p').slideDown(100);
 		}
     	event.preventDefault();
     });

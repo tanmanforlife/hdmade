@@ -69,7 +69,7 @@
 				<div class="g span-2 instagram-feed">
 					<h2>Instagram #121212Concert<a href="instagram" class="more" target="_blank">See All</a></h2>
 					<div class="instagram-grid cf">
-						<ul id="js-instagram" class="instagram">
+						<ul id="js-instagram" class="instagram cf">
 						<?php for ($i=1; $i <= 9; $i++) { ?>
 							<li class="ig ig-<?=$i?>" data-photo-id="">
 								<a href="" class="insta-link"><img class="photo" src="" alt="" /></a>

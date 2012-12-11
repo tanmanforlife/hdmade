@@ -151,7 +151,7 @@ function auto_version($file) {
 	<?php */ ?>
 	<div class="main cf" role="main">
 		<header role="header" class="table">
-			<div class="tr brand">
+			<div class="tr brand cf">
 				<h1 class="logo td">
 					<a href="/">
 						<img src="img/logo.png" alt="121212 Concert Logo" />
