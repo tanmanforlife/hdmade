@@ -79,7 +79,7 @@
 					</div> <!-- .instagram-grid -->
 				</div> <!-- .instagram-feed -->
 				<div class="g span-1 last">
-					<div class="tumblr-feed">
+					<div class="tumblr-feed cf">
 						<h2>Tumblr <a href="http://robinhoodnyc.tumblr.com/search/121212concert" class="more" target="_blank">See All</a></h2>
 						<div class="stories">
 							<ul class="slides cf">
@@ -88,7 +88,7 @@
 						</div> <!-- .stories -->
 					</div> <!-- .tumblr-feed -->
 					<div class="ticker">
-						<p class="timer-status">Less than 3 days to go!!</p>
+						<p class="timer-status">Countdown to the Show</p>
 						<div class="timer cf" id="timer-until-event">
 							<div class="digits">
 								<span class="unit" id="daysLeft"></span>
@@ -105,7 +105,7 @@
 						$d = strtotime('December 12, 2012 19:30 EST');
 						$now = strtotime('Now');
 						?>
-						<div id="timer-event" class="timer cf <?php if($d > $now): ?>visuallyhidden<?php endif; ?>"></div>
+						<div id="timer-event" class="timer cf <?php if($d > $now): ?>hidden<?php endif; ?>"></div>
 					</div> <!-- .ticker -->
 				</div> <!-- .g.span-1 -->
 			</div> <!-- .dynamic -->
