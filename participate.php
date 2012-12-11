@@ -19,7 +19,7 @@
 		<div class="one-fourth give-option">
 			<a href="http://getglue.com/stickers/iheartradio/121212_the_concert_for_sandy_relief_coming_soon">
 				<figure><img src="img/donate-glue.png" alt="Checkin with GetGlue" /></figure>
-				<p>Check-in during the concert and unlock your office 121212 Concert sticker</p>
+				<p>Check-in during the concert and unlock your official 121212 Concert sticker</p>
 			</a>
 		</div> <!-- .tweet-to-give -->
 
