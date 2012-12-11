@@ -280,4 +280,6 @@ Global streaming</strong></p>
   </div>
 
 </div> <!-- #section-6 -->
+</div>
+</div>
 <?php include 'footer.php'; ?>
