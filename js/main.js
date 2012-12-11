@@ -194,7 +194,27 @@ $(window).load(function () {
 
 	// Celev Videos Slider Options
 	jQuery('.celeb-videos li').fitVids();
-
+	var celeb_players = $('.celeb-videos iframe');
+	/*
+	$(document).on('click', '.celeb-video-frame span', function(e) {
+		var t = $(this),
+			iframe = t.siblings().children('iframe');
+		if(t.hasClass('paused')) {
+			for (var i = 0, length = iframe.length; i < length; i++) {
+				player = iframe[i];
+				$f(player).api('play');
+			}
+			t.removeClass('paused');
+		} else {
+			for (var i = 0, length = iframe.length; i < length; i++) {
+				player = iframe[i];
+				$f(player).api('pause');
+			}
+			t.addClass('paused');
+		}
+		
+	});
+	*/
 	$('.celeb-videos').flexslider({
 		animation:"fade",
 		animationLoop: true,
@@ -237,6 +257,12 @@ $(window).load(function () {
 					'marginTop': -1*(videoHeight/2)
 				});
 			});
+		},
+		before: function(slider) {
+			for (var i = 0, length = celeb_players.length; i < length; i++) {
+				player = celeb_players[i];
+				$f(player).api('pause');
+			}
 		}
 	});
 	$(window).resize(function() {
@@ -246,14 +272,33 @@ $(window).load(function () {
 			'marginTop': -1*(videoHeight/2)
 		});
 	});
-        $('.celeb-videos  .bgvo-right').live('click',function(){
-            $('.celeb-videos .flex-next').click();
-        });
-        $('.celeb-videos  .bgvo-left').live('click',function(){
-            $('.celeb-videos .flex-prev').click();
-        });
-
-
+	$(document).on('click', '.celeb-videos .bgvo-left', function(e) {
+		var t = $(this),
+			i = t.parent().parent().index(),
+			size = $('.celeb-video').size(),
+			goToSlide;
+		if(i == 0) {
+			goToSlide = size-1;
+		} else {
+			goToSlide = i-1;
+		}
+		var cvs = $('.celeb-videos').data('flexslider')
+		cvs.flexslider(goToSlide);
+	});
+	$(document).on('click', '.celeb-videos .bgvo-right', function(e) {
+		var t = $(this),
+			i = t.parent().parent().index(),
+			size = $('.celeb-video').size(),
+			goToSlide;
+		if(i == size-1) {
+			goToSlide = 0;
+		} else {
+			goToSlide = i+1;
+		}
+		var cvs = $('.celeb-videos').data('flexslider')
+		cvs.flexslider(goToSlide);
+	});
+	
 
     function getBannerText(){
         $.ajax({

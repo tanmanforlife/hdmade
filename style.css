@@ -1242,11 +1242,16 @@ p.samsung {
 	font-size:15px;
 	font-style: italic;
 }
+
 .celebs-sandy a {
 	color:#fff;
 }
 .celebs-sandy ul li {
 	text-align: center;
+	z-index:1;
+}
+.celebs-sandy ul li.flex-active-slide {
+	z-index:100;
 }
 .celeb-video-wrap {
 	position: relative;
@@ -1254,7 +1259,18 @@ p.samsung {
 .celeb-video-frame {
 	margin:0 20%;
 	position: relative;
+} /*
+.celeb-video-frame > span {
+	bottom:0;
+	display: block;
+	height:100%;
+	left:0;
+	position: absolute;
+	right:0;
+	top:0;
+	width:100%;
 }
+*/
 .celeb-video-wrap > iframe,
 .celeb-video-wrap > .bg-video-overlay {
 	position: absolute;
