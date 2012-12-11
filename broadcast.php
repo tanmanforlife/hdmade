@@ -21,13 +21,13 @@ Global streaming</strong></p>
   <div class="table stream-table">
     <div class="tr">
       <div class="td">
-        Amctv.com<br>AOL<br>Clear Channel Media and Entertainment<br>Clear Channel Outdoor&nbsp;<br>Cookingchannel.com<br>Crackle<br>epixHD.com<br>EW.com<br>Foxmoviechannel.com
+        Amctv.com<br>AOL<br>Clear Channel Media and Entertainment<br>Clear Channel Outdoor&nbsp;<br>Cookingchannel.com<br>Crackle<br>epixHD.com<br>EW.com<br>Foxmoviechannel.com<br>NBA.com
       </div>
       <div class="td">
-        Fuse.tv<br>Hulu<br>Ifc.com<br>iHeartRadio<br>InStyle.com<br>Livewellnetwork.com<br>MTV.com<br>My Space<br>Ovationtv.com
+        Fuse.tv<br>Hulu<br>Ifc.com<br>iHeartRadio<br>InStyle.com<br>Livewellnetwork.com<br>MTV.com<br>Myspace<br>Ovationtv.com
       </div>
       <div class="td">
-        People.com<br>SiriusXM Radio<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube
+        People.com<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube<br>VH1.com
       </div>
     </div>
   </div> <!-- .stream-table -->
@@ -37,7 +37,7 @@ Global streaming</strong></p>
   <div class="table tv-table">
     <div class="tr">
       <div class="td">
-        AMC<br>AXS TV<br>BIO<br>Bloomberg<br>CBS<br>Cooking Channel<br>Destination America<br>Discovery Fit &amp; Health<br>ENCORE<br>EPIX<br>FX Movie Channel<br>FEARnet<br>Fuse<br>G4
+        AMC<br>AXS TV<br>BIO<br>Bloomberg<br>Cooking Channel<br>Destination America<br>Discovery Fit &amp; Health<br>ENCORE<br>EPIX<br>FX Movie Channel<br>FEARnet<br>Fuse<br>G4
       </div>
       <div class="td">
         Hallmark Movie Channel<br>HBO<br>HBO Latino<br>IFC<br>ION Television<br>Lifetime Real Women<br>Live Well Network<br>Military History<br>MSG<br>MSG Plus<br>MUNDOFOX<br />NJTV
@@ -112,6 +112,7 @@ Global streaming</strong></p>
   <div class="table radio-table">
     <div class="tr">
       <div class="td">
+        <span>National  </span><i>SiriusXM Radio</i>
         <span>New York City, NY  </span><i>106.7 Lite fm</i>
         <span>New York City, NY  </span><i>103.5 KTU</i>
         <span>New York City, NY  </span><i>Z100</i>
