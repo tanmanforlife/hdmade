@@ -995,14 +995,15 @@ img.show {
 	font-family: 'TradeGothicCond';
 	font-weight: bold;
 	text-align: center;
-	font-size: 3em
+	font-size: 3em;
+	line-height:1;
+	margin-top: .21em;
 }
 
 .units {
 	text-align: center;
 	font-size: 1em;
 	font-family: 'TradeGothicCond';
-	margin-top: -20px;
 }
 
 .unit {
@@ -1014,8 +1015,13 @@ img.show {
 .timer-unit {
 	text-transform: uppercase;
 	text-align: center;
-		padding:0 20px;
+	padding:0 20px;
 
+}
+#timer-event .timer-unit {
+	display: block;
+	font-size:16px;
+	padding:0;
 }
 
 /* =============================================================================
@@ -1869,6 +1875,17 @@ abbr[title] {
       width: 0;
       height: 100%;
     }
+
+	.visuallyhidden {
+	    border: 0;
+	    clip: rect(0 0 0 0);
+	    height: 1px;
+	    margin: -1px;
+	    overflow: hidden;
+	    padding: 0;
+	    position: absolute;
+	    width: 1px;
+	}
 
     img {
       max-width: 100%;

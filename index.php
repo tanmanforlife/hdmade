@@ -89,7 +89,7 @@
 					</div> <!-- .tumblr-feed -->
 					<div class="ticker">
 						<p class="timer-status">Less than 3 days to go!!</p>
-						<div class="timer cf">
+						<div class="timer cf" id="timer-until-event">
 							<div class="digits">
 								<span class="unit" id="daysLeft"></span>
 								<span class="unit" id="hours"></span>
@@ -101,6 +101,11 @@
 								<span class="timer-unit">Minutes</span>
 							</div>
 						</div>
+						<?php
+						$d = strtotime('December 12, 2012 19:30 EST');
+						$now = strtotime('Now');
+						?>
+						<div id="timer-event" class="timer cf <?php if($d > $now): ?>visuallyhidden<?php endif; ?>"></div>
 					</div> <!-- .ticker -->
 				</div> <!-- .g.span-1 -->
 			</div> <!-- .dynamic -->
