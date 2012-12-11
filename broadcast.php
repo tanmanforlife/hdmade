@@ -9,103 +9,317 @@ SIMULCAST, FREE of CHARGE, IN SELECT THEATERS IN HURRICANE-AFFECTED AREAS.<br />
 Global streaming</strong></p>
 <p class="georgia"><em>Starting at 7:30 p.m. ET, on December 12, "12-12-12," The Concert for Sandy Relief, will be broadcast live from Madison Square Garden via a global network of US and International television stations, Clear Channel radio stations and leading web sites. Check the listings below to see where to tune in to watch or listen to this legendary event.</em></p>
 <div class="table broadcast-images">
-  <div class="tr">
-    <div class="td"><a href="#section-2"><img alt="" src="img/circle1_stream.png" height="178" width="178" /></a></div>
-    <div class="td"><a href="#section-3"><img alt="" src="img/circle2_us.png" height="178" width="178" /></a></div>
-    <div class="td"><a href="#section-4"><img alt="" src="img/circle3_global.png" height="178" width="178" /></a></div>
-    <div class="td"><a href="#section-5"><img alt="" src="img/circle4_theater.png" height="178" width="178" /></a></div>
-  </div>
+	<div class="tr">
+		<div class="td"><a href="#section-2"><img alt="" src="img/circle1_stream.png" height="178" width="178" /></a></div>
+		<div class="td"><a href="#section-3"><img alt="" src="img/circle2_us.png" height="178" width="178" /></a></div>
+		<div class="td"><a href="#section-4"><img alt="" src="img/circle3_global.png" height="178" width="178" /></a></div>
+		<div class="td"><a href="#section-5"><img alt="" src="img/circle4_theater.png" height="178" width="178" /></a></div>
+	</div>
 </div> <!-- .broadcast-images -->
 <div id="section-2">
-  <h2 class="stream-heading">Streaming Websites</h2>
-  <div class="table stream-table">
-    <div class="tr">
-      <div class="td">
-        Amctv.com<br>AOL<br>Clear Channel Media and Entertainment<br>Clear Channel Outdoor&nbsp;<br>Cookingchannel.com<br>Crackle<br>epixHD.com<br>EW.com<br>Foxmoviechannel.com<br>NBA.com
-      </div>
-      <div class="td">
-        Fuse.tv<br>Hulu<br>Ifc.com<br>iHeartRadio<br>InStyle.com<br>Livewellnetwork.com<br>MTV.com<br>Myspace<br>Ovationtv.com
-      </div>
-      <div class="td">
-        People.com<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube<br>VH1.com
-      </div>
-    </div>
-  </div> <!-- .stream-table -->
+	<h2 class="stream-heading">Streaming Websites</h2>
+	<div class="table stream-table">
+		<div class="tr">
+			<div class="td">
+				Amctv.com<br>AOL<br>Clear Channel Media and Entertainment<br>Clear Channel Outdoor&nbsp;<br>Cookingchannel.com<br>Crackle<br>epixHD.com<br>EW.com<br>Foxmoviechannel.com<br>NBA.com
+			</div>
+			<div class="td">
+				Fuse.tv<br>Hulu<br>Ifc.com<br>iHeartRadio<br>InStyle.com<br>Livewellnetwork.com<br>MTV.com<br>Myspace<br>Ovationtv.com
+			</div>
+			<div class="td">
+				People.com<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube<br>VH1.com
+			</div>
+		</div>
+	</div> <!-- .stream-table -->
 </div> <!-- #section-2 -->
 <div id="section-3">
-  <h2 class="tv-heading">US Television Channels</h2>
-  <div class="table tv-table">
-    <div class="tr">
-      <div class="td">
-        AMC<br>AXS TV<br>BIO<br>Bloomberg<br>Cooking Channel<br>Destination America<br>Discovery Fit &amp; Health<br>ENCORE<br>EPIX<br>FX Movie Channel<br>FEARnet<br>Fuse<br>G4
-      </div>
-      <div class="td">
-        Hallmark Movie Channel<br>HBO<br>HBO Latino<br>IFC<br>ION Television<br>Lifetime Real Women<br>Live Well Network<br>Military History<br>MSG<br>MSG Plus<br>MUNDOFOX<br />NJTV
-      </div>
-      <div class="td">
-        Palladia<br>PlumTV<br>SHOWTIME 2<br>Smithsonian Channel<br>Sundance Channel<br>THIRTEEN<br>VH1 Classic<br>WEtv<br>WLIW<br>WLNY<br>WPSG/The CW Philly<br>Wealth TV
-      </div>
-    </div>
-  </div> <!-- .tv-table -->
+	<h2 class="tv-heading">US Television Channels</h2>
+	<div class="table tv-table">
+		<div class="tr">
+			<div class="td">
+				AMC<br>AXS TV<br>BIO<br>Bloomberg<br>Cooking Channel<br>Destination America<br>Discovery Fit &amp; Health<br>ENCORE<br>EPIX<br>FX Movie Channel<br>FEARnet<br>Fuse<br>G4
+			</div>
+			<div class="td">
+				Hallmark Movie Channel<br>HBO<br>HBO Latino<br>IFC<br>ION Television<br>Lifetime Real Women<br>Live Well Network<br>Military History<br>MSG<br>MSG Plus<br>MUNDOFOX<br />NJTV
+			</div>
+			<div class="td">
+				Palladia<br>PlumTV<br>SHOWTIME 2<br>Smithsonian Channel<br>Sundance Channel<br>THIRTEEN<br>VH1 Classic<br>WEtv<br>WLIW<br>WLNY<br>WPSG/The CW Philly<br>Wealth TV
+			</div>
+		</div>
+	</div> <!-- .tv-table -->
 </div> <!-- #section-3 -->
 <div id="section-4">
   <h2 class="int-heading">International Television Channels</h2>
-  <div class="table int-table">
-    <div class="tr">
-      <div class="td">
-        A+E International<br>The American Forces Network<br>AXN<br>Belgacom<br>CyfrowyPolsat<br>Direct TV Brazil<br>Direct TV Latin America<br>Direct TV Pan Americana<br>Fox International Channels’ worldwide networks
-      </div>
-      <div class="td">
-        GlobosatMultishow<br>HBO (Latin America)<br>ITI Neovision<br>MGM Latino<br>Movie Networks Australia<br>37 MTV Channels<br>Numericable<br>RTL<br>SGT JAMBOX
-      </div>
-      <div class="td">
-        Sony Entertainment Television<br>SPIN<br>Sundance Channel Asia<br>Sundance Channel Europe<br>Telehit-Televisa<br>Telenet<br>VH1 Brasil<br>WE tv Asia<br>YES Drama
-      </div>
-    </div>
-  </div>
+	<div class="table radio-table">
+		<div class="tr">
+			<div class="td">
+				<span>Worldwide (excluding North America)</span><i>Sundance Channel Global</i>
+				<span>Pan Asia</span><i>WE tv</i>
+				<span>Canada</span><i>AMC</i>
+				<span> United Kingdom</span><i>SKY Arts</i>
+				<span>Australia</span><i>Starpics (Movie Networks)</i>
+				<span>New Zealand</span><i>Prime (Sky Television)</i>
+				<span>Germany</span><i>Sky Atlantic (Sky Germany)</i>
+				<span>Various</span><i>MTV/VH1*</i>
+				<span>Euro</span><i>MTV</i>
+				<span>Germany</span><i>MTV</i>
+				<span>Hungary</span><i>MTV</i>
+				<span>Adria</span><i>MTV/VH1</i>
+				<span>Australia/New Zealand</span><i>MTV/VH1</i>
+				<span>Base Africa</span><i>MTV/VH1</i>
+				<span>Belgium</span><i>MTV/VH1</i>
+				<span>Canada</span><i>MTV/VH1</i>
+				<span>China/FTA</span><i>MTV/VH1</i>
+				<span>Czech Republic</span><i>MTV/VH1</i>
+				<span>Denmark</span><i>MTV/VH1</i>
+				<span>Finland</span><i>MTV/VH1</i>
+				<span>France</span><i>MTV/VH1</i>
+				<span>Holland</span><i>MTV/VH1</i>
+				<span>Israel</span><i>MTV/VH1</i>
+				<span>Japan</span><i>MTV/VH1</i>
+				<span>Latin America Central</span><i>MTV/VH1</i>
+				<span>Latin America North</span><i>MTV/VH1</i>
+				<span>Latin America South</span><i>MTV/VH1</i>
+				<span>Mena (Middle East)/FTA</span><i>MTV/VH1</i>
+				<span>Norway</span><i>MTV/VH1</i>
+				<span>Poland</span><i>MTV/VH1</i>
+				<span>Portugal</span><i>MTV/VH1</i>
+				<span>Romania</span><i>MTV/VH1</i>
+				<span>Russia/FTA</span><i>MTV/VH1</i>
+				<span>SE Asia</span><i>MTV/VH1</i>
+				<span>Spain</span><i>MTV/VH1</i>
+				<span>Sweden</span><i>MTV/VH1</i>
+				<span>Switzerland</span><i>MTV/VH1</i>
+				<span>Taiwan</span><i>MTV/VH1</i>
+				<span>UK &amp; Ireland</span><i>MTV/VH1</i>
+				<span>Ukraine</span><i>MTV/VH1</i>
+				<span>Vietnam</span><i>MTV/VH1</i>
+				<span>Brazil/FTA</span><i>VH1</i>
+				<span>India/FTA</span><i>VH1</i>
+				<span>Austria</span><i>VIVA (MTV/VH1)</i>
+				<span>Germany</span><i>VIVA (MTV/VH1)</i>
+				<span>Hungary</span><i>VIVA (MTV/VH1)</i>
+				<span>Poland</span><i>VIVA (MTV/VH1)</i>
+				<span>UK</span><i>VIVA (MTV/VH1)</i>
+				<span>France</span><i>TV5Monde</i>
+				<span>Hungary</span><i>TV2 (ProSiebenSat)</i>
+				<span>Belgium</span><i>RTL (PlugTV)</i>
+				<span>Brazil</span><i>Multishow (Globosat)</i>
+				<span>Various</span><i>NBCU</i>
+				<span>Latin America</span><i>E! (NBCU)</i>
+				<span>Pan Asia</span><i>E! (NBCU)</i>
+				<span>Italy</span>Diva (NBCU)</i>
+				<span>Pan Asia</span><i>Diva (NBCU)</i>
+				<span>Italy</span><i>Sky One Entertainment</i>
+				<span>Latin America</span><i>TeleHit (Televisa)</i>
+				<span>Various</span><i>Fox*</i>
+				<span>Africa</span><i>Fox</i>
+				<span>Africa</span><i>National Geographic Channel (Fox)</i>
+				<span>Balkan region</span><i>Fox</i>
+				<span>Balkan region</span><i>National Geographic Channel (Fox)</i>
+				<span>Bulgaria</span><i>Fox</i>
+				<span>Finland</span><i>Fox</i>
+				<span>Japan</span><i>FOX Movies Premium (Fox)</i>
+				<span>Japan</span><i>National Geographic Channel (Fox)</i>
+				<span>Latin America</span><i>FOX Life (Fox)</i>
+				<span>Taiwan</span><i>Fox</i>
+			</div>
+			<div class="td">
+				<span>Taiwan</span><i>Star Movies HD (Fox)</i>
+				<span>Taiwan</span><i>Star World (Fox)</i>
+				<span>Taiwan</span><i>Star Entertainment (Fox)</i>
+				<span>USA</span><i>Mundo Fox</i>
+				<span>Various</span><i>A+E</i>
+				<span>Latin America</span><i>Bio (A+E)</i>
+				<span>Portugal</span><i>Bio (A+E)</i>
+				<span>SEAsia</span><i>Bio (A+E)</i>
+				<span>Spain</span><i>Bio (A+E)</i>
+				<span>India</span><i>HistoryTV 18 (A+E)</i>
+				<span>Kenya,Tanzania &amp; Uganda</span><i>Wananchi Programming Ltd.</i>
+				<span>Various</span><i>Chello</i>
+				<span>Various</span><i>Sony*</i>
+				<span>Philippines</span><i>Animax (Sony)</i>
+				<span>SEAsia</span><i>Animax (Sony)</i>
+				<span>Brazil</span><i>AXN (Sony)</i>
+				<span>Germany</span><i>AXN (Sony)</i>
+				<span>Hungary</span><i>AXN (Sony)</i>
+				<span>India</span><i>AXN (Sony)</i>
+				<span>Italy</span><i>AXN (Sony)</i>
+				<span>Korea</span><i>AXN (Sony)</i>
+				<span>Latin America</span><i>AXN (Sony)</i>
+				<span>Poland</span><i>AXN (Sony)</i>
+				<span>Portugal</span><i>AXN (Sony)</i>
+				<span>Romania</span><i>AXN (Sony)</i>
+				<span>Spain</span><i>AXN (Sony)</i>
+				<span>Taiwan</span><i>AXN (Sony)</i>
+				<span>Portugal</span><i>AXN Black Portugal (Sony)</i>
+				<span>Portugal</span><i>AXN White Portugal (Sony)</i>
+				<span>Spain</span><i>AXN White Spain (Sony)</i>
+				<span>Asia</span><i>BeTV (Sony)</i>
+				<span>USA</span><i>Fearnet (Sony)</i>
+				<span>Africa</span><i>SET (Sony)</i>
+				<span>Brazil</span><i>SET (Sony)</i>
+				<span>Latin America</span><i>SET (Sony)</i>
+				<span>Russia</span><i>SET (Sony)</i>
+				<span>Brazil</span><i>Sony Spin (Sony)</i>
+				<span>Spain</span><i>Sony Spin (Sony)</i>
+				<span>Israel</span><i>Yes Drama</i>
+				<span>Various</span><i>LGI</i>
+				<span>Latin America / Brazil</span><i>MGM Latino</i>
+				<span>Latin America</span><i>HBO</i>
+				<span>Asia Pacific</span><i>Tru TV Network (Turner)</i>
+				<span>Belgium</span><i>Acht</i>
+				<span>Various</span><i>Armed Forces Network</i>
+				<span>HongKong</span><i>TVB</i>
+				<span>China</span><i>CCTV / NBATV</i>
+				<span>French Canada</span><i>Musiqueplusand Musimax (Astral)</i>
+				<span>Various</span><i>ESPN</i>
+				<span>Belgium</span><i>Belgacom</i>
+				<span>France</span><i>Numericable</i>
+				<span>Belgium</span><i>Telenet</i>
+				<span>Philippines</span><i>Sky Cable Corporation</i>
+				<span>CzechRepublic</span><i>UPCDirect</i>
+				<span>France</span><i>Free</i>
+				<span>France</span><i>Neuf / SFR</i>
+				<span>Guadalupe / Martinique</span><i>Numericable</i>
+				<span>France</span><i>Omea Telenet (VirginMobile)</i>
+				<span>Greece</span><i>OTE</i>
+				<span>Hungary</span><i>Invitel</i>
+				<span>Hungary</span><i>UPCDirect</i>
+				<span>Hungary</span><i>UPCHungary</i>
+				<span>Malta</span><i>MelitaCable</i>
+				<span>Netherlands</span><i>CAIW / Film1</i>
+				<span>Netherlands</span><i>CanalDigitaal / Film1</i>
+				<span>Netherlands</span><i>DeltaKabelcomfort / Film1</i>
+				<span>Netherlands</span><i>KabelNoord / Film1</i>
+				<span>Netherlands</span><i>KabeltexBV / Film1</i>
+				<span>Netherlands</span><i>Tele2Netherlands / Film1</i>
+				<span>Netherlands</span><i>UPCNetherlands / Film1</i>
+				<span>Netherlands</span><i>Ziggo / Film1</i>
+				<span>Poland</span><i>East &amp; WestImport</i>
+				<span>Poland</span><i>East &amp; WestSp.z.o.o.</i>
+				<span>Poland</span><i>ITI Neovision Sp.z.o.o.</i>
+			</div>
+			<div class="td">
+				<span>Netherlands</span><i>SKN Veendam / Film1</i>
+				<span>Poland</span><i>Orange Poland (TPSA)</i>
+				<span>Poland</span><i>SGT</i>
+				<span>Poland</span><i>Stowarzyszenie Rad-Sat2</i>
+				<span>Poland</span><i>SMLW Legionowo</i>
+				<span>Poland</span><i>UPC Poland</i>
+				<span>Poland</span><i>Cyfrowy Polsat</i>
+				<span>Turkey</span><i>Digiturk</i>
+				<span>Portugal</span><i>ZON Media</i>
+				<span>Romania</span><i>UPC Direct (Focusat)</i>
+				<span>Romania</span><i>UPC Romania</i>
+				<span>Slovakia</span><i>UPC Direct</i>
+				<span>Spain</span><i>Euskeltel SA</i>
+				<span>Spain</span><i>Imagenio</i>
+				<span>China</span><i>Shanghai Media Group (BesTV)</i>
+				<span>Korea</span><i>HanaTV (SKBroadband)</i>
+				<span>Korea</span><i>KT Corporation</i>
+				<span>Malaysia</span><i>Astro</i>
+				<span>Thailand</span><i>True Visions Public Co., Ltd.</i>
+				<span>Korea</span><i>KT Sky Life</i>
+				<span>Singapore</span><i>SIng Tel</i>
+				<span>Taiwan</span><i>Chunghwa</i>
+				<span>Taiwan</span><i>Dish HD</i>
+				<span>Taiwan</span><i>Vee TIME</i>
+				<span>Hong Kong</span><i>PCCW</i>
+				<span>Korea</span><i>LGU+</i>
+				<span>Japan</span><i>Sky Perfect TV</i>
+				<span>Japan</span><i>J-Com Broadband</i>
+				<span>Japan</span><i>Japan Cabletnet</i>
+				<span>Middle East</span><i>ART America</i>
+				<span>Americas</span><i>ART America</i>
+				<span>Lebanon</span><i>ART Cable &amp; MTVLebanon</i>
+				<span>Middle East</span><i>OSN</i>
+				<span>India</span><i>DEN</i>
+				<span>India</span><i>Digicable</i>
+				<span>India</span><i>Hathway</i>
+				<span>India</span><i>WWIL (Siti)</i>
+				<span>India</span><i>In Cable</i>
+				<span>India</span><i>Dish TVDTH</i>
+				<span>India</span><i>Zee Trendz</i>
+				<span>India</span><i>Tata Sky</i>
+				<span>India</span><i>Airtel</i>
+				<span>India</span><i>Sun Direct</i>
+				<span>India</span><i>Videocon</i>
+				<span>India</span><i>BigTV</i>
+				<span>Indonesia</span><i>Indovision</i>
+				<span>Hungary</span><i>Magyar Telekom</i>
+				<span>Hungary</span><i>PR Telecom</i>
+				<span>Luxembourg</span><i>Tango</i>
+				<span>South America</span><i>DirecTV Pan Americana</i>
+				<span>Brazil</span><i>Sky TV</i>
+				<span>Mexico</span><i>Sky Mexico</i>
+				<span>Russia</span><i>HDLife (NTV+)</i>
+				<span>Russia</span><i>Sistema / MTS</i>
+				<span>Russia</span><i>Tricolor</i>
+				<span>Russia</span><i>Rostelecom</i>
+				<span>Russia</span><i>ER Telecom</i>
+				<span>Russia</span><i>Moscow Cablecom / Akado</i>
+				<span>Africa</span><i>Multichoice (SouthAfrica)</i>
+				<span>Africa</span><i>Multichoice (DSTV)</i>
+				<span>Africa</span><i>Startimes</i>
+				<span>Ireland</span><i>Sky Ireland</i>
+				<span>Austria</span><i>Sky Austria</i>
+				<span>Germany</span><i>Unity Media</i>
+				<span>England</span><i>Virgin Media</i>
+				<span>Israel</span><i>HOT Telecommunication</i>
+				<span>Poland</span><i>TVN</i>
+				<span>Poland</span><i>Inea</i>
+				<span>Poland</span><i>Promax</i>
+				<span>Poland</span><i>Multimedia</i>
+				<span>Poland</span><i>C+</i>
+				<span>Poland</span><i>Vectra</i>
+				<span>Poland</span><i>Toya</i>
+			</div> <!-- .td -->
+		</div> <!-- .tr -->
+	</div> <!-- .table -->
 </div> <!-- #section-4 -->
 <div id="section-5">
-  <h2 class="movie-heading">Movie Theatres</h2>
-  <div class="ticket-info">
-    <p>TICKETS:<br />FREE tickets are available starting December 5th at the theater box offices on a first-come, first-serve basis.</p>
-    <p>WHEN:<br />Wednesday, December 12, 2012 at 7:30 pm<br />Doors open at 6:45pm<br />Presentation to run until approximately 11:30pm.</p>
-  </div> <!-- .ticket-info -->
-  <div class="locations ny-loc">
-    New York Locations<br />
-    Clearview’s Grand Avenue Cinemas,1849 Grand Avenue, Baldwin, NY<br />
-    Clearview’s Franklin Square Cinemas, 989 Hempstead Turnpike, Franklin Square NY<br />
-    Clearview’s Babylon Cinemas, 34 Main Street, Babylon, NY<br />
-    Clearview’s Bedford Playhouse, 633 Old Post Road, Bedford, NY<br />
-    Clearview’s Central Plaza Cinemas, 2630 Central Park Ave, Yonkers, NY<br />
-    Clearview’s New City, 202 S Main St, New City, NY<br />
-    Clearview’s Port Washington Cinemas, 114 Main St, Port Washington, NY<br />
-    Clearview’s Squire Cinemas, 115 Middle Neck Road, Great Neck, NY<br />
-    Clearview’s ChelseaCinemas, 260 West 23rd Street, New York, NY<br />
-    National Amusements’, Linden Boulevard, 2784 Linden Blvd, Brooklyn, NY<br />
-    National Amusements’ Island 16, Exit 62 &amp; Route 97, Holtsville, NY<br />
-    National Amusements’ Farmingdale Multiplex, 1001 Broad Hollow Road, Farmingdale, NY
-  </div>
-  <div class="locations nj-loc">
-    New Jersey Locations<br />
-    Clearview’s Middlebrook Galleria Cin.10, 1502 Rte 35 South, Ocean, NJ<br />
-    Clearview’s Closter Cinema, 130 Closter Plaza, Closter, NJ<br />
-    Clearview’s Kinnelon, 25 Kinnelon Rd, Kinnelon, NJ<br />
-    Clearview’s Parsippany Cinema 12, 3165 Rte 46, Parsippany, NJ<br />
-    Clearview’s South Orange 5, 1 Trenchard Place, South Orange, NJ<br />
-    Clearview’s Succasunna Cinema 10, 21 Sunset Strip, Succasunna, NJ<br />
-    Clearview’s Warner Quad- Ridgewood, 190 E Ridgewood Ave., Ridgewood, NJ<br />
-    Clearview’s Wayne Preakness Cinemas, 1220 Hamburg Tpk, Wayne, NJ<br />
-    FrankTheatres Towne Stadium 16, 6733 Black Horse Pike, Egg HarborTwp, NJ<br />
-    FrankTheatres South Cove Stadium 12, 191 Lefante Way, Bayonne, NJ<br />
-    Marquee Cinemas, Orchard 10, 1311 Route 37 West, Toms River, NJ <br />
-    National Amusements’ Edgewater Multiplex, 339 River Rd, Edgewater, NJ<br />
-    Paramount Theatre, 1300 Ocean Avenue, Asbury Park, NJ 07712<br />
-    Rave Cinemas, Hazlet Multiplex, 2821 State Route 35, Hazlet, NJ
-  </div>
-  <div class="locations ct-loc">
-    Connecticut Locations<br />
-    Bow Tie Cinemas, Regent 8, 64 North Main Street, SouthNorwalk, CT
-  </div>
+	<h2 class="movie-heading">Movie Theatres</h2>
+	<div class="ticket-info">
+		<p>TICKETS:<br />FREE tickets are available starting December 5th at the theater box offices on a first-come, first-serve basis.</p>
+		<p>WHEN:<br />Wednesday, December 12, 2012 at 7:30 pm<br />Doors open at 6:45pm<br />Presentation to run until approximately 11:30pm.</p>
+	</div> <!-- .ticket-info -->
+	<div class="locations ny-loc">
+		New York Locations<br />
+		Clearview’s Grand Avenue Cinemas,1849 Grand Avenue, Baldwin, NY<br />
+		Clearview’s Franklin Square Cinemas, 989 Hempstead Turnpike, Franklin Square NY<br />
+		Clearview’s Babylon Cinemas, 34 Main Street, Babylon, NY<br />
+		Clearview’s Bedford Playhouse, 633 Old Post Road, Bedford, NY<br />
+		Clearview’s Central Plaza Cinemas, 2630 Central Park Ave, Yonkers, NY<br />
+		Clearview’s New City, 202 S Main St, New City, NY<br />
+		Clearview’s Port Washington Cinemas, 114 Main St, Port Washington, NY<br />
+		Clearview’s Squire Cinemas, 115 Middle Neck Road, Great Neck, NY<br />
+		Clearview’s ChelseaCinemas, 260 West 23rd Street, New York, NY<br />
+		National Amusements’, Linden Boulevard, 2784 Linden Blvd, Brooklyn, NY<br />
+		National Amusements’ Island 16, Exit 62 &amp; Route 97, Holtsville, NY<br />
+		National Amusements’ Farmingdale Multiplex, 1001 Broad Hollow Road, Farmingdale, NY
+	</div>
+	<div class="locations nj-loc">
+		New Jersey Locations<br />
+		Clearview’s Middlebrook Galleria Cin.10, 1502 Rte 35 South, Ocean, NJ<br />
+		Clearview’s Closter Cinema, 130 Closter Plaza, Closter, NJ<br />
+		Clearview’s Kinnelon, 25 Kinnelon Rd, Kinnelon, NJ<br />
+		Clearview’s Parsippany Cinema 12, 3165 Rte 46, Parsippany, NJ<br />
+		Clearview’s South Orange 5, 1 Trenchard Place, South Orange, NJ<br />
+		Clearview’s Succasunna Cinema 10, 21 Sunset Strip, Succasunna, NJ<br />
+		Clearview’s Warner Quad- Ridgewood, 190 E Ridgewood Ave., Ridgewood, NJ<br />
+		Clearview’s Wayne Preakness Cinemas, 1220 Hamburg Tpk, Wayne, NJ<br />
+		FrankTheatres Towne Stadium 16, 6733 Black Horse Pike, Egg HarborTwp, NJ<br />
+		FrankTheatres South Cove Stadium 12, 191 Lefante Way, Bayonne, NJ<br />
+		Marquee Cinemas, Orchard 10, 1311 Route 37 West, Toms River, NJ <br />
+		National Amusements’ Edgewater Multiplex, 339 River Rd, Edgewater, NJ<br />
+		Paramount Theatre, 1300 Ocean Avenue, Asbury Park, NJ 07712<br />
+		Rave Cinemas, Hazlet Multiplex, 2821 State Route 35, Hazlet, NJ
+	</div>
+	<div class="locations ct-loc">
+		Connecticut Locations<br />
+		Bow Tie Cinemas, Regent 8, 64 North Main Street, SouthNorwalk, CT
+	</div>
 </div> <!-- #section-5 -->
 <div id="section-6">
   <h2 class="radio-heading">US Radio Stations</h2>
@@ -278,7 +492,6 @@ Global streaming</strong></p>
       </div>
     </div>
   </div>
-
 </div> <!-- #section-6 -->
 </div>
 </div>

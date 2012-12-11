@@ -1124,7 +1124,7 @@ p.samsung {
 	max-width:320px;
 }
 .artists-tweets .jta-tweet-list-item {
-	
+
 }
 
 .artists-tweets .jta-tweet-text, .artists-tweets .jta-tweet-text a {
@@ -1525,7 +1525,8 @@ abbr[title] {
 .bd #section-2,
 .bd #section-3,
 .bd #section-4,
-.bd #section-5 {
+.bd #section-5,
+.bd #section-7 {
 	margin-bottom: 3em;
 }
 .bd #section-6 {
@@ -1549,7 +1550,7 @@ abbr[title] {
 .bd .locations {
 	margin-bottom: 2.5em;
 }
-.bd #section-6 .table {
+.bd #section-6 .table, .bd #section-4 .table {
 	font-size:12px;
 }
 .bd .radio-table span {
@@ -2100,10 +2101,10 @@ abbr[title] {
 	.mobile-wrap,.twitter{
 		background: black
 	}
-	
+
 	/* -----------------------
 	-- Ways To Give -- */
-	
+
 	.ways-to-give {
 		background:#000;
 	}
@@ -2270,12 +2271,12 @@ abbr[title] {
 	.artists-tweets .jta-tweet-list-item {
 		margin-bottom: 0;
 	}
-	
+
 	/* -----------------------
 	-- Support The Cause -- */
-	
-	
-	
+
+
+
 	/* -----------------------
 	-- RH Stories -- */
 
