@@ -43,7 +43,7 @@
 	<p class="meta micro"><em>*$10.00 donation to the Robin Hood Foundation. Charges will appear on your wireless bill, or bededucted from your prepaid balance. All purchases must be authorized by account holder. Must be 18 years of age or have parental
 		permission to participate.Message and Data Rates May Apply. Text STOP to 50555 to STOP.  Text HELP to 50555 for HELP.</em></p>
 
-	<p class="meta micro"><em>Full Terms: <a href="https://mgive.org/terms-of-service.aspx">mGive.org/T</a>.    <a href="https://mgive.org/privacy.aspx">Privacy Policy</a>.</em></p>
+	<p class="meta micro"><em>Full Terms: <a href="https://mgive.org/terms-of-service.aspx" target="_blank">mGive.org/T</a>.    <a href="https://mgive.org/privacy.aspx" target="_blank">Privacy Policy</a>.</em></p>
 	</div>
 </div>
 <?php include 'footer.php'; ?>

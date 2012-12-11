@@ -1431,6 +1431,7 @@ abbr[title] {
 	font-size: 1em;
 	font-family: georgia;
 	font-style: italic;
+	padding: 0 2em;
 }
 .give-option figure {
 	display: block;
@@ -1877,7 +1878,7 @@ abbr[title] {
 	font-size: 1.3em;
 }
 .micro {
-	font-size: 0.9rem;
+	font-size: 0.75rem;
 	text-align: center;
 }
 .terms {
@@ -2067,6 +2068,9 @@ abbr[title] {
     ========================================================================== */
 
 @media all and (max-width:64em) { /* 1024 */
+	.top{
+		padding-bottom: 0;
+	}
 
 }
 @media only screen and (max-width:56.25em) {
@@ -2215,7 +2219,10 @@ abbr[title] {
 	}
 	.timer {
 		background-position: center;
+
 	}
+
+
 
 	.site li:nth-child(1), .site li:nth-child(2), .site li:nth-child(3), .site li:nth-child(4) {
 		display: none
@@ -2370,7 +2377,8 @@ abbr[title] {
 	-- Tumblr -- */
 
 	.tumblr-feed {
-		padding-bottom: 30px;
+		padding-bottom: 40px;
+
 	}
 	.tumblr-feed h2 {
 		position: static;
@@ -2378,6 +2386,13 @@ abbr[title] {
 	.tumblr-feed h2 .more {
 		bottom:0;
 		top:auto;
+	}
+
+	.ticker {
+		border-top: 1px solid #fff;
+		padding-top: 40px;
+		margin-top: 40px;
+		padding-bottom: 40px;
 	}
 
 
@@ -2483,7 +2498,7 @@ abbr[title] {
 		text-align: center;
 	}
 
-	h2 {
+	h2, h3, .sponsors h3 {
 		font-size: 16px;
 	}
 	.page-title {
