@@ -1394,10 +1394,16 @@ abbr[title] {
 	font-size: 1em;
 	font-family: georgia;
 	font-style: italic;
-	height: 215px;
 }
 .give-option figure {
-	height: 50px;
+	display: block;
+	min-height: 70px;
+	margin-bottom: 10px;
+	padding:0 2%;
+}
+.give-option figure img {
+	display: block;
+	margin:0 auto;
 }
 
 .participate:last-child {
@@ -1979,6 +1985,12 @@ abbr[title] {
 	.robin-hood-stories {
 		padding: 20px;
 	}
+	/* -----------------------
+	-- Participate -- */
+	.participate .one-fourth {
+		margin-bottom: 20px;
+		width:50%;
+	}
 }
 
 @media all and (max-width: 655px) {
@@ -2303,6 +2315,13 @@ abbr[title] {
 
 	.sponsor-list {
 		text-align: center;
+	}
+	
+	/* -----------------------
+	-- Participate -- */
+	
+	.participate .one-fourth {
+		width:100%;
 	}
 
 	/* -----------------------
