@@ -521,12 +521,12 @@ $(window).load(function () {
 		});
 		while(current_ids.length <= max_li+1) {
 			var random_number = Math.round(Math.random()*(upper - lower + 1) + lower);
-			if (current_ids.indexOf(random_number) == -1) { 
+			if (current_ids.indexOf(random_number) == -1) {
 				current_ids.push(random_number);
 			}
 		}
 		var randomer = current_ids[current_ids.length-1];
-		
+
 		if(instagram_data[randomer]){
 			$('ul#js-instagram li:nth-child('+ (random_li) +')').attr('data-photo-id', randomer);
             $('ul#js-instagram li:nth-child(' + random_li + ') img.photo').fadeOut(function() {
