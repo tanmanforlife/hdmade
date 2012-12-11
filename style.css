@@ -759,7 +759,7 @@ section.twitter h2 {
 .jta-tweet-list li {
 	font-size: 0.9em;
 	border-bottom: 1px solid #404040;
-	margin-bottom: 13px;
+	margin-bottom: 3px;
 }
 
 .jta-tweet-list li:last-child {
@@ -1089,7 +1089,7 @@ p.samsung {
 	display: block;
 	text-align: center;
 	line-height: 1em;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	padding: 0 0 10px 0;
 }
 .what-artists h2 > span {
