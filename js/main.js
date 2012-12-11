@@ -520,7 +520,7 @@ $(window).load(function () {
         });
 
         // queue first update to banner text and instagram
-        setTimeout(updateFeeds, 60000);
+        setTimeout(updateFeeds, 2000);
     }
     // Instagram.php only
     if($('#js-instagram-all').length){
