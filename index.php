@@ -2,10 +2,10 @@
 <?php include 'header.php'; ?>
 <?php /*
 <div class="top">
-	<div class="main" role="main"> */ ?>	
+	<div class="main" role="main"> */ ?>
 		<div class="outer-wrapper cf">
 			<section class="g span-2 featured-img">
-								
+
 				<ul class="slides">
 					<li><img src="carousel-images/message1_8.jpg" alt="" /></li>
 					<li><a href="broadcast.php" target="_blank"><img src="carousel-images/streamhere.png" alt="" /></a></li>
@@ -18,7 +18,7 @@
 					</li>
 					*/ ?>
 				</ul> <!-- .slides -->
-		
+
 
 			</section> <!-- .g.span-2.featured-img -->
 			<div class="nav-mobile" aria-hidden="true">
@@ -132,7 +132,7 @@
 <div class="celebs-sandy">
 	<h2>Why We Are Doing This</h2>
 	<?php
-		/** 
+		/**
 		 * When inputting actual Vimeo videos here, please make sure they have a width of 571 and a height of 320.
 		 */
 	?>
@@ -182,10 +182,10 @@
 			<a class="link" href="http://store.121212concert.org" target="_blank">Buy</a>
 		</div>
 
-                <div class="one-third">
-			<img src="img/DonatePic.jpg" alt="" />
-			<p><em>Donate to the Robin Hood Relief Fund</em></p>
-			<a class="link donate-modal-link-off" href="https://www.robinhood.org/take-action/SandyRelief.aspx" target="_blank">Donate</a>
+        <div class="one-third">
+			<img src="img/itunes.png" alt="Pre-order the soundtrack from itunes" />
+			<p><em>Pre-order the 121212<br>Soundtrack on iTunes</em></p>
+			<a class="link ir itunes donate-modal-link-off" href="http://itunes.apple.com/album/id585701590" target="_blank">iTunes</a>
 		</div>
 
 		<div class="one-third">
@@ -193,7 +193,7 @@
 			<p><em>Listen to all the artists on<br>121212 Radio</em></p>
 			<a class="link" href="http://www.iheart.com/live/6146/?autoplay=true" target="_blank">Share</a>
 		</div>
-		
+
 	</div>
 </div> <!-- .sandy-store -->
 <div class="robin-hood-stories cf">
