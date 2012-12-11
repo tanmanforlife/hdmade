@@ -280,4 +280,3 @@ Global streaming</strong></p>
 
 </div> <!-- #section-6 -->
 <?php include 'footer.php'; ?>
->>>>>>> fixes
