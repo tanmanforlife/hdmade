@@ -155,7 +155,6 @@
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
 						<iframe src="http://player.vimeo.com/video/55133889?byline=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=celeb-video-1" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen id="celeb-video-1"></iframe>
-						<?php /* ?><span class="paused"></span> */ ?>
 					</div>
 				</div>
 				<p>Jon Bon Jovi talks about seeing the destruction Hurricane Sandy wreaked on his hometown and the need for the relief effort.</p>
@@ -164,7 +163,6 @@
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
 						<iframe src="http://player.vimeo.com/video/55133887?byline=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=celeb-video-2" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen id="celeb-video-2"></iframe>
-						<?php /* ?><span class="paused"></span> */ ?>
 					</div>
 				</div>
 				<p>Billy Joel talks about being in New York during Hurricane Sandy and the need for the relief effort.</p>
@@ -173,7 +171,6 @@
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
 						<iframe src="http://player.vimeo.com/video/55133888?byline=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=celeb-video-3" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen id="celeb-video-3"></iframe>
-						<?php /* ?><span class="paused"></span> */ ?>
 					</div>
 				</div>
 				<p>Alicia Keys talks about the lingering effects of Hurricane Sandy on New York and the need for the relief effort.</p>
@@ -182,7 +179,6 @@
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
 						<iframe src="http://player.vimeo.com/video/55138860?byline=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=celeb-video-4" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen id="celeb-video-4"></iframe>
-						<?php /* ?><span class="paused"></span> */ ?>
 					</div>
 				</div>
 				<p>Bruce Springsteen talks about the destruction Hurricane Sandy caused to the Jersey Shore and the need to raise money for the relief effort.</p>
