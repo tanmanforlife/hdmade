@@ -946,7 +946,7 @@ img.show {
 .instagram-all li {
 	width: 33.3%;
 	float: left;
-	padding:2px;
+	padding: 15px;
 }
 
 /* ==|== Dynamic =================
@@ -2644,5 +2644,8 @@ abbr[title] {
             width: 100%;
             margin: 0;
         }
+        .instagram-all li {
+	padding: 2px;
+}
 
 }

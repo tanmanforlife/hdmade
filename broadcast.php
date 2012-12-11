@@ -29,7 +29,7 @@
 					Fuse.tv<br>Hulu<br>Ifc.com<br>iHeartRadio<br>InStyle.com<br>Livewellnetwork.com<br>MTV.com<br>Myspace<br>Ovationtv.com
 				</div>
 				<div class="td">
-					People.com<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube<br>VH1.com
+					People.com<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube<br>VH1.com<br>BMI.com
 				</div>
 			</div>
 		</div> <!-- .stream-table -->
