@@ -1442,7 +1442,7 @@ abbr[title] {
 	margin:0 auto;
 }
 
-.participate:last-child {
+.participate.last{
 	border-bottom: none;
 }
 
@@ -1875,6 +1875,15 @@ abbr[title] {
 	font-style: italic;
 	font-size: 1.3em;
 }
+.micro {
+	font-size: 0.9rem;
+	text-align: center;
+}
+.terms {
+	font-size: 0.8rem;
+	display: block;
+	text-align: center;
+}
 
 /*  ==========================================================================
     Flexslider Styling
@@ -2108,6 +2117,7 @@ abbr[title] {
 }
 
 @media all and (max-width: 655px) {
+
 	html {
 		font-size: 0.9em
 	}
