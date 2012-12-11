@@ -1389,11 +1389,18 @@ abbr[title] {
 	text-align: center;
 	border-bottom: 2px solid #fff;
 	margin-top:60px;
+	padding-bottom: 20px;
 }
 .give-option {
 	font-size: 1em;
+	font-family: georgia;
+	font-style: italic;
 	height: 215px;
 }
+.give-option figure {
+	height: 50px;
+}
+
 .participate:last-child {
 	border-bottom: none;
 }
