@@ -960,6 +960,7 @@ img.show {
 	background:url('img/tumblr-icon.png') no-repeat left center;
 	padding-left: 30px;
 	text-align: left;
+	margin-bottom: 40px;
 }
 .tumblr-feed p {
 	overflow: hidden;
@@ -2481,7 +2482,7 @@ abbr[title] {
 		margin-bottom: 0px;
 		margin-top: 0;
 		padding-left: 0;
-		text-align: left;
+
 	}
 	.what-artists .see-all {
 		float: right;
