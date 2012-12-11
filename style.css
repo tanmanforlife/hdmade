@@ -1883,6 +1883,17 @@ abbr[title] {
 
 		.featured-img .flex-direction-nav .flex-prev { left:10px; }
 		.featured-img .flex-direction-nav .flex-next { right:10px; }
+		.featured-img .flex-direction-nav .flex-next, .featured-img .flex-direction-nav .flex-prev {
+			height: 100%;
+			width: 30px;
+			top:20px;
+		}
+		.featured-img .flex-direction-nav .flex-next {
+			background-position: 100% 50%
+		}
+		.featured-img .flex-direction-nav .flex-prev {
+			background-position: 0% 50%
+		}
 
     .tumblr-feed .flex-next, .robin-hood-stories .flex-next, .their-stories .flex-next { right: 100px; }
 
