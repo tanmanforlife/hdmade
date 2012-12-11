@@ -328,7 +328,8 @@
 		<div class="table radio-table">
 			<div class="tr">
 				<div class="td">
-					<span>National  </span><i>SiriusXM Radio</i>
+					<span>National  </span><i>SiriusXM Satellite Radio</i>
+					<span>National  </span><i>SiriusXM Local Radio</i>
 					<span>New York City, NY  </span><i>106.7 Lite fm</i>
 					<span>New York City, NY  </span><i>103.5 KTU</i>
 					<span>New York City, NY  </span><i>Z100</i>
