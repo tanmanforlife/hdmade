@@ -44,7 +44,7 @@
 
 		<div class="one-fourth give-option">
 			<figure><img src="img/donate-shazam.png" alt="Donate via Tweitter" /></figure>
-			<p>Shazam the 121212 concert and to donate</p>
+			<p>Shazam the 121212 concert to donate</p>
 		</div> <!-- .tweet-to-give -->
 
 	</div> <!-- .table -->
