@@ -1522,6 +1522,21 @@ abbr[title] {
     	font-size: 1.1em;
     	font-family: georgia
     }
+
+    .callout-copy {
+    	font-size: 1.5em;
+    	font-family: georgia;
+    	line-height: 2em;
+    }
+    .callout-copy a {
+    	font-size: 1.2rem;
+    	font-style: italic;
+    }
+    .callout-copy .icon-robin {
+    	font-size: 2.5em
+    }
+
+
     .partner-content h1.page-title {
     	font-size: 1.5em;
     	font-family:'TeeFraMed';
@@ -1868,6 +1883,17 @@ abbr[title] {
 
 		.featured-img .flex-direction-nav .flex-prev { left:10px; }
 		.featured-img .flex-direction-nav .flex-next { right:10px; }
+		.featured-img .flex-direction-nav .flex-next, .featured-img .flex-direction-nav .flex-prev {
+			height: 100%;
+			width: 30px;
+			top:20px;
+		}
+		.featured-img .flex-direction-nav .flex-next {
+			background-position: 100% 50%
+		}
+		.featured-img .flex-direction-nav .flex-prev {
+			background-position: 0% 50%
+		}
 
     .tumblr-feed .flex-next, .robin-hood-stories .flex-next, .their-stories .flex-next { right: 100px; }
 
@@ -2143,7 +2169,7 @@ abbr[title] {
         .menu-wrap .separator{
             display: none;
         }
-		
+
 	.main {
 		padding:0 10px;
 	}
@@ -2407,10 +2433,10 @@ abbr[title] {
 	.sponsor-list {
 		text-align: center;
 	}
-	
+
 	/* -----------------------
 	-- Participate -- */
-	
+
 	.participate .one-fourth {
 		width:100%;
 	}
