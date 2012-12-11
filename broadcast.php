@@ -29,7 +29,7 @@
 					Fuse.tv<br>Hulu<br>Ifc.com<br>iHeartRadio<br>InStyle.com<br>Livewellnetwork.com<br>MTV.com<br>Myspace<br>Ovationtv.com
 				</div>
 				<div class="td">
-					People.com<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube<br>VH1.com
+					People.com<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube<br>VH1.com<br>BMI.com
 				</div>
 			</div>
 		</div> <!-- .stream-table -->
@@ -328,7 +328,8 @@
 		<div class="table radio-table">
 			<div class="tr">
 				<div class="td">
-					<span>National  </span><i>SiriusXM Radio</i>
+					<span>National  </span><i>SiriusXM Satellite Radio</i>
+					<span>National  </span><i>SiriusXM Local Radio</i>
 					<span>New York City, NY  </span><i>106.7 Lite fm</i>
 					<span>New York City, NY  </span><i>103.5 KTU</i>
 					<span>New York City, NY  </span><i>Z100</i>
