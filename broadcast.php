@@ -23,13 +23,13 @@
 		<div class="table stream-table">
 			<div class="tr">
 				<div class="td">
-					Amctv.com<br>AOL<br>Clear Channel Media and Entertainment<br>Clear Channel Outdoor&nbsp;<br>Cookingchannel.com<br>Crackle<br>epixHD.com<br>EW.com<br>Foxmoviechannel.com<br>NBA.com
+					Amctv.com<br>AOL<br>BMI.com<br>Clear Channel Media and Entertainment<br>Clear Channel Outdoor&nbsp;<br>Cookingchannel.com<br>Crackle<br>epixHD.com<br>EW.com<br>Foxmoviechannel.com
 				</div>
 				<div class="td">
-					Fuse.tv<br>Hulu<br>Ifc.com<br>iHeartRadio<br>InStyle.com<br>Livewellnetwork.com<br>MTV.com<br>Myspace<br>Ovationtv.com
+					NBA.com<br>Fuse.tv<br>Hulu<br>Ifc.com<br>iHeartRadio<br>InStyle.com<br>Livewellnetwork.com<br>MTV.com<br>Myspace<br>Ovationtv.com
 				</div>
 				<div class="td">
-					People.com<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube<br>VH1.com<br>BMI.com
+					People.com<br>Sundancechannel.com<br>Time.com<br>Vevo<br>VH1.com<br>Wetv.com<br>Yahoo<br>YouTube<br>VH1.com
 				</div>
 			</div>
 		</div> <!-- .stream-table -->

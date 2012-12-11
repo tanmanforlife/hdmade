@@ -142,7 +142,13 @@
 		 */
 	?>
 	<div class="celeb-videos flexslider-fade">
+<<<<<<< HEAD
+		<ul class="slides cf">
+			<li class="celeb-video">
+
+=======
 		<ul class="slides cf">		
+>>>>>>> 9e7a4664d23fca80cfa895e6653be9d7f0211e8c
 			<li class="celeb-video">
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">

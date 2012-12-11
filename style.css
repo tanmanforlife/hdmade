@@ -1234,16 +1234,9 @@ p.samsung {
 }
 
 .see-all {
-	font-family: 'TradeGothic';
-	font-size: 21px;
-	display: block;
+
 	float: right;
-	letter-spacing:0;
-	text-transform: uppercase;
-	line-height: 1;
-	padding-left: 10px;
-	font-weight: normal;
-		letter-spacing: 2px;
+
 
 }
 .jta-tweet-list-autorefresh-trigger {
@@ -1477,6 +1470,9 @@ abbr[title] {
 
 .participate.last{
 	border-bottom: none;
+}
+.participate a {
+	color: #fff
 }
 
 /*
