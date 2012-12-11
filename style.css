@@ -995,14 +995,15 @@ img.show {
 	font-family: 'TradeGothicCond';
 	font-weight: bold;
 	text-align: center;
-	font-size: 3em
+	font-size: 3em;
+	line-height:1;
+	margin-top: .21em;
 }
 
 .units {
 	text-align: center;
 	font-size: 1em;
 	font-family: 'TradeGothicCond';
-	margin-top: -20px;
 }
 
 .unit {
@@ -1014,8 +1015,13 @@ img.show {
 .timer-unit {
 	text-transform: uppercase;
 	text-align: center;
-		padding:0 20px;
+	padding:0 20px;
 
+}
+#timer-event .timer-unit {
+	display: block;
+	font-size:16px;
+	padding:0;
 }
 
 /* =============================================================================
@@ -1242,11 +1248,16 @@ p.samsung {
 	font-size:15px;
 	font-style: italic;
 }
+
 .celebs-sandy a {
 	color:#fff;
 }
 .celebs-sandy ul li {
 	text-align: center;
+	z-index:1;
+}
+.celebs-sandy ul li.flex-active-slide {
+	z-index:100;
 }
 .celeb-video-wrap {
 	position: relative;
@@ -1254,7 +1265,18 @@ p.samsung {
 .celeb-video-frame {
 	margin:0 20%;
 	position: relative;
+} /*
+.celeb-video-frame > span {
+	bottom:0;
+	display: block;
+	height:100%;
+	left:0;
+	position: absolute;
+	right:0;
+	top:0;
+	width:100%;
 }
+*/
 .celeb-video-wrap > iframe,
 .celeb-video-wrap > .bg-video-overlay {
 	position: absolute;
@@ -1908,6 +1930,17 @@ abbr[title] {
       width: 0;
       height: 100%;
     }
+
+	.visuallyhidden {
+	    border: 0;
+	    clip: rect(0 0 0 0);
+	    height: 1px;
+	    margin: -1px;
+	    overflow: hidden;
+	    padding: 0;
+	    position: absolute;
+	    width: 1px;
+	}
 
     img {
       max-width: 100%;
