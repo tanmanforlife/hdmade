@@ -146,6 +146,14 @@
 			<li class="celeb-video">
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
+						<iframe src="http://player.vimeo.com/video/55366318?title=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=celeb-video-0" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen id="celeb-video-0"></iframe>
+					</div>
+				</div>
+				<p>Paul McCartney talks about the destruction Hurricane Sandy and why he's raising money for the relief effort.</p>
+			</li>
+			<li class="celeb-video">
+				<div class="celeb-video-wrap">
+					<div class="celeb-video-frame">
 						<iframe src="http://player.vimeo.com/video/55362033?title=0&amp;portrait=0&amp;badge=0&amp;color=0079c1&amp;api=1&amp;player_id=celeb-video-0" width="571" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen id="celeb-video-0"></iframe>
 					</div>
 				</div>
