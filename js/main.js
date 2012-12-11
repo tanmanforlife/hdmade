@@ -450,7 +450,7 @@ $(window).load(function () {
             });
         }
     }
-    setInterval(randomPic, 5000);
+    setInterval(randomPic, 2000);
     if($('#js-instagram').length){
         $.ajax({
             url: '/social/instagram.json',

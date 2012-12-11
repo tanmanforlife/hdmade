@@ -168,6 +168,7 @@ function auto_version($file) {
 				<ul class="nav site">
 					<li><span class="separator"><a href="https://twitter.com/search?q=%23121212Concert&src=hash" target="_blank">#121212Concert</a></span></li>
 					<li><a href="broadcast" target="_blank">Watch</a></li>
+					<li><a href="participate" target="_blank">Participate</a></li>
 					<!--li><a href="social" target="_blank">Connect</a></li-->
 					<li><a href="http://store.121212concert.org" target="_blank">Shop</a></li>
 					<li><span class="separator">|</span></li>

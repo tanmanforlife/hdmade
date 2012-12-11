@@ -382,6 +382,7 @@ h1 {
 }
 
 .page-title {
+	font-family:"TeeFraMed";
 	margin-top: 90px;
 }
 
@@ -1406,10 +1407,16 @@ abbr[title] {
 	font-size: 1em;
 	font-family: georgia;
 	font-style: italic;
-	height: 215px;
 }
 .give-option figure {
-	height: 50px;
+	display: block;
+	min-height: 70px;
+	margin-bottom: 10px;
+	padding:0 2%;
+}
+.give-option figure img {
+	display: block;
+	margin:0 auto;
 }
 
 .participate:last-child {
@@ -1540,6 +1547,7 @@ abbr[title] {
    ========================================================================== */
 
 .bd .page-title {
+	font-family:"TradeGothicCond";
 	font-size:72px;
 	margin:45px 0;
 }
@@ -1553,7 +1561,7 @@ abbr[title] {
 	font-family:"Georgia";
 	text-align: center;
 }
-.bd .table {
+.bd .broadcast-content .table {
 	width:100%;
 }
 .bd .broadcast-content .td {
@@ -2031,6 +2039,12 @@ abbr[title] {
 	.robin-hood-stories {
 		padding: 20px;
 	}
+	/* -----------------------
+	-- Participate -- */
+	.participate .one-fourth {
+		margin-bottom: 20px;
+		width:50%;
+	}
 }
 
 @media all and (max-width: 655px) {
@@ -2096,6 +2110,10 @@ abbr[title] {
         .menu-wrap .separator{
             display: none;
         }
+		
+	.main {
+		padding:0 10px;
+	}
 	.home .main {
 		border-top: 1px solid #345d96;
 		padding: 0;
@@ -2356,6 +2374,13 @@ abbr[title] {
 	.sponsor-list {
 		text-align: center;
 	}
+	
+	/* -----------------------
+	-- Participate -- */
+	
+	.participate .one-fourth {
+		width:100%;
+	}
 
 	/* -----------------------
 	-- Footer -- */
@@ -2380,6 +2405,9 @@ abbr[title] {
 
 	h2 {
 		font-size: 16px;
+	}
+	.page-title {
+		margin:22px 0;
 	}
         #donate-popup .amounts input[type=radio]{
             margin-right: 5px;

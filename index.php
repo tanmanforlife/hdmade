@@ -26,6 +26,7 @@
 					<li><span class="separator">#121212 Concert</span></li>
 
 					<li><a href="broadcast" target="_blank">Watch</a></li>
+					<li><a href="participate" target="_blank">Participate</a></li>
 					<!--<li><a href="social" target="_blank">Social</a></li>-->
 					<li><a href="http://store.121212concert.org" target="_blank">Shop</a></li>
 
