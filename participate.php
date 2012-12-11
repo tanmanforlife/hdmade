@@ -3,18 +3,24 @@
 <h1 class="page-title">Participate</h1>
 	<div class="participate cf">
 		<div class="one-fourth give-option">
-			<figure><img src="img/donate-fb.png" alt="Donate via Facebook" /></figure>
-			<p>Buy your friend a 121212 gift and you will be making a $25 donation in honor of them</p>
+			<a href="http://www.facebook.com/121212concert">
+				<figure><img src="img/donate-fb.png" alt="Donate via Facebook" /></figure>
+				<p>Buy your friend a 121212 gift and you will be making a $25 donation in honor of them</p>
+			</a>
 		</div> <!-- .text-to-give -->
 
 		<div class="one-fourth give-option">
-			<figure><img src="img/donate-foursquare.png" alt="Checkin with Foursquare" /></figure>
-			<p>Be one of the first 25k to check-in anywhere using #121212concert and Samsung Galaxy will donate $10 to the Robin Hood Relief Fund on your behalf</p>
+			<a href="http://www.foursquare.com/">
+				<figure><img src="img/donate-foursquare.png" alt="Checkin with Foursquare" /></figure>
+				<p>Be one of the first 25k to check-in anywhere using #121212concert and Samsung Galaxy will donate $10 to the Robin Hood Relief Fund on your behalf</p>
+			</a>
 		</div> <!-- .amazon -->
 
 		<div class="one-fourth give-option">
-			<figure><img src="img/donate-glue.png" alt="Checkin with GetGlue" /></figure>
-			<p>Check-in during the concert and unlock your office 121212 Concert sticker</p>
+			<a href="http://getglue.com/stickers/iheartradio/121212_the_concert_for_sandy_relief_coming_soon">
+				<figure><img src="img/donate-glue.png" alt="Checkin with GetGlue" /></figure>
+				<p>Check-in during the concert and unlock your office 121212 Concert sticker</p>
+			</a>
 		</div> <!-- .tweet-to-give -->
 
 		<div class="one-fourth give-option">
@@ -30,8 +36,10 @@
 		</div> <!-- .text-to-give -->
 
 		<div class="one-fourth give-option">
-			<figure><img src="img/donate-tumblr.png" alt="Tell us with Tumblr" /></figure>
-			<p>Tell us how you've been Robin Hood in your communities by tagging #Sandy #HowIHelped, and we'll feature posts on our Tumblr page </p>
+			<a href="https://www.tumblr.com/%C2%A0">
+				<figure><img src="img/donate-tumblr.png" alt="Tell us with Tumblr" /></figure>
+				<p>Tell us how you've been Robin Hood in your communities by tagging #Sandy #HowIHelped, and we'll feature posts on our Tumblr page </p>
+			</a>
 		</div> <!-- .amazon -->
 
 		<div class="one-fourth give-option">

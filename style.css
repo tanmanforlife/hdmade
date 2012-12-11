@@ -1471,6 +1471,9 @@ abbr[title] {
 .participate.last{
 	border-bottom: none;
 }
+.participate a {
+	color: #fff
+}
 
 /*
 
