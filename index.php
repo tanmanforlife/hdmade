@@ -144,7 +144,7 @@
 	<div class="celeb-videos flexslider-fade">
 		<ul class="slides cf">
 			<li class="celeb-video">
-			
+
 			<li class="celeb-video">
 				<div class="celeb-video-wrap">
 					<div class="celeb-video-frame">
